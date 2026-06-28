@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакты — Mir Orexov Samarkand</title>
+  <meta name="description" content="Оставьте заявку на поставку орехов и сухофруктов из Узбекистана. WhatsApp, Telegram, Email." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-logo"><img src="assets/img/IMG_0074.PNG" alt="" /></div>
+    <div class="preloader-bar"></div>
+  </div>
+  <a class="skip-link" href="#main" data-en="Skip to content">Перейти к содержимому</a>
+
+  <header class="navbar">
+    <a href="index.html" class="brand">
+      <span class="brand-logo"><img src="assets/img/IMG_0074.PNG" alt="Mir Orexov Samarkand" /></span>
+      <span class="brand-name">
+        <strong>Mir Orexov</strong>
+        <span>SAMARKAND</span>
+      </span>
+    </a>
+
+    <nav class="nav-menu" aria-label="Основная навигация">
+      <a href="index.html" data-en="Home">Главная</a>
+      <a href="catalog.html" data-en="Catalog">Каталог</a>
+      <a href="about.html" data-en="About Us">О нас</a>
+      <a href="contact.html" class="active" data-en="Contact">Контакты</a>
+    </nav>
+
+    <div class="nav-right">
+      <div class="lang-switch" role="group" aria-label="Выбор языка">
+        <button data-lang="ru" type="button">RU</button>
+        <button data-lang="en" type="button">EN</button>
+      </div>
+      <a href="contact.html" class="btn btn-primary btn-sm" data-en="Request a Quote">Оставить заявку</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="page-header">
+      <div class="container">
+        <h1 data-en="Contact">Контакты</h1>
+        <p data-en="Leave a request — we will contact you within one business day">Оставьте заявку — мы свяжемся с вами в течение рабочего дня</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 0;">
+      <div class="container contact-grid">
+        <div class="form-card" data-animate>
+          <form id="request-form" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name" data-en="Name">Имя<span class="required">*</span></label>
+                <input id="name" name="name" type="text" required placeholder="Ваше имя" data-en-placeholder="Your name" />
+                <div class="field-error" data-en="Please enter your name">Укажите имя</div>
+              </div>
+              <div class="field">
+                <label for="company" data-en="Company">Компания</label>
+                <input id="company" name="company" type="text" placeholder="Название компании" data-en-placeholder="Company name" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="country" data-en="Country">Страна<span class="required">*</span></label>
+                <input id="country" name="country" type="text" required placeholder="Страна" data-en-placeholder="Country" />
+                <div class="field-error" data-en="Please enter your country">Укажите страну</div>
+              </div>
+              <div class="field">
+                <label for="phone" data-en="Phone">Телефон</label>
+                <input id="phone" name="phone" type="tel" placeholder="+998 90 000 00 00" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email" data-en="Email">Email<span class="required">*</span></label>
+              <input id="email" name="email" type="email" required placeholder="you@company.com" />
+              <div class="field-error" data-en="Please enter a valid email">Укажите корректный email</div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="product" data-en="Product">Товар<span class="required">*</span></label>
+                <select id="product" name="product" required>
+                  <option value="" data-en="Select a product">Выберите товар</option>
+                  <option value="walnut" data-en="Walnut">Грецкий орех</option>
+                  <option value="pistachio" data-en="Pistachio">Фисташки</option>
+                  <option value="almond" data-en="Almond">Миндаль</option>
+                  <option value="apricot" data-en="Dried Apricot">Курага</option>
+                  <option value="raisins" data-en="Raisins">Изюм</option>
+                  <option value="fig" data-en="Fig">Инжир</option>
+                </select>
+                <div class="field-error" data-en="Please select a product">Выберите товар</div>
+              </div>
+              <div class="field">
+                <label for="volume" data-en="Volume (tons)">Объём (тонн)</label>
+                <input id="volume" name="volume" type="number" min="1" placeholder="например, 20" data-en-placeholder="e.g. 20" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message" data-en="Comment">Комментарий</label>
+              <textarea id="message" name="message" placeholder="Дополнительные детали заявки" data-en-placeholder="Additional details of your request"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" data-en="Submit Request">Отправить заявку</button>
+            <div class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div data-animate>
+          <h2 style="font-size: var(--fs-h2); margin-bottom: 24px;" data-en="Contact Us Directly">Свяжитесь напрямую</h2>
+          <div class="contact-list">
+            <a class="contact-item" href="https://wa.me/998000000000">
+              <span class="icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 11-4-7.2L21 3l-1.3 4.5A8.4 8.4 0 0121 11.5z"/><path d="M8 10.5c.5 2.5 2.5 4.5 5 5"/></svg>
+              </span>
+              <div>
+                <strong data-en="WhatsApp">WhatsApp</strong>
+                <div class="stat-label">+998 00 000 00 00</div>
+              </div>
+            </a>
+            <a class="contact-item" href="https://t.me/mirorexov">
+              <span class="icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </span>
+              <div>
+                <strong data-en="Telegram">Telegram</strong>
+                <div class="stat-label">@mirorexov</div>
+              </div>
+            </a>
+            <a class="contact-item" href="https://instagram.com/mirorexov">
+              <span class="icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+              </span>
+              <div>
+                <strong data-en="Instagram">Instagram</strong>
+                <div class="stat-label">@mirorexov</div>
+              </div>
+            </a>
+            <a class="contact-item" href="mailto:info@mirorexov.uz">
+              <span class="icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+              </span>
+              <div>
+                <strong data-en="Email">Email</strong>
+                <div class="stat-label">info@mirorexov.uz</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-flat">
+      <div class="footer-flat-top">
+        <div class="footer-brand-col">
+          <div class="pf-logo-row">
+            <span class="pf-logo-mark"><img src="assets/img/IMG_0074.PNG" alt="Mir Orexov Samarkand" /></span>
+            <span class="pf-logo-text pf-logo-text--dark">
+              <strong>Mir Orexov</strong>
+              <span>SAMARKAND</span>
+            </span>
+          </div>
+          <p class="footer-tagline-flat" data-en="Premium nuts and raisins.">Премиум орехи и изюм.</p>
+        </div>
+        <div class="footer-slogan">
+          <span class="footer-slogan-ru" data-en="A GIFT OF NATURE TO THE WORLD">ДАР ПРИРОДЫ — ВСЕМУ МИРУ</span>
+          <span class="footer-slogan-en">FROM NATURE TO THE WORLD</span>
+        </div>
+      </div>
+
+      <div class="footer-flat-cols">
+        <div class="pf-col">
+          <h4 data-en="Information">Информация</h4>
+          <ul class="pf-nav">
+            <li><a href="index.html" data-en="Home">Главная</a></li>
+            <li><a href="catalog.html" data-en="Catalog">Каталог</a></li>
+            <li><a href="about.html" data-en="About Us">О нас</a></li>
+            <li><a href="contact.html" data-en="Contact">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="pf-col">
+          <h4 data-en="Contact">Контакты</h4>
+          <div class="pf-contact-row">
+            <span class="pf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.5 7-11.5a7 7 0 10-14 0C5 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></span>
+            <span class="pf-static" data-en="Samarkand, Uzbekistan">г. Самарканд</span>
+          </div>
+          <div class="pf-contact-row">
+            <span class="pf-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.7-.85-2-.95-.25-.1-.45-.15-.65.15-.2.3-.75.95-.9 1.15-.2.2-.35.2-.65.05-1.7-.85-2.8-1.5-3.9-3.4-.3-.5.3-.45.85-1.5.1-.2.05-.35-.05-.5-.1-.15-.6-1.45-.85-2-.2-.5-.4-.45-.6-.45-.2 0-.4 0-.6.05-.2.05-.5.2-.7.65-.2.45-.85 1.55-.05 3.3.8 1.75 1.65 2.8 3.1 4 1.45 1.2 2.65 1.45 3.25 1.55.6.1 1.85-.15 2.1-.75.3-.6.3-1.1.2-1.25-.1-.1-.25-.15-.55-.3z"/><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 18.2a8.2 8.2 0 110-16.4 8.2 8.2 0 010 16.4z"/></svg></span>
+            <a href="https://wa.me/998000000000">+998 00 000 00 00</a>
+          </div>
+          <div class="pf-contact-row">
+            <span class="pf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span>
+            <a href="mailto:info@mirorexov.uz">info@mirorexov.uz</a>
+          </div>
+          <div class="pf-contact-row">
+            <span class="pf-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.95 5.1L18.4 19.3c-.27 1.1-1.03 1.37-2.07.86l-5.7-4.2-2.74 2.64c-.3.3-.56.55-1.13.55l.4-5.7L18.6 6.65c.5-.45-.1-.7-.78-.25L7.1 13.4l-5.55-1.74c-1.2-.38-1.22-1.2.27-1.78L20.45 3.3c1-.36 1.86.23 1.5 1.8z"/></svg></span>
+            <a href="https://t.me/mirorexov">@mirorexov</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom" data-en="© 2026 Mir Orexov Samarkand. All rights reserved.">© 2026 Mir Orexov Samarkand. Все права защищены.</div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>

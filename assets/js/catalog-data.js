@@ -1,0 +1,244 @@
+// Catalog tree: category -> product -> variety -> Request a Quote.
+// Real photos only; products/categories with no real photo are left without `img`
+// and rendered as an honest empty-state instead of a fabricated placeholder.
+// A node with no `children` key at all is a leaf (goes straight to "Request a Quote").
+// `titleEn` is the English label, used when the site language is switched to EN.
+window.CATALOG_DATA = {
+  id: "root",
+  title: "Каталог",
+  titleEn: "Catalog",
+  children: [
+    {
+      id: "dried",
+      title: "Сухофрукты",
+      titleEn: "Dried Fruits",
+      img: "assets/img/catalog/сухофрукты.jpg",
+      children: [
+        {
+          id: "apricot",
+          title: "Курага",
+          titleEn: "Dried Apricot",
+          img: "assets/img/products/kuraga-base.jpg",
+          children: [
+            { id: "kuraga", title: "Курага", titleEn: "Kuraga", img: "assets/img/products/kuraga-kuraga.jpg" },
+            { id: "limonka", title: "Курага «Лимонка»", titleEn: "Dried Apricot Limonka", img: "assets/img/products/kuraga-limonka.jpg" },
+            { id: "natural", title: "Курага натуральная", titleEn: "Dried Apricot Natural", img: "assets/img/products/kuraga-natural.jpg" },
+            { id: "turshak", title: "Курага «Туршак»", titleEn: "Dried Apricot Turshak", img: "assets/img/products/turshak.jpg" },
+          ],
+        },
+        {
+          id: "dried-apricots",
+          title: "Сушёные абрикосы",
+          titleEn: "Dried Apricots",
+          img: "assets/img/products/dried-apricots.jpg",
+        },
+        {
+          id: "raisins",
+          title: "Изюм",
+          titleEn: "Raisins",
+          img: "assets/img/izyum-golden-jpg.jpg",
+          children: [
+            { id: "javz", title: "Изюм «Джавз»", titleEn: "Raisins Javz", img: "assets/img/products/raisin-javz.jpg" },
+            { id: "soyagi", title: "Изюм «Сояги»", titleEn: "Raisins Soyagi", img: "assets/img/products/raisin-soyagi.jpg" },
+            { id: "yellow-hybrid", title: "Изюм жёлтый (гибрид)", titleEn: "Raisins Yellow (Hybrid)", img: "assets/img/products/raisin-yellow-hybrid.jpg" },
+            { id: "yellow-califar", title: "Изюм жёлтый (Калифар)", titleEn: "Raisins Yellow (Califar)", img: "assets/img/products/raisin-yellow-califar.jpg" },
+            { id: "sultan", title: "Изюм «Султан»", titleEn: "Raisins Sultan", img: "assets/img/products/raisin-sultan.jpg" },
+            { id: "black-giant", title: "Изюм чёрный (гигант)", titleEn: "Raisins Black (Giant)", img: "assets/img/products/raisin-black-giant.jpg" },
+            { id: "red-thompson", title: "Изюм «Красный Томпсон»", titleEn: "Raisins Red Thompson", img: "assets/img/products/red-thompson.jpg" },
+            { id: "shigani-red", title: "Изюм «Шигани» красный", titleEn: "Raisins Shigani Red", img: "assets/img/products/shigani-red.jpg" },
+          ],
+        },
+        {
+          id: "prune",
+          title: "Чернослив",
+          titleEn: "Prune",
+          img: "assets/img/products/prune-catalog.jpg",
+          children: [
+            { id: "ballonchik", title: "Чернослив «Баллончик»", titleEn: "Prune Ballonchik", img: "assets/img/products/prune-Чернослив Баллончик.jpg" },
+            { id: "larch", title: "Чернослив «Ларч», крупный, без косточек", titleEn: "Prune Larch, Large, Pitless", img: "assets/img/products/prune-Чернослив Ларч крупный без косточек.jpg" },
+            { id: "with-pit", title: "Чернослив с косточкой", titleEn: "Prune With Pit", img: "assets/img/products/prune-Чернослив с косточкой.jpg" },
+          ],
+        },
+        {
+          id: "jida",
+          title: "Джида",
+          titleEn: "Jida",
+          img: "assets/img/products/jida.jpg",
+        },
+        {
+          id: "unabi",
+          title: "Унаби",
+          titleEn: "Unabi",
+          img: "assets/img/products/unabi.jpg",
+        },
+      ],
+    },
+    {
+      id: "nuts",
+      title: "Орехи",
+      titleEn: "Nuts",
+      img: "assets/img/catalog/орехи.jpg",
+      children: [
+        {
+          id: "walnut",
+          title: "Грецкий орех",
+          titleEn: "Walnut",
+          img: "assets/img/products/walnut-catalog.jpg",
+          children: [
+            { id: "chandler", title: "Грецкий орех Chandler", titleEn: "Walnut Chandler" },
+            { id: "paper-shell", title: "Грецкий орех Paper Shell", titleEn: "Walnut Paper Shell" },
+            { id: "extra-light", title: "Грецкий орех Extra Light", titleEn: "Walnut Extra Light" },
+            { id: "light", title: "Грецкий орех Light", titleEn: "Walnut Light" },
+            { id: "peeled", title: "Грецкий орех очищенный", titleEn: "Walnut Peeled", img: "assets/img/products/walnut-peeled.jpg" },
+            { id: "crushed", title: "Грецкий орех измельчённый", titleEn: "Walnut Crushed", img: "assets/img/products/walnut-crushed.jpg" },
+            { id: "quarters", title: "Грецкий орех, четвертинка", titleEn: "Walnut Quarters", img: "assets/img/products/walnut-quarters.jpg" },
+          ],
+        },
+        {
+          id: "pistachio",
+          title: "Фисташки",
+          titleEn: "Pistachio",
+          img: "assets/img/fistashki-zharenye-solenye-iran.jpg",
+          children: [
+            { id: "peeled", title: "Фисташки очищенные", titleEn: "Pistachio, Peeled", img: "assets/img/products/pistachio- Фисташки очищенные.jpg" },
+            { id: "ahmad-agai-iran", title: "Фисташки «Ахмад-Агаи», жареные, солёные (Иран)", titleEn: "Pistachio Ahmad-Agai, Roasted, Salted (Iran)", img: "assets/img/products/pistachio-Фисташки Ахмад-Агаи жареные, соленые Иран.jpg" },
+            { id: "turkey-unpeeled-premium", title: "Фисташки неочищенные, жареные, высший сорт (Турция)", titleEn: "Pistachio Unpeeled, Roasted, Premium Grade (Turkey)", img: "assets/img/products/pistachio-Фисташки Турция неочищенные жареные высший сорт.jpg" },
+            { id: "roasted-salted-iran", title: "Фисташки жареные, солёные (Иран)", titleEn: "Pistachio Roasted, Salted (Iran)", img: "assets/img/products/pistachio-Фисташки жареные соленые Иран.jpg" },
+          ],
+        },
+        {
+          id: "almond",
+          title: "Миндаль",
+          titleEn: "Almond",
+          img: "assets/img/mindal-v-skorlupe-v-s.jpg",
+          children: [
+            { id: "inshell", title: "Миндаль в скорлупе", titleEn: "Almond In Shell", img: "assets/img/products/almond-inshell.jpg" },
+            { id: "unpeeled", title: "Миндаль неочищенный", titleEn: "Almond Unpeeled", img: "assets/img/products/almond-unpeeled.jpg" },
+            { id: "peeled", title: "Миндаль очищенный", titleEn: "Almond Peeled", img: "assets/img/products/almond.jpg" },
+            { id: "nonpareil", title: "Миндаль Nonpareil", titleEn: "Almond Nonpareil" },
+            { id: "carmel", title: "Миндаль Carmel", titleEn: "Almond Carmel" },
+            { id: "mission", title: "Миндаль Mission", titleEn: "Almond Mission" },
+            { id: "fritz", title: "Миндаль Fritz", titleEn: "Almond Fritz" },
+          ],
+        },
+        {
+          id: "cashew",
+          title: "Кешью",
+          titleEn: "Cashew",
+          img: "assets/img/products/cashew.jpg",
+          children: [
+            { id: "w180", title: "Кешью W180", titleEn: "Cashew W180" },
+            { id: "w210", title: "Кешью W210", titleEn: "Cashew W210" },
+            { id: "w240", title: "Кешью W240", titleEn: "Cashew W240" },
+            { id: "w320", title: "Кешью W320", titleEn: "Cashew W320" },
+          ],
+        },
+        {
+          id: "peanut",
+          title: "Арахис",
+          titleEn: "Peanut",
+          img: "assets/img/products/peanut-inshell.jpg",
+          children: [
+            { id: "inshell", title: "Арахис в скорлупе", titleEn: "Peanut In Shell", img: "assets/img/products/peanut-inshell.jpg" },
+            { id: "peeled", title: "Арахис очищенный", titleEn: "Peanut Peeled", img: "assets/img/products/peanut-peeled.jpg" },
+            { id: "blanched", title: "Арахис бланшированный", titleEn: "Peanut Blanched", img: "assets/img/products/peanut-blanched.jpg" },
+            { id: "crushed", title: "Арахис измельчённый", titleEn: "Peanut Crushed", img: "assets/img/products/peanut-crushed.jpg" },
+          ],
+        },
+        {
+          id: "pumpkin-seed",
+          title: "Тыквенная семечка",
+          titleEn: "Pumpkin Seed",
+          img: "assets/img/products/pumpkin-seed.jpg",
+        },
+        {
+          id: "macadamia",
+          title: "Макадамия",
+          titleEn: "Macadamia",
+          img: "assets/img/products/macadamia.jpg",
+        },
+        {
+          id: "hazelnut",
+          title: "Фундук",
+          titleEn: "Hazelnut",
+          img: "assets/img/products/hazelnut.jpg",
+        },
+        {
+          id: "apricot-kernels",
+          title: "Абрикосовые косточки",
+          titleEn: "Apricot Kernels",
+          img: "assets/img/products/apricot-kernels.jpg",
+        },
+      ],
+    },
+    {
+      id: "legumes",
+      title: "Семена и бобовые",
+      titleEn: "Seeds & Legumes",
+      img: "assets/img/catalog/бобовые.jpg",
+      children: [
+        {
+          id: "mash",
+          title: "Маш",
+          titleEn: "Mung Bean",
+          img: "assets/img/products/mash.jpg",
+        },
+        {
+          id: "sesame-white",
+          title: "Кунжут белый",
+          titleEn: "White Sesame",
+          img: "assets/img/products/sesame-white.jpg",
+        },
+        {
+          id: "fasol",
+          title: "Фасоль",
+          titleEn: "Beans",
+          img: "assets/img/products/fasol-red.jpg",
+          children: [
+            { id: "red", title: "Фасоль красная", titleEn: "Beans, Red", img: "assets/img/products/fasol-red.jpg" },
+            { id: "pinto", title: "Фасоль «Пинто»", titleEn: "Beans, Pinto", img: "assets/img/products/fasol-pinto.jpg" },
+            { id: "blackeye", title: "Фасоль «Черноглазка»", titleEn: "Beans, Black-Eyed", img: "assets/img/products/fasol-blackeye.jpg" },
+          ],
+        },
+        {
+          id: "pea-roasted",
+          title: "Горох жареный",
+          titleEn: "Roasted Peas",
+          img: "assets/img/products/pea-roasted.jpg",
+        },
+      ],
+    },
+    {
+      id: "fruits",
+      title: "Овощи и фрукты",
+      titleEn: "Vegetables & Fruits",
+      img: "assets/img/catalog/фрукты.jpg",
+      children: [],
+    },
+    {
+      id: "candied",
+      title: "Цукаты",
+      titleEn: "Candied Fruit",
+      img: "assets/img/products/cukaty.jpg",
+      children: [
+        { id: "candied-fruit", title: "Цукаты", titleEn: "Candied Fruit", img: "assets/img/products/candied-fruit.jpg" },
+        { id: "dried-pineapple", title: "Сушёные ананасы", titleEn: "Dried Pineapple", img: "assets/img/products/dried-pineapple.jpg" },
+        { id: "dried-banana", title: "Сушёный банан", titleEn: "Dried Banana", img: "assets/img/products/dried-banana.jpg" },
+        { id: "dried-kiwi", title: "Сушёное киви", titleEn: "Dried Kiwi", img: "assets/img/products/dried-kiwi.jpg" },
+        { id: "dried-mango", title: "Сушёное манго", titleEn: "Dried Mango", img: "assets/img/products/dried-mango.jpg" },
+      ],
+    },
+    {
+      id: "packaging",
+      title: "Упаковка",
+      titleEn: "Packaging",
+      // Service offering, not a photographed SKU — `service: true` keeps these
+      // leaves visible without a fabricated product photo (see resolveNode in catalog.js).
+      children: [
+        { id: "bulk", title: "Фасовка", titleEn: "Bulk Packing", service: true },
+        { id: "branding", title: "Брендирование", titleEn: "Branding", service: true },
+        { id: "turnkey", title: "Готовые решения", titleEn: "Turnkey Solutions", service: true },
+      ],
+    },
+  ],
+};

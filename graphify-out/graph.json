@@ -1,0 +1,4301 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "catalog-data.js",
+      "file_type": "code",
+      "source_file": "assets/js/catalog-data.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_catalog_data",
+      "community": 36,
+      "norm_label": "catalog-data.js"
+    },
+    {
+      "label": "catalog.js",
+      "file_type": "code",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_catalog",
+      "community": 8,
+      "norm_label": "catalog.js"
+    },
+    {
+      "label": "resolveNode()",
+      "file_type": "code",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "js_catalog_resolvenode",
+      "community": 8,
+      "norm_label": "resolvenode()"
+    },
+    {
+      "label": "t()",
+      "file_type": "code",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "js_catalog_t",
+      "community": 8,
+      "norm_label": "t()"
+    },
+    {
+      "label": "quoteLabel()",
+      "file_type": "code",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "js_catalog_quotelabel",
+      "community": 8,
+      "norm_label": "quotelabel()"
+    },
+    {
+      "label": "nodeAtPath()",
+      "file_type": "code",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "js_catalog_nodeatpath",
+      "community": 8,
+      "norm_label": "nodeatpath()"
+    },
+    {
+      "label": "pathFromHash()",
+      "file_type": "code",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "js_catalog_pathfromhash",
+      "community": 8,
+      "norm_label": "pathfromhash()"
+    },
+    {
+      "label": "render()",
+      "file_type": "code",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "js_catalog_render",
+      "community": 8,
+      "norm_label": "render()"
+    },
+    {
+      "label": "hero-orbit.js",
+      "file_type": "code",
+      "source_file": "assets/js/hero-orbit.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_hero_orbit",
+      "community": 12,
+      "norm_label": "hero-orbit.js"
+    },
+    {
+      "label": "buildOrbitLeaves()",
+      "file_type": "code",
+      "source_file": "assets/js/hero-orbit.js",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "js_hero_orbit_buildorbitleaves",
+      "community": 12,
+      "norm_label": "buildorbitleaves()"
+    },
+    {
+      "label": "currentTitle()",
+      "file_type": "code",
+      "source_file": "assets/js/hero-orbit.js",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "js_hero_orbit_currenttitle",
+      "community": 12,
+      "norm_label": "currenttitle()"
+    },
+    {
+      "label": "refreshLabels()",
+      "file_type": "code",
+      "source_file": "assets/js/hero-orbit.js",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "js_hero_orbit_refreshlabels",
+      "community": 12,
+      "norm_label": "refreshlabels()"
+    },
+    {
+      "label": "i18n.js",
+      "file_type": "code",
+      "source_file": "assets/js/i18n.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_i18n",
+      "community": 13,
+      "norm_label": "i18n.js"
+    },
+    {
+      "label": "getLang()",
+      "file_type": "code",
+      "source_file": "assets/js/i18n.js",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "js_i18n_getlang",
+      "community": 13,
+      "norm_label": "getlang()"
+    },
+    {
+      "label": "applyLang()",
+      "file_type": "code",
+      "source_file": "assets/js/i18n.js",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "js_i18n_applylang",
+      "community": 13,
+      "norm_label": "applylang()"
+    },
+    {
+      "label": "setLang()",
+      "file_type": "code",
+      "source_file": "assets/js/i18n.js",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "js_i18n_setlang",
+      "community": 13,
+      "norm_label": "setlang()"
+    },
+    {
+      "label": "main.js",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_main",
+      "community": 14,
+      "norm_label": "main.js"
+    },
+    {
+      "label": "initForm()",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "js_main_initform",
+      "community": 14,
+      "norm_label": "initform()"
+    },
+    {
+      "label": "showStatus()",
+      "file_type": "code",
+      "source_file": "assets/js/main.js",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "js_main_showstatus",
+      "community": 14,
+      "norm_label": "showstatus()"
+    },
+    {
+      "label": "quote-modal.js",
+      "file_type": "code",
+      "source_file": "assets/js/quote-modal.js",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "js_quote_modal",
+      "community": 15,
+      "norm_label": "quote-modal.js"
+    },
+    {
+      "label": "openQuoteModal()",
+      "file_type": "code",
+      "source_file": "assets/js/quote-modal.js",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "js_quote_modal_openquotemodal",
+      "community": 15,
+      "norm_label": "openquotemodal()"
+    },
+    {
+      "label": "closeQuoteModal()",
+      "file_type": "code",
+      "source_file": "assets/js/quote-modal.js",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "js_quote_modal_closequotemodal",
+      "community": 15,
+      "norm_label": "closequotemodal()"
+    },
+    {
+      "label": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f (index.html)",
+      "type": "Page",
+      "source_file": "index.html",
+      "source_location": "<title>Mir Orexov Samarkand \u2014 \u041f\u0440\u0435\u043c\u0438\u0443\u043c \u044d\u043a\u0441\u043f\u043e\u0440\u0442 \u043e\u0440\u0435\u0445\u043e\u0432 \u0438 \u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u043e\u0432</title>",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "page_index",
+      "community": 2,
+      "norm_label": "\u0433\u043b\u0430\u0432\u043d\u0430\u044f (index.html)"
+    },
+    {
+      "label": "\u041e \u043d\u0430\u0441 (about.html)",
+      "type": "Page",
+      "source_file": "about.html",
+      "source_location": "<title>\u041e \u043d\u0430\u0441 \u2014 Mir Orexov Samarkand</title>",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "page_about",
+      "community": 2,
+      "norm_label": "\u043e \u043d\u0430\u0441 (about.html)"
+    },
+    {
+      "label": "\u041a\u0430\u0442\u0430\u043b\u043e\u0433 (catalog.html)",
+      "type": "Page",
+      "source_file": "catalog.html",
+      "source_location": "<title>\u041a\u0430\u0442\u0430\u043b\u043e\u0433 \u2014 Mir Orexov Samarkand</title>",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "page_catalog",
+      "community": 2,
+      "norm_label": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 (catalog.html)"
+    },
+    {
+      "label": "\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b (contact.html)",
+      "type": "Page",
+      "source_file": "contact.html",
+      "source_location": "<title>\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b \u2014 Mir Orexov Samarkand</title>",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "page_contact",
+      "community": 2,
+      "norm_label": "\u043a\u043e\u043d\u0442\u0430\u043a\u0442\u044b (contact.html)"
+    },
+    {
+      "label": "\u041a\u0430\u0442\u0430\u043b\u043e\u0433 PDF (\u043f\u0440\u043e\u0434\u0443\u043a\u0442\u043e\u0432\u044b\u0439 \u043a\u0430\u0442\u0430\u043b\u043e\u0433)",
+      "type": "Page",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "20-page product catalog booklet",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "pdf_catalog",
+      "community": 1,
+      "norm_label": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 pdf (\u043f\u0440\u043e\u0434\u0443\u043a\u0442\u043e\u0432\u044b\u0438 \u043a\u0430\u0442\u0430\u043b\u043e\u0433)"
+    },
+    {
+      "label": "Mir Orexov Samarkand",
+      "type": "Company",
+      "source_file": "index.html",
+      "source_location": "Mir Orexov Samarkand \u2014 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c \u0438 \u044d\u043a\u0441\u043f\u043e\u0440\u0442\u0451\u0440 \u043e\u0440\u0435\u0445\u043e\u0432 \u0438 \u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u043e\u0432 \u0438\u0437 \u0423\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u0430\u043d\u0430",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "company_mir_orexov",
+      "community": 2,
+      "norm_label": "mir orexov samarkand"
+    },
+    {
+      "label": "\u041e\u041e\u041e \"Raise Production business\"",
+      "type": "Company",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "\u041e\u041e\u041e \"Raise Production business\" \u2014 Dried fruits processing and packaging factory",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "company_raise_production",
+      "community": 1,
+      "norm_label": "\u043e\u043e\u043e \"raise production business\""
+    },
+    {
+      "label": "SAMBOX (\u0443\u043f\u0430\u043a\u043e\u0432\u043e\u0447\u043d\u0430\u044f \u0444\u0430\u0431\u0440\u0438\u043a\u0430)",
+      "type": "Company",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "WE HAVE OUR OWN CARDBOARD FACTORY! SAMBOX QADOQLASH FABRIKASI",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "brand_sambox",
+      "community": 2,
+      "norm_label": "sambox (\u0443\u043f\u0430\u043a\u043e\u0432\u043e\u0447\u043d\u0430\u044f \u0444\u0430\u0431\u0440\u0438\u043a\u0430)"
+    },
+    {
+      "label": "HACCP",
+      "type": "Certification",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "Quality & Certifications: HACCP CERTIFIED FOOD SAFETY",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "cert_haccp",
+      "community": 1,
+      "norm_label": "haccp"
+    },
+    {
+      "label": "ISO 22000",
+      "type": "Certification",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "ISO 22000 FOOD SAFETY MANAGEMENT SYSTEM CERTIFIED",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "cert_iso22000",
+      "community": 1,
+      "norm_label": "iso 22000"
+    },
+    {
+      "label": "HALAL",
+      "type": "Certification",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "HALAL CERTIFIED",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "cert_halal",
+      "community": 1,
+      "norm_label": "halal"
+    },
+    {
+      "label": "ORGANIC",
+      "type": "Certification",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "ORGANIC CERTIFIED",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "cert_organic",
+      "community": 1,
+      "norm_label": "organic"
+    },
+    {
+      "label": "GlobalG.A.P.",
+      "type": "Certification",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "GLOBALG.A.P. CERTIFIED FARM ASSURANCE",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "cert_globalgap",
+      "community": 1,
+      "norm_label": "globalg.a.p."
+    },
+    {
+      "label": "ISO \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u0430\u0442 (\u0443\u043f\u043e\u043c\u044f\u043d\u0443\u0442 \u043d\u0430 \u0441\u0430\u0439\u0442\u0435)",
+      "type": "Certification",
+      "source_file": "index.html",
+      "source_location": "ISO \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u0430\u0442 / ISO Certified \u2014 \u041a\u043e\u043d\u0442\u0440\u043e\u043b\u044c \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0430 \u043d\u0430 \u043a\u0430\u0436\u0434\u043e\u043c \u044d\u0442\u0430\u043f\u0435 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0438",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "cert_iso_generic",
+      "community": 2,
+      "norm_label": "iso \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u0430\u0442 (\u0443\u043f\u043e\u043c\u044f\u043d\u0443\u0442 \u043d\u0430 \u0441\u0430\u0438\u0442\u0435)"
+    },
+    {
+      "label": "WhatsApp +998 00 000 00 00",
+      "type": "Contact",
+      "source_file": "index.html",
+      "source_location": "https://wa.me/998000000000",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "contact_whatsapp",
+      "community": 2,
+      "norm_label": "whatsapp +998 00 000 00 00"
+    },
+    {
+      "label": "Telegram @mirorexov",
+      "type": "Contact",
+      "source_file": "index.html",
+      "source_location": "https://t.me/mirorexov",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "contact_telegram",
+      "community": 2,
+      "norm_label": "telegram @mirorexov"
+    },
+    {
+      "label": "Instagram @mirorexov",
+      "type": "Contact",
+      "source_file": "contact.html",
+      "source_location": "https://instagram.com/mirorexov",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "contact_instagram",
+      "community": 2,
+      "norm_label": "instagram @mirorexov"
+    },
+    {
+      "label": "Email info@mirorexov.uz",
+      "type": "Contact",
+      "source_file": "index.html",
+      "source_location": "mailto:info@mirorexov.uz",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "contact_email",
+      "community": 2,
+      "norm_label": "email info@mirorexov.uz"
+    },
+    {
+      "label": "Email mir_orexov@mail.ru",
+      "type": "Contact",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "mir_orexov@mail.ru",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "contact_email_pdf",
+      "community": 1,
+      "norm_label": "email mir_orexov@mail.ru"
+    },
+    {
+      "label": "Phone +998 91 543 55 55",
+      "type": "Contact",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "+998 91 543 55 55",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "contact_phone_pdf_1",
+      "community": 1,
+      "norm_label": "phone +998 91 543 55 55"
+    },
+    {
+      "label": "Phone +998 91 708 00 00",
+      "type": "Contact",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "+998 91 708 00 00",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "contact_phone_pdf_2",
+      "community": 1,
+      "norm_label": "phone +998 91 708 00 00"
+    },
+    {
+      "label": "Website mirorexov.com",
+      "type": "Contact",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "mirorexov.com",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "contact_website",
+      "community": 1,
+      "norm_label": "website mirorexov.com"
+    },
+    {
+      "label": "\u0424\u043e\u0440\u043c\u0430 \u0437\u0430\u044f\u0432\u043a\u0438 (Request Form)",
+      "type": "Concept",
+      "source_file": "contact.html",
+      "source_location": "<form id=\"request-form\">",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "contact_form",
+      "community": 2,
+      "norm_label": "\u0444\u043e\u0440\u043c\u0430 \u0437\u0430\u044f\u0432\u043a\u0438 (request form)"
+    },
+    {
+      "label": "\u041c\u043e\u0434\u0430\u043b\u044c\u043d\u0430\u044f \u0444\u043e\u0440\u043c\u0430 \u0437\u0430\u044f\u0432\u043a\u0438 (Quote Modal)",
+      "type": "Concept",
+      "source_file": "index.html",
+      "source_location": "<div class=\"modal-overlay\" id=\"quote-modal\">",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "quote_modal",
+      "community": 2,
+      "norm_label": "\u043c\u043e\u0434\u0430\u043b\u044c\u043d\u0430\u044f \u0444\u043e\u0440\u043c\u0430 \u0437\u0430\u044f\u0432\u043a\u0438 (quote modal)"
+    },
+    {
+      "label": "\u0421\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b / Dried Fruits",
+      "type": "Category",
+      "source_file": "index.html",
+      "source_location": "cat-tile-title \u0421\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b, href=catalog.html#/dried",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_dried_fruits",
+      "community": 2,
+      "norm_label": "\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b / dried fruits"
+    },
+    {
+      "label": "\u041e\u0440\u0435\u0445\u0438 / Nuts",
+      "type": "Category",
+      "source_file": "index.html",
+      "source_location": "cat-tile-title \u041e\u0440\u0435\u0445\u0438, href=catalog.html#/nuts",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_nuts",
+      "community": 2,
+      "norm_label": "\u043e\u0440\u0435\u0445\u0438 / nuts"
+    },
+    {
+      "label": "\u0421\u0435\u043c\u0435\u043d\u0430 \u0438 \u0431\u043e\u0431\u043e\u0432\u044b\u0435 / Seeds & Legumes",
+      "type": "Category",
+      "source_file": "index.html",
+      "source_location": "cat-tile-title \u0421\u0435\u043c\u0435\u043d\u0430 \u0438 \u0431\u043e\u0431\u043e\u0432\u044b\u0435, href=catalog.html#/legumes",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_legumes",
+      "community": 2,
+      "norm_label": "\u0441\u0435\u043c\u0435\u043d\u0430 \u0438 \u0431\u043e\u0431\u043e\u0432\u044b\u0435 / seeds & legumes"
+    },
+    {
+      "label": "\u041e\u0432\u043e\u0449\u0438 \u0438 \u0444\u0440\u0443\u043a\u0442\u044b / Vegetables & Fruits",
+      "type": "Category",
+      "source_file": "index.html",
+      "source_location": "cat-tile-title \u041e\u0432\u043e\u0449\u0438 \u0438 \u0444\u0440\u0443\u043a\u0442\u044b, href=catalog.html#/fruits",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_fruits",
+      "community": 2,
+      "norm_label": "\u043e\u0432\u043e\u0449\u0438 \u0438 \u0444\u0440\u0443\u043a\u0442\u044b / vegetables & fruits"
+    },
+    {
+      "label": "\u0421\u0435\u043c\u0435\u043d\u0430 / Seeds (PDF section)",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "SEEDS / \u0421\u0415\u041c\u0415\u041d\u0410",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_seeds_pdf",
+      "community": 1,
+      "norm_label": "\u0441\u0435\u043c\u0435\u043d\u0430 / seeds (pdf section)"
+    },
+    {
+      "label": "\u0421\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b / Dried Fruits (China)",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "DRIED FRUITS / CHINA / \u0421\u0423\u0425\u041e\u0424\u0420\u0423\u041a\u0422\u042b / \u041a\u0418\u0422\u0410\u0419",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_dried_fruits_china",
+      "community": 7,
+      "norm_label": "\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b / dried fruits (china)"
+    },
+    {
+      "label": "\u0421\u0432\u0435\u0436\u0438\u0435 \u0444\u0440\u0443\u043a\u0442\u044b / Fresh Fruits",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "FRESH FRUITS / \u0421\u0412\u0415\u0416\u0418\u0415 \u0424\u0420\u0423\u041a\u0422\u042b",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_fresh_fruits",
+      "community": 3,
+      "norm_label": "\u0441\u0432\u0435\u0436\u0438\u0435 \u0444\u0440\u0443\u043a\u0442\u044b / fresh fruits"
+    },
+    {
+      "label": "\u0418\u0437\u044e\u043c / Raisins",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "RAISINS / \u0418\u0417\u042e\u041c",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_raisins",
+      "community": 5,
+      "norm_label": "\u0438\u0437\u044e\u043c / raisins"
+    },
+    {
+      "label": "\u0421\u0443\u0448\u0435\u043d\u044b\u0435 \u0430\u0431\u0440\u0438\u043a\u043e\u0441\u044b / Dried Apricots",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "DRIED APRICOTS / \u0421\u0423\u0428\u0415\u041d\u042b\u0415 \u0410\u0411\u0420\u0418\u041a\u041e\u0421\u042b",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_dried_apricots",
+      "community": 1,
+      "norm_label": "\u0441\u0443\u0448\u0435\u043d\u044b\u0435 \u0430\u0431\u0440\u0438\u043a\u043e\u0441\u044b / dried apricots"
+    },
+    {
+      "label": "\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432, \u0443\u043d\u0430\u0431\u0438 / Prunes, Jujube",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "PRUNES, JUJUBE / \u0427\u0415\u0420\u041d\u041e\u0421\u041b\u0418\u0412, \u0423\u041d\u0410\u0411\u0418",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_prunes_jujube",
+      "community": 1,
+      "norm_label": "\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432, \u0443\u043d\u0430\u0431\u0438 / prunes, jujube"
+    },
+    {
+      "label": "\u0410\u0440\u0430\u0445\u0438\u0441 / Peanuts",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "PEANUTS / \u0410\u0420\u0410\u0425\u0418\u0421",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_peanuts",
+      "community": 11,
+      "norm_label": "\u0430\u0440\u0430\u0445\u0438\u0441 / peanuts"
+    },
+    {
+      "label": "\u041c\u0438\u043d\u0434\u0430\u043b\u044c / Almond",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "ALMOND / \u041c\u0418\u041d\u0414\u0410\u041b\u042c",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_almond",
+      "community": 4,
+      "norm_label": "\u043c\u0438\u043d\u0434\u0430\u043b\u044c / almond"
+    },
+    {
+      "label": "\u041e\u0440\u0435\u0445\u0438 / Nuts (PDF section - pistachio, cashew, hazelnut, macadamia)",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "NUTS / \u041e\u0420\u0415\u0425\u0418",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_nuts_pdf",
+      "community": 1,
+      "norm_label": "\u043e\u0440\u0435\u0445\u0438 / nuts (pdf section - pistachio, cashew, hazelnut, macadamia)"
+    },
+    {
+      "label": "\u0411\u043e\u0431\u043e\u0432\u044b\u0435 / Legumes (PDF section)",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "LEGUMES / \u0411\u041e\u0411\u041e\u0412\u042b\u0415",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_legumes_pdf",
+      "community": 9,
+      "norm_label": "\u0431\u043e\u0431\u043e\u0432\u044b\u0435 / legumes (pdf section)"
+    },
+    {
+      "label": "\u0413\u0440\u0435\u0446\u043a\u0438\u0439 \u043e\u0440\u0435\u0445 / Walnuts (PDF section)",
+      "type": "Category",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "WALNUTS / \u0413\u0420\u0415\u0426\u041a\u0418\u0419 \u041e\u0420\u0415\u0425",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "category_walnuts_pdf",
+      "community": 4,
+      "norm_label": "\u0433\u0440\u0435\u0446\u043a\u0438\u0438 \u043e\u0440\u0435\u0445 / walnuts (pdf section)"
+    },
+    {
+      "label": "\u0413\u0440\u0435\u0446\u043a\u0438\u0439 \u043e\u0440\u0435\u0445 / Walnut",
+      "type": "Product",
+      "source_file": "contact.html",
+      "source_location": "<option value=\"walnut\">\u0413\u0440\u0435\u0446\u043a\u0438\u0439 \u043e\u0440\u0435\u0445</option>",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_walnut",
+      "community": 2,
+      "norm_label": "\u0433\u0440\u0435\u0446\u043a\u0438\u0438 \u043e\u0440\u0435\u0445 / walnut"
+    },
+    {
+      "label": "\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 / Pistachio",
+      "type": "Product",
+      "source_file": "contact.html",
+      "source_location": "<option value=\"pistachio\">\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438</option>",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_pistachio",
+      "community": 2,
+      "norm_label": "\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438 / pistachio"
+    },
+    {
+      "label": "\u041c\u0438\u043d\u0434\u0430\u043b\u044c / Almond",
+      "type": "Product",
+      "source_file": "contact.html",
+      "source_location": "<option value=\"almond\">\u041c\u0438\u043d\u0434\u0430\u043b\u044c</option>",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_almond",
+      "community": 2,
+      "norm_label": "\u043c\u0438\u043d\u0434\u0430\u043b\u044c / almond"
+    },
+    {
+      "label": "\u041a\u0443\u0440\u0430\u0433\u0430 / Dried Apricot",
+      "type": "Product",
+      "source_file": "contact.html",
+      "source_location": "<option value=\"apricot\">\u041a\u0443\u0440\u0430\u0433\u0430</option>",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_apricot",
+      "community": 2,
+      "norm_label": "\u043a\u0443\u0440\u0430\u0433\u0430 / dried apricot"
+    },
+    {
+      "label": "\u0418\u0437\u044e\u043c / Raisins",
+      "type": "Product",
+      "source_file": "contact.html",
+      "source_location": "<option value=\"raisins\">\u0418\u0437\u044e\u043c</option>",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_raisins",
+      "community": 2,
+      "norm_label": "\u0438\u0437\u044e\u043c / raisins"
+    },
+    {
+      "label": "\u0418\u043d\u0436\u0438\u0440 / Fig",
+      "type": "Product",
+      "source_file": "contact.html",
+      "source_location": "<option value=\"fig\">\u0418\u043d\u0436\u0438\u0440</option>",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fig",
+      "community": 2,
+      "norm_label": "\u0438\u043d\u0436\u0438\u0440 / fig"
+    },
+    {
+      "label": "Walnuts (in shell)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "WALNUTS \u0413\u0440\u0435\u0446\u043a\u043e\u0432\u044b\u0435 \u043e\u0440\u0435\u0445\u0438 Packaging: 1kg-25kg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_walnuts_inshell",
+      "community": 4,
+      "norm_label": "walnuts (in shell)"
+    },
+    {
+      "label": "Walnuts Peeled",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "WALNUTS PEELED \u041e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0433\u0440\u0435\u0446\u043a\u0438\u0435 \u043e\u0440\u0435\u0445\u0438",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_walnuts_peeled",
+      "community": 4,
+      "norm_label": "walnuts peeled"
+    },
+    {
+      "label": "Walnut Kernel Pieces (\u0447\u0435\u0442\u0432\u0435\u0440\u0442\u0438\u043d\u043a\u0430)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "WALNUT KERNEL PIECES \u0427\u0435\u0442\u0432\u0435\u0440\u0442\u0438\u043d\u043a\u0430",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_walnut_kernel_pieces",
+      "community": 4,
+      "norm_label": "walnut kernel pieces (\u0447\u0435\u0442\u0432\u0435\u0440\u0442\u0438\u043d\u043a\u0430)"
+    },
+    {
+      "label": "Walnuts Chopped",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "WALNUTS CHOPPED \u0418\u0437\u043c\u0435\u043b\u044c\u0447\u0451\u043d\u043d\u044b\u0435 \u0433\u0440\u0435\u0446\u043a\u0438\u0435 \u043e\u0440\u0435\u0445\u0438",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_walnuts_chopped",
+      "community": 4,
+      "norm_label": "walnuts chopped"
+    },
+    {
+      "label": "Black Raisins (Gigant)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "BLACK RAISINS (Gigant) \u0427\u0451\u0440\u043d\u044b\u0439 \u0438\u0437\u044e\u043c (\u0413\u0438\u0433\u0430\u043d\u0442)",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_black_raisins_gigant",
+      "community": 5,
+      "norm_label": "black raisins (gigant)"
+    },
+    {
+      "label": "Black Raisins (Gibrid)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "BLACK RAISINS (Gibrid) \u0427\u0451\u0440\u043d\u044b\u0439 \u0438\u0437\u044e\u043c (\u0413\u0438\u0431\u0440\u0438\u0434)",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_black_raisins_gibrid",
+      "community": 5,
+      "norm_label": "black raisins (gibrid)"
+    },
+    {
+      "label": "Golden Raisins (Gibrid)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "GOLDEN RAISINS (Gibrid) \u0416\u0451\u043b\u0442\u044b\u0439 \u0438\u0437\u044e\u043c (\u0413\u0438\u0431\u0440\u0438\u0434)",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_golden_raisins_gibrid",
+      "community": 5,
+      "norm_label": "golden raisins (gibrid)"
+    },
+    {
+      "label": "Golden Raisins (Kalifar)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "GOLDEN RAISINS (Kalifar) \u0416\u0451\u043b\u0442\u044b\u0439 \u0438\u0437\u044e\u043c (\u041a\u0430\u043b\u0438\u0444\u0430\u0440)",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_golden_raisins_kalifar",
+      "community": 5,
+      "norm_label": "golden raisins (kalifar)"
+    },
+    {
+      "label": "Sultana Raisins",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "SULTANA RAISINS \u0421\u0443\u043b\u0442\u0430\u043d\u0430 \u0438\u0437\u044e\u043c",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_sultana_raisins",
+      "community": 5,
+      "norm_label": "sultana raisins"
+    },
+    {
+      "label": "Red Tompson Raisins",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "RED TOMPSON RAISINS \u041a\u0440\u0430\u0441\u043d\u044b\u0439 \u0422\u043e\u043c\u043f\u0441\u043e\u043d",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_red_tompson_raisins",
+      "community": 5,
+      "norm_label": "red tompson raisins"
+    },
+    {
+      "label": "Red Shigani Raisins",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "RED SHIGANI RAISINS \u0428\u0438\u0433\u0430\u043d\u0438 \u043a\u0440\u0430\u0441\u043d\u044b\u0439",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_red_shigani_raisins",
+      "community": 5,
+      "norm_label": "red shigani raisins"
+    },
+    {
+      "label": "Dried Apricots (\u043b\u0438\u043c\u043e\u043d\u043a\u0430)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "DRIED APRICOTS \u0421\u0443\u0448. \u0430\u0431\u0440\u0438\u043a\u043e\u0441 (\u043b\u0438\u043c\u043e\u043d\u043a\u0430)",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_dried_apricots_lemonka",
+      "community": 1,
+      "norm_label": "dried apricots (\u043b\u0438\u043c\u043e\u043d\u043a\u0430)"
+    },
+    {
+      "label": "Dried Apricots (\u043a\u0443\u0440\u0430\u0433\u0430)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "DRIED APRICOTS \u0421\u0443\u0448. \u0430\u0431\u0440\u0438\u043a\u043e\u0441 (\u043a\u0443\u0440\u0430\u0433\u0430)",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_dried_apricots_kuraga",
+      "community": 1,
+      "norm_label": "dried apricots (\u043a\u0443\u0440\u0430\u0433\u0430)"
+    },
+    {
+      "label": "Sun Dried Apricots (\u043d\u0430\u0442\u0443\u0440\u0430\u043b\u044c\u043d\u044b\u0439)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "SUN DRIED APRICOTS \u0421\u0443\u0448. \u0430\u0431\u0440\u0438\u043a\u043e\u0441 (\u043d\u0430\u0442\u0443\u0440\u0430\u043b\u044c\u043d\u044b\u0439)",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_sun_dried_apricots",
+      "community": 1,
+      "norm_label": "sun dried apricots (\u043d\u0430\u0442\u0443\u0440\u0430\u043b\u044c\u043d\u044b\u0438)"
+    },
+    {
+      "label": "Jujube (\u0443\u043d\u0430\u0431\u0438)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "JUJUBE \u0423\u043d\u0430\u0431\u0438",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_jujube",
+      "community": 1,
+      "norm_label": "jujube (\u0443\u043d\u0430\u0431\u0438)"
+    },
+    {
+      "label": "Oleaster (\u0434\u0436\u0438\u0434\u0430)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "OLEASTER \u0414\u0436\u0438\u0434\u0430",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_oleaster",
+      "community": 1,
+      "norm_label": "oleaster (\u0434\u0436\u0438\u0434\u0430)"
+    },
+    {
+      "label": "Prunes (\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "PRUNES \u0421\u0443\u0448. \u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_prunes",
+      "community": 1,
+      "norm_label": "prunes (\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432)"
+    },
+    {
+      "label": "Peanuts in Shell",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "PEANUTS IN SHELL \u0410\u0440\u0430\u0445\u0438\u0441 \u0432 \u0441\u043a\u043e\u0440\u043b\u0443\u043f\u0435",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_peanuts_inshell",
+      "community": 11,
+      "norm_label": "peanuts in shell"
+    },
+    {
+      "label": "Peeled Peanuts",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "PEELED PEANUTS \u041e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0439 \u0430\u0440\u0430\u0445\u0438\u0441",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_peeled_peanuts",
+      "community": 11,
+      "norm_label": "peeled peanuts"
+    },
+    {
+      "label": "Blanched Peanuts",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "BLANCHED PEANUTS \u0411\u043b\u0430\u043d\u0448\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0430\u0440\u0430\u0445\u0438\u0441",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_blanched_peanuts",
+      "community": 11,
+      "norm_label": "blanched peanuts"
+    },
+    {
+      "label": "Chopped Peanuts",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "CHOPPED PEANUTS \u0418\u0437\u043c\u0435\u043b\u044c\u0447\u0435\u043d\u043d\u044b\u0439 \u0430\u0440\u0430\u0445\u0438\u0441",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_chopped_peanuts",
+      "community": 11,
+      "norm_label": "chopped peanuts"
+    },
+    {
+      "label": "Almonds (in shell)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "ALMONDS \u041c\u0438\u043d\u0434\u0430\u043b\u044c Packaging: 0.5kg-1kg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_almonds_inshell",
+      "community": 4,
+      "norm_label": "almonds (in shell)"
+    },
+    {
+      "label": "Almonds Kernel",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "ALMONDS KERNEL \u042f\u0434\u0440\u0430 \u043c\u0438\u043d\u0434\u0430\u043b\u044f",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_almonds_kernel",
+      "community": 4,
+      "norm_label": "almonds kernel"
+    },
+    {
+      "label": "Apricot Kernels",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "APRICOT KERNELS \u0410\u0431\u0440\u0438\u043a\u043e\u0441\u043e\u0432\u044b\u0435 \u043a\u043e\u0441\u0442\u043e\u0447\u043a\u0438",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_apricot_kernels",
+      "community": 4,
+      "norm_label": "apricot kernels"
+    },
+    {
+      "label": "Pistachio (PDF)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "PISTACHIO \u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0430",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_pistachio_pdf",
+      "community": 1,
+      "norm_label": "pistachio (pdf)"
+    },
+    {
+      "label": "Cashew (\u043a\u0435\u0448\u044c\u044e)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "CASHEW \u041a\u0435\u0448\u044c\u044e",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_cashew",
+      "community": 1,
+      "norm_label": "cashew (\u043a\u0435\u0448\u044c\u044e)"
+    },
+    {
+      "label": "Hazelnut (\u0444\u0443\u043d\u0434\u0443\u043a)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "HAZELNUT \u0424\u0443\u043d\u0434\u0443\u043a",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_hazelnut",
+      "community": 1,
+      "norm_label": "hazelnut (\u0444\u0443\u043d\u0434\u0443\u043a)"
+    },
+    {
+      "label": "Macadamia (\u043c\u0430\u043a\u0430\u0434\u0430\u043c\u0438\u044f)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "MACADAMIA \u041c\u0430\u043a\u0430\u0434\u0430\u043c\u0438\u044f",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_macadamia",
+      "community": 1,
+      "norm_label": "macadamia (\u043c\u0430\u043a\u0430\u0434\u0430\u043c\u0438\u044f)"
+    },
+    {
+      "label": "Sesame (\u043a\u0443\u043d\u0436\u0443\u0442)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "SESAME \u041a\u0443\u043d\u0436\u0443\u0442",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_sesame",
+      "community": 1,
+      "norm_label": "sesame (\u043a\u0443\u043d\u0436\u0443\u0442)"
+    },
+    {
+      "label": "Shelled Pumpkin Seeds",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "SHELLED PUMPKIN SEEDS \u041e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0442\u044b\u043a\u0432\u0435\u043d\u043d\u044b\u0435 \u0441\u0435\u043c\u0435\u0447\u043a\u0438",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_pumpkin_seeds",
+      "community": 1,
+      "norm_label": "shelled pumpkin seeds"
+    },
+    {
+      "label": "Red Beans (\u043a\u0440\u0430\u0441\u043d\u044b\u0439 \u0444\u0430\u0441\u043e\u043b\u044c)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "RED BEANS \u041a\u0440\u0430\u0441\u043d\u044b\u0439 \u0444\u0430\u0441\u043e\u043b\u044c",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_red_beans",
+      "community": 9,
+      "norm_label": "red beans (\u043a\u0440\u0430\u0441\u043d\u044b\u0438 \u0444\u0430\u0441\u043e\u043b\u044c)"
+    },
+    {
+      "label": "Beans (\u0444\u0430\u0441\u043e\u043b\u044c, white)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "BEANS \u0424\u0430\u0441\u043e\u043b\u044c Packaging: 0.5kg-1kg / 2kg-25kg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_beans_white",
+      "community": 9,
+      "norm_label": "beans (\u0444\u0430\u0441\u043e\u043b\u044c, white)"
+    },
+    {
+      "label": "Beans (\u0444\u0430\u0441\u043e\u043b\u044c, black-eyed)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "BEANS \u0424\u0430\u0441\u043e\u043b\u044c (black-eyed style image)",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_beans_blackeyed",
+      "community": 9,
+      "norm_label": "beans (\u0444\u0430\u0441\u043e\u043b\u044c, black-eyed)"
+    },
+    {
+      "label": "Mung Bean (\u043c\u0430\u0448)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "MUNG BEAN \u041c\u0430\u0448",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_mung_bean",
+      "community": 9,
+      "norm_label": "mung bean (\u043c\u0430\u0448)"
+    },
+    {
+      "label": "Chickpea Roasted (\u0433\u043e\u0440\u043e\u0445 \u0436\u0430\u0440\u0435\u043d\u044b\u0439)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "CHICKPEA (Roasted) \u0413\u043e\u0440\u043e\u0445 (\u0436\u0430\u0440\u0435\u043d\u044b\u0439)",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_chickpea_roasted",
+      "community": 9,
+      "norm_label": "chickpea roasted (\u0433\u043e\u0440\u043e\u0445 \u0436\u0430\u0440\u0435\u043d\u044b\u0438)"
+    },
+    {
+      "label": "Dried Banana (\u0441\u0443\u0448. \u0431\u0430\u043d\u0430\u043d)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "DRIED BANANA \u0421\u0443\u0448. \u0431\u0430\u043d\u0430\u043d",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_dried_banana",
+      "community": 7,
+      "norm_label": "dried banana (\u0441\u0443\u0448. \u0431\u0430\u043d\u0430\u043d)"
+    },
+    {
+      "label": "Dried Pineapple (\u0441\u0443\u0448. \u0430\u043d\u0430\u043d\u0430\u0441)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "DRIED PINEAPPLE \u0421\u0443\u0448. \u0430\u043d\u0430\u043d\u0430\u0441",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_dried_pineapple",
+      "community": 7,
+      "norm_label": "dried pineapple (\u0441\u0443\u0448. \u0430\u043d\u0430\u043d\u0430\u0441)"
+    },
+    {
+      "label": "Dried Peach (\u0441\u0443\u0448. \u043f\u0435\u0440\u0441\u0438\u043a)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "DRIED PEACH \u0421\u0443\u0448. \u043f\u0435\u0440\u0441\u0438\u043a",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_dried_peach",
+      "community": 7,
+      "norm_label": "dried peach (\u0441\u0443\u0448. \u043f\u0435\u0440\u0441\u0438\u043a)"
+    },
+    {
+      "label": "Dried Kiwi (\u0441\u0443\u0448. \u043a\u0438\u0432\u0438)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "DRIED KIWI \u0421\u0443\u0448. \u043a\u0438\u0432\u0438",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_dried_kiwi",
+      "community": 7,
+      "norm_label": "dried kiwi (\u0441\u0443\u0448. \u043a\u0438\u0432\u0438)"
+    },
+    {
+      "label": "Dried Mango (\u0441\u0443\u0448. \u043c\u0430\u043d\u0433\u043e)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "DRIED MANGO \u0421\u0443\u0448. \u043c\u0430\u043d\u0433\u043e",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_dried_mango",
+      "community": 7,
+      "norm_label": "dried mango (\u0441\u0443\u0448. \u043c\u0430\u043d\u0433\u043e)"
+    },
+    {
+      "label": "Dried Candied Fruit (\u0446\u0443\u043a\u0430\u0442\u044b)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "DRIED CANDIED FRUIT \u0426\u0443\u043a\u0430\u0442\u044b",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_dried_candied_fruit",
+      "community": 7,
+      "norm_label": "dried candied fruit (\u0446\u0443\u043a\u0430\u0442\u044b)"
+    },
+    {
+      "label": "Apple (\u044f\u0431\u043b\u043e\u043a\u043e)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "APPLE / \u042f\u0411\u041b\u041e\u041a\u041e",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_apple",
+      "community": 3,
+      "norm_label": "apple (\u044f\u0431\u043b\u043e\u043a\u043e)"
+    },
+    {
+      "label": "Peach (\u043f\u0435\u0440\u0441\u0438\u043a)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "PEACH / \u041f\u0415\u0420\u0421\u0418\u041a",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_peach",
+      "community": 3,
+      "norm_label": "peach (\u043f\u0435\u0440\u0441\u0438\u043a)"
+    },
+    {
+      "label": "Apricot (\u0430\u0431\u0440\u0438\u043a\u043e\u0441)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "APRICOT / \u0410\u0411\u0420\u0418\u041a\u041e\u0421",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_apricot",
+      "community": 3,
+      "norm_label": "apricot (\u0430\u0431\u0440\u0438\u043a\u043e\u0441)"
+    },
+    {
+      "label": "Lemon (\u043b\u0438\u043c\u043e\u043d)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "LEMON / \u041b\u0418\u041c\u041e\u041d",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_lemon",
+      "community": 3,
+      "norm_label": "lemon (\u043b\u0438\u043c\u043e\u043d)"
+    },
+    {
+      "label": "Grape (\u0432\u0438\u043d\u043e\u0433\u0440\u0430\u0434)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "GRAPE / \u0412\u0418\u041d\u041e\u0413\u0420\u0410\u0414",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_grape",
+      "community": 3,
+      "norm_label": "grape (\u0432\u0438\u043d\u043e\u0433\u0440\u0430\u0434)"
+    },
+    {
+      "label": "Plums (\u0441\u043b\u0438\u0432\u0430)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "PLUMS / \u0421\u041b\u0418\u0412\u0410",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_plums",
+      "community": 3,
+      "norm_label": "plums (\u0441\u043b\u0438\u0432\u0430)"
+    },
+    {
+      "label": "Cherry (\u0447\u0435\u0440\u0435\u0448\u043d\u044f)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "CHERRY / \u0427\u0415\u0420\u0415\u0428\u041d\u042f",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_cherry",
+      "community": 3,
+      "norm_label": "cherry (\u0447\u0435\u0440\u0435\u0448\u043d\u044f)"
+    },
+    {
+      "label": "Sour Cherry (\u0432\u0438\u0448\u043d\u044f)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "SOUR CHERRY / \u0412\u0418\u0428\u041d\u042f",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_sourcherry",
+      "community": 3,
+      "norm_label": "sour cherry (\u0432\u0438\u0448\u043d\u044f)"
+    },
+    {
+      "label": "Figs (\u0438\u043d\u0436\u0438\u0440, fresh)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "FIGS / \u0418\u041d\u0416\u0418\u0420",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_figs",
+      "community": 3,
+      "norm_label": "figs (\u0438\u043d\u0436\u0438\u0440, fresh)"
+    },
+    {
+      "label": "Tomato (\u043f\u043e\u043c\u0438\u0434\u043e\u0440)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "TOMATO / \u041f\u041e\u041c\u0418\u0414\u041e\u0420",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_tomato",
+      "community": 3,
+      "norm_label": "tomato (\u043f\u043e\u043c\u0438\u0434\u043e\u0440)"
+    },
+    {
+      "label": "Cucumber (\u043e\u0433\u0443\u0440\u0435\u0446)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "CUCUMBER / \u041e\u0413\u0423\u0420\u0415\u0426",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_cucumber",
+      "community": 3,
+      "norm_label": "cucumber (\u043e\u0433\u0443\u0440\u0435\u0446)"
+    },
+    {
+      "label": "Potato (\u043a\u0430\u0440\u0442\u043e\u0448\u043a\u0430)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "POTATO / \u041a\u0410\u0420\u0422\u041e\u0428\u041a\u0410",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_potato",
+      "community": 3,
+      "norm_label": "potato (\u043a\u0430\u0440\u0442\u043e\u0448\u043a\u0430)"
+    },
+    {
+      "label": "Onion (\u043b\u0443\u043a)",
+      "type": "Product",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "ONION / \u041b\u0423\u041a",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "product_fresh_onion",
+      "community": 3,
+      "norm_label": "onion (\u043b\u0443\u043a)"
+    },
+    {
+      "label": "\u0412\u0430\u0440\u0438\u0430\u043d\u0442\u044b \u0443\u043f\u0430\u043a\u043e\u0432\u043a\u0438 (Vacuum/PE bags, Carton boxes, Retail, Private Label)",
+      "type": "Concept",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "PACKAGING OPTIONS / \u0412\u0410\u0420\u0418\u0410\u041d\u0422\u042b \u0423\u041f\u0410\u041a\u041e\u0412\u041a\u0418",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "concept_packaging_options",
+      "community": 1,
+      "norm_label": "\u0432\u0430\u0440\u0438\u0430\u043d\u0442\u044b \u0443\u043f\u0430\u043a\u043e\u0432\u043a\u0438 (vacuum/pe bags, carton boxes, retail, private label)"
+    },
+    {
+      "label": "\u041f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u043f\u0440\u043e\u0446\u0435\u0441\u0441 (Harvesting \u2192 Drying \u2192 Processing \u2192 Packaging \u2192 Export)",
+      "type": "Concept",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source_location": "Production process / \u041f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u043f\u0440\u043e\u0446\u0435\u0441\u0441: 1.Harvesting 2.Natural drying 3.Processing 4.Packaging 5.Delivery and export",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "concept_production_process",
+      "community": 1,
+      "norm_label": "\u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0438 \u043f\u0440\u043e\u0446\u0435\u0441\u0441 (harvesting \u2192 drying \u2192 processing \u2192 packaging \u2192 export)"
+    },
+    {
+      "label": "\u041a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u043f\u043e\u043b\u043d\u043e\u0433\u043e \u0446\u0438\u043a\u043b\u0430 (\u043e\u0442 \u043f\u043e\u043b\u044f \u0434\u043e \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440\u0430)",
+      "type": "Concept",
+      "source_file": "about.html",
+      "source_location": "Mir Orexov Samarkand \u2014 \u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u043f\u043e\u043b\u043d\u043e\u0433\u043e \u0446\u0438\u043a\u043b\u0430: \u043e\u0442 \u043f\u043e\u043b\u044f \u0434\u043e \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440\u0430, \u0430 \u043d\u0435 \u043f\u0435\u0440\u0435\u043a\u0443\u043f\u0449\u0438\u043a",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "concept_full_cycle",
+      "community": 2,
+      "norm_label": "\u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u043f\u043e\u043b\u043d\u043e\u0433\u043e \u0446\u0438\u043a\u043b\u0430 (\u043e\u0442 \u043f\u043e\u043b\u044f \u0434\u043e \u043a\u043e\u043d\u0442\u0435\u0438\u043d\u0435\u0440\u0430)"
+    },
+    {
+      "label": "IMG_0074",
+      "type": "Image",
+      "source_file": "assets/img/IMG_0074.PNG",
+      "source_location": "assets\\img\\IMG_0074.PNG",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_img_0074_png",
+      "community": 18,
+      "norm_label": "img_0074"
+    },
+    {
+      "label": "\u0431\u043e\u0431\u043e\u0432\u044b\u0435",
+      "type": "Image",
+      "source_file": "assets/img/catalog/\u0431\u043e\u0431\u043e\u0432\u044b\u0435.jpg",
+      "source_location": "assets\\img\\catalog\\\u0431\u043e\u0431\u043e\u0432\u044b\u0435.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_catalog_\u0431\u043e\u0431\u043e\u0432\u044b\u0435_jpg",
+      "community": 10,
+      "norm_label": "\u0431\u043e\u0431\u043e\u0432\u044b\u0435"
+    },
+    {
+      "label": "catalog",
+      "type": "Category",
+      "source_file": "assets/img/catalog/\u0431\u043e\u0431\u043e\u0432\u044b\u0435.jpg",
+      "source_location": "folder assets/img/catalog/",
+      "confidence": "INFERRED",
+      "file_type": "concept",
+      "id": "category_catalog",
+      "community": 10,
+      "norm_label": "catalog"
+    },
+    {
+      "label": "\u043e\u0440\u0435\u0445\u0438",
+      "type": "Image",
+      "source_file": "assets/img/catalog/\u043e\u0440\u0435\u0445\u0438.jpg",
+      "source_location": "assets\\img\\catalog\\\u043e\u0440\u0435\u0445\u0438.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_catalog_\u043e\u0440\u0435\u0445\u0438_jpg",
+      "community": 10,
+      "norm_label": "\u043e\u0440\u0435\u0445\u0438"
+    },
+    {
+      "label": "\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b",
+      "type": "Image",
+      "source_file": "assets/img/catalog/\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b.jpg",
+      "source_location": "assets\\img\\catalog\\\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_catalog_\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b_jpg",
+      "community": 10,
+      "norm_label": "\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b"
+    },
+    {
+      "label": "\u0444\u0440\u0443\u043a\u0442\u044b",
+      "type": "Image",
+      "source_file": "assets/img/catalog/\u0444\u0440\u0443\u043a\u0442\u044b.jpg",
+      "source_location": "assets\\img\\catalog\\\u0444\u0440\u0443\u043a\u0442\u044b.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_catalog_\u0444\u0440\u0443\u043a\u0442\u044b_jpg",
+      "community": 10,
+      "norm_label": "\u0444\u0440\u0443\u043a\u0442\u044b"
+    },
+    {
+      "label": "globalgap",
+      "type": "Image",
+      "source_file": "assets/img/certs/globalgap.png",
+      "source_location": "assets\\img\\certs\\globalgap.png",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_certs_globalgap_png",
+      "community": 6,
+      "norm_label": "globalgap"
+    },
+    {
+      "label": "certs",
+      "type": "Category",
+      "source_file": "assets/img/certs/globalgap.png",
+      "source_location": "folder assets/img/certs/",
+      "confidence": "INFERRED",
+      "file_type": "concept",
+      "id": "category_certs",
+      "community": 6,
+      "norm_label": "certs"
+    },
+    {
+      "label": "haccp",
+      "type": "Image",
+      "source_file": "assets/img/certs/haccp.png",
+      "source_location": "assets\\img\\certs\\haccp.png",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_certs_haccp_png",
+      "community": 6,
+      "norm_label": "haccp"
+    },
+    {
+      "label": "halal",
+      "type": "Image",
+      "source_file": "assets/img/certs/halal.jpg",
+      "source_location": "assets\\img\\certs\\halal.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_certs_halal_jpg",
+      "community": 6,
+      "norm_label": "halal"
+    },
+    {
+      "label": "halal",
+      "type": "Image",
+      "source_file": "assets/img/certs/halal.png",
+      "source_location": "assets\\img\\certs\\halal.png",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_certs_halal_png",
+      "community": 6,
+      "norm_label": "halal"
+    },
+    {
+      "label": "iso22000",
+      "type": "Image",
+      "source_file": "assets/img/certs/iso22000.png",
+      "source_location": "assets\\img\\certs\\iso22000.png",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_certs_iso22000_png",
+      "community": 6,
+      "norm_label": "iso22000"
+    },
+    {
+      "label": "organic",
+      "type": "Image",
+      "source_file": "assets/img/certs/organic.png",
+      "source_location": "assets\\img\\certs\\organic.png",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_certs_organic_png",
+      "community": 6,
+      "norm_label": "organic"
+    },
+    {
+      "label": "fistashki-zharenye-solenye-iran",
+      "type": "Image",
+      "source_file": "assets/img/fistashki-zharenye-solenye-iran.jpg",
+      "source_location": "assets\\img\\fistashki-zharenye-solenye-iran.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_fistashki_zharenye_solenye_iran_jpg",
+      "community": 16,
+      "norm_label": "fistashki-zharenye-solenye-iran"
+    },
+    {
+      "label": "group-su-image-catalog-2967074benl-400x400-jpg",
+      "type": "Image",
+      "source_file": "assets/img/group-su-image-catalog-2967074benl-400x400-jpg.jpg",
+      "source_location": "assets\\img\\group-su-image-catalog-2967074benl-400x400-jpg.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_group_su_image_catalog_2967074benl_400x400_jpg_jpg",
+      "community": 17,
+      "norm_label": "group-su-image-catalog-2967074benl-400x400-jpg"
+    },
+    {
+      "label": "izyum-golden-jpg",
+      "type": "Image",
+      "source_file": "assets/img/izyum-golden-jpg.jpg",
+      "source_location": "assets\\img\\izyum-golden-jpg.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_izyum_golden_jpg_jpg",
+      "community": 19,
+      "norm_label": "izyum-golden-jpg"
+    },
+    {
+      "label": "mindal-v-skorlupe-v-s",
+      "type": "Image",
+      "source_file": "assets/img/mindal-v-skorlupe-v-s.jpg",
+      "source_location": "assets\\img\\mindal-v-skorlupe-v-s.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_mindal_v_skorlupe_v_s_jpg",
+      "community": 20,
+      "norm_label": "mindal-v-skorlupe-v-s"
+    },
+    {
+      "label": "almond-inshell",
+      "type": "Image",
+      "source_file": "assets/img/products/almond-inshell.jpg",
+      "source_location": "assets\\img\\products\\almond-inshell.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_almond_inshell_jpg",
+      "community": 0,
+      "norm_label": "almond-inshell"
+    },
+    {
+      "label": "products",
+      "type": "Category",
+      "source_file": "assets/img/products/almond-inshell.jpg",
+      "source_location": "folder assets/img/products/",
+      "confidence": "INFERRED",
+      "file_type": "concept",
+      "id": "category_products",
+      "community": 0,
+      "norm_label": "products"
+    },
+    {
+      "label": "almond-unpeeled",
+      "type": "Image",
+      "source_file": "assets/img/products/almond-unpeeled.jpg",
+      "source_location": "assets\\img\\products\\almond-unpeeled.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_almond_unpeeled_jpg",
+      "community": 0,
+      "norm_label": "almond-unpeeled"
+    },
+    {
+      "label": "almond",
+      "type": "Image",
+      "source_file": "assets/img/products/almond.jpg",
+      "source_location": "assets\\img\\products\\almond.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_almond_jpg",
+      "community": 0,
+      "norm_label": "almond"
+    },
+    {
+      "label": "apricot-kernels",
+      "type": "Image",
+      "source_file": "assets/img/products/apricot-kernels.jpg",
+      "source_location": "assets\\img\\products\\apricot-kernels.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_apricot_kernels_jpg",
+      "community": 0,
+      "norm_label": "apricot-kernels"
+    },
+    {
+      "label": "apricot",
+      "type": "Image",
+      "source_file": "assets/img/products/apricot.jpg",
+      "source_location": "assets\\img\\products\\apricot.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_apricot_jpg",
+      "community": 0,
+      "norm_label": "apricot"
+    },
+    {
+      "label": "candied-fruit",
+      "type": "Image",
+      "source_file": "assets/img/products/candied-fruit.jpg",
+      "source_location": "assets\\img\\products\\candied-fruit.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_candied_fruit_jpg",
+      "community": 0,
+      "norm_label": "candied-fruit"
+    },
+    {
+      "label": "cashew",
+      "type": "Image",
+      "source_file": "assets/img/products/cashew.jpg",
+      "source_location": "assets\\img\\products\\cashew.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_cashew_jpg",
+      "community": 0,
+      "norm_label": "cashew"
+    },
+    {
+      "label": "cukaty",
+      "type": "Image",
+      "source_file": "assets/img/products/cukaty.jpg",
+      "source_location": "assets\\img\\products\\cukaty.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_cukaty_jpg",
+      "community": 0,
+      "norm_label": "cukaty"
+    },
+    {
+      "label": "dried-apricots",
+      "type": "Image",
+      "source_file": "assets/img/products/dried-apricots.jpg",
+      "source_location": "assets\\img\\products\\dried-apricots.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_dried_apricots_jpg",
+      "community": 0,
+      "norm_label": "dried-apricots"
+    },
+    {
+      "label": "dried-banana",
+      "type": "Image",
+      "source_file": "assets/img/products/dried-banana.jpg",
+      "source_location": "assets\\img\\products\\dried-banana.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_dried_banana_jpg",
+      "community": 0,
+      "norm_label": "dried-banana"
+    },
+    {
+      "label": "dried-kiwi",
+      "type": "Image",
+      "source_file": "assets/img/products/dried-kiwi.jpg",
+      "source_location": "assets\\img\\products\\dried-kiwi.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_dried_kiwi_jpg",
+      "community": 0,
+      "norm_label": "dried-kiwi"
+    },
+    {
+      "label": "dried-mango",
+      "type": "Image",
+      "source_file": "assets/img/products/dried-mango.jpg",
+      "source_location": "assets\\img\\products\\dried-mango.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_dried_mango_jpg",
+      "community": 0,
+      "norm_label": "dried-mango"
+    },
+    {
+      "label": "dried-pineapple",
+      "type": "Image",
+      "source_file": "assets/img/products/dried-pineapple.jpg",
+      "source_location": "assets\\img\\products\\dried-pineapple.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_dried_pineapple_jpg",
+      "community": 0,
+      "norm_label": "dried-pineapple"
+    },
+    {
+      "label": "fasol-blackeye",
+      "type": "Image",
+      "source_file": "assets/img/products/fasol-blackeye.jpg",
+      "source_location": "assets\\img\\products\\fasol-blackeye.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_fasol_blackeye_jpg",
+      "community": 0,
+      "norm_label": "fasol-blackeye"
+    },
+    {
+      "label": "fasol-pinto",
+      "type": "Image",
+      "source_file": "assets/img/products/fasol-pinto.jpg",
+      "source_location": "assets\\img\\products\\fasol-pinto.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_fasol_pinto_jpg",
+      "community": 0,
+      "norm_label": "fasol-pinto"
+    },
+    {
+      "label": "fasol-red",
+      "type": "Image",
+      "source_file": "assets/img/products/fasol-red.jpg",
+      "source_location": "assets\\img\\products\\fasol-red.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_fasol_red_jpg",
+      "community": 0,
+      "norm_label": "fasol-red"
+    },
+    {
+      "label": "hazelnut",
+      "type": "Image",
+      "source_file": "assets/img/products/hazelnut.jpg",
+      "source_location": "assets\\img\\products\\hazelnut.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_hazelnut_jpg",
+      "community": 0,
+      "norm_label": "hazelnut"
+    },
+    {
+      "label": "jida",
+      "type": "Image",
+      "source_file": "assets/img/products/jida.jpg",
+      "source_location": "assets\\img\\products\\jida.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_jida_jpg",
+      "community": 0,
+      "norm_label": "jida"
+    },
+    {
+      "label": "jumbo",
+      "type": "Image",
+      "source_file": "assets/img/products/jumbo.jpg",
+      "source_location": "assets\\img\\products\\jumbo.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_jumbo_jpg",
+      "community": 0,
+      "norm_label": "jumbo"
+    },
+    {
+      "label": "kuraga-base",
+      "type": "Image",
+      "source_file": "assets/img/products/kuraga-base.jpg",
+      "source_location": "assets\\img\\products\\kuraga-base.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_kuraga_base_jpg",
+      "community": 0,
+      "norm_label": "kuraga-base"
+    },
+    {
+      "label": "kuraga-kuraga",
+      "type": "Image",
+      "source_file": "assets/img/products/kuraga-kuraga.jpg",
+      "source_location": "assets\\img\\products\\kuraga-kuraga.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_kuraga_kuraga_jpg",
+      "community": 0,
+      "norm_label": "kuraga-kuraga"
+    },
+    {
+      "label": "kuraga-limonka",
+      "type": "Image",
+      "source_file": "assets/img/products/kuraga-limonka.jpg",
+      "source_location": "assets\\img\\products\\kuraga-limonka.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_kuraga_limonka_jpg",
+      "community": 0,
+      "norm_label": "kuraga-limonka"
+    },
+    {
+      "label": "kuraga-natural",
+      "type": "Image",
+      "source_file": "assets/img/products/kuraga-natural.jpg",
+      "source_location": "assets\\img\\products\\kuraga-natural.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_kuraga_natural_jpg",
+      "community": 0,
+      "norm_label": "kuraga-natural"
+    },
+    {
+      "label": "macadamia",
+      "type": "Image",
+      "source_file": "assets/img/products/macadamia.jpg",
+      "source_location": "assets\\img\\products\\macadamia.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_macadamia_jpg",
+      "community": 0,
+      "norm_label": "macadamia"
+    },
+    {
+      "label": "mash",
+      "type": "Image",
+      "source_file": "assets/img/products/mash.jpg",
+      "source_location": "assets\\img\\products\\mash.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_mash_jpg",
+      "community": 0,
+      "norm_label": "mash"
+    },
+    {
+      "label": "orig",
+      "type": "Image",
+      "source_file": "assets/img/products/orig.jpg",
+      "source_location": "assets\\img\\products\\orig.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_orig_jpg",
+      "community": 0,
+      "norm_label": "orig"
+    },
+    {
+      "label": "pea-roasted",
+      "type": "Image",
+      "source_file": "assets/img/products/pea-roasted.jpg",
+      "source_location": "assets\\img\\products\\pea-roasted.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_pea_roasted_jpg",
+      "community": 0,
+      "norm_label": "pea-roasted"
+    },
+    {
+      "label": "peanut-blanched",
+      "type": "Image",
+      "source_file": "assets/img/products/peanut-blanched.jpg",
+      "source_location": "assets\\img\\products\\peanut-blanched.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_peanut_blanched_jpg",
+      "community": 0,
+      "norm_label": "peanut-blanched"
+    },
+    {
+      "label": "peanut-crushed",
+      "type": "Image",
+      "source_file": "assets/img/products/peanut-crushed.jpg",
+      "source_location": "assets\\img\\products\\peanut-crushed.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_peanut_crushed_jpg",
+      "community": 0,
+      "norm_label": "peanut-crushed"
+    },
+    {
+      "label": "peanut-inshell",
+      "type": "Image",
+      "source_file": "assets/img/products/peanut-inshell.jpg",
+      "source_location": "assets\\img\\products\\peanut-inshell.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_peanut_inshell_jpg",
+      "community": 0,
+      "norm_label": "peanut-inshell"
+    },
+    {
+      "label": "peanut-peeled",
+      "type": "Image",
+      "source_file": "assets/img/products/peanut-peeled.jpg",
+      "source_location": "assets\\img\\products\\peanut-peeled.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_peanut_peeled_jpg",
+      "community": 0,
+      "norm_label": "peanut-peeled"
+    },
+    {
+      "label": "pistachio- \u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435",
+      "type": "Image",
+      "source_file": "assets/img/products/pistachio- \u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435.jpg",
+      "source_location": "assets\\img\\products\\pistachio- \u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_pistachio_\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438_\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435_jpg",
+      "community": 0,
+      "norm_label": "pistachio- \u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435"
+    },
+    {
+      "label": "pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0410\u0445\u043c\u0430\u0434-\u0410\u0433\u0430\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435, \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d",
+      "type": "Image",
+      "source_file": "assets/img/products/pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0410\u0445\u043c\u0430\u0434-\u0410\u0433\u0430\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435, \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d.jpg",
+      "source_location": "assets\\img\\products\\pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0410\u0445\u043c\u0430\u0434-\u0410\u0433\u0430\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435, \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_pistachio_\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438_\u0430\u0445\u043c\u0430\u0434_\u0430\u0433\u0430\u0438_\u0436\u0430\u0440\u0435\u043d\u044b\u0435_\u0441\u043e\u043b\u0435\u043d\u044b\u0435_\u0438\u0440\u0430\u043d_jpg",
+      "community": 0,
+      "norm_label": "pistachio-\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0430\u0445\u043c\u0430\u0434-\u0430\u0433\u0430\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435, \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0438\u0440\u0430\u043d"
+    },
+    {
+      "label": "pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0422\u0443\u0440\u0446\u0438\u044f \u043d\u0435\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0432\u044b\u0441\u0448\u0438\u0439 \u0441\u043e\u0440\u0442",
+      "type": "Image",
+      "source_file": "assets/img/products/pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0422\u0443\u0440\u0446\u0438\u044f \u043d\u0435\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0432\u044b\u0441\u0448\u0438\u0439 \u0441\u043e\u0440\u0442.jpg",
+      "source_location": "assets\\img\\products\\pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0422\u0443\u0440\u0446\u0438\u044f \u043d\u0435\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0432\u044b\u0441\u0448\u0438\u0439 \u0441\u043e\u0440\u0442.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_pistachio_\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438_\u0442\u0443\u0440\u0446\u0438\u044f_\u043d\u0435\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435_\u0436\u0430\u0440\u0435\u043d\u044b\u0435_\u0432\u044b\u0441\u0448\u0438\u0439_\u0441\u043e\u0440\u0442_jpg",
+      "community": 0,
+      "norm_label": "pistachio-\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0442\u0443\u0440\u0446\u0438\u044f \u043d\u0435\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0432\u044b\u0441\u0448\u0438\u0438 \u0441\u043e\u0440\u0442"
+    },
+    {
+      "label": "pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d",
+      "type": "Image",
+      "source_file": "assets/img/products/pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d.jpg",
+      "source_location": "assets\\img\\products\\pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_pistachio_\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438_\u0436\u0430\u0440\u0435\u043d\u044b\u0435_\u0441\u043e\u043b\u0435\u043d\u044b\u0435_\u0438\u0440\u0430\u043d_jpg",
+      "community": 0,
+      "norm_label": "pistachio-\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0438\u0440\u0430\u043d"
+    },
+    {
+      "label": "pistachio",
+      "type": "Image",
+      "source_file": "assets/img/products/pistachio.png",
+      "source_location": "assets\\img\\products\\pistachio.png",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_pistachio_png",
+      "community": 0,
+      "norm_label": "pistachio"
+    },
+    {
+      "label": "prune-catalog",
+      "type": "Image",
+      "source_file": "assets/img/products/prune-catalog.jpg",
+      "source_location": "assets\\img\\products\\prune-catalog.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_prune_catalog_jpg",
+      "community": 0,
+      "norm_label": "prune-catalog"
+    },
+    {
+      "label": "prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0411\u0430\u043b\u043b\u043e\u043d\u0447\u0438\u043a",
+      "type": "Image",
+      "source_file": "assets/img/products/prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0411\u0430\u043b\u043b\u043e\u043d\u0447\u0438\u043a.jpg",
+      "source_location": "assets\\img\\products\\prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0411\u0430\u043b\u043b\u043e\u043d\u0447\u0438\u043a.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_prune_\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432_\u0431\u0430\u043b\u043b\u043e\u043d\u0447\u0438\u043a_jpg",
+      "community": 0,
+      "norm_label": "prune-\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0431\u0430\u043b\u043b\u043e\u043d\u0447\u0438\u043a"
+    },
+    {
+      "label": "prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u041b\u0430\u0440\u0447 \u043a\u0440\u0443\u043f\u043d\u044b\u0439 \u0431\u0435\u0437 \u043a\u043e\u0441\u0442\u043e\u0447\u0435\u043a",
+      "type": "Image",
+      "source_file": "assets/img/products/prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u041b\u0430\u0440\u0447 \u043a\u0440\u0443\u043f\u043d\u044b\u0439 \u0431\u0435\u0437 \u043a\u043e\u0441\u0442\u043e\u0447\u0435\u043a.jpg",
+      "source_location": "assets\\img\\products\\prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u041b\u0430\u0440\u0447 \u043a\u0440\u0443\u043f\u043d\u044b\u0439 \u0431\u0435\u0437 \u043a\u043e\u0441\u0442\u043e\u0447\u0435\u043a.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_prune_\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432_\u043b\u0430\u0440\u0447_\u043a\u0440\u0443\u043f\u043d\u044b\u0439_\u0431\u0435\u0437_\u043a\u043e\u0441\u0442\u043e\u0447\u0435\u043a_jpg",
+      "community": 0,
+      "norm_label": "prune-\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u043b\u0430\u0440\u0447 \u043a\u0440\u0443\u043f\u043d\u044b\u0438 \u0431\u0435\u0437 \u043a\u043e\u0441\u0442\u043e\u0447\u0435\u043a"
+    },
+    {
+      "label": "prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0441 \u043a\u043e\u0441\u0442\u043e\u0447\u043a\u043e\u0439",
+      "type": "Image",
+      "source_file": "assets/img/products/prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0441 \u043a\u043e\u0441\u0442\u043e\u0447\u043a\u043e\u0439.jpg",
+      "source_location": "assets\\img\\products\\prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0441 \u043a\u043e\u0441\u0442\u043e\u0447\u043a\u043e\u0439.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_prune_\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432_\u0441_\u043a\u043e\u0441\u0442\u043e\u0447\u043a\u043e\u0439_jpg",
+      "community": 0,
+      "norm_label": "prune-\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0441 \u043a\u043e\u0441\u0442\u043e\u0447\u043a\u043e\u0438"
+    },
+    {
+      "label": "prune",
+      "type": "Image",
+      "source_file": "assets/img/products/prune.jpg",
+      "source_location": "assets\\img\\products\\prune.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_prune_jpg",
+      "community": 0,
+      "norm_label": "prune"
+    },
+    {
+      "label": "pumpkin-seed",
+      "type": "Image",
+      "source_file": "assets/img/products/pumpkin-seed.jpg",
+      "source_location": "assets\\img\\products\\pumpkin-seed.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_pumpkin_seed_jpg",
+      "community": 0,
+      "norm_label": "pumpkin-seed"
+    },
+    {
+      "label": "raisin-black-giant",
+      "type": "Image",
+      "source_file": "assets/img/products/raisin-black-giant.jpg",
+      "source_location": "assets\\img\\products\\raisin-black-giant.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_raisin_black_giant_jpg",
+      "community": 0,
+      "norm_label": "raisin-black-giant"
+    },
+    {
+      "label": "raisin-javz",
+      "type": "Image",
+      "source_file": "assets/img/products/raisin-javz.jpg",
+      "source_location": "assets\\img\\products\\raisin-javz.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_raisin_javz_jpg",
+      "community": 0,
+      "norm_label": "raisin-javz"
+    },
+    {
+      "label": "raisin-soyagi",
+      "type": "Image",
+      "source_file": "assets/img/products/raisin-soyagi.jpg",
+      "source_location": "assets\\img\\products\\raisin-soyagi.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_raisin_soyagi_jpg",
+      "community": 0,
+      "norm_label": "raisin-soyagi"
+    },
+    {
+      "label": "raisin-sultan",
+      "type": "Image",
+      "source_file": "assets/img/products/raisin-sultan.jpg",
+      "source_location": "assets\\img\\products\\raisin-sultan.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_raisin_sultan_jpg",
+      "community": 0,
+      "norm_label": "raisin-sultan"
+    },
+    {
+      "label": "raisin-yellow-califar",
+      "type": "Image",
+      "source_file": "assets/img/products/raisin-yellow-califar.jpg",
+      "source_location": "assets\\img\\products\\raisin-yellow-califar.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_raisin_yellow_califar_jpg",
+      "community": 0,
+      "norm_label": "raisin-yellow-califar"
+    },
+    {
+      "label": "raisin-yellow-hybrid",
+      "type": "Image",
+      "source_file": "assets/img/products/raisin-yellow-hybrid.jpg",
+      "source_location": "assets\\img\\products\\raisin-yellow-hybrid.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_raisin_yellow_hybrid_jpg",
+      "community": 0,
+      "norm_label": "raisin-yellow-hybrid"
+    },
+    {
+      "label": "red-thompson",
+      "type": "Image",
+      "source_file": "assets/img/products/red-thompson.jpg",
+      "source_location": "assets\\img\\products\\red-thompson.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_red_thompson_jpg",
+      "community": 0,
+      "norm_label": "red-thompson"
+    },
+    {
+      "label": "sesame-white",
+      "type": "Image",
+      "source_file": "assets/img/products/sesame-white.jpg",
+      "source_location": "assets\\img\\products\\sesame-white.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_sesame_white_jpg",
+      "community": 0,
+      "norm_label": "sesame-white"
+    },
+    {
+      "label": "shigani-red",
+      "type": "Image",
+      "source_file": "assets/img/products/shigani-red.jpg",
+      "source_location": "assets\\img\\products\\shigani-red.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_shigani_red_jpg",
+      "community": 0,
+      "norm_label": "shigani-red"
+    },
+    {
+      "label": "turshak",
+      "type": "Image",
+      "source_file": "assets/img/products/turshak.jpg",
+      "source_location": "assets\\img\\products\\turshak.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_turshak_jpg",
+      "community": 0,
+      "norm_label": "turshak"
+    },
+    {
+      "label": "unabi",
+      "type": "Image",
+      "source_file": "assets/img/products/unabi.jpg",
+      "source_location": "assets\\img\\products\\unabi.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_unabi_jpg",
+      "community": 0,
+      "norm_label": "unabi"
+    },
+    {
+      "label": "walnut-catalog",
+      "type": "Image",
+      "source_file": "assets/img/products/walnut-catalog.jpg",
+      "source_location": "assets\\img\\products\\walnut-catalog.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_walnut_catalog_jpg",
+      "community": 0,
+      "norm_label": "walnut-catalog"
+    },
+    {
+      "label": "walnut-crushed",
+      "type": "Image",
+      "source_file": "assets/img/products/walnut-crushed.jpg",
+      "source_location": "assets\\img\\products\\walnut-crushed.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_walnut_crushed_jpg",
+      "community": 0,
+      "norm_label": "walnut-crushed"
+    },
+    {
+      "label": "walnut-peeled",
+      "type": "Image",
+      "source_file": "assets/img/products/walnut-peeled.jpg",
+      "source_location": "assets\\img\\products\\walnut-peeled.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_walnut_peeled_jpg",
+      "community": 0,
+      "norm_label": "walnut-peeled"
+    },
+    {
+      "label": "walnut-quarters",
+      "type": "Image",
+      "source_file": "assets/img/products/walnut-quarters.jpg",
+      "source_location": "assets\\img\\products\\walnut-quarters.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_walnut_quarters_jpg",
+      "community": 0,
+      "norm_label": "walnut-quarters"
+    },
+    {
+      "label": "walnut",
+      "type": "Image",
+      "source_file": "assets/img/products/walnut.jpg",
+      "source_location": "assets\\img\\products\\walnut.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_products_walnut_jpg",
+      "community": 0,
+      "norm_label": "walnut"
+    },
+    {
+      "label": "semechki-tykvy-ochishhennye-jpeg",
+      "type": "Image",
+      "source_file": "assets/img/semechki-tykvy-ochishhennye-jpeg.jpg",
+      "source_location": "assets\\img\\semechki-tykvy-ochishhennye-jpeg.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_semechki_tykvy_ochishhennye_jpeg_jpg",
+      "community": 21,
+      "norm_label": "semechki-tykvy-ochishhennye-jpeg"
+    },
+    {
+      "label": "\u0436\u0443\u043c\u0431\u043e",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0436\u0443\u043c\u0431\u043e.jpg",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0436\u0443\u043c\u0431\u043e.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u0436\u0443\u043c\u0431\u043e_jpg",
+      "community": 22,
+      "norm_label": "\u0436\u0443\u043c\u0431\u043e"
+    },
+    {
+      "label": "\u0438\u0437\u044e\u043c \u0436\u0430\u0432\u0437",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0438\u0437\u044e\u043c \u0436\u0430\u0432\u0437.JPG",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0438\u0437\u044e\u043c \u0436\u0430\u0432\u0437.JPG",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u0438\u0437\u044e\u043c_\u0436\u0430\u0432\u0437_jpg",
+      "community": 23,
+      "norm_label": "\u0438\u0437\u044e\u043c \u0436\u0430\u0432\u0437"
+    },
+    {
+      "label": "\u0438\u0437\u044e\u043c \u0441\u043e\u0439\u0430\u0433\u0438",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0438\u0437\u044e\u043c \u0441\u043e\u0439\u0430\u0433\u0438.jpg",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0438\u0437\u044e\u043c \u0441\u043e\u0439\u0430\u0433\u0438.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u0438\u0437\u044e\u043c_\u0441\u043e\u0439\u0430\u0433\u0438_jpg",
+      "community": 24,
+      "norm_label": "\u0438\u0437\u044e\u043c \u0441\u043e\u0438\u0430\u0433\u0438"
+    },
+    {
+      "label": "\u043a\u0435\u0448\u044c\u044e",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u043a\u0435\u0448\u044c\u044e.jpg",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u043a\u0435\u0448\u044c\u044e.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u043a\u0435\u0448\u044c\u044e_jpg",
+      "community": 25,
+      "norm_label": "\u043a\u0435\u0448\u044c\u044e"
+    },
+    {
+      "label": "\u043a\u0443\u0440\u0430\u0433\u0430",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u043a\u0443\u0440\u0430\u0433\u0430.jpg",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u043a\u0443\u0440\u0430\u0433\u0430.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u043a\u0443\u0440\u0430\u0433\u0430_jpg",
+      "community": 26,
+      "norm_label": "\u043a\u0443\u0440\u0430\u0433\u0430"
+    },
+    {
+      "label": "\u043c\u0438\u043d\u0434\u0430\u043b\u044c",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u043c\u0438\u043d\u0434\u0430\u043b\u044c.jpg",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u043c\u0438\u043d\u0434\u0430\u043b\u044c.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u043c\u0438\u043d\u0434\u0430\u043b\u044c_jpg",
+      "community": 27,
+      "norm_label": "\u043c\u0438\u043d\u0434\u0430\u043b\u044c"
+    },
+    {
+      "label": "\u043e\u0440\u0435\u0445",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u043e\u0440\u0435\u0445.jpg",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u043e\u0440\u0435\u0445.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u043e\u0440\u0435\u0445_jpg",
+      "community": 28,
+      "norm_label": "\u043e\u0440\u0435\u0445"
+    },
+    {
+      "label": "\u0442\u0443\u0440\u0448\u0430\u043a",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0442\u0443\u0440\u0448\u0430\u043a.jpg",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0442\u0443\u0440\u0448\u0430\u043a.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u0442\u0443\u0440\u0448\u0430\u043a_jpg",
+      "community": 29,
+      "norm_label": "\u0442\u0443\u0440\u0448\u0430\u043a"
+    },
+    {
+      "label": "\u0442\u044b\u043a\u0432\u0435\u043d\u043d\u0430\u044f \u0441\u0435\u043c\u0435\u0447\u043a\u0430",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0442\u044b\u043a\u0432\u0435\u043d\u043d\u0430\u044f \u0441\u0435\u043c\u0435\u0447\u043a\u0430.jpg",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0442\u044b\u043a\u0432\u0435\u043d\u043d\u0430\u044f \u0441\u0435\u043c\u0435\u0447\u043a\u0430.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u0442\u044b\u043a\u0432\u0435\u043d\u043d\u0430\u044f_\u0441\u0435\u043c\u0435\u0447\u043a\u0430_jpg",
+      "community": 30,
+      "norm_label": "\u0442\u044b\u043a\u0432\u0435\u043d\u043d\u0430\u044f \u0441\u0435\u043c\u0435\u0447\u043a\u0430"
+    },
+    {
+      "label": "\u0444\u0438\u0441\u0442\u044f\u0448\u043a\u0430",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0444\u0438\u0441\u0442\u044f\u0448\u043a\u0430.png",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0444\u0438\u0441\u0442\u044f\u0448\u043a\u0430.png",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u0444\u0438\u0441\u0442\u044f\u0448\u043a\u0430_png",
+      "community": 31,
+      "norm_label": "\u0444\u0438\u0441\u0442\u044f\u0448\u043a\u0430"
+    },
+    {
+      "label": "\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432",
+      "type": "Image",
+      "source_file": "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432.jpg",
+      "source_location": "assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0434\u043b\u044f_\u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f_\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432_jpg",
+      "community": 32,
+      "norm_label": "\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432"
+    },
+    {
+      "label": "\u0441\u043b\u0438\u0432\u0430 ",
+      "type": "Image",
+      "source_file": "assets/img/\u0441\u043b\u0438\u0432\u0430 .jpg",
+      "source_location": "assets\\img\\\u0441\u043b\u0438\u0432\u0430 .jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0441\u043b\u0438\u0432\u0430_jpg",
+      "community": 33,
+      "norm_label": "\u0441\u043b\u0438\u0432\u0430 "
+    },
+    {
+      "label": "\u0443\u0440\u044e\u043a",
+      "type": "Image",
+      "source_file": "assets/img/\u0443\u0440\u044e\u043a.jpg",
+      "source_location": "assets\\img\\\u0443\u0440\u044e\u043a.jpg",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_assets_img_\u0443\u0440\u044e\u043a_jpg",
+      "community": 34,
+      "norm_label": "\u0443\u0440\u044e\u043a"
+    },
+    {
+      "label": "page_005_hd",
+      "type": "Image",
+      "source_file": "pdfpages/page_005_hd.png",
+      "source_location": "pdfpages\\page_005_hd.png",
+      "confidence": "EXTRACTED",
+      "file_type": "concept",
+      "id": "img_pdfpages_page_005_hd_png",
+      "community": 35,
+      "norm_label": "page_005_hd"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "js_catalog",
+      "target": "js_catalog_nodeatpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "js_catalog",
+      "target": "js_catalog_pathfromhash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "js_catalog",
+      "target": "js_catalog_quotelabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "js_catalog",
+      "target": "js_catalog_render",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "js_catalog",
+      "target": "js_catalog_resolvenode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "js_catalog",
+      "target": "js_catalog_t",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "js_catalog_render",
+      "target": "js_catalog_nodeatpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/catalog.js",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "js_catalog_render",
+      "target": "js_catalog_pathfromhash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/hero-orbit.js",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "js_hero_orbit",
+      "target": "js_hero_orbit_buildorbitleaves",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/hero-orbit.js",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "js_hero_orbit",
+      "target": "js_hero_orbit_currenttitle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/hero-orbit.js",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "js_hero_orbit",
+      "target": "js_hero_orbit_refreshlabels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/i18n.js",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "js_i18n",
+      "target": "js_i18n_applylang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/i18n.js",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "js_i18n",
+      "target": "js_i18n_getlang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/i18n.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "js_i18n",
+      "target": "js_i18n_setlang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/i18n.js",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "js_i18n_setlang",
+      "target": "js_i18n_applylang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/main.js",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_initform",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/main.js",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "js_main",
+      "target": "js_main_showstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/quote-modal.js",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "js_quote_modal",
+      "target": "js_quote_modal_closequotemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "assets/js/quote-modal.js",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "js_quote_modal",
+      "target": "js_quote_modal_openquotemodal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "LINKS_TO",
+      "confidence": "EXTRACTED",
+      "source_location": "nav-menu <a href=\"index.html\">\u0413\u043b\u0430\u0432\u043d\u0430\u044f</a>",
+      "source_file": "about.html",
+      "source": "page_about",
+      "target": "page_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "LINKS_TO",
+      "confidence": "EXTRACTED",
+      "source_location": "nav-menu <a href=\"index.html\">\u0413\u043b\u0430\u0432\u043d\u0430\u044f</a>",
+      "source_file": "catalog.html",
+      "source": "page_catalog",
+      "target": "page_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "LINKS_TO",
+      "confidence": "EXTRACTED",
+      "source_location": "nav-menu <a href=\"index.html\">\u0413\u043b\u0430\u0432\u043d\u0430\u044f</a>",
+      "source_file": "contact.html",
+      "source": "page_contact",
+      "target": "page_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "cat-tile href=catalog.html#/dried, \u0421\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b",
+      "source_file": "index.html",
+      "source": "page_index",
+      "target": "category_dried_fruits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "cat-tile href=catalog.html#/fruits, \u041e\u0432\u043e\u0449\u0438 \u0438 \u0444\u0440\u0443\u043a\u0442\u044b",
+      "source_file": "index.html",
+      "source": "page_index",
+      "target": "category_fruits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "cat-tile href=catalog.html#/legumes, \u0421\u0435\u043c\u0435\u043d\u0430 \u0438 \u0431\u043e\u0431\u043e\u0432\u044b\u0435",
+      "source_file": "index.html",
+      "source": "page_index",
+      "target": "category_legumes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "cat-tile href=catalog.html#/nuts, \u041e\u0440\u0435\u0445\u0438",
+      "source_file": "index.html",
+      "source": "page_index",
+      "target": "category_nuts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "ISO \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u0430\u0442 / ISO Certified \u2014 \u041a\u043e\u043d\u0442\u0440\u043e\u043b\u044c \u043a\u0430\u0447\u0435\u0441\u0442\u0432\u0430 \u043d\u0430 \u043a\u0430\u0436\u0434\u043e\u043c \u044d\u0442\u0430\u043f\u0435 \u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0438",
+      "source_file": "index.html",
+      "source": "page_index",
+      "target": "cert_iso_generic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "Mir Orexov Samarkand \u2014 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c \u0438 \u044d\u043a\u0441\u043f\u043e\u0440\u0442\u0451\u0440 \u043e\u0440\u0435\u0445\u043e\u0432 \u0438 \u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u043e\u0432 \u0438\u0437 \u0423\u0437\u0431\u0435\u043a\u0438\u0441\u0442\u0430\u043d\u0430",
+      "source_file": "index.html",
+      "source": "page_index",
+      "target": "company_mir_orexov",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "footer-contact-row Email info@mirorexov.uz",
+      "source_file": "index.html",
+      "source": "page_index",
+      "target": "contact_email",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "footer-contact-row Telegram @mirorexov",
+      "source_file": "index.html",
+      "source": "page_index",
+      "target": "contact_telegram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "footer-contact-row WhatsApp +998 00 000 00 00",
+      "source_file": "index.html",
+      "source": "page_index",
+      "target": "contact_whatsapp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "<div class=\"modal-overlay\" id=\"quote-modal\">",
+      "source_file": "index.html",
+      "source": "page_index",
+      "target": "quote_modal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "\u0421\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0435 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u0443\u043f\u0430\u043a\u043e\u0432\u043a\u0438 \u2014 Sam Box ... \u043c\u044b \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u043c \u0433\u043e\u0444\u0440\u043e\u043a\u0430\u0440\u0442\u043e\u043d \u0438 \u043a\u043e\u0440\u043e\u0431\u043a\u0438",
+      "source_file": "about.html",
+      "source": "page_about",
+      "target": "brand_sambox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "Mir Orexov Samarkand \u2014 \u043d\u0435 \u0442\u043e\u0440\u0433\u043e\u0432\u044b\u0439 \u043f\u043e\u0441\u0440\u0435\u0434\u043d\u0438\u043a, \u0430 \u0432\u0435\u0440\u0442\u0438\u043a\u0430\u043b\u044c\u043d\u043e \u0438\u043d\u0442\u0435\u0433\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u0442\u0435\u043b\u044c",
+      "source_file": "about.html",
+      "source": "page_about",
+      "target": "company_mir_orexov",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "\u043a\u043e\u043c\u043f\u0430\u043d\u0438\u044f \u043f\u043e\u043b\u043d\u043e\u0433\u043e \u0446\u0438\u043a\u043b\u0430: \u043e\u0442 \u043f\u043e\u043b\u044f \u0434\u043e \u043a\u043e\u043d\u0442\u0435\u0439\u043d\u0435\u0440\u0430, \u0430 \u043d\u0435 \u043f\u0435\u0440\u0435\u043a\u0443\u043f\u0449\u0438\u043a",
+      "source_file": "about.html",
+      "source": "page_about",
+      "target": "concept_full_cycle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "LINKS_TO",
+      "confidence": "EXTRACTED",
+      "source_location": "nav-menu <a href=\"catalog.html\">\u041a\u0430\u0442\u0430\u043b\u043e\u0433</a>",
+      "source_file": "about.html",
+      "source": "page_about",
+      "target": "page_catalog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "LINKS_TO",
+      "confidence": "EXTRACTED",
+      "source_location": "nav-menu <a href=\"contact.html\">\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b</a>",
+      "source_file": "about.html",
+      "source": "page_about",
+      "target": "page_contact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "AMBIGUOUS",
+      "source_location": "catalog.html#catalog-grid is dynamically populated by assets/js/catalog-data.js, content not directly readable",
+      "source_file": "catalog.html",
+      "source": "page_catalog",
+      "target": "category_dried_fruits",
+      "confidence_score": 0.2
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "AMBIGUOUS",
+      "source_location": "catalog.html#catalog-grid populated via catalog-data.js script, not inline",
+      "source_file": "catalog.html",
+      "source": "page_catalog",
+      "target": "category_fruits",
+      "confidence_score": 0.2
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "AMBIGUOUS",
+      "source_location": "catalog.html#catalog-grid populated via catalog-data.js script, not inline",
+      "source_file": "catalog.html",
+      "source": "page_catalog",
+      "target": "category_legumes",
+      "confidence_score": 0.2
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "AMBIGUOUS",
+      "source_location": "catalog.html#catalog-grid populated via catalog-data.js script, not inline",
+      "source_file": "catalog.html",
+      "source": "page_catalog",
+      "target": "category_nuts",
+      "confidence_score": 0.2
+    },
+    {
+      "relation": "LINKS_TO",
+      "confidence": "EXTRACTED",
+      "source_location": "nav-menu <a href=\"contact.html\">\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b</a>",
+      "source_file": "catalog.html",
+      "source": "page_catalog",
+      "target": "page_contact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "<div class=\"modal-overlay\" id=\"quote-modal\">",
+      "source_file": "catalog.html",
+      "source": "page_catalog",
+      "target": "quote_modal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "contact-item href=\"mailto:info@mirorexov.uz\"",
+      "source_file": "contact.html",
+      "source": "page_contact",
+      "target": "contact_email",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "<form id=\"request-form\">",
+      "source_file": "contact.html",
+      "source": "page_contact",
+      "target": "contact_form",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "contact-item href=\"https://instagram.com/mirorexov\"",
+      "source_file": "contact.html",
+      "source": "page_contact",
+      "target": "contact_instagram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "contact-item href=\"https://t.me/mirorexov\"",
+      "source_file": "contact.html",
+      "source": "page_contact",
+      "target": "contact_telegram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "contact-item href=\"https://wa.me/998000000000\"",
+      "source_file": "contact.html",
+      "source": "page_contact",
+      "target": "contact_whatsapp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "WE HAVE OUR OWN CARDBOARD FACTORY! SAMBOX QADOQLASH FABRIKASI",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "brand_sambox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "ALMOND / \u041c\u0418\u041d\u0414\u0410\u041b\u042c section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_almond",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "DRIED APRICOTS / \u0421\u0423\u0428\u0415\u041d\u042b\u0415 \u0410\u0411\u0420\u0418\u041a\u041e\u0421\u042b section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_dried_apricots",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "DRIED FRUITS / CHINA / \u0421\u0423\u0425\u041e\u0424\u0420\u0423\u041a\u0422\u042b / \u041a\u0418\u0422\u0410\u0419 section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_dried_fruits_china",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "FRESH FRUITS / \u0421\u0412\u0415\u0416\u0418\u0415 \u0424\u0420\u0423\u041a\u0422\u042b section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_fresh_fruits",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "LEGUMES / \u0411\u041e\u0411\u041e\u0412\u042b\u0415 section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_legumes_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "NUTS / \u041e\u0420\u0415\u0425\u0418 section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_nuts_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "PEANUTS / \u0410\u0420\u0410\u0425\u0418\u0421 section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_peanuts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "PRUNES, JUJUBE / \u0427\u0415\u0420\u041d\u041e\u0421\u041b\u0418\u0412, \u0423\u041d\u0410\u0411\u0418 section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_prunes_jujube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "RAISINS / \u0418\u0417\u042e\u041c section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_raisins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "SEEDS / \u0421\u0415\u041c\u0415\u041d\u0410 section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_seeds_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "WALNUTS / \u0413\u0420\u0415\u0426\u041a\u0418\u0419 \u041e\u0420\u0415\u0425 section header",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "category_walnuts_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "GLOBALG.A.P. CERTIFIED FARM ASSURANCE",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "cert_globalgap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "Quality & Certifications: HACCP CERTIFIED FOOD SAFETY",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "cert_haccp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "HALAL CERTIFIED",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "cert_halal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "ISO 22000 FOOD SAFETY MANAGEMENT SYSTEM CERTIFIED",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "cert_iso22000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "ORGANIC CERTIFIED",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "cert_organic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "\u041e\u041e\u041e \"Raise Production business\" Dried fruits processing and packaging factory",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "company_raise_production",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "PACKAGING OPTIONS / \u0412\u0410\u0420\u0418\u0410\u041d\u0422\u042b \u0423\u041f\u0410\u041a\u041e\u0412\u041a\u0418: Vacuum bags, PE bags, Carton boxes, Retail packaging, Private Label packaging",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "concept_packaging_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "Production process: Harvesting, Natural drying, Processing, Packaging, Delivery and export",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "concept_production_process",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "mir_orexov@mail.ru",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "contact_email_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "+998 91 543 55 55",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "contact_phone_pdf_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "+998 91 708 00 00",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "contact_phone_pdf_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "EXTRACTED",
+      "source_location": "mirorexov.com",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "pdf_catalog",
+      "target": "contact_website",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "\u041f\u043e\u0434 \u0441\u043e\u0431\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c \u0431\u0440\u0435\u043d\u0434\u043e\u043c Sam Box \u043c\u044b \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0438\u043c \u0433\u043e\u0444\u0440\u043e\u043a\u0430\u0440\u0442\u043e\u043d \u0438 \u043a\u043e\u0440\u043e\u0431\u043a\u0438 \u0434\u043b\u044f \u043e\u0440\u0435\u0445\u043e\u0432, \u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u043e\u0432",
+      "source_file": "index.html",
+      "source": "company_mir_orexov",
+      "target": "brand_sambox",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "AMBIGUOUS",
+      "source_location": "site mentions 'ISO \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043a\u0430\u0442' generically without specifying ISO 22000 vs other ISO standard",
+      "source_file": "index.html",
+      "source": "company_mir_orexov",
+      "target": "cert_iso_generic",
+      "confidence_score": 0.2
+    },
+    {
+      "relation": "MENTIONS",
+      "confidence": "AMBIGUOUS",
+      "source_location": "both appear in PDF as separate company entities under Mir Orexov umbrella; explicit ownership link not stated in text",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "company_raise_production",
+      "target": "brand_sambox",
+      "confidence_score": 0.2
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "Quality & Certifications section directly follows company description",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "company_raise_production",
+      "target": "cert_globalgap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "Quality & Certifications section directly follows company description",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "company_raise_production",
+      "target": "cert_haccp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "Quality & Certifications section directly follows company description",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "company_raise_production",
+      "target": "cert_halal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "Quality & Certifications section directly follows company description",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "company_raise_production",
+      "target": "cert_iso22000",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "Quality & Certifications section directly follows company description",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "company_raise_production",
+      "target": "cert_organic",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "<option value=\"almond\">\u041c\u0438\u043d\u0434\u0430\u043b\u044c</option>",
+      "source_file": "contact.html",
+      "source": "contact_form",
+      "target": "product_almond",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "<option value=\"apricot\">\u041a\u0443\u0440\u0430\u0433\u0430</option>",
+      "source_file": "contact.html",
+      "source": "contact_form",
+      "target": "product_apricot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "<option value=\"fig\">\u0418\u043d\u0436\u0438\u0440</option>",
+      "source_file": "contact.html",
+      "source": "contact_form",
+      "target": "product_fig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "<option value=\"pistachio\">\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438</option>",
+      "source_file": "contact.html",
+      "source": "contact_form",
+      "target": "product_pistachio",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "<option value=\"raisins\">\u0418\u0437\u044e\u043c</option>",
+      "source_file": "contact.html",
+      "source": "contact_form",
+      "target": "product_raisins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "OFFERS",
+      "confidence": "EXTRACTED",
+      "source_location": "<option value=\"walnut\">\u0413\u0440\u0435\u0446\u043a\u0438\u0439 \u043e\u0440\u0435\u0445</option>",
+      "source_file": "contact.html",
+      "source": "contact_form",
+      "target": "product_walnut",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "dried apricot/\u043a\u0443\u0440\u0430\u0433\u0430 is conceptually a dried fruit; not explicitly linked in markup",
+      "source_file": "contact.html",
+      "source": "product_apricot",
+      "target": "category_dried_fruits",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "fig/\u0438\u043d\u0436\u0438\u0440 is conceptually a dried fruit; not explicitly linked in markup",
+      "source_file": "contact.html",
+      "source": "product_fig",
+      "target": "category_dried_fruits",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "raisins/\u0438\u0437\u044e\u043c is conceptually a dried fruit; not explicitly linked in markup",
+      "source_file": "contact.html",
+      "source": "product_raisins",
+      "target": "category_dried_fruits",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "almond is conceptually a nut product category-wise; not explicitly linked in markup",
+      "source_file": "contact.html",
+      "source": "product_almond",
+      "target": "category_nuts",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "pistachio is conceptually a nut product category-wise; not explicitly linked in markup",
+      "source_file": "contact.html",
+      "source": "product_pistachio",
+      "target": "category_nuts",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "walnut is conceptually a nut product category-wise; not explicitly linked in markup",
+      "source_file": "contact.html",
+      "source": "product_walnut",
+      "target": "category_nuts",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "SHELLED PUMPKIN SEEDS \u041e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0442\u044b\u043a\u0432\u0435\u043d\u043d\u044b\u0435 \u0441\u0435\u043c\u0435\u0447\u043a\u0438",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_seeds_pdf",
+      "target": "product_pumpkin_seeds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "SESAME \u041a\u0443\u043d\u0436\u0443\u0442",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_seeds_pdf",
+      "target": "product_sesame",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "DRIED BANANA \u0421\u0443\u0448. \u0431\u0430\u043d\u0430\u043d",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_dried_fruits_china",
+      "target": "product_dried_banana",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "DRIED CANDIED FRUIT \u0426\u0443\u043a\u0430\u0442\u044b",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_dried_fruits_china",
+      "target": "product_dried_candied_fruit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "DRIED KIWI \u0421\u0443\u0448. \u043a\u0438\u0432\u0438",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_dried_fruits_china",
+      "target": "product_dried_kiwi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "DRIED MANGO \u0421\u0443\u0448. \u043c\u0430\u043d\u0433\u043e",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_dried_fruits_china",
+      "target": "product_dried_mango",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "DRIED PEACH \u0421\u0443\u0448. \u043f\u0435\u0440\u0441\u0438\u043a",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_dried_fruits_china",
+      "target": "product_dried_peach",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "DRIED PINEAPPLE \u0421\u0443\u0448. \u0430\u043d\u0430\u043d\u0430\u0441",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_dried_fruits_china",
+      "target": "product_dried_pineapple",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "APPLE / \u042f\u0411\u041b\u041e\u041a\u041e",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_apple",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "APRICOT / \u0410\u0411\u0420\u0418\u041a\u041e\u0421",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_apricot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "CHERRY / \u0427\u0415\u0420\u0415\u0428\u041d\u042f",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_cherry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "CUCUMBER / \u041e\u0413\u0423\u0420\u0415\u0426",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_cucumber",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "FIGS / \u0418\u041d\u0416\u0418\u0420",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_figs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "GRAPE / \u0412\u0418\u041d\u041e\u0413\u0420\u0410\u0414",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_grape",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "LEMON / \u041b\u0418\u041c\u041e\u041d",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_lemon",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "ONION / \u041b\u0423\u041a",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_onion",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "PEACH / \u041f\u0415\u0420\u0421\u0418\u041a",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_peach",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "PLUMS / \u0421\u041b\u0418\u0412\u0410",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_plums",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "POTATO / \u041a\u0410\u0420\u0422\u041e\u0428\u041a\u0410",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_potato",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "SOUR CHERRY / \u0412\u0418\u0428\u041d\u042f",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_sourcherry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "TOMATO / \u041f\u041e\u041c\u0418\u0414\u041e\u0420",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_fresh_fruits",
+      "target": "product_fresh_tomato",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "BLACK RAISINS (Gibrid) \u0427\u0451\u0440\u043d\u044b\u0439 \u0438\u0437\u044e\u043c (\u0413\u0438\u0431\u0440\u0438\u0434)",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_raisins",
+      "target": "product_black_raisins_gibrid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "BLACK RAISINS (Gigant) \u0427\u0451\u0440\u043d\u044b\u0439 \u0438\u0437\u044e\u043c (\u0413\u0438\u0433\u0430\u043d\u0442)",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_raisins",
+      "target": "product_black_raisins_gigant",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "GOLDEN RAISINS (Gibrid) \u0416\u0451\u043b\u0442\u044b\u0439 \u0438\u0437\u044e\u043c (\u0413\u0438\u0431\u0440\u0438\u0434)",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_raisins",
+      "target": "product_golden_raisins_gibrid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "GOLDEN RAISINS (Kalifar) \u0416\u0451\u043b\u0442\u044b\u0439 \u0438\u0437\u044e\u043c (\u041a\u0430\u043b\u0438\u0444\u0430\u0440)",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_raisins",
+      "target": "product_golden_raisins_kalifar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "RED SHIGANI RAISINS \u0428\u0438\u0433\u0430\u043d\u0438 \u043a\u0440\u0430\u0441\u043d\u044b\u0439",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_raisins",
+      "target": "product_red_shigani_raisins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "RED TOMPSON RAISINS \u041a\u0440\u0430\u0441\u043d\u044b\u0439 \u0422\u043e\u043c\u043f\u0441\u043e\u043d",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_raisins",
+      "target": "product_red_tompson_raisins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "SULTANA RAISINS \u0421\u0443\u043b\u0442\u0430\u043d\u0430 \u0438\u0437\u044e\u043c",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_raisins",
+      "target": "product_sultana_raisins",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "DRIED APRICOTS \u0421\u0443\u0448. \u0430\u0431\u0440\u0438\u043a\u043e\u0441 (\u043a\u0443\u0440\u0430\u0433\u0430)",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_dried_apricots",
+      "target": "product_dried_apricots_kuraga",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "DRIED APRICOTS \u0421\u0443\u0448. \u0430\u0431\u0440\u0438\u043a\u043e\u0441 (\u043b\u0438\u043c\u043e\u043d\u043a\u0430)",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_dried_apricots",
+      "target": "product_dried_apricots_lemonka",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "SUN DRIED APRICOTS \u0421\u0443\u0448. \u0430\u0431\u0440\u0438\u043a\u043e\u0441 (\u043d\u0430\u0442\u0443\u0440\u0430\u043b\u044c\u043d\u044b\u0439)",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_dried_apricots",
+      "target": "product_sun_dried_apricots",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "JUJUBE \u0423\u043d\u0430\u0431\u0438",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_prunes_jujube",
+      "target": "product_jujube",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "OLEASTER \u0414\u0436\u0438\u0434\u0430",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_prunes_jujube",
+      "target": "product_oleaster",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "PRUNES \u0421\u0443\u0448. \u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_prunes_jujube",
+      "target": "product_prunes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "BLANCHED PEANUTS \u0411\u043b\u0430\u043d\u0448\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0430\u0440\u0430\u0445\u0438\u0441",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_peanuts",
+      "target": "product_blanched_peanuts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "CHOPPED PEANUTS \u0418\u0437\u043c\u0435\u043b\u044c\u0447\u0435\u043d\u043d\u044b\u0439 \u0430\u0440\u0430\u0445\u0438\u0441",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_peanuts",
+      "target": "product_chopped_peanuts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "PEANUTS IN SHELL \u0410\u0440\u0430\u0445\u0438\u0441 \u0432 \u0441\u043a\u043e\u0440\u043b\u0443\u043f\u0435",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_peanuts",
+      "target": "product_peanuts_inshell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "PEELED PEANUTS \u041e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0439 \u0430\u0440\u0430\u0445\u0438\u0441",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_peanuts",
+      "target": "product_peeled_peanuts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "ALMONDS \u041c\u0438\u043d\u0434\u0430\u043b\u044c Packaging: 0.5kg-1kg",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_almond",
+      "target": "product_almonds_inshell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "ALMONDS KERNEL \u042f\u0434\u0440\u0430 \u043c\u0438\u043d\u0434\u0430\u043b\u044f",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_almond",
+      "target": "product_almonds_kernel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "APRICOT KERNELS \u0410\u0431\u0440\u0438\u043a\u043e\u0441\u043e\u0432\u044b\u0435 \u043a\u043e\u0441\u0442\u043e\u0447\u043a\u0438 (listed under ALMOND section in PDF)",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_almond",
+      "target": "product_apricot_kernels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "CASHEW \u041a\u0435\u0448\u044c\u044e",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_nuts_pdf",
+      "target": "product_cashew",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "HAZELNUT \u0424\u0443\u043d\u0434\u0443\u043a",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_nuts_pdf",
+      "target": "product_hazelnut",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "MACADAMIA \u041c\u0430\u043a\u0430\u0434\u0430\u043c\u0438\u044f",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_nuts_pdf",
+      "target": "product_macadamia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "PISTACHIO \u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0430",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_nuts_pdf",
+      "target": "product_pistachio_pdf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "BEANS \u0424\u0430\u0441\u043e\u043b\u044c (black-eyed)",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_legumes_pdf",
+      "target": "product_beans_blackeyed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "BEANS \u0424\u0430\u0441\u043e\u043b\u044c",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_legumes_pdf",
+      "target": "product_beans_white",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "CHICKPEA (Roasted) \u0413\u043e\u0440\u043e\u0445 (\u0436\u0430\u0440\u0435\u043d\u044b\u0439)",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_legumes_pdf",
+      "target": "product_chickpea_roasted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "MUNG BEAN \u041c\u0430\u0448",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_legumes_pdf",
+      "target": "product_mung_bean",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "RED BEANS \u041a\u0440\u0430\u0441\u043d\u044b\u0439 \u0444\u0430\u0441\u043e\u043b\u044c",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_legumes_pdf",
+      "target": "product_red_beans",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "WALNUT KERNEL PIECES \u0427\u0435\u0442\u0432\u0435\u0440\u0442\u0438\u043d\u043a\u0430",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_walnuts_pdf",
+      "target": "product_walnut_kernel_pieces",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "WALNUTS CHOPPED \u0418\u0437\u043c\u0435\u043b\u044c\u0447\u0451\u043d\u043d\u044b\u0435 \u0433\u0440\u0435\u0446\u043a\u0438\u0435 \u043e\u0440\u0435\u0445\u0438",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_walnuts_pdf",
+      "target": "product_walnuts_chopped",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "WALNUTS \u0413\u0440\u0435\u0446\u043a\u043e\u0432\u044b\u0435 \u043e\u0440\u0435\u0445\u0438",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_walnuts_pdf",
+      "target": "product_walnuts_inshell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "CONTAINS",
+      "confidence": "EXTRACTED",
+      "source_location": "WALNUTS PEELED \u041e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0433\u0440\u0435\u0446\u043a\u0438\u0435 \u043e\u0440\u0435\u0445\u0438",
+      "source_file": "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf",
+      "source": "category_walnuts_pdf",
+      "target": "product_walnuts_peeled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/catalog/",
+      "source_file": "assets/img/catalog/\u0431\u043e\u0431\u043e\u0432\u044b\u0435.jpg",
+      "source": "img_assets_img_catalog_\u0431\u043e\u0431\u043e\u0432\u044b\u0435_jpg",
+      "target": "category_catalog",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/catalog/",
+      "source_file": "assets/img/catalog/\u043e\u0440\u0435\u0445\u0438.jpg",
+      "source": "img_assets_img_catalog_\u043e\u0440\u0435\u0445\u0438_jpg",
+      "target": "category_catalog",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/catalog/",
+      "source_file": "assets/img/catalog/\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b.jpg",
+      "source": "img_assets_img_catalog_\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b_jpg",
+      "target": "category_catalog",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/catalog/",
+      "source_file": "assets/img/catalog/\u0444\u0440\u0443\u043a\u0442\u044b.jpg",
+      "source": "img_assets_img_catalog_\u0444\u0440\u0443\u043a\u0442\u044b_jpg",
+      "target": "category_catalog",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/certs/",
+      "source_file": "assets/img/certs/globalgap.png",
+      "source": "img_assets_img_certs_globalgap_png",
+      "target": "category_certs",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/certs/",
+      "source_file": "assets/img/certs/haccp.png",
+      "source": "img_assets_img_certs_haccp_png",
+      "target": "category_certs",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/certs/",
+      "source_file": "assets/img/certs/halal.jpg",
+      "source": "img_assets_img_certs_halal_jpg",
+      "target": "category_certs",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/certs/",
+      "source_file": "assets/img/certs/halal.png",
+      "source": "img_assets_img_certs_halal_png",
+      "target": "category_certs",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/certs/",
+      "source_file": "assets/img/certs/iso22000.png",
+      "source": "img_assets_img_certs_iso22000_png",
+      "target": "category_certs",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/certs/",
+      "source_file": "assets/img/certs/organic.png",
+      "source": "img_assets_img_certs_organic_png",
+      "target": "category_certs",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/almond-inshell.jpg",
+      "source": "img_assets_img_products_almond_inshell_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/almond.jpg",
+      "source": "img_assets_img_products_almond_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/almond-unpeeled.jpg",
+      "source": "img_assets_img_products_almond_unpeeled_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/apricot.jpg",
+      "source": "img_assets_img_products_apricot_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/apricot-kernels.jpg",
+      "source": "img_assets_img_products_apricot_kernels_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/candied-fruit.jpg",
+      "source": "img_assets_img_products_candied_fruit_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/cashew.jpg",
+      "source": "img_assets_img_products_cashew_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/cukaty.jpg",
+      "source": "img_assets_img_products_cukaty_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/dried-apricots.jpg",
+      "source": "img_assets_img_products_dried_apricots_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/dried-banana.jpg",
+      "source": "img_assets_img_products_dried_banana_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/dried-kiwi.jpg",
+      "source": "img_assets_img_products_dried_kiwi_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/dried-mango.jpg",
+      "source": "img_assets_img_products_dried_mango_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/dried-pineapple.jpg",
+      "source": "img_assets_img_products_dried_pineapple_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/fasol-blackeye.jpg",
+      "source": "img_assets_img_products_fasol_blackeye_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/fasol-pinto.jpg",
+      "source": "img_assets_img_products_fasol_pinto_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/fasol-red.jpg",
+      "source": "img_assets_img_products_fasol_red_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/hazelnut.jpg",
+      "source": "img_assets_img_products_hazelnut_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/jida.jpg",
+      "source": "img_assets_img_products_jida_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/jumbo.jpg",
+      "source": "img_assets_img_products_jumbo_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/kuraga-base.jpg",
+      "source": "img_assets_img_products_kuraga_base_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/kuraga-kuraga.jpg",
+      "source": "img_assets_img_products_kuraga_kuraga_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/kuraga-limonka.jpg",
+      "source": "img_assets_img_products_kuraga_limonka_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/kuraga-natural.jpg",
+      "source": "img_assets_img_products_kuraga_natural_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/macadamia.jpg",
+      "source": "img_assets_img_products_macadamia_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/mash.jpg",
+      "source": "img_assets_img_products_mash_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/orig.jpg",
+      "source": "img_assets_img_products_orig_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/pea-roasted.jpg",
+      "source": "img_assets_img_products_pea_roasted_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/peanut-blanched.jpg",
+      "source": "img_assets_img_products_peanut_blanched_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/peanut-crushed.jpg",
+      "source": "img_assets_img_products_peanut_crushed_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/peanut-inshell.jpg",
+      "source": "img_assets_img_products_peanut_inshell_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/peanut-peeled.jpg",
+      "source": "img_assets_img_products_peanut_peeled_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/pistachio.png",
+      "source": "img_assets_img_products_pistachio_png",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0410\u0445\u043c\u0430\u0434-\u0410\u0433\u0430\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435, \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d.jpg",
+      "source": "img_assets_img_products_pistachio_\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438_\u0430\u0445\u043c\u0430\u0434_\u0430\u0433\u0430\u0438_\u0436\u0430\u0440\u0435\u043d\u044b\u0435_\u0441\u043e\u043b\u0435\u043d\u044b\u0435_\u0438\u0440\u0430\u043d_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d.jpg",
+      "source": "img_assets_img_products_pistachio_\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438_\u0436\u0430\u0440\u0435\u043d\u044b\u0435_\u0441\u043e\u043b\u0435\u043d\u044b\u0435_\u0438\u0440\u0430\u043d_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/pistachio- \u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435.jpg",
+      "source": "img_assets_img_products_pistachio_\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438_\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0422\u0443\u0440\u0446\u0438\u044f \u043d\u0435\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0432\u044b\u0441\u0448\u0438\u0439 \u0441\u043e\u0440\u0442.jpg",
+      "source": "img_assets_img_products_pistachio_\u0444\u0438\u0441\u0442\u0430\u0448\u043a\u0438_\u0442\u0443\u0440\u0446\u0438\u044f_\u043d\u0435\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435_\u0436\u0430\u0440\u0435\u043d\u044b\u0435_\u0432\u044b\u0441\u0448\u0438\u0439_\u0441\u043e\u0440\u0442_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/prune-catalog.jpg",
+      "source": "img_assets_img_products_prune_catalog_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/prune.jpg",
+      "source": "img_assets_img_products_prune_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0411\u0430\u043b\u043b\u043e\u043d\u0447\u0438\u043a.jpg",
+      "source": "img_assets_img_products_prune_\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432_\u0431\u0430\u043b\u043b\u043e\u043d\u0447\u0438\u043a_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u041b\u0430\u0440\u0447 \u043a\u0440\u0443\u043f\u043d\u044b\u0439 \u0431\u0435\u0437 \u043a\u043e\u0441\u0442\u043e\u0447\u0435\u043a.jpg",
+      "source": "img_assets_img_products_prune_\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432_\u043b\u0430\u0440\u0447_\u043a\u0440\u0443\u043f\u043d\u044b\u0439_\u0431\u0435\u0437_\u043a\u043e\u0441\u0442\u043e\u0447\u0435\u043a_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0441 \u043a\u043e\u0441\u0442\u043e\u0447\u043a\u043e\u0439.jpg",
+      "source": "img_assets_img_products_prune_\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432_\u0441_\u043a\u043e\u0441\u0442\u043e\u0447\u043a\u043e\u0439_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/pumpkin-seed.jpg",
+      "source": "img_assets_img_products_pumpkin_seed_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/raisin-black-giant.jpg",
+      "source": "img_assets_img_products_raisin_black_giant_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/raisin-javz.jpg",
+      "source": "img_assets_img_products_raisin_javz_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/raisin-soyagi.jpg",
+      "source": "img_assets_img_products_raisin_soyagi_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/raisin-sultan.jpg",
+      "source": "img_assets_img_products_raisin_sultan_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/raisin-yellow-califar.jpg",
+      "source": "img_assets_img_products_raisin_yellow_califar_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/raisin-yellow-hybrid.jpg",
+      "source": "img_assets_img_products_raisin_yellow_hybrid_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/red-thompson.jpg",
+      "source": "img_assets_img_products_red_thompson_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/sesame-white.jpg",
+      "source": "img_assets_img_products_sesame_white_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/shigani-red.jpg",
+      "source": "img_assets_img_products_shigani_red_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/turshak.jpg",
+      "source": "img_assets_img_products_turshak_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/unabi.jpg",
+      "source": "img_assets_img_products_unabi_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/walnut-catalog.jpg",
+      "source": "img_assets_img_products_walnut_catalog_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/walnut-crushed.jpg",
+      "source": "img_assets_img_products_walnut_crushed_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/walnut.jpg",
+      "source": "img_assets_img_products_walnut_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/walnut-peeled.jpg",
+      "source": "img_assets_img_products_walnut_peeled_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "BELONGS_TO",
+      "confidence": "INFERRED",
+      "source_location": "folder assets/img/products/",
+      "source_file": "assets/img/products/walnut-quarters.jpg",
+      "source": "img_assets_img_products_walnut_quarters_jpg",
+      "target": "category_products",
+      "confidence_score": 0.5
+    }
+  ],
+  "hyperedges": []
+}
