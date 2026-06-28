@@ -77,8 +77,9 @@ window.CATALOG_DATA = {
           id: "walnut",
           title: "Грецкий орех",
           titleEn: "Walnut",
-          img: "assets/img/products/walnut-catalog.jpg",
+          img: "assets/img/products/walnut-peeled.jpg",
           children: [
+            { id: "unpeeled", title: "Грецкий орех неочищенный", titleEn: "Walnut Unpeeled", img: "assets/img/products/walnut-catalog.jpg" },
             { id: "chandler", title: "Грецкий орех Chandler", titleEn: "Walnut Chandler" },
             { id: "paper-shell", title: "Грецкий орех Paper Shell", titleEn: "Walnut Paper Shell" },
             { id: "extra-light", title: "Грецкий орех Extra Light", titleEn: "Walnut Extra Light" },
