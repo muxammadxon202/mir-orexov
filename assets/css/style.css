@@ -780,12 +780,15 @@ button { font-family: inherit; cursor: pointer; }
 
 .footer-flat-cols {
   display: flex;
+  justify-content: space-between;
   gap: 64px;
   padding-top: 36px;
   flex-wrap: wrap;
 }
+.footer-about { max-width: 340px; }
+.footer-about p { font-size: 14.5px; color: var(--text-dim); line-height: 1.6; margin: 0; }
 
-.pf-col h4 { margin: 0 0 20px; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-deep); }
+.pf-col h4, .footer-about h4 { margin: 0 0 20px; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-deep); }
 
 .pf-nav { list-style: none; margin: 0; padding: 0; }
 .pf-nav li { margin-bottom: 13px; }
@@ -1154,8 +1157,9 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 @media (max-width: 720px) {
-  .nav-menu, .nav-right .lang-switch, .nav-right .btn { display: none; }
+  .nav-menu, .nav-right .btn { display: none; }
   .nav-toggle { display: flex; }
+  .nav-right .lang-switch { display: flex; }
   .navbar.menu-open .nav-menu {
     display: flex;
     position: absolute;
