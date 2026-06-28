@@ -27,12 +27,6 @@ window.CATALOG_DATA = {
           ],
         },
         {
-          id: "dried-apricots",
-          title: "Сушёные абрикосы",
-          titleEn: "Dried Apricots",
-          img: "assets/img/products/dried-apricots.jpg",
-        },
-        {
           id: "raisins",
           title: "Изюм",
           titleEn: "Raisins",
@@ -222,6 +216,7 @@ window.CATALOG_DATA = {
       img: "assets/img/products/cukaty.jpg",
       children: [
         { id: "candied-fruit", title: "Цукаты", titleEn: "Candied Fruit", img: "assets/img/products/candied-fruit.jpg" },
+        { id: "dried-apricots", title: "Сушёные абрикосы", titleEn: "Dried Apricots", img: "assets/img/products/dried-apricots.jpg" },
         { id: "dried-pineapple", title: "Сушёные ананасы", titleEn: "Dried Pineapple", img: "assets/img/products/dried-pineapple.jpg" },
         { id: "dried-banana", title: "Сушёный банан", titleEn: "Dried Banana", img: "assets/img/products/dried-banana.jpg" },
         { id: "dried-kiwi", title: "Сушёное киви", titleEn: "Dried Kiwi", img: "assets/img/products/dried-kiwi.jpg" },
@@ -232,6 +227,7 @@ window.CATALOG_DATA = {
       id: "packaging",
       title: "Упаковка",
       titleEn: "Packaging",
+      img: "assets/img/catalog/упаковка.jpg",
       // Service offering, not a photographed SKU — `service: true` keeps these
       // leaves visible without a fabricated product photo (see resolveNode in catalog.js).
       children: [

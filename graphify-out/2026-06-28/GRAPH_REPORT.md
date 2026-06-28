@@ -1,18 +1,12 @@
-# Graph Report - mir-orexov  (2026-06-28)
+# Graph Report - .  (2026-06-28)
 
 ## Corpus Check
-- 9 files · ~744,329 words
-- Verdict: corpus is large enough that graph structure adds value.
+- Large corpus: 101 files · ~726,636 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder.
 
 ## Summary
-- 216 nodes · 214 edges · 38 communities (17 shown, 21 thin omitted)
+- 215 nodes · 214 edges · 37 communities (16 shown, 21 thin omitted)
 - Extraction: 63% EXTRACTED · 35% INFERRED · 3% AMBIGUOUS · INFERRED: 74 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
-
-## Graph Freshness
-- Built from commit: `51e875d7`
-- Run `git rev-parse HEAD` and compare to check if the graph is stale.
-- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Фото товаров (каталог)|Фото товаров (каталог)]]
@@ -76,7 +70,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (38 total, 21 thin omitted)
+## Communities (37 total, 21 thin omitted)
 
 ### Community 0 - "Фото товаров (каталог)"
 Cohesion: 0.03
@@ -161,4 +155,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `ООО "Raise Production business"` and `SAMBOX (упаковочная фабрика)`?**
   _Edge tagged AMBIGUOUS (relation: MENTIONS) - confidence is low._
 - **Why does `Каталог PDF (продуктовый каталог)` connect `PDF-каталог: разделы и сертификаты` to `Бренд SAMBOX и категории сайта`, `Свежие фрукты и овощи (PDF)`, `Миндаль и грецкий орех`, `Изюм (сорта)`, `Сухофрукты Китай`, `Бобовые`, `Арахис`?**
-  _High betweenness centrality (0.194) - this node is a cross-community bridge._
+  _High betweenness centrality (0.196) - this node is a cross-community bridge._

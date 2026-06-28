@@ -1,527 +1,507 @@
 {
-  ".claude/launch.json": {
-    "mtime": 1782625926.2754195,
-    "ast_hash": "abc461611bdf42da4da0039fc250b1b0",
-    "semantic_hash": ""
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\.claude\\launch.json": {
+    "mtime": 1782622461.3208535,
+    "ast_hash": "09219c3816e19bc94f4db54ada902a5d",
+    "semantic_hash": "09219c3816e19bc94f4db54ada902a5d"
   },
-  ".claude/settings.json": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\.claude\\settings.json": {
     "mtime": 1782622461.3325918,
     "ast_hash": "e181224cb8a20611f1a6240bda165d92",
     "semantic_hash": "e181224cb8a20611f1a6240bda165d92"
   },
-  "assets/js/catalog-data.js": {
-    "mtime": 1782643638.9798496,
-    "ast_hash": "bf74e56064a4cb0019ffb824a67c5ce9",
-    "semantic_hash": ""
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\js\\catalog-data.js": {
+    "mtime": 1782622461.924988,
+    "ast_hash": "d265e2dcb650fcaab011658d29b7d3f3",
+    "semantic_hash": "d265e2dcb650fcaab011658d29b7d3f3"
   },
-  "assets/js/catalog.js": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\js\\catalog.js": {
     "mtime": 1782622461.9374154,
     "ast_hash": "1659118aaae2e49081cbd6a24bcb0b56",
     "semantic_hash": "1659118aaae2e49081cbd6a24bcb0b56"
   },
-  "assets/js/hero-orbit.js": {
-    "mtime": 1782643595.590172,
-    "ast_hash": "55aa9c3ba421d1dd838a4f445a5e6a23",
-    "semantic_hash": ""
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\js\\hero-orbit.js": {
+    "mtime": 1782622461.9410503,
+    "ast_hash": "369d5198c22a31e4bd6918b731f313fb",
+    "semantic_hash": "369d5198c22a31e4bd6918b731f313fb"
   },
-  "assets/js/i18n.js": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\js\\i18n.js": {
     "mtime": 1782622461.9479039,
     "ast_hash": "861bece7adec1dfdfe3e6e34eab676fd",
     "semantic_hash": "861bece7adec1dfdfe3e6e34eab676fd"
   },
-  "assets/js/main.js": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\js\\main.js": {
     "mtime": 1782622461.954482,
     "ast_hash": "760338e4eee30c64ce7a61cfa1276f6d",
     "semantic_hash": "760338e4eee30c64ce7a61cfa1276f6d"
   },
-  "assets/js/quote-modal.js": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\js\\quote-modal.js": {
     "mtime": 1782622461.9605033,
     "ast_hash": "5b9ed364944a80bf4f3e20b20184a0dc",
     "semantic_hash": "5b9ed364944a80bf4f3e20b20184a0dc"
   },
-  "about.html": {
-    "mtime": 1782644063.17229,
-    "ast_hash": "1ec933c494b1b95a25e23dc4adcae4cd",
-    "semantic_hash": ""
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\about.html": {
+    "mtime": 1782622461.2328658,
+    "ast_hash": "e2b0ad5f49bc3e81c535fea8c6fef800",
+    "semantic_hash": "e2b0ad5f49bc3e81c535fea8c6fef800"
   },
-  "catalog.html": {
-    "mtime": 1782644011.9702199,
-    "ast_hash": "22397b1095a1ab05bc8ff0fd625924b2",
-    "semantic_hash": ""
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\catalog.html": {
+    "mtime": 1782622461.2416437,
+    "ast_hash": "89bdba0782a957b1146a16c734439824",
+    "semantic_hash": "89bdba0782a957b1146a16c734439824"
   },
-  "contact.html": {
-    "mtime": 1782644112.5879602,
-    "ast_hash": "e71b70413dc002e49505cbb9509e292f",
-    "semantic_hash": ""
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\contact.html": {
+    "mtime": 1782622461.2416437,
+    "ast_hash": "492fe93948a8e3f96664fbef3a0effb6",
+    "semantic_hash": "492fe93948a8e3f96664fbef3a0effb6"
   },
-  "index.html": {
-    "mtime": 1782643931.566414,
-    "ast_hash": "156194f57217175ad8b4e9ef7f02d2ab",
-    "semantic_hash": ""
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\index.html": {
+    "mtime": 1782622461.2542782,
+    "ast_hash": "8eb8c79a1ce292917839ff953700e6d8",
+    "semantic_hash": "8eb8c79a1ce292917839ff953700e6d8"
   },
-  "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf": {
     "mtime": 1782622461.3208535,
     "ast_hash": "4001242805ab850e2108f95299741bd9",
     "semantic_hash": "4001242805ab850e2108f95299741bd9"
   },
-  "assets/img/IMG_0074.PNG": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\IMG_0074.PNG": {
     "mtime": 1782622461.3841856,
     "ast_hash": "24bcbfa6d38eb5155291c706f1e503d5",
     "semantic_hash": "24bcbfa6d38eb5155291c706f1e503d5"
   },
-  "assets/img/catalog/\u0431\u043e\u0431\u043e\u0432\u044b\u0435.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\catalog\\\u0431\u043e\u0431\u043e\u0432\u044b\u0435.jpg": {
     "mtime": 1782622461.4218445,
     "ast_hash": "6a4501e348745554ba711eb570b2cd37",
     "semantic_hash": "6a4501e348745554ba711eb570b2cd37"
   },
-  "assets/img/catalog/\u043e\u0440\u0435\u0445\u0438.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\catalog\\\u043e\u0440\u0435\u0445\u0438.jpg": {
     "mtime": 1782622461.4218445,
     "ast_hash": "7587a38ab50be70438eb31d11e43b5d2",
     "semantic_hash": "7587a38ab50be70438eb31d11e43b5d2"
   },
-  "assets/img/catalog/\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\catalog\\\u0441\u0443\u0445\u043e\u0444\u0440\u0443\u043a\u0442\u044b.jpg": {
     "mtime": 1782622461.4317696,
     "ast_hash": "5830d6315f49c72856e6e387e8456286",
     "semantic_hash": "5830d6315f49c72856e6e387e8456286"
   },
-  "assets/img/catalog/\u0444\u0440\u0443\u043a\u0442\u044b.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\catalog\\\u0444\u0440\u0443\u043a\u0442\u044b.jpg": {
     "mtime": 1782622461.438322,
     "ast_hash": "5b7318a059ceaec63e6b89cd4b4dc88d",
     "semantic_hash": "5b7318a059ceaec63e6b89cd4b4dc88d"
   },
-  "assets/img/certs/globalgap.png": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\certs\\globalgap.png": {
     "mtime": 1782622461.4496775,
     "ast_hash": "6542e67d558c303642d793cdde1346d6",
     "semantic_hash": "6542e67d558c303642d793cdde1346d6"
   },
-  "assets/img/certs/haccp.png": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\certs\\haccp.png": {
     "mtime": 1782622461.4496775,
     "ast_hash": "f02881d2d9d9a21b6e33c5d4152248df",
     "semantic_hash": "f02881d2d9d9a21b6e33c5d4152248df"
   },
-  "assets/img/certs/halal.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\certs\\halal.jpg": {
     "mtime": 1782622461.4496775,
     "ast_hash": "370dfa4ce836d6e18eaeb2b5819d6496",
     "semantic_hash": "370dfa4ce836d6e18eaeb2b5819d6496"
   },
-  "assets/img/certs/halal.png": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\certs\\halal.png": {
     "mtime": 1782622461.4496775,
     "ast_hash": "5f1d8cbe0902f1e91e711629186d2675",
     "semantic_hash": "5f1d8cbe0902f1e91e711629186d2675"
   },
-  "assets/img/certs/iso22000.png": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\certs\\iso22000.png": {
     "mtime": 1782622461.4635432,
     "ast_hash": "8c8172d1b34fdc7e064a7c5fcbed07a0",
     "semantic_hash": "8c8172d1b34fdc7e064a7c5fcbed07a0"
   },
-  "assets/img/certs/organic.png": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\certs\\organic.png": {
     "mtime": 1782622461.4635432,
     "ast_hash": "e14ab9853e23a6bfe126e1bec4153cd3",
     "semantic_hash": "e14ab9853e23a6bfe126e1bec4153cd3"
   },
-  "assets/img/fistashki-zharenye-solenye-iran.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\fistashki-zharenye-solenye-iran.jpg": {
     "mtime": 1782622461.360487,
     "ast_hash": "413cb30b89bfe51b5951ba7c5a99c4c9",
     "semantic_hash": "413cb30b89bfe51b5951ba7c5a99c4c9"
   },
-  "assets/img/group-su-image-catalog-2967074benl-400x400-jpg.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\group-su-image-catalog-2967074benl-400x400-jpg.jpg": {
     "mtime": 1782622461.3645127,
     "ast_hash": "aa9646fb92745028f971a20a0f02c7e6",
     "semantic_hash": "aa9646fb92745028f971a20a0f02c7e6"
   },
-  "assets/img/izyum-golden-jpg.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\izyum-golden-jpg.jpg": {
     "mtime": 1782622461.3841856,
     "ast_hash": "a04bc978a7b04b62296d8e787a7c6d68",
     "semantic_hash": "a04bc978a7b04b62296d8e787a7c6d68"
   },
-  "assets/img/mindal-v-skorlupe-v-s.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\mindal-v-skorlupe-v-s.jpg": {
     "mtime": 1782622461.4001603,
     "ast_hash": "1241883c640c9a34b99f5dfd0b66d124",
     "semantic_hash": "1241883c640c9a34b99f5dfd0b66d124"
   },
-  "assets/img/products/almond-inshell.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\almond-inshell.jpg": {
     "mtime": 1782622461.4806046,
     "ast_hash": "5279c6a7f91408fa25d6ba2e863351d0",
     "semantic_hash": "5279c6a7f91408fa25d6ba2e863351d0"
   },
-  "assets/img/products/almond-unpeeled.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\almond-unpeeled.jpg": {
     "mtime": 1782622461.4842763,
     "ast_hash": "8598ed312e18154bb0065a8dc018dd2c",
     "semantic_hash": "8598ed312e18154bb0065a8dc018dd2c"
   },
-  "assets/img/products/almond.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\almond.jpg": {
     "mtime": 1782622461.4872453,
     "ast_hash": "0d5322b477485b75c44bc22f40d5e446",
     "semantic_hash": "0d5322b477485b75c44bc22f40d5e446"
   },
-  "assets/img/products/apricot-kernels.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\apricot-kernels.jpg": {
     "mtime": 1782622461.496514,
     "ast_hash": "808772f7c4bfa3ada1c5e82e2cf90907",
     "semantic_hash": "808772f7c4bfa3ada1c5e82e2cf90907"
   },
-  "assets/img/products/apricot.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\apricot.jpg": {
     "mtime": 1782622461.496514,
     "ast_hash": "7705e76fe2b0a33b459fbffc51a833e6",
     "semantic_hash": "7705e76fe2b0a33b459fbffc51a833e6"
   },
-  "assets/img/products/candied-fruit.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\candied-fruit.jpg": {
     "mtime": 1782622461.5034468,
     "ast_hash": "542c7bd507c45b80ff42b54031301562",
     "semantic_hash": "542c7bd507c45b80ff42b54031301562"
   },
-  "assets/img/products/cashew.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\cashew.jpg": {
     "mtime": 1782622461.512606,
     "ast_hash": "7cb93c709e8676451e5acdebbf8590bf",
     "semantic_hash": "7cb93c709e8676451e5acdebbf8590bf"
   },
-  "assets/img/products/cukaty.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\cukaty.jpg": {
     "mtime": 1782622461.512606,
     "ast_hash": "9b3dca71b0a2e7e94c5f1ad47defb778",
     "semantic_hash": "9b3dca71b0a2e7e94c5f1ad47defb778"
   },
-  "assets/img/products/dried-apricots.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\dried-apricots.jpg": {
     "mtime": 1782622461.512606,
     "ast_hash": "68f6347fb3e084814c76530e58858ec1",
     "semantic_hash": "68f6347fb3e084814c76530e58858ec1"
   },
-  "assets/img/products/dried-banana.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\dried-banana.jpg": {
     "mtime": 1782622461.5262244,
     "ast_hash": "d28bc56746bebb629d2ee06110998117",
     "semantic_hash": "d28bc56746bebb629d2ee06110998117"
   },
-  "assets/img/products/dried-kiwi.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\dried-kiwi.jpg": {
     "mtime": 1782622461.5311167,
     "ast_hash": "5212f55d301d058e67b6fb942880d569",
     "semantic_hash": "5212f55d301d058e67b6fb942880d569"
   },
-  "assets/img/products/dried-mango.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\dried-mango.jpg": {
     "mtime": 1782622461.5360518,
     "ast_hash": "c203e16962dbda36e741e3bfce3c2bbb",
     "semantic_hash": "c203e16962dbda36e741e3bfce3c2bbb"
   },
-  "assets/img/products/dried-pineapple.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\dried-pineapple.jpg": {
     "mtime": 1782622461.5360518,
     "ast_hash": "b8177c34c35e6ecc4409818bd5935e4d",
     "semantic_hash": "b8177c34c35e6ecc4409818bd5935e4d"
   },
-  "assets/img/products/fasol-blackeye.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\fasol-blackeye.jpg": {
     "mtime": 1782622461.544621,
     "ast_hash": "cc635bb9595e381c6edc419b4f81310b",
     "semantic_hash": "cc635bb9595e381c6edc419b4f81310b"
   },
-  "assets/img/products/fasol-pinto.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\fasol-pinto.jpg": {
     "mtime": 1782622461.544621,
     "ast_hash": "00a5ff3ef79b1d1a89b52c67dbe36907",
     "semantic_hash": "00a5ff3ef79b1d1a89b52c67dbe36907"
   },
-  "assets/img/products/fasol-red.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\fasol-red.jpg": {
     "mtime": 1782622461.544621,
     "ast_hash": "4861f035f9aefa2d1b0d6b19bceb23bc",
     "semantic_hash": "4861f035f9aefa2d1b0d6b19bceb23bc"
   },
-  "assets/img/products/hazelnut.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\hazelnut.jpg": {
     "mtime": 1782622461.544621,
     "ast_hash": "27d9f3fb6070e3c958f1cf82afa62882",
     "semantic_hash": "27d9f3fb6070e3c958f1cf82afa62882"
   },
-  "assets/img/products/jida.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\jida.jpg": {
     "mtime": 1782622461.560287,
     "ast_hash": "e5fa2716f153ad13dac9803f41ae0bf9",
     "semantic_hash": "e5fa2716f153ad13dac9803f41ae0bf9"
   },
-  "assets/img/products/jumbo.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\jumbo.jpg": {
     "mtime": 1782622461.560287,
     "ast_hash": "2b88813ed04dd1800363e64799dff043",
     "semantic_hash": "2b88813ed04dd1800363e64799dff043"
   },
-  "assets/img/products/kuraga-base.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\kuraga-base.jpg": {
     "mtime": 1782622461.560287,
     "ast_hash": "cf10887559dc8de394aed25886f7a49b",
     "semantic_hash": "cf10887559dc8de394aed25886f7a49b"
   },
-  "assets/img/products/kuraga-kuraga.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\kuraga-kuraga.jpg": {
     "mtime": 1782622461.576159,
     "ast_hash": "5ff6805be2b88d70d4bad1b4d58b9084",
     "semantic_hash": "5ff6805be2b88d70d4bad1b4d58b9084"
   },
-  "assets/img/products/kuraga-limonka.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\kuraga-limonka.jpg": {
     "mtime": 1782622461.576159,
     "ast_hash": "786284687d24ac694d9d1b20febb0b59",
     "semantic_hash": "786284687d24ac694d9d1b20febb0b59"
   },
-  "assets/img/products/kuraga-natural.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\kuraga-natural.jpg": {
     "mtime": 1782622461.5875568,
     "ast_hash": "b8ef1587ce2ba997775aa5448ce8d230",
     "semantic_hash": "b8ef1587ce2ba997775aa5448ce8d230"
   },
-  "assets/img/products/macadamia.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\macadamia.jpg": {
     "mtime": 1782622461.5921957,
     "ast_hash": "fddc18571546fe1ef191d2b5c8fd4e17",
     "semantic_hash": "fddc18571546fe1ef191d2b5c8fd4e17"
   },
-  "assets/img/products/mash.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\mash.jpg": {
     "mtime": 1782622461.593739,
     "ast_hash": "1d3cf811bcce70cd2c3974c7dffb8dab",
     "semantic_hash": "1d3cf811bcce70cd2c3974c7dffb8dab"
   },
-  "assets/img/products/orig.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\orig.jpg": {
     "mtime": 1782622461.602784,
     "ast_hash": "d09486db4f26005cfd78c90b48ba6c69",
     "semantic_hash": "d09486db4f26005cfd78c90b48ba6c69"
   },
-  "assets/img/products/pea-roasted.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\pea-roasted.jpg": {
     "mtime": 1782622461.6079922,
     "ast_hash": "b52ce99d8cf226b46ff5fe1f644d678f",
     "semantic_hash": "b52ce99d8cf226b46ff5fe1f644d678f"
   },
-  "assets/img/products/peanut-blanched.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\peanut-blanched.jpg": {
     "mtime": 1782622461.610011,
     "ast_hash": "3fddfc9db0c85f56db28faaabb5fcbf3",
     "semantic_hash": "3fddfc9db0c85f56db28faaabb5fcbf3"
   },
-  "assets/img/products/peanut-crushed.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\peanut-crushed.jpg": {
     "mtime": 1782622461.6153052,
     "ast_hash": "79a1ea711cdc912ee21e0b4a33b5248e",
     "semantic_hash": "79a1ea711cdc912ee21e0b4a33b5248e"
   },
-  "assets/img/products/peanut-inshell.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\peanut-inshell.jpg": {
     "mtime": 1782622461.6238642,
     "ast_hash": "aa9646fb92745028f971a20a0f02c7e6",
     "semantic_hash": "aa9646fb92745028f971a20a0f02c7e6"
   },
-  "assets/img/products/peanut-peeled.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\peanut-peeled.jpg": {
     "mtime": 1782622461.6297872,
     "ast_hash": "dd8380972c9e3cdfd1d29b602685af43",
     "semantic_hash": "dd8380972c9e3cdfd1d29b602685af43"
   },
-  "assets/img/products/pistachio- \u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\pistachio- \u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435.jpg": {
     "mtime": 1782622461.6315055,
     "ast_hash": "c069f4b92bddc80dcf2879b76ea2b174",
     "semantic_hash": "c069f4b92bddc80dcf2879b76ea2b174"
   },
-  "assets/img/products/pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0410\u0445\u043c\u0430\u0434-\u0410\u0433\u0430\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435, \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0410\u0445\u043c\u0430\u0434-\u0410\u0433\u0430\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435, \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d.jpg": {
     "mtime": 1782622461.6398287,
     "ast_hash": "9db9910b2eefcd0a3e88014e409980cc",
     "semantic_hash": "9db9910b2eefcd0a3e88014e409980cc"
   },
-  "assets/img/products/pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0422\u0443\u0440\u0446\u0438\u044f \u043d\u0435\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0432\u044b\u0441\u0448\u0438\u0439 \u0441\u043e\u0440\u0442.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0422\u0443\u0440\u0446\u0438\u044f \u043d\u0435\u043e\u0447\u0438\u0449\u0435\u043d\u043d\u044b\u0435 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0432\u044b\u0441\u0448\u0438\u0439 \u0441\u043e\u0440\u0442.jpg": {
     "mtime": 1782622461.6557615,
     "ast_hash": "fbdcecec2b28687ba0d01f8c92bea21d",
     "semantic_hash": "fbdcecec2b28687ba0d01f8c92bea21d"
   },
-  "assets/img/products/pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\pistachio-\u0424\u0438\u0441\u0442\u0430\u0448\u043a\u0438 \u0436\u0430\u0440\u0435\u043d\u044b\u0435 \u0441\u043e\u043b\u0435\u043d\u044b\u0435 \u0418\u0440\u0430\u043d.jpg": {
     "mtime": 1782622461.6557615,
     "ast_hash": "413cb30b89bfe51b5951ba7c5a99c4c9",
     "semantic_hash": "413cb30b89bfe51b5951ba7c5a99c4c9"
   },
-  "assets/img/products/pistachio.png": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\pistachio.png": {
     "mtime": 1782622461.675518,
     "ast_hash": "9db9910b2eefcd0a3e88014e409980cc",
     "semantic_hash": "9db9910b2eefcd0a3e88014e409980cc"
   },
-  "assets/img/products/prune-catalog.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\prune-catalog.jpg": {
     "mtime": 1782622461.675518,
     "ast_hash": "e2a6b850482f793bc5e7376e403100e9",
     "semantic_hash": "e2a6b850482f793bc5e7376e403100e9"
   },
-  "assets/img/products/prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0411\u0430\u043b\u043b\u043e\u043d\u0447\u0438\u043a.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0411\u0430\u043b\u043b\u043e\u043d\u0447\u0438\u043a.jpg": {
     "mtime": 1782622461.6871626,
     "ast_hash": "26f143c82bdeb3b897970c59d9fed55a",
     "semantic_hash": "26f143c82bdeb3b897970c59d9fed55a"
   },
-  "assets/img/products/prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u041b\u0430\u0440\u0447 \u043a\u0440\u0443\u043f\u043d\u044b\u0439 \u0431\u0435\u0437 \u043a\u043e\u0441\u0442\u043e\u0447\u0435\u043a.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u041b\u0430\u0440\u0447 \u043a\u0440\u0443\u043f\u043d\u044b\u0439 \u0431\u0435\u0437 \u043a\u043e\u0441\u0442\u043e\u0447\u0435\u043a.jpg": {
     "mtime": 1782622461.6871626,
     "ast_hash": "b6ff288414d15febab5e08ead7a8024b",
     "semantic_hash": "b6ff288414d15febab5e08ead7a8024b"
   },
-  "assets/img/products/prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0441 \u043a\u043e\u0441\u0442\u043e\u0447\u043a\u043e\u0439.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\prune-\u0427\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432 \u0441 \u043a\u043e\u0441\u0442\u043e\u0447\u043a\u043e\u0439.jpg": {
     "mtime": 1782622461.7032578,
     "ast_hash": "0019730dc5abc9a23ebd1ad35ff464e1",
     "semantic_hash": "0019730dc5abc9a23ebd1ad35ff464e1"
   },
-  "assets/img/products/prune.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\prune.jpg": {
     "mtime": 1782622461.7032578,
     "ast_hash": "6894bfdd3973507394bd0ab060397956",
     "semantic_hash": "6894bfdd3973507394bd0ab060397956"
   },
-  "assets/img/products/pumpkin-seed.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\pumpkin-seed.jpg": {
     "mtime": 1782622461.7032578,
     "ast_hash": "014e6a744f3603c16b70122e66087461",
     "semantic_hash": "014e6a744f3603c16b70122e66087461"
   },
-  "assets/img/products/raisin-black-giant.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\raisin-black-giant.jpg": {
     "mtime": 1782622461.7193463,
     "ast_hash": "67cfd3d4b3f5e8061923cd3fe575fb83",
     "semantic_hash": "67cfd3d4b3f5e8061923cd3fe575fb83"
   },
-  "assets/img/products/raisin-javz.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\raisin-javz.jpg": {
     "mtime": 1782622461.7193463,
     "ast_hash": "e427fe842d898eef4089b2560222dd84",
     "semantic_hash": "e427fe842d898eef4089b2560222dd84"
   },
-  "assets/img/products/raisin-soyagi.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\raisin-soyagi.jpg": {
     "mtime": 1782622461.7193463,
     "ast_hash": "41a482c44fa8525079506db8b37383d2",
     "semantic_hash": "41a482c44fa8525079506db8b37383d2"
   },
-  "assets/img/products/raisin-sultan.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\raisin-sultan.jpg": {
     "mtime": 1782622461.735116,
     "ast_hash": "1f4357f43113e1d76c255fbeaff9cbb7",
     "semantic_hash": "1f4357f43113e1d76c255fbeaff9cbb7"
   },
-  "assets/img/products/raisin-yellow-califar.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\raisin-yellow-califar.jpg": {
     "mtime": 1782622461.735116,
     "ast_hash": "7e569ba7343cbf674daee8fbef21e6ae",
     "semantic_hash": "7e569ba7343cbf674daee8fbef21e6ae"
   },
-  "assets/img/products/raisin-yellow-hybrid.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\raisin-yellow-hybrid.jpg": {
     "mtime": 1782622461.735116,
     "ast_hash": "11f45107e41479b43f96f460ec96b0ed",
     "semantic_hash": "11f45107e41479b43f96f460ec96b0ed"
   },
-  "assets/img/products/red-thompson.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\red-thompson.jpg": {
     "mtime": 1782622461.7511516,
     "ast_hash": "2236c4de4d9333d91be5088877925965",
     "semantic_hash": "2236c4de4d9333d91be5088877925965"
   },
-  "assets/img/products/sesame-white.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\sesame-white.jpg": {
     "mtime": 1782622461.7511516,
     "ast_hash": "f709270f94b1ddde052ebc1c733a5535",
     "semantic_hash": "f709270f94b1ddde052ebc1c733a5535"
   },
-  "assets/img/products/shigani-red.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\shigani-red.jpg": {
     "mtime": 1782622461.7511516,
     "ast_hash": "7919edf1bd840f4b9fd1e8bd09848c86",
     "semantic_hash": "7919edf1bd840f4b9fd1e8bd09848c86"
   },
-  "assets/img/products/turshak.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\turshak.jpg": {
     "mtime": 1782622461.7649815,
     "ast_hash": "ff4cd2efee8edba1526778ced63556bc",
     "semantic_hash": "ff4cd2efee8edba1526778ced63556bc"
   },
-  "assets/img/products/unabi.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\unabi.jpg": {
     "mtime": 1782622461.7669978,
     "ast_hash": "8e0f55732df2ba0ee60ba36d6b8b5d41",
     "semantic_hash": "8e0f55732df2ba0ee60ba36d6b8b5d41"
   },
-  "assets/img/products/walnut-catalog.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\walnut-catalog.jpg": {
     "mtime": 1782622461.7953682,
     "ast_hash": "f16d758ecdbc8010f2ff1fe442621a59",
     "semantic_hash": "f16d758ecdbc8010f2ff1fe442621a59"
   },
-  "assets/img/products/walnut-crushed.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\walnut-crushed.jpg": {
     "mtime": 1782622461.8147154,
     "ast_hash": "97ae2354a1b8b65959497b8178f7b067",
     "semantic_hash": "97ae2354a1b8b65959497b8178f7b067"
   },
-  "assets/img/products/walnut-peeled.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\walnut-peeled.jpg": {
     "mtime": 1782622461.8456833,
     "ast_hash": "df5de91f12319a3e594a811f531f15bb",
     "semantic_hash": "df5de91f12319a3e594a811f531f15bb"
   },
-  "assets/img/products/walnut-quarters.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\walnut-quarters.jpg": {
     "mtime": 1782622461.8512068,
     "ast_hash": "eec46b112a2144794bdb3065f3ea1887",
     "semantic_hash": "eec46b112a2144794bdb3065f3ea1887"
   },
-  "assets/img/products/walnut.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\products\\walnut.jpg": {
     "mtime": 1782622461.854139,
     "ast_hash": "2f5d7171cc5552a3f6dab3bc53df178b",
     "semantic_hash": "2f5d7171cc5552a3f6dab3bc53df178b"
   },
-  "assets/img/semechki-tykvy-ochishhennye-jpeg.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\semechki-tykvy-ochishhennye-jpeg.jpg": {
     "mtime": 1782622461.4001603,
     "ast_hash": "1b806867a2bb1e8e2a0c78bca6681171",
     "semantic_hash": "1b806867a2bb1e8e2a0c78bca6681171"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0436\u0443\u043c\u0431\u043e.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0436\u0443\u043c\u0431\u043e.jpg": {
     "mtime": 1782622461.8616204,
     "ast_hash": "2b88813ed04dd1800363e64799dff043",
     "semantic_hash": "2b88813ed04dd1800363e64799dff043"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0438\u0437\u044e\u043c \u0436\u0430\u0432\u0437.JPG": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0438\u0437\u044e\u043c \u0436\u0430\u0432\u0437.JPG": {
     "mtime": 1782622461.8616204,
     "ast_hash": "e427fe842d898eef4089b2560222dd84",
     "semantic_hash": "e427fe842d898eef4089b2560222dd84"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0438\u0437\u044e\u043c \u0441\u043e\u0439\u0430\u0433\u0438.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0438\u0437\u044e\u043c \u0441\u043e\u0439\u0430\u0433\u0438.jpg": {
     "mtime": 1782622461.8616204,
     "ast_hash": "41a482c44fa8525079506db8b37383d2",
     "semantic_hash": "41a482c44fa8525079506db8b37383d2"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u043a\u0435\u0448\u044c\u044e.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u043a\u0435\u0448\u044c\u044e.jpg": {
     "mtime": 1782622461.878818,
     "ast_hash": "7cb93c709e8676451e5acdebbf8590bf",
     "semantic_hash": "7cb93c709e8676451e5acdebbf8590bf"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u043a\u0443\u0440\u0430\u0433\u0430.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u043a\u0443\u0440\u0430\u0433\u0430.jpg": {
     "mtime": 1782622461.878818,
     "ast_hash": "7705e76fe2b0a33b459fbffc51a833e6",
     "semantic_hash": "7705e76fe2b0a33b459fbffc51a833e6"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u043c\u0438\u043d\u0434\u0430\u043b\u044c.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u043c\u0438\u043d\u0434\u0430\u043b\u044c.jpg": {
     "mtime": 1782622461.878818,
     "ast_hash": "0d5322b477485b75c44bc22f40d5e446",
     "semantic_hash": "0d5322b477485b75c44bc22f40d5e446"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u043e\u0440\u0435\u0445.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u043e\u0440\u0435\u0445.jpg": {
     "mtime": 1782622461.8931742,
     "ast_hash": "2f5d7171cc5552a3f6dab3bc53df178b",
     "semantic_hash": "2f5d7171cc5552a3f6dab3bc53df178b"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0442\u0443\u0440\u0448\u0430\u043a.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0442\u0443\u0440\u0448\u0430\u043a.jpg": {
     "mtime": 1782622461.8931742,
     "ast_hash": "ff4cd2efee8edba1526778ced63556bc",
     "semantic_hash": "ff4cd2efee8edba1526778ced63556bc"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0442\u044b\u043a\u0432\u0435\u043d\u043d\u0430\u044f \u0441\u0435\u043c\u0435\u0447\u043a\u0430.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0442\u044b\u043a\u0432\u0435\u043d\u043d\u0430\u044f \u0441\u0435\u043c\u0435\u0447\u043a\u0430.jpg": {
     "mtime": 1782622461.903375,
     "ast_hash": "014e6a744f3603c16b70122e66087461",
     "semantic_hash": "014e6a744f3603c16b70122e66087461"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0444\u0438\u0441\u0442\u044f\u0448\u043a\u0430.png": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0444\u0438\u0441\u0442\u044f\u0448\u043a\u0430.png": {
     "mtime": 1782622461.9089155,
     "ast_hash": "9db9910b2eefcd0a3e88014e409980cc",
     "semantic_hash": "9db9910b2eefcd0a3e88014e409980cc"
   },
-  "assets/img/\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f/\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0434\u043b\u044f \u0430\u043d\u0438\u043c\u0430\u0446\u0438\u044f\\\u0447\u0435\u0440\u043d\u043e\u0441\u043b\u0438\u0432.jpg": {
     "mtime": 1782622461.9089155,
     "ast_hash": "6894bfdd3973507394bd0ab060397956",
     "semantic_hash": "6894bfdd3973507394bd0ab060397956"
   },
-  "assets/img/\u0441\u043b\u0438\u0432\u0430 .jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0441\u043b\u0438\u0432\u0430 .jpg": {
     "mtime": 1782622461.4001603,
     "ast_hash": "b6ff288414d15febab5e08ead7a8024b",
     "semantic_hash": "b6ff288414d15febab5e08ead7a8024b"
   },
-  "assets/img/\u0443\u0440\u044e\u043a.jpg": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\assets\\img\\\u0443\u0440\u044e\u043a.jpg": {
     "mtime": 1782622461.415814,
     "ast_hash": "f5d795835183861f70417aadfaf2f6c3",
     "semantic_hash": "f5d795835183861f70417aadfaf2f6c3"
   },
-  "pdfpages/page_005_hd.png": {
+  "C:\\Users\\AkalarPC\\OneDrive\\Desktop\\mir-orexov\\pdfpages\\page_005_hd.png": {
     "mtime": 1782622462.0448859,
     "ast_hash": "63cc7c59db3f689cb5dd979d0f8591c4",
     "semantic_hash": "63cc7c59db3f689cb5dd979d0f8591c4"
-  },
-  "assets/js/chat-widget.js": {
-    "mtime": 1782643840.9337587,
-    "ast_hash": "74d1c2c54bb18fe0bad249311ed957a9",
-    "semantic_hash": ""
-  },
-  "assets/footer-premium.html": {
-    "mtime": 1782624380.160993,
-    "ast_hash": "cc8fc40e022addca98425837e194b7ef",
-    "semantic_hash": ""
-  },
-  "assets/img/catalog/\u0443\u043f\u0430\u043a\u043e\u0432\u043a\u0430.jpg": {
-    "mtime": 1782629806.0212035,
-    "ast_hash": "74a7f8b4e10607e5a54ea93b1cde1e9e",
-    "semantic_hash": ""
-  },
-  "assets/img/pattern-nuts-lines.png": {
-    "mtime": 1782627263.879933,
-    "ast_hash": "a679d2b3286c73e8a6d0f587472ff2dc",
-    "semantic_hash": ""
   }
 }

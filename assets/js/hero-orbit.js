@@ -10,6 +10,10 @@
   const ORBIT_CATEGORIES = ["dried", "nuts"];
   const ORBIT_MAX_ITEMS = 20;
 
+  // Single-photo products excluded from the orbit entirely (still shown in
+  // the catalog) — kept off the homepage visual by request.
+  const ORBIT_EXCLUDE_IDS = ["jida", "unabi"];
+
   // Which sub-variant to show for products that have several photographed
   // varieties — keeps the orbit to one card per product instead of every SKU.
   // catalog-data.js titles already carry the full "Product Variant" name
@@ -19,9 +23,15 @@
     raisins: "javz",
     prune: "larch",
     walnut: "peeled",
-    pistachio: "peeled",
+    pistachio: "turkey-unpeeled-premium",
     almond: "peeled",
     peanut: "peeled",
+  };
+
+  // Extra variants shown *in addition to* the primary pick above, as their
+  // own orbit items — e.g. Raisins gets 3 separate dots instead of 1.
+  const ORBIT_EXTRA_VARIANTS = {
+    raisins: ["yellow-hybrid", "black-giant"],
   };
 
   function buildOrbitLeaves() {
@@ -30,6 +40,7 @@
       .filter((category) => ORBIT_CATEGORIES.includes(category.id))
       .forEach((category) => {
         (category.children || []).forEach((product) => {
+          if (ORBIT_EXCLUDE_IDS.includes(product.id)) return;
           // Single-photo product (no sub-varieties) — shown as-is.
           if (!product.children) {
             if (!product.img) return;
@@ -44,8 +55,14 @@
           const variant =
             (pickId && product.children.find((v) => v.id === pickId && v.img)) ||
             product.children.find((v) => v.img);
-          if (!variant) return;
-          items.push({ titleRu: variant.title, titleEn: variant.titleEn || variant.title, img: variant.img });
+          if (variant) {
+            items.push({ titleRu: variant.title, titleEn: variant.titleEn || variant.title, img: variant.img });
+          }
+          // Extra variants for this product, shown as their own orbit items.
+          (ORBIT_EXTRA_VARIANTS[product.id] || []).forEach((extraId) => {
+            const extra = product.children.find((v) => v.id === extraId && v.img);
+            if (extra) items.push({ titleRu: extra.title, titleEn: extra.titleEn || extra.title, img: extra.img });
+          });
         });
       });
     return items.slice(0, ORBIT_MAX_ITEMS);
