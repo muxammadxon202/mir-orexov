@@ -679,7 +679,7 @@ button { font-family: inherit; cursor: pointer; }
   margin-top: 2px;
 }
 
-.footer-tagline-flat { margin: 16px 0 0; font-size: 15px; color: var(--text-dim); }
+.footer-tagline-flat { margin: 16px 0 0; font-size: 15px; color: var(--text-dim); max-width: 380px; line-height: 1.5; }
 
 .footer-slogan {
   display: flex;
@@ -689,6 +689,15 @@ button { font-family: inherit; cursor: pointer; }
   gap: 6px;
   max-width: 460px;
 }
+
+.footer-stats {
+  display: flex;
+  gap: 32px;
+  margin-top: 18px;
+}
+.footer-stats > div { text-align: right; }
+.footer-stats .stat-num { font-size: 22px; }
+.footer-stats .stat-label { font-size: var(--fs-tiny); }
 .footer-slogan-ru {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 700;
