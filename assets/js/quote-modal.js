@@ -72,7 +72,7 @@
     submitBtn.textContent = "Отправка...";
 
     try {
-      const res = await fetch("/api/requests", {
+      const res = await fetch("https://mir-orexov-backend.onrender.com/api/requests", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

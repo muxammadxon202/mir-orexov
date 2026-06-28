@@ -80,10 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // ===== Request form handling =====
-// Backend contract (FastAPI): POST /api/requests
+// Backend (Express, deployed separately on Render): POST /api/requests
 // Expected JSON body matches FormData field names below.
 // Server fans out to Telegram bot, email, and Google Sheets.
-const API_ENDPOINT = "/api/requests";
+const API_ENDPOINT = "https://mir-orexov-backend.onrender.com/api/requests";
 
 function initForm() {
   const form = document.querySelector("#request-form");
