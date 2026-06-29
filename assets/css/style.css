@@ -717,7 +717,8 @@ button { font-family: inherit; cursor: pointer; }
 
 .footer-brand-col { display: flex; flex-direction: column; }
 
-.pf-logo-row { display: flex; align-items: center; gap: 14px; }
+.pf-logo-row { display: flex; align-items: center; gap: 14px; text-decoration: none; transition: opacity var(--dur-fast) var(--ease-out); }
+.pf-logo-row:hover { opacity: 0.82; }
 .pf-logo-mark {
   width: 56px; height: 56px;
   border-radius: 50%;

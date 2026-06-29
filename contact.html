@@ -104,19 +104,69 @@
                 <label for="product" data-en="Product">Товар<span class="required">*</span></label>
                 <select id="product" name="product" required>
                   <option value="" data-en="Select a product">Выберите товар</option>
-                  <optgroup label="Сухофрукты" data-en-label="Dried Fruits">
-                    <option value="apricot" data-en="Dried Apricot">Курага</option>
-                    <option value="raisins" data-en="Raisins">Изюм</option>
-                    <option value="prune" data-en="Prune">Чернослив</option>
+                  <optgroup label="Сухофрукты — Курага" data-en-label="Dried Fruits — Dried Apricot">
+                    <option value="apricot-kuraga" data-en="Kuraga">Курага</option>
+                    <option value="apricot-limonka" data-en="Dried Apricot Limonka">Курага «Лимонка»</option>
+                    <option value="apricot-natural" data-en="Dried Apricot Natural">Курага натуральная</option>
+                    <option value="apricot-turshak" data-en="Dried Apricot Turshak">Курага «Туршак»</option>
+                  </optgroup>
+                  <optgroup label="Сухофрукты — Изюм" data-en-label="Dried Fruits — Raisins">
+                    <option value="raisins-javz" data-en="Raisins Javz">Изюм «Джавз»</option>
+                    <option value="raisins-soyagi" data-en="Raisins Soyagi">Изюм «Сояги»</option>
+                    <option value="raisins-yellow-hybrid" data-en="Raisins Yellow (Hybrid)">Изюм жёлтый (гибрид)</option>
+                    <option value="raisins-yellow-califar" data-en="Raisins Yellow (Califar)">Изюм жёлтый (Калифар)</option>
+                    <option value="raisins-sultan" data-en="Raisins Sultan">Изюм «Султан»</option>
+                    <option value="raisins-black-giant" data-en="Raisins Black (Giant)">Изюм чёрный (гигант)</option>
+                    <option value="raisins-red-thompson" data-en="Raisins Red Thompson">Изюм «Красный Томпсон»</option>
+                    <option value="raisins-shigani-red" data-en="Raisins Shigani Red">Изюм «Шигани» красный</option>
+                  </optgroup>
+                  <optgroup label="Сухофрукты — Чернослив" data-en-label="Dried Fruits — Prune">
+                    <option value="prune-ballonchik" data-en="Prune Ballonchik">Чернослив «Баллончик»</option>
+                    <option value="prune-larch" data-en="Prune Larch, Large, Pitless">Чернослив «Ларч», крупный, без косточек</option>
+                    <option value="prune-with-pit" data-en="Prune With Pit">Чернослив с косточкой</option>
+                  </optgroup>
+                  <optgroup label="Сухофрукты — другое" data-en-label="Dried Fruits — Other">
                     <option value="jida" data-en="Jida">Джида</option>
                     <option value="unabi" data-en="Unabi">Унаби</option>
                   </optgroup>
-                  <optgroup label="Орехи" data-en-label="Nuts">
-                    <option value="walnut" data-en="Walnut">Грецкий орех</option>
-                    <option value="pistachio" data-en="Pistachio">Фисташки</option>
-                    <option value="almond" data-en="Almond">Миндаль</option>
-                    <option value="cashew" data-en="Cashew">Кешью</option>
-                    <option value="peanut" data-en="Peanut">Арахис</option>
+                  <optgroup label="Орехи — Грецкий орех" data-en-label="Nuts — Walnut">
+                    <option value="walnut-unpeeled" data-en="Walnut Unpeeled">Грецкий орех неочищенный</option>
+                    <option value="walnut-chandler" data-en="Walnut Chandler">Грецкий орех Chandler</option>
+                    <option value="walnut-paper-shell" data-en="Walnut Paper Shell">Грецкий орех Paper Shell</option>
+                    <option value="walnut-extra-light" data-en="Walnut Extra Light">Грецкий орех Extra Light</option>
+                    <option value="walnut-light" data-en="Walnut Light">Грецкий орех Light</option>
+                    <option value="walnut-peeled" data-en="Walnut Peeled">Грецкий орех очищенный</option>
+                    <option value="walnut-crushed" data-en="Walnut Crushed">Грецкий орех измельчённый</option>
+                    <option value="walnut-quarters" data-en="Walnut Quarters">Грецкий орех, четвертинка</option>
+                  </optgroup>
+                  <optgroup label="Орехи — Фисташки" data-en-label="Nuts — Pistachio">
+                    <option value="pistachio-peeled" data-en="Pistachio, Peeled">Фисташки очищенные</option>
+                    <option value="pistachio-ahmad-agai-iran" data-en="Pistachio Ahmad-Agai, Roasted, Salted (Iran)">Фисташки «Ахмад-Агаи», жареные, солёные (Иран)</option>
+                    <option value="pistachio-turkey-unpeeled-premium" data-en="Pistachio Unpeeled, Roasted, Premium Grade (Turkey)">Фисташки неочищенные, жареные, высший сорт (Турция)</option>
+                    <option value="pistachio-roasted-salted-iran" data-en="Pistachio Roasted, Salted (Iran)">Фисташки жареные, солёные (Иран)</option>
+                  </optgroup>
+                  <optgroup label="Орехи — Миндаль" data-en-label="Nuts — Almond">
+                    <option value="almond-inshell" data-en="Almond In Shell">Миндаль в скорлупе</option>
+                    <option value="almond-unpeeled" data-en="Almond Unpeeled">Миндаль неочищенный</option>
+                    <option value="almond-peeled" data-en="Almond Peeled">Миндаль очищенный</option>
+                    <option value="almond-nonpareil" data-en="Almond Nonpareil">Миндаль Nonpareil</option>
+                    <option value="almond-carmel" data-en="Almond Carmel">Миндаль Carmel</option>
+                    <option value="almond-mission" data-en="Almond Mission">Миндаль Mission</option>
+                    <option value="almond-fritz" data-en="Almond Fritz">Миндаль Fritz</option>
+                  </optgroup>
+                  <optgroup label="Орехи — Кешью" data-en-label="Nuts — Cashew">
+                    <option value="cashew-w180" data-en="Cashew W180">Кешью W180</option>
+                    <option value="cashew-w210" data-en="Cashew W210">Кешью W210</option>
+                    <option value="cashew-w240" data-en="Cashew W240">Кешью W240</option>
+                    <option value="cashew-w320" data-en="Cashew W320">Кешью W320</option>
+                  </optgroup>
+                  <optgroup label="Орехи — Арахис" data-en-label="Nuts — Peanut">
+                    <option value="peanut-inshell" data-en="Peanut In Shell">Арахис в скорлупе</option>
+                    <option value="peanut-peeled" data-en="Peanut Peeled">Арахис очищенный</option>
+                    <option value="peanut-blanched" data-en="Peanut Blanched">Арахис бланшированный</option>
+                    <option value="peanut-crushed" data-en="Peanut Crushed">Арахис измельчённый</option>
+                  </optgroup>
+                  <optgroup label="Орехи — другое" data-en-label="Nuts — Other">
                     <option value="pumpkin-seed" data-en="Pumpkin Seed">Тыквенная семечка</option>
                     <option value="macadamia" data-en="Macadamia">Макадамия</option>
                     <option value="hazelnut" data-en="Hazelnut">Фундук</option>
@@ -125,11 +175,18 @@
                   <optgroup label="Семена и бобовые" data-en-label="Seeds &amp; Legumes">
                     <option value="mash" data-en="Mung Bean">Маш</option>
                     <option value="sesame-white" data-en="White Sesame">Кунжут белый</option>
-                    <option value="fasol" data-en="Beans">Фасоль</option>
+                    <option value="fasol-red" data-en="Beans, Red">Фасоль красная</option>
+                    <option value="fasol-pinto" data-en="Beans, Pinto">Фасоль «Пинто»</option>
+                    <option value="fasol-blackeye" data-en="Beans, Black-Eyed">Фасоль «Черноглазка»</option>
                     <option value="pea-roasted" data-en="Roasted Peas">Горох жареный</option>
                   </optgroup>
                   <optgroup label="Цукаты" data-en-label="Candied Fruit">
-                    <option value="candied" data-en="Candied Fruit">Цукаты</option>
+                    <option value="candied-fruit" data-en="Candied Fruit">Цукаты</option>
+                    <option value="dried-apricots" data-en="Dried Apricots">Сушёные абрикосы</option>
+                    <option value="dried-pineapple" data-en="Dried Pineapple">Сушёные ананасы</option>
+                    <option value="dried-banana" data-en="Dried Banana">Сушёный банан</option>
+                    <option value="dried-kiwi" data-en="Dried Kiwi">Сушёное киви</option>
+                    <option value="dried-mango" data-en="Dried Mango">Сушёное манго</option>
                   </optgroup>
                   <option value="other" data-en="Other">Другое</option>
                 </select>
@@ -212,13 +269,13 @@
     <div class="footer-flat">
       <div class="footer-flat-top">
         <div class="footer-brand-col">
-          <div class="pf-logo-row">
+          <a href="index.html" class="pf-logo-row">
             <span class="pf-logo-mark"><img src="assets/img/IMG_0074.PNG" alt="Mir Orexov Samarkand" /></span>
             <span class="pf-logo-text pf-logo-text--dark">
               <strong>Mir Orexov</strong>
               <span>SAMARKAND</span>
             </span>
-          </div>
+          </a>
           <p class="footer-tagline-flat" data-en="Premium export of nuts and dried fruits from Uzbekistan to 30+ countries worldwide — premium quality with attention to every detail.">Премиум экспорт орехов и сухофруктов из Узбекистана в 30+ стран мира — премиум качество с заботой о деталях.</p>
         </div>
         <div class="footer-slogan">
@@ -257,10 +314,10 @@
         </div>
         <div class="pf-col">
           <h4 data-en="Contact">Контакты</h4>
-          <div class="pf-contact-row">
+          <a class="pf-contact-row" href="https://maps.app.goo.gl/b43Q6W3gZjCjXXnG9" target="_blank" rel="noopener">
             <span class="pf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.5 7-11.5a7 7 0 10-14 0C5 14.5 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.4"/></svg></span>
             <span class="pf-static" data-en="Uzbekistan, Samarkand">Узбекистан, Самарканд</span>
-          </div>
+          </a>
           <div class="pf-contact-row">
             <span class="pf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span>
             <a href="mailto:mir_orexov@mail.ru">mir_orexov@mail.ru</a>
