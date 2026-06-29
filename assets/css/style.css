@@ -807,6 +807,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .pf-icon svg { width: 17px; height: 17px; }
 .pf-contact-row a, .pf-contact-row span.pf-static { font-size: 14.5px; font-weight: 600; color: var(--text); text-decoration: none; }
+.pf-phone-stack { display: flex; flex-direction: column; gap: 2px; }
 .pf-contact-row a:hover { color: var(--gold-text); }
 
 .footer-bottom { margin-top: 18px; padding: 20px 0; text-align: center; color: var(--text-dim); font-size: var(--fs-tiny); }

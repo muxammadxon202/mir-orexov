@@ -30,33 +30,33 @@
     "semantic_hash": "861bece7adec1dfdfe3e6e34eab676fd"
   },
   "assets/js/main.js": {
-    "mtime": 1782648388.6588607,
-    "ast_hash": "ddecc94e3320db9bce48d0571818fc41",
-    "semantic_hash": ""
+    "mtime": 1782622461.954482,
+    "ast_hash": "760338e4eee30c64ce7a61cfa1276f6d",
+    "semantic_hash": "760338e4eee30c64ce7a61cfa1276f6d"
   },
   "assets/js/quote-modal.js": {
-    "mtime": 1782648397.467521,
-    "ast_hash": "1c1b7b782b45d9da87ae84ab63b92e15",
-    "semantic_hash": ""
+    "mtime": 1782622461.9605033,
+    "ast_hash": "5b9ed364944a80bf4f3e20b20184a0dc",
+    "semantic_hash": "5b9ed364944a80bf4f3e20b20184a0dc"
   },
   "about.html": {
-    "mtime": 1782706634.5875237,
-    "ast_hash": "b974381e3ce1f58def7d8e0165f1c07a",
+    "mtime": 1782645041.9712842,
+    "ast_hash": "4685410003d088f063d6acdb53075027",
     "semantic_hash": ""
   },
   "catalog.html": {
-    "mtime": 1782706634.6486154,
-    "ast_hash": "a0f4dea261f4fe34da19b1e4ea6a14bd",
+    "mtime": 1782645051.6371045,
+    "ast_hash": "5a91aa574be1929239a694a18c527779",
     "semantic_hash": ""
   },
   "contact.html": {
-    "mtime": 1782706634.752049,
-    "ast_hash": "4b894e63058f512b790d9e189f6a1b6f",
+    "mtime": 1782645059.8187377,
+    "ast_hash": "2253eed84bce54e5d86893fa50a8c2c6",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1782706634.5485563,
-    "ast_hash": "b6769530da2bcd428bd073ac8d7f75dd",
+    "mtime": 1782645033.5725875,
+    "ast_hash": "620065b608c50e0c2eac9a3f9a57d01b",
     "semantic_hash": ""
   },
   "\u043a\u0430\u0442\u0430\u043b\u043e\u0433 PDF .pdf": {
@@ -522,36 +522,6 @@
   "assets/img/pattern-nuts-lines.png": {
     "mtime": 1782627263.879933,
     "ast_hash": "a679d2b3286c73e8a6d0f587472ff2dc",
-    "semantic_hash": ""
-  },
-  "backend/lib/email.js": {
-    "mtime": 1782646425.2322547,
-    "ast_hash": "1e045b3e54cad2254170dc69326b0e6b",
-    "semantic_hash": ""
-  },
-  "backend/lib/normalize.js": {
-    "mtime": 1782646406.936664,
-    "ast_hash": "53cdfa571874e4ebbd9829dd5d19f96b",
-    "semantic_hash": ""
-  },
-  "backend/lib/sheets.js": {
-    "mtime": 1782646433.6037993,
-    "ast_hash": "b8085f01485cfab9e5b512a014863a43",
-    "semantic_hash": ""
-  },
-  "backend/lib/telegram.js": {
-    "mtime": 1782646415.116868,
-    "ast_hash": "3fd3f3d1370164d57bf45bcf7bfce834",
-    "semantic_hash": ""
-  },
-  "backend/package.json": {
-    "mtime": 1782646500.6204972,
-    "ast_hash": "06ec749bce13ceb744003f222432463c",
-    "semantic_hash": ""
-  },
-  "backend/server.js": {
-    "mtime": 1782646446.8206704,
-    "ast_hash": "2c44fe21e496ac665b5a80403570ceb8",
     "semantic_hash": ""
   }
 }

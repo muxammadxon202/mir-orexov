@@ -1,16 +1,16 @@
-# Graph Report - mir-orexov  (2026-06-29)
+# Graph Report - mir-orexov  (2026-06-28)
 
 ## Corpus Check
-- 15 files · ~745,534 words
+- 9 files · ~744,329 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 257 nodes · 260 edges · 41 communities (20 shown, 21 thin omitted)
-- Extraction: 69% EXTRACTED · 28% INFERRED · 2% AMBIGUOUS · INFERRED: 74 edges (avg confidence: 0.5)
+- 216 nodes · 214 edges · 38 communities (17 shown, 21 thin omitted)
+- Extraction: 63% EXTRACTED · 35% INFERRED · 3% AMBIGUOUS · INFERRED: 74 edges (avg confidence: 0.5)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e26a77e0`
+- Built from commit: `51e875d7`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -48,9 +48,6 @@
 - [[_COMMUNITY_Фото слива|Фото: слива]]
 - [[_COMMUNITY_Фото урюк|Фото: урюк]]
 - [[_COMMUNITY_PDF-страница (page_005)|PDF-страница (page_005)]]
-- [[_COMMUNITY_Community 38|Community 38]]
-- [[_COMMUNITY_Community 39|Community 39]]
-- [[_COMMUNITY_Community 40|Community 40]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `products` - 58 edges
@@ -79,7 +76,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (41 total, 21 thin omitted)
+## Communities (38 total, 21 thin omitted)
 
 ### Community 0 - "Фото товаров (каталог)"
 Cohesion: 0.03
@@ -87,7 +84,7 @@ Nodes (59): products, almond-inshell, almond, almond-unpeeled, apricot, apricot-
 
 ### Community 1 - "PDF-каталог: разделы и сертификаты"
 Cohesion: 0.08
-Nodes (28): Миндаль / Almond, Сушеные абрикосы / Dried Apricots, Чернослив, унаби / Prunes, Jujube, Семена / Seeds (PDF section), GlobalG.A.P., HACCP, HALAL, ISO 22000 (+20 more)
+Nodes (29): Сушеные абрикосы / Dried Apricots, Орехи / Nuts (PDF section - pistachio, cashew, hazelnut, macadamia), Чернослив, унаби / Prunes, Jujube, Семена / Seeds (PDF section), GlobalG.A.P., HACCP, HALAL, ISO 22000 (+21 more)
 
 ### Community 2 - "Бренд SAMBOX и категории сайта"
 Cohesion: 0.16
@@ -98,8 +95,8 @@ Cohesion: 0.14
 Nodes (14): Свежие фрукты / Fresh Fruits, Apple (яблоко), Apricot (абрикос), Cherry (черешня), Cucumber (огурец), Figs (инжир, fresh), Grape (виноград), Lemon (лимон) (+6 more)
 
 ### Community 4 - "Миндаль и грецкий орех"
-Cohesion: 0.40
-Nodes (5): Грецкий орех / Walnuts (PDF section), Walnut Kernel Pieces (четвертинка), Walnuts Chopped, Walnuts (in shell), Walnuts Peeled
+Cohesion: 0.19
+Nodes (9): Миндаль / Almond, Грецкий орех / Walnuts (PDF section), Almonds (in shell), Almonds Kernel, Apricot Kernels, Walnut Kernel Pieces (четвертинка), Walnuts Chopped, Walnuts (in shell) (+1 more)
 
 ### Community 5 - "Изюм (сорта)"
 Cohesion: 0.25
@@ -129,18 +126,6 @@ Nodes (5): catalog, бобовые, орехи, сухофрукты, фрукт
 Cohesion: 0.40
 Nodes (5): Арахис / Peanuts, Blanched Peanuts, Chopped Peanuts, Peanuts in Shell, Peeled Peanuts
 
-### Community 38 - "Community 38"
-Cohesion: 0.11
-Nodes (17): allowedOrigins, app, { appendToSheet }, cors, express, { normalize, isValid }, { sendEmail }, { sendTelegram } (+9 more)
-
-### Community 39 - "Community 39"
-Cohesion: 0.12
-Nodes (16): dependencies, cors, dotenv, express, googleapis, nodemailer, description, engines (+8 more)
-
-### Community 40 - "Community 40"
-Cohesion: 0.40
-Nodes (5): Орехи / Nuts (PDF section - pistachio, cashew, hazelnut, macadamia), Cashew (кешью), Hazelnut (фундук), Macadamia (макадамия), Pistachio (PDF)
-
 ## Ambiguous Edges - Review These
 - `Каталог (catalog.html)` → `Сухофрукты / Dried Fruits`  [AMBIGUOUS]
   catalog.html · relation: CONTAINS
@@ -156,7 +141,7 @@ Nodes (5): Орехи / Nuts (PDF section - pistachio, cashew, hazelnut, macadam
   каталог PDF .pdf · relation: MENTIONS
 
 ## Knowledge Gaps
-- **173 isolated node(s):** `nodemailer`, `{ google }`, `name`, `version`, `description` (+168 more)
+- **150 isolated node(s):** `Instagram @mirorexov`, `Email mir_orexov@mail.ru`, `Phone +998 91 543 55 55`, `Phone +998 91 708 00 00`, `Website mirorexov.com` (+145 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -175,5 +160,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: OFFERS) - confidence is low._
 - **What is the exact relationship between `ООО "Raise Production business"` and `SAMBOX (упаковочная фабрика)`?**
   _Edge tagged AMBIGUOUS (relation: MENTIONS) - confidence is low._
-- **Why does `Каталог PDF (продуктовый каталог)` connect `PDF-каталог: разделы и сертификаты` to `Бренд SAMBOX и категории сайта`, `Свежие фрукты и овощи (PDF)`, `Миндаль и грецкий орех`, `Изюм (сорта)`, `Сухофрукты Китай`, `Community 40`, `Бобовые`, `Арахис`?**
-  _High betweenness centrality (0.137) - this node is a cross-community bridge._
+- **Why does `Каталог PDF (продуктовый каталог)` connect `PDF-каталог: разделы и сертификаты` to `Бренд SAMBOX и категории сайта`, `Свежие фрукты и овощи (PDF)`, `Миндаль и грецкий орех`, `Изюм (сорта)`, `Сухофрукты Китай`, `Бобовые`, `Арахис`?**
+  _High betweenness centrality (0.194) - this node is a cross-community bridge._
