@@ -106,21 +106,8 @@
           quoteBtn.textContent = quoteLabel();
           const fullName = [...trail.slice(1), child].map((n) => t(n)).join(" — ");
           const isPackaging = path[0] === "packaging";
-          const qtyField = isPackaging
-            ? {
-                label: "Количество, шт",
-                labelEn: "Quantity, pcs",
-                placeholder: "например, 5000",
-                placeholderEn: "e.g. 5000",
-                error: "Укажите количество",
-                errorEn: "Please enter the quantity",
-                type: "number",
-                min: "1",
-                step: "1",
-              }
-            : undefined;
           quoteBtn.addEventListener("click", () =>
-            openQuoteModal(fullName, child.img, { gallery: child.gallery, weight: child.weight, weightEn: child.weightEn, qtyField })
+            openQuoteModal(fullName, child.img, { gallery: child.gallery, weight: child.weight, weightEn: child.weightEn, hideQty: isPackaging })
           );
           card.appendChild(quoteBtn);
         }
@@ -163,7 +150,8 @@
       }
 
       const quoteBtn = quoteEl.querySelector("#catalog-quote-link");
-      quoteBtn.onclick = () => openQuoteModal(fullName, node.img);
+      const hideQty = path[0] === "packaging";
+      quoteBtn.onclick = () => openQuoteModal(fullName, node.img, { gallery: node.gallery, weight: node.weight, weightEn: node.weightEn, hideQty });
 
       quoteEl.style.display = "";
       quoteEl.classList.remove("quote-anim");

@@ -104,10 +104,17 @@
       weightEl.style.display = weightText ? "" : "none";
     }
 
+    const volumeField = modal.querySelector("#qm-volume-field");
     const volumeLabel = modal.querySelector("#qm-volume-label");
     const volumeInput = modal.querySelector("#qm-volume");
     const volumeError = modal.querySelector("#qm-volume-error");
-    if (volumeLabel && volumeInput && volumeError) {
+
+    if (extra.hideQty) {
+      if (volumeField) volumeField.style.display = "none";
+      if (volumeInput) volumeInput.required = false;
+    } else if (volumeField && volumeLabel && volumeInput && volumeError) {
+      volumeField.style.display = "";
+      volumeInput.required = true;
       const field = extra.qtyField || {
         label: "Сколько тонн",
         labelEn: "Volume (tons)",
