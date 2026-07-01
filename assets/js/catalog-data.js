@@ -30,7 +30,7 @@ window.CATALOG_DATA = {
           id: "raisins",
           title: "Изюм",
           titleEn: "Raisins",
-          img: "assets/img/izyum-golden-jpg.jpg",
+          img: "assets/img/products/raisin-cover.jpg",
           children: [
             { id: "javz", title: "Изюм «Джавз»", titleEn: "Raisins Javz", img: "assets/img/products/raisin-javz.jpg" },
             { id: "soyagi", title: "Изюм «Сояги»", titleEn: "Raisins Soyagi", img: "assets/img/products/raisin-soyagi.jpg" },
@@ -93,7 +93,7 @@ window.CATALOG_DATA = {
           id: "pistachio",
           title: "Фисташки",
           titleEn: "Pistachio",
-          img: "assets/img/fistashki-zharenye-solenye-iran.jpg",
+          img: "assets/img/products/pistachio-cover.jpg",
           children: [
             { id: "peeled", title: "Фисташки очищенные", titleEn: "Pistachio, Peeled", img: "assets/img/products/pistachio- Фисташки очищенные.jpg" },
             { id: "ahmad-agai-iran", title: "Фисташки «Ахмад-Агаи», жареные, солёные (Иран)", titleEn: "Pistachio Ahmad-Agai, Roasted, Salted (Iran)", img: "assets/img/products/pistachio-Фисташки Ахмад-Агаи жареные, соленые Иран.jpg" },
@@ -105,7 +105,7 @@ window.CATALOG_DATA = {
           id: "almond",
           title: "Миндаль",
           titleEn: "Almond",
-          img: "assets/img/mindal-v-skorlupe-v-s.jpg",
+          img: "assets/img/products/almond-inshell-cover.jpg",
           children: [
             { id: "inshell", title: "Миндаль в скорлупе", titleEn: "Almond In Shell", img: "assets/img/products/almond-inshell.jpg" },
             { id: "unpeeled", title: "Миндаль неочищенный", titleEn: "Almond Unpeeled", img: "assets/img/products/almond-unpeeled.jpg" },
@@ -208,7 +208,20 @@ window.CATALOG_DATA = {
       title: "Овощи и фрукты",
       titleEn: "Vegetables & Fruits",
       img: "assets/img/catalog/фрукты.jpg",
-      children: [],
+      children: [
+        { id: "apple", title: "Яблоко", titleEn: "Apple", img: "assets/img/products/fresh/apple.jpg" },
+        { id: "apricot-fresh", title: "Абрикос", titleEn: "Apricot", img: "assets/img/products/fresh/apricot.jpg" },
+        { id: "cherry", title: "Черешня", titleEn: "Cherry", img: "assets/img/products/fresh/cherry.jpg" },
+        { id: "grapes", title: "Виноград", titleEn: "Grapes", img: "assets/img/products/fresh/grapes.jpg" },
+        { id: "lemon", title: "Лимон", titleEn: "Lemon", img: "assets/img/products/fresh/lemon.jpg" },
+        { id: "onion", title: "Лук", titleEn: "Onion", img: "assets/img/products/fresh/onion.jpg" },
+        { id: "peach", title: "Персик", titleEn: "Peach", img: "assets/img/products/fresh/peach.jpg" },
+        { id: "plum", title: "Слива", titleEn: "Plum", img: "assets/img/products/fresh/plum.jpg" },
+        { id: "potato", title: "Картофель", titleEn: "Potato", img: "assets/img/products/fresh/potato.jpg" },
+        { id: "tomato", title: "Помидор", titleEn: "Tomato", img: "assets/img/products/fresh/tomato.jpg" },
+        { id: "fig", title: "Инжир", titleEn: "Fig", img: "assets/img/products/fresh/fig.jpg" },
+        { id: "cucumber", title: "Огурец", titleEn: "Cucumber", img: "assets/img/products/fresh/cucumber.jpg" },
+      ],
     },
     {
       id: "candied",
