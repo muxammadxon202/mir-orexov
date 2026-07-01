@@ -298,11 +298,12 @@ window.CATALOG_DATA = {
           id: "branding",
           title: "Брендирование",
           titleEn: "Branding",
+          img: "assets/img/products/packaging/branded-jars.jpg",
           children: [
             { id: "branded-jars", title: "Брендированные банки Mir Orexov", titleEn: "Mir Orexov Branded Jars", img: "assets/img/products/packaging/branded-jars.jpg" },
           ],
         },
-        { id: "turnkey", title: "Готовые решения", titleEn: "Turnkey Solutions", service: true },
+        { id: "turnkey", title: "Готовые решения", titleEn: "Turnkey Solutions", img: "assets/img/products/packaging/lineup.jpg", service: true },
       ],
     },
   ],
