@@ -9,17 +9,101 @@
   const modalItemEl = modal.querySelector("#quote-modal-item");
   let lastFocused = null;
 
-  function openQuoteModal(itemName, itemImg) {
+  function buildGallery(container, images, alt) {
+    let current = 0;
+    let timer;
+    const track = document.createElement("div");
+    track.className = "catalog-gallery__track";
+    images.forEach((src, i) => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = alt;
+      img.className = "catalog-gallery__slide" + (i === 0 ? " active" : "");
+      track.appendChild(img);
+    });
+    const dots = document.createElement("div");
+    dots.className = "catalog-gallery__dots";
+    images.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "catalog-gallery__dot" + (i === 0 ? " active" : "");
+      dot.addEventListener("click", () => {
+        stopAuto();
+        goTo(i);
+        startAuto();
+      });
+      dots.appendChild(dot);
+    });
+    const prevBtn = document.createElement("button");
+    prevBtn.type = "button";
+    prevBtn.className = "catalog-gallery__arrow catalog-gallery__arrow--prev";
+    prevBtn.innerHTML = "&#8592;";
+    const nextBtn = document.createElement("button");
+    nextBtn.type = "button";
+    nextBtn.className = "catalog-gallery__arrow catalog-gallery__arrow--next";
+    nextBtn.innerHTML = "&#8594;";
+
+    const slides = () => track.querySelectorAll(".catalog-gallery__slide");
+    const dotEls = () => dots.querySelectorAll(".catalog-gallery__dot");
+
+    function goTo(idx) {
+      slides()[current].classList.remove("active");
+      dotEls()[current].classList.remove("active");
+      current = (idx + images.length) % images.length;
+      slides()[current].classList.add("active");
+      dotEls()[current].classList.add("active");
+    }
+    function startAuto() { timer = setInterval(() => goTo(current + 1), 3500); }
+    function stopAuto() { clearInterval(timer); }
+
+    prevBtn.addEventListener("click", () => { stopAuto(); goTo(current - 1); startAuto(); });
+    nextBtn.addEventListener("click", () => { stopAuto(); goTo(current + 1); startAuto(); });
+
+    container.appendChild(track);
+    container.appendChild(dots);
+    container.appendChild(prevBtn);
+    container.appendChild(nextBtn);
+    startAuto();
+    return () => clearInterval(timer);
+  }
+
+  let stopGalleryAuto = null;
+
+  function openQuoteModal(itemName, itemImg, extra) {
+    extra = extra || {};
     modalItemEl.textContent = itemName;
     const thumb = modal.querySelector("#quote-modal-thumb");
-    if (thumb) {
-      if (itemImg) {
-        thumb.src = itemImg;
-        thumb.style.display = "";
-      } else {
-        thumb.style.display = "none";
+    const galleryEl = modal.querySelector("#quote-modal-gallery");
+    const weightEl = modal.querySelector("#quote-modal-weight");
+
+    if (stopGalleryAuto) { stopGalleryAuto(); stopGalleryAuto = null; }
+    if (galleryEl) galleryEl.innerHTML = "";
+
+    if (extra.gallery && extra.gallery.length > 1) {
+      if (thumb) thumb.style.display = "none";
+      if (galleryEl) {
+        galleryEl.style.display = "block";
+        stopGalleryAuto = buildGallery(galleryEl, extra.gallery, itemName);
+      }
+    } else {
+      if (galleryEl) galleryEl.style.display = "none";
+      if (thumb) {
+        if (itemImg) {
+          thumb.src = itemImg;
+          thumb.style.display = "";
+        } else {
+          thumb.style.display = "none";
+        }
       }
     }
+
+    if (weightEl) {
+      const lang = window.i18n && window.i18n.getLang() === "en" ? "en" : "ru";
+      const weightText = lang === "en" ? extra.weightEn : extra.weight;
+      weightEl.textContent = weightText || "";
+      weightEl.style.display = weightText ? "" : "none";
+    }
+
     modalForm.reset();
     modalForm.querySelectorAll(".field-error").forEach((el) => el.classList.remove("show"));
     const statusEl = modalForm.querySelector(".form-status");

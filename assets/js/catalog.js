@@ -105,8 +105,13 @@
           quoteBtn.className = "btn btn-primary btn-sm cat-tile-quote-btn";
           quoteBtn.textContent = quoteLabel();
           const fullName = [...trail.slice(1), child].map((n) => t(n)).join(" — ");
-          quoteBtn.addEventListener("click", () => openQuoteModal(fullName, child.img));
+          quoteBtn.addEventListener("click", () =>
+            openQuoteModal(fullName, child.img, { gallery: child.gallery, weight: child.weight, weightEn: child.weightEn })
+          );
           card.appendChild(quoteBtn);
+        }
+        if (child.gallery && child.gallery.length > 1) {
+          buildTilePreview(card.querySelector(".cat-tile-photo"), child.gallery, t(child));
         }
         gridEl.appendChild(card);
       });
@@ -118,14 +123,31 @@
         .map((n) => t(n))
         .join(" — ");
       quoteEl.querySelector("#catalog-quote-name").textContent = fullName;
+
+      const weightEl = quoteEl.querySelector("#catalog-quote-weight");
+      const weightText = window.i18n && window.i18n.getLang() === "en" ? node.weightEn : node.weight;
+      weightEl.textContent = weightText || "";
+      weightEl.style.display = weightText ? "" : "none";
+
       const thumbEl = quoteEl.querySelector("#catalog-quote-thumb");
-      if (node.img) {
-        thumbEl.src = node.img;
-        thumbEl.alt = fullName;
-        thumbEl.style.display = "";
-      } else {
+      const galleryEl = quoteEl.querySelector("#catalog-quote-gallery");
+      galleryEl.innerHTML = "";
+
+      if (node.gallery && node.gallery.length > 1) {
         thumbEl.style.display = "none";
+        galleryEl.style.display = "";
+        buildGallery(galleryEl, node.gallery, fullName);
+      } else {
+        galleryEl.style.display = "none";
+        if (node.img) {
+          thumbEl.src = node.img;
+          thumbEl.alt = fullName;
+          thumbEl.style.display = "";
+        } else {
+          thumbEl.style.display = "none";
+        }
       }
+
       const quoteBtn = quoteEl.querySelector("#catalog-quote-link");
       quoteBtn.onclick = () => openQuoteModal(fullName, node.img);
 
@@ -137,6 +159,85 @@
       quoteEl.style.display = "none";
       quoteEl.classList.remove("quote-anim");
     }
+  }
+
+  function buildTilePreview(photoEl, images, alt) {
+    if (!photoEl || images.length < 2) return;
+    const mainImg = photoEl.querySelector("img");
+    if (mainImg) mainImg.classList.add("cat-tile-photo__slide", "active");
+    const slides = [mainImg];
+    images.slice(1).forEach((src) => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = alt;
+      img.loading = "lazy";
+      img.className = "cat-tile-photo__slide";
+      photoEl.appendChild(img);
+      slides.push(img);
+    });
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 2600);
+  }
+
+  function buildGallery(container, images, alt) {
+    let current = 0;
+    let timer;
+    const track = document.createElement("div");
+    track.className = "catalog-gallery__track";
+    images.forEach((src, i) => {
+      const img = document.createElement("img");
+      img.src = src;
+      img.alt = alt;
+      img.className = "catalog-gallery__slide" + (i === 0 ? " active" : "");
+      track.appendChild(img);
+    });
+    const dots = document.createElement("div");
+    dots.className = "catalog-gallery__dots";
+    images.forEach((_, i) => {
+      const dot = document.createElement("button");
+      dot.type = "button";
+      dot.className = "catalog-gallery__dot" + (i === 0 ? " active" : "");
+      dot.addEventListener("click", () => {
+        stopAuto();
+        goTo(i);
+        startAuto();
+      });
+      dots.appendChild(dot);
+    });
+    const prevBtn = document.createElement("button");
+    prevBtn.type = "button";
+    prevBtn.className = "catalog-gallery__arrow catalog-gallery__arrow--prev";
+    prevBtn.innerHTML = "&#8592;";
+    const nextBtn = document.createElement("button");
+    nextBtn.type = "button";
+    nextBtn.className = "catalog-gallery__arrow catalog-gallery__arrow--next";
+    nextBtn.innerHTML = "&#8594;";
+
+    const slides = () => track.querySelectorAll(".catalog-gallery__slide");
+    const dotEls = () => dots.querySelectorAll(".catalog-gallery__dot");
+
+    function goTo(idx) {
+      slides()[current].classList.remove("active");
+      dotEls()[current].classList.remove("active");
+      current = (idx + images.length) % images.length;
+      slides()[current].classList.add("active");
+      dotEls()[current].classList.add("active");
+    }
+    function startAuto() { timer = setInterval(() => goTo(current + 1), 3500); }
+    function stopAuto() { clearInterval(timer); }
+
+    prevBtn.addEventListener("click", () => { stopAuto(); goTo(current - 1); startAuto(); });
+    nextBtn.addEventListener("click", () => { stopAuto(); goTo(current + 1); startAuto(); });
+
+    container.appendChild(track);
+    container.appendChild(dots);
+    container.appendChild(prevBtn);
+    container.appendChild(nextBtn);
+    startAuto();
   }
 
   // Quote modal open/close/submit logic lives in assets/js/quote-modal.js

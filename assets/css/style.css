@@ -921,7 +921,16 @@ button { font-family: inherit; cursor: pointer; }
   .cat-tile-quote-btn { animation-duration: 0.01ms; }
 }
 
-.cat-tile-photo { aspect-ratio: 1/1; overflow: hidden; background: var(--gold-soft); }
+.cat-tile-photo { position: relative; aspect-ratio: 1/1; overflow: hidden; background: var(--gold-soft); }
+
+.cat-tile-photo__slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.cat-tile-photo__slide.active { opacity: 1; }
+.cat-tile-photo__slide:first-child { position: absolute; }
 
 /* Category-level cards (root of the catalog) use a smaller, icon-like photo
    instead of the full-bleed product shot, so they read as nav tiles, not products. */
@@ -998,7 +1007,70 @@ button { font-family: inherit; cursor: pointer; }
   display: block;
 }
 .catalog-quote-label { color: var(--text-dim); font-size: var(--fs-small); margin-bottom: 8px; }
-.catalog-quote-name { font-size: 24px; font-weight: 600; margin-bottom: 24px; }
+.catalog-quote-name { font-size: 24px; font-weight: 600; margin-bottom: 8px; }
+.catalog-quote-weight { color: var(--gold-text); font-size: var(--fs-small); font-weight: 600; margin-bottom: 24px; }
+
+.catalog-gallery {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  aspect-ratio: 4/3;
+  margin: 0 auto 20px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.13);
+}
+.catalog-gallery__track { position: relative; width: 100%; height: 100%; }
+.catalog-gallery__slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 0.5s var(--ease-cinematic), transform 0.5s var(--ease-cinematic);
+  pointer-events: none;
+}
+.catalog-gallery__slide.active { opacity: 1; transform: scale(1); pointer-events: auto; }
+.catalog-gallery__dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 7px;
+  z-index: 3;
+}
+.catalog-gallery__dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.7);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.25s, border-color 0.25s, transform 0.2s;
+}
+.catalog-gallery__dot.active { background: #fff; border-color: #fff; transform: scale(1.2); }
+.catalog-gallery__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: rgba(251,247,235,0.72);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(166,124,82,0.3);
+  color: var(--text);
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+.catalog-gallery__arrow:hover { background: rgba(251,247,235,0.95); transform: translateY(-50%) scale(1.08); }
+.catalog-gallery__arrow--prev { left: 8px; }
+.catalog-gallery__arrow--next { right: 8px; }
 
 /* ===== Quote modal ===== */
 .modal-overlay {
@@ -1065,7 +1137,9 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 #quote-modal-title { font-size: var(--fs-h2); margin-bottom: 6px; }
-.modal-item-name { color: var(--gold-text); font-weight: 600; margin-bottom: 24px; }
+.modal-item-name { color: var(--gold-text); font-weight: 600; margin-bottom: 4px; }
+.modal-item-weight { color: var(--text-dim); font-size: var(--fs-small); font-weight: 500; margin-bottom: 20px; }
+.catalog-gallery--modal { max-width: 260px; aspect-ratio: 4/3; margin-bottom: 16px; display: none; }
 .modal-card .field { text-align: left; }
 .modal-card .form-status { text-align: left; }
 
