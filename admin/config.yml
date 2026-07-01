@@ -1,0 +1,79 @@
+backend:
+  name: github
+  repo: muxammadxon202/mir-orexov
+  branch: master
+  base_url: https://mir-orexov-backend.onrender.com
+
+media_folder: "assets/img/products"
+public_folder: "/assets/img/products"
+
+locale: "ru"
+
+collections:
+  - name: "catalog"
+    label: "Каталог"
+    files:
+      - name: "catalog"
+        label: "Дерево каталога"
+        file: "assets/data/catalog.json"
+        fields:
+          - { label: "ID", name: "id", widget: "hidden", default: "root" }
+          - { label: "Название", name: "title", widget: "string" }
+          - { label: "Название (EN)", name: "titleEn", widget: "string" }
+          - label: "Категории"
+            name: "children"
+            widget: "list"
+            fields:
+              - { label: "ID (латиницей, без пробелов)", name: "id", widget: "string" }
+              - { label: "Название", name: "title", widget: "string" }
+              - { label: "Название (EN)", name: "titleEn", widget: "string" }
+              - { label: "Фото-обложка", name: "img", widget: "image", required: false }
+              - label: "Товары"
+                name: "children"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "ID (латиницей, без пробелов)", name: "id", widget: "string" }
+                  - { label: "Название", name: "title", widget: "string" }
+                  - { label: "Название (EN)", name: "titleEn", widget: "string" }
+                  - { label: "Фото-обложка", name: "img", widget: "image", required: false }
+                  - { label: "Вес/объём (текст, напр. «700 г – 1,5 кг»)", name: "weight", widget: "string", required: false }
+                  - { label: "Вес/объём (EN)", name: "weightEn", widget: "string", required: false }
+                  - { label: "Описание услуги (если нет фото)", name: "desc", widget: "text", required: false }
+                  - { label: "Описание услуги (EN)", name: "descEn", widget: "text", required: false }
+                  - label: "Фото для слайдера (если несколько)"
+                    name: "gallery"
+                    widget: "list"
+                    required: false
+                    field: { label: "Фото", name: "image", widget: "image" }
+                  - label: "Варианты (сорта/виды)"
+                    name: "children"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - { label: "ID (латиницей, без пробелов)", name: "id", widget: "string" }
+                      - { label: "Название", name: "title", widget: "string" }
+                      - { label: "Название (EN)", name: "titleEn", widget: "string" }
+                      - { label: "Фото", name: "img", widget: "image", required: false }
+                      - { label: "Вес/объём (текст)", name: "weight", widget: "string", required: false }
+                      - { label: "Вес/объём (EN)", name: "weightEn", widget: "string", required: false }
+
+  - name: "news"
+    label: "Новости"
+    files:
+      - name: "news"
+        label: "Список новостей"
+        file: "assets/data/news.json"
+        fields:
+          - label: "Новости"
+            name: "articles"
+            widget: "list"
+            summary: "{{title}} — {{date}}"
+            fields:
+              - { label: "ID (латиницей, без пробелов, уникальный)", name: "id", widget: "string" }
+              - { label: "Заголовок", name: "title", widget: "string" }
+              - { label: "Заголовок (EN)", name: "titleEn", widget: "string", required: false }
+              - { label: "Дата", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+              - { label: "Фото", name: "image", widget: "image", required: false }
+              - { label: "Текст новости", name: "body", widget: "markdown" }
+              - { label: "Текст новости (EN)", name: "bodyEn", widget: "markdown", required: false }

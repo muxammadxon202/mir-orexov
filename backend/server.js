@@ -7,9 +7,12 @@ const { normalize, isValid } = require("./lib/normalize");
 const { sendTelegram } = require("./lib/telegram");
 const { sendEmail } = require("./lib/email");
 const { appendToSheet } = require("./lib/sheets");
+const { registerGithubOAuth } = require("./lib/github-oauth");
 
 const app = express();
 app.use(express.json());
+
+registerGithubOAuth(app);
 
 const allowedOrigins = (process.env.ALLOWED_ORIGINS || "")
   .split(",")

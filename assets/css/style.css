@@ -1444,3 +1444,12 @@ button { font-family: inherit; cursor: pointer; }
   .sam-slider { aspect-ratio: 3/2; }
   .sam-arrow { width: 34px; height: 34px; font-size: 15px; }
 }
+
+/* ===== News page ===== */
+.news-card { display: flex; flex-direction: column; }
+.news-card-body { padding: 20px; }
+.news-card-date { display: block; color: var(--gold-text); font-size: var(--fs-small); font-weight: 600; margin-bottom: 8px; }
+.news-card-title { font-size: 19px; font-weight: 600; margin-bottom: 10px; }
+.news-card-excerpt { color: var(--text-dim); font-size: var(--fs-small); line-height: 1.6; }
+.news-card-excerpt p { margin: 0 0 10px; }
+.news-card-excerpt p:last-child { margin-bottom: 0; }
