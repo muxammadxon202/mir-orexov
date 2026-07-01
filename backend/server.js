@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const rateLimit = require("express-rate-limit");
 
 const { normalize, isValid } = require("./lib/normalize");
 const { sendTelegram } = require("./lib/telegram");
@@ -27,7 +28,15 @@ app.use(
 
 app.get("/healthz", (req, res) => res.json({ ok: true }));
 
-app.post("/api/requests", async (req, res) => {
+const requestsLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 10, // 10 submissions per IP per window
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { ok: false, error: "Too many requests, please try again later" },
+});
+
+app.post("/api/requests", requestsLimiter, async (req, res) => {
   const record = normalize(req.body || {});
 
   if (!isValid(record)) {
