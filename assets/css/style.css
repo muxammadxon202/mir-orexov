@@ -1292,23 +1292,6 @@ button { font-family: inherit; cursor: pointer; }
 .sam-slider[data-animate]:not(.in-view) { opacity: 0; transform: translateY(36px); }
 .sam-slider[data-animate].in-view { opacity: 1; transform: translateY(0); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
 
-.sam-section__logo {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 3;
-  height: 40px;
-  width: auto;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.85);
-  padding: 4px 8px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
-}
-
-@media (max-width: 640px) {
-  .sam-section__logo { position: static; height: 32px; display: block; margin: 0 0 12px auto; }
-}
-
 .sam-slider__caption {
   position: absolute;
   left: 14px;
