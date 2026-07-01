@@ -100,7 +100,24 @@
 
     <section class="section" style="background: url('assets/img/pattern-nuts-lines.png') repeat fixed, var(--bg-card); background-size: 900px, auto; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
       <div class="container two-col">
-        <div class="media-placeholder" data-animate data-en="Sam Box packaging plant photo">Фото производства Sam Box</div>
+        <div class="sam-slider" data-animate>
+          <div class="sam-slider__track">
+            <img src="assets/img/sam_box.JPG"  alt="Sam Box производство" class="sam-slide active">
+            <img src="assets/img/sam_box1.JPG" alt="Sam Box производство" class="sam-slide">
+            <img src="assets/img/sam_box2.JPG" alt="Sam Box производство" class="sam-slide">
+            <img src="assets/img/sam_box3.JPG" alt="Sam Box производство" class="sam-slide">
+            <img src="assets/img/sam_box4.PNG" alt="Sam Box производство" class="sam-slide">
+          </div>
+          <div class="sam-slider__dots">
+            <button class="sam-dot active" data-idx="0"></button>
+            <button class="sam-dot" data-idx="1"></button>
+            <button class="sam-dot" data-idx="2"></button>
+            <button class="sam-dot" data-idx="3"></button>
+            <button class="sam-dot" data-idx="4"></button>
+          </div>
+          <button class="sam-arrow sam-arrow--prev" aria-label="Назад">&#8592;</button>
+          <button class="sam-arrow sam-arrow--next" aria-label="Вперёд">&#8594;</button>
+        </div>
         <div data-animate>
           <div class="section-eyebrow" data-en="Packaging">Упаковка</div>
           <h2 style="margin-bottom: 16px;" data-en="Our Own Packaging Production — Sam Box">Собственное производство упаковки — Sam Box</h2>
@@ -299,5 +316,39 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/chat-widget.js"></script>
+  <script>
+    (function(){
+      const slider = document.querySelector('.sam-slider');
+      if (!slider) return;
+      const slides = slider.querySelectorAll('.sam-slide');
+      const dots   = slider.querySelectorAll('.sam-dot');
+      let current = 0, timer;
+
+      function goTo(idx) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (idx + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+      }
+
+      function startAuto() { timer = setInterval(() => goTo(current + 1), 3500); }
+      function stopAuto()  { clearInterval(timer); }
+
+      slider.querySelector('.sam-arrow--next').addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
+      slider.querySelector('.sam-arrow--prev').addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
+      dots.forEach(d => d.addEventListener('click', () => { stopAuto(); goTo(+d.dataset.idx); startAuto(); }));
+
+      // Touch swipe
+      let tx = 0;
+      slider.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+      slider.addEventListener('touchend',   e => {
+        const dx = e.changedTouches[0].clientX - tx;
+        if (Math.abs(dx) > 40) { stopAuto(); goTo(current + (dx < 0 ? 1 : -1)); startAuto(); }
+      }, { passive: true });
+
+      startAuto();
+    })();
+  </script>
 </body>
 </html>

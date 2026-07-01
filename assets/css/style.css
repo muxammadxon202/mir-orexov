@@ -1260,3 +1260,79 @@ button { font-family: inherit; cursor: pointer; }
   box-shadow: 0 14px 36px rgba(0,0,0,0.1);
 }
 .map-embed iframe { display: block; width: 100%; }
+
+/* ===== Sam Box slider ===== */
+.sam-slider {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: var(--bg-card);
+  box-shadow: 0 14px 36px rgba(0,0,0,0.13);
+}
+.sam-slider__track { position: relative; width: 100%; height: 100%; }
+.sam-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  opacity: 0;
+  transform: scale(1.04);
+  transition: opacity 0.55s var(--ease-cinematic), transform 0.55s var(--ease-cinematic);
+  pointer-events: none;
+}
+.sam-slide.active {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+/* Scroll-in animation for the whole slider */
+.sam-slider[data-animate]:not(.in-view) { opacity: 0; transform: translateY(36px); }
+.sam-slider[data-animate].in-view { opacity: 1; transform: translateY(0); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
+
+.sam-slider__dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 4;
+}
+.sam-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.7);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.25s, border-color 0.25s, transform 0.2s;
+}
+.sam-dot.active { background: #fff; border-color: #fff; transform: scale(1.25); }
+
+.sam-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  background: rgba(251,247,235,0.72);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(166,124,82,0.3);
+  color: var(--text);
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+}
+.sam-arrow:hover { background: rgba(251,247,235,0.95); transform: translateY(-50%) scale(1.08); }
+.sam-arrow--prev { left: 12px; }
+.sam-arrow--next { right: 12px; }
+
+@media (max-width: 640px) {
+  .sam-slider { aspect-ratio: 3/2; }
+  .sam-arrow { width: 34px; height: 34px; font-size: 15px; }
+}
