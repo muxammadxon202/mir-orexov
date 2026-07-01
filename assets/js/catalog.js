@@ -105,8 +105,22 @@
           quoteBtn.className = "btn btn-primary btn-sm cat-tile-quote-btn";
           quoteBtn.textContent = quoteLabel();
           const fullName = [...trail.slice(1), child].map((n) => t(n)).join(" — ");
+          const isPackaging = path[0] === "packaging";
+          const qtyField = isPackaging
+            ? {
+                label: "Количество, шт",
+                labelEn: "Quantity, pcs",
+                placeholder: "например, 5000",
+                placeholderEn: "e.g. 5000",
+                error: "Укажите количество",
+                errorEn: "Please enter the quantity",
+                type: "number",
+                min: "1",
+                step: "1",
+              }
+            : undefined;
           quoteBtn.addEventListener("click", () =>
-            openQuoteModal(fullName, child.img, { gallery: child.gallery, weight: child.weight, weightEn: child.weightEn })
+            openQuoteModal(fullName, child.img, { gallery: child.gallery, weight: child.weight, weightEn: child.weightEn, qtyField })
           );
           card.appendChild(quoteBtn);
         }

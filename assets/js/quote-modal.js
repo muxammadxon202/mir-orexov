@@ -104,6 +104,38 @@
       weightEl.style.display = weightText ? "" : "none";
     }
 
+    const volumeLabel = modal.querySelector("#qm-volume-label");
+    const volumeInput = modal.querySelector("#qm-volume");
+    const volumeError = modal.querySelector("#qm-volume-error");
+    if (volumeLabel && volumeInput && volumeError) {
+      const field = extra.qtyField || {
+        label: "Сколько тонн",
+        labelEn: "Volume (tons)",
+        placeholder: "например, 20",
+        placeholderEn: "e.g. 20",
+        error: "Укажите объём в тоннах",
+        errorEn: "Please enter the volume in tons",
+        type: "number",
+        min: "0.1",
+        step: "0.1",
+      };
+      volumeLabel.textContent = field.label;
+      volumeLabel.dataset.en = field.labelEn;
+      volumeInput.placeholder = field.placeholder;
+      volumeInput.dataset.enPlaceholder = field.placeholderEn;
+      volumeInput.type = field.type || "text";
+      if (field.min !== undefined) volumeInput.min = field.min; else volumeInput.removeAttribute("min");
+      if (field.step !== undefined) volumeInput.step = field.step; else volumeInput.removeAttribute("step");
+      volumeError.textContent = field.error;
+      volumeError.dataset.en = field.errorEn;
+      const isEn = window.i18n && window.i18n.getLang() === "en";
+      if (isEn) {
+        volumeLabel.textContent = field.labelEn;
+        volumeInput.placeholder = field.placeholderEn;
+        volumeError.textContent = field.errorEn;
+      }
+    }
+
     modalForm.reset();
     modalForm.querySelectorAll(".field-error").forEach((el) => el.classList.remove("show"));
     const statusEl = modalForm.querySelector(".form-status");
