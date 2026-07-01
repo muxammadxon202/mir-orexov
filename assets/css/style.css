@@ -1031,7 +1031,7 @@ button { font-family: inherit; cursor: pointer; }
 .catalog-gallery {
   position: relative;
   width: 100%;
-  max-width: 320px;
+  max-width: 220px;
   aspect-ratio: 4/3;
   margin: 0 auto 20px;
   border-radius: var(--radius-lg);
@@ -1158,7 +1158,7 @@ button { font-family: inherit; cursor: pointer; }
 #quote-modal-title { font-size: var(--fs-h2); margin-bottom: 6px; }
 .modal-item-name { color: var(--gold-text); font-weight: 600; margin-bottom: 4px; }
 .modal-item-weight { color: var(--text-dim); font-size: var(--fs-small); font-weight: 500; margin-bottom: 20px; }
-.catalog-gallery--modal { max-width: 260px; aspect-ratio: 4/3; margin-bottom: 16px; display: none; }
+.catalog-gallery--modal { max-width: 200px; aspect-ratio: 4/3; margin-bottom: 16px; display: none; }
 .modal-card .field { text-align: left; }
 .modal-card .form-status { text-align: left; }
 
