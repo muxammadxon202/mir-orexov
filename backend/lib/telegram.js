@@ -4,10 +4,33 @@ function escapeMarkdown(value) {
   return String(value).replace(/[_*`[]/g, "\\$&");
 }
 
+async function sendToChat(token, chatId, text) {
+  const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: chatId,
+      text,
+      parse_mode: "Markdown",
+    }),
+  });
+
+  if (!res.ok) {
+    const body = await res.text();
+    throw new Error(`Telegram API error for chat ${chatId}: ${res.status} ${body}`);
+  }
+}
+
 async function sendTelegram(record) {
   const token = process.env.TELEGRAM_BOT_TOKEN;
-  const chatId = process.env.TELEGRAM_CHAT_ID;
-  if (!token || !chatId) throw new Error("Telegram not configured");
+  // Multiple admins: TELEGRAM_CHAT_ID accepts a comma-separated list of personal
+  // chat ids (each admin starts the bot once so it can message them directly),
+  // so we don't need a shared group.
+  const chatIds = String(process.env.TELEGRAM_CHAT_ID || "")
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  if (!token || chatIds.length === 0) throw new Error("Telegram not configured");
 
   const lines = [
     "🌰 *Новая заявка с сайта Mir Orexov*",
@@ -20,20 +43,16 @@ async function sendTelegram(record) {
     record.volume && `*Объём:* ${escapeMarkdown(record.volume)} т`,
     record.message && `*Комментарий:* ${escapeMarkdown(record.message)}`,
   ].filter(Boolean);
+  const text = lines.join("\n");
 
-  const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      chat_id: chatId,
-      text: lines.join("\n"),
-      parse_mode: "Markdown",
-    }),
-  });
+  // Deliver to every admin independently — one admin's chat being unreachable
+  // (e.g. blocked the bot) shouldn't stop the others from getting notified.
+  const results = await Promise.allSettled(chatIds.map((chatId) => sendToChat(token, chatId, text)));
+  const failures = results.filter((r) => r.status === "rejected");
+  failures.forEach((r) => console.error("[telegram]", r.reason.message));
 
-  if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Telegram API error: ${res.status} ${body}`);
+  if (failures.length === results.length) {
+    throw new Error("Telegram delivery failed for all configured chats");
   }
 }
 
