@@ -1,7 +1,8 @@
 (function () {
-  const rawRoot = window.CATALOG_DATA;
-  if (!rawRoot) return;
+  if (!window.CATALOG_READY) return;
+  window.CATALOG_READY.then(init).catch((err) => console.error("Catalog failed to load:", err));
 
+  function init(rawRoot) {
   // Drop dead ends: a leaf with no photo is removed entirely. A category
   // (depth 1) always stays, even with nothing inside yet — it just shows the
   // "coming soon" empty state. A product (depth 2+) whose real photographed
@@ -256,4 +257,5 @@
   window.addEventListener("hashchange", render);
   window.addEventListener("langchange", render);
   render();
+  }
 })();

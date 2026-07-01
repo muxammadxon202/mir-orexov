@@ -3,7 +3,10 @@
 // orbit). Clicking any of them opens the same "Request a Quote" modal used
 // in the catalog drill-down.
 (function () {
-  const data = window.CATALOG_DATA;
+  if (!window.CATALOG_READY) return;
+  window.CATALOG_READY.then(init).catch((err) => console.error("Hero orbit failed to load catalog:", err));
+
+  function init(data) {
   const orbits = [document.querySelector("#orbit-1"), document.querySelector("#orbit-3")];
   if (!data || orbits.some((o) => !o)) return;
 
@@ -137,4 +140,5 @@
 
   refreshLabels();
   window.addEventListener("langchange", refreshLabels);
+  }
 })();
