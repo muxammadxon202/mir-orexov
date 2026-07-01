@@ -1292,6 +1292,21 @@ button { font-family: inherit; cursor: pointer; }
 .sam-slider[data-animate]:not(.in-view) { opacity: 0; transform: translateY(36px); }
 .sam-slider[data-animate].in-view { opacity: 1; transform: translateY(0); transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out); }
 
+.sam-slider__caption {
+  position: absolute;
+  left: 14px;
+  bottom: 40px;
+  z-index: 4;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 10px;
+  background: rgba(45,28,21,0.55);
+  backdrop-filter: blur(4px);
+  transition: opacity 0.3s;
+}
+
 .sam-slider__dots {
   position: absolute;
   bottom: 14px;

@@ -102,12 +102,13 @@
       <div class="container two-col">
         <div class="sam-slider" data-animate>
           <div class="sam-slider__track">
-            <img src="assets/img/sam_box.JPG"  alt="Sam Box производство" class="sam-slide active">
-            <img src="assets/img/sam_box1.JPG" alt="Sam Box производство" class="sam-slide">
-            <img src="assets/img/sam_box2.JPG" alt="Sam Box производство" class="sam-slide">
-            <img src="assets/img/sam_box3.JPG" alt="Sam Box производство" class="sam-slide">
-            <img src="assets/img/sam_box4.PNG" alt="Sam Box производство" class="sam-slide">
+            <img src="assets/img/sam_box.JPG"  alt="Гофроагрегат Sam Box в цеху" class="sam-slide active" data-caption-ru="Линия по производству гофрокартона" data-caption-en="Corrugated cardboard production line">
+            <img src="assets/img/sam_box1.JPG" alt="Печатная машина Sam Box" class="sam-slide" data-caption-ru="Печать брендированной упаковки" data-caption-en="Branded packaging printing">
+            <img src="assets/img/sam_box2.JPG" alt="Виды гофрокартона Sam Box" class="sam-slide" data-caption-ru="Одно-, двух- и трёхслойный гофрокартон" data-caption-en="Single, double and triple wall board">
+            <img src="assets/img/sam_box3.JPG" alt="Рилёвочный станок Sam Box" class="sam-slide" data-caption-ru="Рилёвка и раскрой коробок" data-caption-en="Box creasing and cutting">
+            <img src="assets/img/sam_box4.PNG" alt="Линия гофрирования Sam Box" class="sam-slide" data-caption-ru="Линия непрерывного гофрирования" data-caption-en="Continuous corrugating line">
           </div>
+          <div class="sam-slider__caption">Линия по производству гофрокартона</div>
           <div class="sam-slider__dots">
             <button class="sam-dot active" data-idx="0"></button>
             <button class="sam-dot" data-idx="1"></button>
@@ -320,9 +321,18 @@
     (function(){
       const slider = document.querySelector('.sam-slider');
       if (!slider) return;
-      const slides = slider.querySelectorAll('.sam-slide');
-      const dots   = slider.querySelectorAll('.sam-dot');
+      const slides  = slider.querySelectorAll('.sam-slide');
+      const dots    = slider.querySelectorAll('.sam-dot');
+      const caption = slider.querySelector('.sam-slider__caption');
       let current = 0, timer;
+
+      function updateCaption() {
+        if (!caption) return;
+        const s = slides[current];
+        const isEn = document.documentElement.lang === 'en';
+        caption.textContent = isEn ? s.dataset.captionEn : s.dataset.captionRu;
+      }
+      window.addEventListener('langchange', updateCaption);
 
       function goTo(idx) {
         slides[current].classList.remove('active');
@@ -330,7 +340,10 @@
         current = (idx + slides.length) % slides.length;
         slides[current].classList.add('active');
         dots[current].classList.add('active');
+        updateCaption();
       }
+
+      updateCaption();
 
       function startAuto() { timer = setInterval(() => goTo(current + 1), 3500); }
       function stopAuto()  { clearInterval(timer); }
