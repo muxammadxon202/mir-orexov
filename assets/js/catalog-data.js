@@ -232,8 +232,30 @@ window.CATALOG_DATA = {
       // Service offering, not a photographed SKU — `service: true` keeps these
       // leaves visible without a fabricated product photo (see resolveNode in catalog.js).
       children: [
-        { id: "bulk", title: "Фасовка", titleEn: "Bulk Packing", service: true },
-        { id: "branding", title: "Брендирование", titleEn: "Branding", service: true },
+        {
+          id: "bulk",
+          title: "Фасовка",
+          titleEn: "Bulk Packing",
+          children: [
+            { id: "jar-cashew", title: "ПЭТ-банка — кешью", titleEn: "PET Jar — Cashew", img: "assets/img/products/packaging/jar-cashew.jpg" },
+            { id: "jar-peanut", title: "ПЭТ-банка — арахис", titleEn: "PET Jar — Peanut", img: "assets/img/products/packaging/jar-peanut.jpg" },
+            { id: "doypack-raisins", title: "Дой-пак с zip-замком — изюм", titleEn: "Zip-Lock Doypack — Raisins", img: "assets/img/products/packaging/doypack-raisins.jpg" },
+            { id: "bag-walnut", title: "Прозрачный пакет — грецкий орех", titleEn: "Clear Bag — Walnut", img: "assets/img/products/packaging/bag-walnut.jpg" },
+            { id: "bags-set", title: "Прозрачные пакеты — арахис, кешью, миндаль", titleEn: "Clear Bags — Peanut, Cashew, Almond", img: "assets/img/products/packaging/bags-set.jpg" },
+            { id: "bag-prune", title: "Прозрачный пакет — чернослив", titleEn: "Clear Bag — Prune", img: "assets/img/products/packaging/bag-prune.jpg" },
+            { id: "bags-prune-set", title: "Прозрачные пакеты — чернослив", titleEn: "Clear Bags — Prune", img: "assets/img/products/packaging/bags-prune-set.jpg" },
+            { id: "lineup", title: "Линейка фасовки", titleEn: "Packaging Lineup", img: "assets/img/products/packaging/lineup.jpg" },
+          ],
+        },
+        {
+          id: "branding",
+          title: "Брендирование",
+          titleEn: "Branding",
+          children: [
+            { id: "branded-jars", title: "Брендированные банки Mir Orexov", titleEn: "Mir Orexov Branded Jars", img: "assets/img/products/packaging/branded-jars.jpg" },
+            { id: "branded-doypack", title: "Брендированный дой-пак", titleEn: "Branded Doypack", img: "assets/img/products/packaging/branded-doypack.jpg" },
+          ],
+        },
         { id: "turnkey", title: "Готовые решения", titleEn: "Turnkey Solutions", service: true },
       ],
     },
