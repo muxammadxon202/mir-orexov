@@ -1294,10 +1294,10 @@ button { font-family: inherit; cursor: pointer; }
 
 .sam-section__logo {
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 0;
+  right: 0;
   z-index: 3;
-  height: 48px;
+  height: 40px;
   width: auto;
   border-radius: 8px;
   background: rgba(255,255,255,0.85);
@@ -1306,7 +1306,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 @media (max-width: 640px) {
-  .sam-section__logo { height: 36px; top: 14px; right: 14px; }
+  .sam-section__logo { position: static; height: 32px; display: block; margin: 0 0 12px auto; }
 }
 
 .sam-slider__caption {
