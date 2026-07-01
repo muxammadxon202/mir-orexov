@@ -249,6 +249,7 @@ window.CATALOG_DATA = {
           id: "bulk",
           title: "Фасовка",
           titleEn: "Bulk Packing",
+          img: "assets/img/products/packaging/фасовка-cover.jpg",
           children: [
             {
               id: "clear-bags",
