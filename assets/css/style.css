@@ -973,6 +973,24 @@ button { font-family: inherit; cursor: pointer; }
 
 .cat-tile-title { padding: 16px; font-size: 16px; font-weight: 600; text-align: center; }
 
+.cat-tile-photo--service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 20px;
+  background: var(--gold-soft);
+}
+.cat-tile-service-icon { color: var(--gold-text); flex-shrink: 0; }
+.cat-tile-service-desc {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  text-align: center;
+}
+
 .catalog-empty { display: none; text-align: center; padding: 64px 0; color: var(--text-dim); }
 
 .catalog-quote.quote-anim { animation: quote-in 550ms var(--ease-cinematic); }

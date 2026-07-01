@@ -95,9 +95,17 @@
         const card = document.createElement(isLeafChild ? "div" : "a");
         if (!isLeafChild) card.href = "#/" + [...path, child.id].join("/");
         card.className = "cat-tile" + (isCategoryLevel ? " cat-tile--category" : "") + (isLeafChild ? " cat-tile--disabled" : "") + (child.disabled ? " cat-tile--empty" : "");
-        card.innerHTML = child.img
-          ? `<div class="cat-tile-photo"><img src="${child.img}" alt="${t(child)}" loading="lazy" /></div>`
-          : `<div class="cat-tile-photo cat-tile-photo--empty">${t(child)}</div>`;
+        const descText = window.i18n && window.i18n.getLang() === "en" ? child.descEn : child.desc;
+        if (child.img) {
+          card.innerHTML = `<div class="cat-tile-photo"><img src="${child.img}" alt="${t(child)}" loading="lazy" /></div>`;
+        } else if (descText) {
+          card.innerHTML = `<div class="cat-tile-photo cat-tile-photo--service">
+            <svg class="cat-tile-service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 13a8 8 0 0116 0"/><rect x="2" y="13" width="5" height="7" rx="1.5"/><rect x="17" y="13" width="5" height="7" rx="1.5"/><path d="M20 20a4 4 0 01-4 4h-2"/></svg>
+            <p class="cat-tile-service-desc">${descText}</p>
+          </div>`;
+        } else {
+          card.innerHTML = `<div class="cat-tile-photo cat-tile-photo--empty">${t(child)}</div>`;
+        }
         card.innerHTML += `<div class="cat-tile-title">${t(child)}</div>`;
         if (isLeafChild) {
           const quoteBtn = document.createElement("button");
