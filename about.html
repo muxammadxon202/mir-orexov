@@ -21,6 +21,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="assets/img/branding/logo.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Repeat visits within a session skip the brand preloader (see main.js) -->
+  <script>try{if(sessionStorage.getItem("mo-visited"))document.documentElement.classList.add("repeat-visit")}catch(e){}</script>
 </head>
 <body>
   <div class="preloader" aria-hidden="true">
@@ -49,12 +51,13 @@
       </span>
     </a>
 
-    <nav class="nav-menu" aria-label="Основная навигация">
+    <nav class="nav-menu" id="site-nav" aria-label="Основная навигация">
       <a href="index.html" data-en="Home">Главная</a>
       <a href="catalog.html" data-en="Catalog">Каталог</a>
       <a href="about.html" class="active" data-en="About Us">О нас</a>
       <a href="news.html" data-en="News">Новости</a>
       <a href="contact.html" data-en="Contact">Контакты</a>
+      <a href="contact.html" class="btn btn-primary nav-cta-mobile" data-en="Request a Quote">Оставить заявку</a>
     </nav>
 
     <div class="nav-right">
@@ -65,7 +68,7 @@
       <a href="contact.html" class="btn btn-primary btn-sm" data-en="Request a Quote">Оставить заявку</a>
     </div>
 
-    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </header>
@@ -89,7 +92,7 @@
       </div>
     </section>
 
-    <section class="section" style="background: url('assets/img/pattern-nuts-lines.png') repeat fixed, var(--bg-card); background-size: 900px, auto; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <section class="section section--alt">
       <div class="container two-col">
         <div class="media-placeholder" data-animate data-en="Own farmland photo">Фото собственных земель</div>
         <div data-animate>
@@ -129,7 +132,7 @@
       </div>
     </section>
 
-    <section class="section" style="background: url('assets/img/pattern-nuts-lines.png') repeat fixed, var(--bg-card); background-size: 900px, auto; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <section class="section section--alt">
       <div class="container two-col">
         <div class="sam-slider" data-animate>
           <div class="sam-slider__track">
@@ -249,7 +252,7 @@
       </div>
     </section>
 
-    <section class="section" style="background: url('assets/img/pattern-nuts-lines.png') repeat fixed, var(--bg-card); background-size: 900px, auto; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <section class="section section--alt">
       <div class="container">
         <div class="section-head" data-animate>
           <div class="section-eyebrow" data-en="Partners">Партнёры</div>
@@ -257,27 +260,23 @@
         </div>
         <div class="partners-slider" data-animate>
           <div class="partners-track">
-            <div class="partner-slot" data-en="Logo">Лого</div>
-            <div class="partner-slot" data-en="Logo">Лого</div>
-            <div class="partner-slot" data-en="Logo">Лого</div>
-            <div class="partner-slot" data-en="Logo">Лого</div>
-            <div class="partner-slot" data-en="Logo">Лого</div>
-            <div class="partner-slot" data-en="Logo">Лого</div>
-            <div class="partner-slot" data-en="Logo">Лого</div>
-            <div class="partner-slot" data-en="Logo">Лого</div>
-            <div class="partner-slot" data-en="Logo">Лого</div>
-            <div class="partner-slot" data-en="Logo">Лого</div>
+            <div class="partner-slot"><img src="assets/img/partners/pyaterochka.webp" alt="Пятёрочка" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/lenta.png" alt="Лента" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/magnit.png" alt="Магнит" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/global-village.webp" alt="Global Village" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/sladkaya-zhizn.png" alt="Сладкая Жизнь" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/lezzeti.png" alt="Lazetti" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/samarkand-baku.png" alt="Samarkand-Baku Agro Bizness" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/zumrud-cerez.png" alt="Zumrud Çərəz" loading="lazy" /></div>
             <!-- duplicated for a seamless loop -->
-            <div class="partner-slot" data-en="Logo" aria-hidden="true">Лого</div>
-            <div class="partner-slot" data-en="Logo" aria-hidden="true">Лого</div>
-            <div class="partner-slot" data-en="Logo" aria-hidden="true">Лого</div>
-            <div class="partner-slot" data-en="Logo" aria-hidden="true">Лого</div>
-            <div class="partner-slot" data-en="Logo" aria-hidden="true">Лого</div>
-            <div class="partner-slot" data-en="Logo" aria-hidden="true">Лого</div>
-            <div class="partner-slot" data-en="Logo" aria-hidden="true">Лого</div>
-            <div class="partner-slot" data-en="Logo" aria-hidden="true">Лого</div>
-            <div class="partner-slot" data-en="Logo" aria-hidden="true">Лого</div>
-            <div class="partner-slot" data-en="Logo" aria-hidden="true">Лого</div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/pyaterochka.webp" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/lenta.png" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/magnit.png" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/global-village.webp" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/sladkaya-zhizn.png" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/lezzeti.png" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/samarkand-baku.png" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/zumrud-cerez.png" alt="" loading="lazy" /></div>
           </div>
         </div>
       </div>
@@ -420,7 +419,10 @@
 
         slider.querySelector('.sam-arrow--next').addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
         slider.querySelector('.sam-arrow--prev').addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
-        dots.forEach(d => d.addEventListener('click', () => { stopAuto(); goTo(+d.dataset.idx); startAuto(); }));
+        dots.forEach((d, i) => {
+          d.setAttribute('aria-label', 'Фото ' + (i + 1));
+          d.addEventListener('click', () => { stopAuto(); goTo(+d.dataset.idx); startAuto(); });
+        });
 
         // Touch swipe
         let tx = 0;
@@ -430,7 +432,7 @@
           if (Math.abs(dx) > 40) { stopAuto(); goTo(current + (dx < 0 ? 1 : -1)); startAuto(); }
         }, { passive: true });
 
-        startAuto();
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) startAuto();
       }
 
       document.querySelectorAll('.sam-slider').forEach(initSlider);

@@ -59,11 +59,15 @@
     prevBtn.addEventListener("click", () => { stopAuto(); goTo(current - 1); startAuto(); });
     nextBtn.addEventListener("click", () => { stopAuto(); goTo(current + 1); startAuto(); });
 
+    prevBtn.setAttribute("aria-label", "Предыдущее фото");
+    nextBtn.setAttribute("aria-label", "Следующее фото");
+    dotEls().forEach((d, i) => d.setAttribute("aria-label", "Фото " + (i + 1)));
+
     container.appendChild(track);
     container.appendChild(dots);
     container.appendChild(prevBtn);
     container.appendChild(nextBtn);
-    startAuto();
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) startAuto();
     return () => clearInterval(timer);
   }
 
@@ -173,6 +177,26 @@
     if (e.key === "Escape" && modal.classList.contains("open")) closeQuoteModal();
   });
 
+  // Focus trap: while the dialog is open, Tab cycles inside it instead of
+  // escaping into the page underneath.
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Tab" || !modal.classList.contains("open")) return;
+    const focusables = modal.querySelectorAll(
+      'button, [href], input:not([type="hidden"]), select, textarea'
+    );
+    const visible = Array.from(focusables).filter((el) => el.offsetParent !== null);
+    if (!visible.length) return;
+    const first = visible[0];
+    const last = visible[visible.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  });
+
   modalForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     if (!modalForm.checkValidity()) {
@@ -189,10 +213,14 @@
     const submitBtn = modalForm.querySelector('button[type="submit"]');
     const data = Object.fromEntries(new FormData(modalForm).entries());
     data.item = modalItemEl.textContent;
+    const msg = window.formMessages
+      ? window.formMessages()
+      : { sending: "Отправка…", success: "Заявка отправлена! Мы свяжемся с вами в ближайшее время.", error: "Не удалось отправить заявку. Попробуйте ещё раз или напишите в WhatsApp." };
 
     submitBtn.disabled = true;
+    submitBtn.classList.add("btn-loading");
     submitBtn.dataset.originalText = submitBtn.textContent;
-    submitBtn.textContent = "Отправка...";
+    submitBtn.textContent = msg.sending;
 
     try {
       const res = await fetch("https://mir-orexov-backend.onrender.com/api/requests", {
@@ -201,14 +229,15 @@
         body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error("Request failed");
-      statusEl.textContent = "Заявка отправлена! Мы свяжемся с вами в ближайшее время.";
+      statusEl.textContent = msg.success;
       statusEl.classList.add("show", "success");
       setTimeout(closeQuoteModal, 1800);
     } catch (err) {
-      statusEl.textContent = "Не удалось отправить заявку. Попробуйте ещё раз или напишите в WhatsApp.";
+      statusEl.textContent = msg.error;
       statusEl.classList.add("show", "error");
     } finally {
       submitBtn.disabled = false;
+      submitBtn.classList.remove("btn-loading");
       submitBtn.textContent = submitBtn.dataset.originalText;
     }
   });

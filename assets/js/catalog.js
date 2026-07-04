@@ -1,6 +1,14 @@
 (function () {
   if (!window.CATALOG_READY) return;
-  window.CATALOG_READY.then(init).catch((err) => console.error("Catalog failed to load:", err));
+  window.CATALOG_READY.then(init).catch((err) => {
+    console.error("Catalog failed to load:", err);
+    // Swap the skeleton placeholders for the empty state instead of
+    // leaving them shimmering forever.
+    const grid = document.querySelector("#catalog-grid");
+    const empty = document.querySelector("#catalog-empty");
+    if (grid) grid.style.display = "none";
+    if (empty) empty.style.display = "";
+  });
 
   function init(rawRoot) {
   // Drop dead ends: a leaf with no photo is removed entirely. A category
@@ -187,6 +195,7 @@
       slides.push(img);
     });
     let current = 0;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     setInterval(() => {
       slides[current].classList.remove("active");
       current = (current + 1) % slides.length;
@@ -244,11 +253,15 @@
     prevBtn.addEventListener("click", () => { stopAuto(); goTo(current - 1); startAuto(); });
     nextBtn.addEventListener("click", () => { stopAuto(); goTo(current + 1); startAuto(); });
 
+    prevBtn.setAttribute("aria-label", "Предыдущее фото");
+    nextBtn.setAttribute("aria-label", "Следующее фото");
+    dotEls().forEach((d, i) => d.setAttribute("aria-label", "Фото " + (i + 1)));
+
     container.appendChild(track);
     container.appendChild(dots);
     container.appendChild(prevBtn);
     container.appendChild(nextBtn);
-    startAuto();
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) startAuto();
   }
 
   // Quote modal open/close/submit logic lives in assets/js/quote-modal.js

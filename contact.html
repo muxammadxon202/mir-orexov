@@ -21,6 +21,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="assets/img/branding/logo.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Repeat visits within a session skip the brand preloader (see main.js) -->
+  <script>try{if(sessionStorage.getItem("mo-visited"))document.documentElement.classList.add("repeat-visit")}catch(e){}</script>
 </head>
 <body>
   <div class="preloader" aria-hidden="true">
@@ -49,12 +51,13 @@
       </span>
     </a>
 
-    <nav class="nav-menu" aria-label="Основная навигация">
+    <nav class="nav-menu" id="site-nav" aria-label="Основная навигация">
       <a href="index.html" data-en="Home">Главная</a>
       <a href="catalog.html" data-en="Catalog">Каталог</a>
       <a href="about.html" data-en="About Us">О нас</a>
       <a href="news.html" data-en="News">Новости</a>
       <a href="contact.html" class="active" data-en="Contact">Контакты</a>
+      <a href="contact.html" class="btn btn-primary nav-cta-mobile" data-en="Request a Quote">Оставить заявку</a>
     </nav>
 
     <div class="nav-right">
@@ -65,7 +68,7 @@
       <a href="contact.html" class="btn btn-primary btn-sm" data-en="Request a Quote">Оставить заявку</a>
     </div>
 
-    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </header>

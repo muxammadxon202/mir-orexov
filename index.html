@@ -39,6 +39,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="assets/img/branding/logo.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Repeat visits within a session skip the brand preloader (see main.js) -->
+  <script>try{if(sessionStorage.getItem("mo-visited"))document.documentElement.classList.add("repeat-visit")}catch(e){}</script>
 </head>
 <body>
   <div class="preloader" aria-hidden="true">
@@ -67,12 +69,13 @@
       </span>
     </a>
 
-    <nav class="nav-menu" aria-label="Основная навигация">
+    <nav class="nav-menu" id="site-nav" aria-label="Основная навигация">
       <a href="index.html" class="active" data-en="Home">Главная</a>
       <a href="catalog.html" data-en="Catalog">Каталог</a>
       <a href="about.html" data-en="About Us">О нас</a>
       <a href="news.html" data-en="News">Новости</a>
       <a href="contact.html" data-en="Contact">Контакты</a>
+      <a href="contact.html" class="btn btn-primary nav-cta-mobile" data-en="Request a Quote">Оставить заявку</a>
     </nav>
 
     <div class="nav-right">
@@ -83,7 +86,7 @@
       <a href="contact.html" class="btn btn-primary btn-sm" data-en="Request a Quote">Оставить заявку</a>
     </div>
 
-    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+    <button class="nav-toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
   </header>
@@ -97,8 +100,8 @@
           <h1 data-animate-load="1">Орехи и сухофрукты<br /><span class="gold" data-en="Direct from the Producer">прямо от производителя</span></h1>
           <p class="hero-subtitle" data-animate-load="2" data-en="Direct supply of premium walnuts, pistachios, almonds and dried fruits from our own processing facilities in Samarkand.">Прямые поставки грецкого ореха, фисташек, миндаля и сухофруктов высшего качества с собственных перерабатывающих линий в Самарканде.</p>
           <div class="hero-actions" data-animate-load="3">
-            <a href="catalog.html" class="btn btn-outline" data-en="View Catalog">Смотреть каталог</a>
-            <a href="contact.html" class="btn btn-primary" data-en="Request a Quote">Оставить заявку</a>
+            <a href="catalog.html" class="btn btn-primary" data-en="View Catalog">Смотреть каталог</a>
+            <a href="contact.html" class="btn btn-outline" data-en="Request a Quote">Оставить заявку</a>
           </div>
           <div class="hero-stats" data-animate-load="4">
             <div>
@@ -168,7 +171,7 @@
     </section>
 
     <!-- CATALOG PREVIEW -->
-    <section class="section" style="background: url('assets/img/pattern-nuts-lines.png') repeat fixed, var(--bg-card); background-size: 900px, auto; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <section class="section section--alt">
       <div class="container">
         <div class="section-head" data-animate>
           <div class="section-eyebrow" data-en="Products">Продукция</div>
@@ -208,7 +211,9 @@
           <p style="color: var(--text-dim);" data-en="Mir Orexov Samarkand is a producer and exporter of nuts and dried fruits from Uzbekistan. Our own orchards, modern processing and sorting lines, and direct contracts with buyers in more than 30 countries worldwide.">Mir Orexov Samarkand — производитель и экспортёр орехов и сухофруктов из Узбекистана. Собственные сады, современные линии переработки и сортировки, прямые контракты с покупателями в более чем 30 странах мира.</p>
           <a href="about.html" class="btn btn-outline" style="margin-top: 24px;" data-en="Learn More">Узнать больше</a>
         </div>
-        <div class="media-placeholder" data-animate data-en="Production photo / video">Фото / видео производства</div>
+        <div data-animate>
+          <img src="assets/img/about/logistics/factory-line-1.jpg" alt="Производственная линия Mir Orexov" loading="lazy" style="border-radius: var(--radius-lg); aspect-ratio: 4/3; object-fit: cover; width: 100%; box-shadow: var(--shadow-md);" />
+        </div>
       </div>
     </section>
 

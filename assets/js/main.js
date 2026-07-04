@@ -1,7 +1,13 @@
 // Mobile nav toggle
 document.addEventListener("DOMContentLoaded", () => {
+  // The 2.5s brand preloader runs only once per browser session; on repeat
+  // navigations <head> sets html.repeat-visit (CSS hides the preloader and
+  // drops the navbar reveal delay), so pages open instantly.
+  const isRepeatVisit = document.documentElement.classList.contains("repeat-visit");
+  try { sessionStorage.setItem("mo-visited", "1"); } catch (e) { /* private mode */ }
+
   const preloader = document.querySelector(".preloader");
-  if (preloader) {
+  if (preloader && !isRepeatVisit) {
     const minDisplayMs = 2500;
     const start = Date.now();
     const hidePreloader = () => {
@@ -23,10 +29,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.querySelector(".nav-toggle");
   const navbar = document.querySelector(".navbar");
   if (toggle && navbar) {
-    toggle.addEventListener("click", () => {
-      const open = navbar.classList.toggle("menu-open");
+    const setMenu = (open) => {
+      navbar.classList.toggle("menu-open", open);
       toggle.setAttribute("aria-expanded", String(open));
+    };
+    toggle.addEventListener("click", () => setMenu(!navbar.classList.contains("menu-open")));
+    // Close on nav link tap, Escape, or a click outside the bar
+    navbar.querySelectorAll(".nav-menu a").forEach((link) => {
+      link.addEventListener("click", () => setMenu(false));
     });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && navbar.classList.contains("menu-open")) setMenu(false);
+    });
+    document.addEventListener("click", (e) => {
+      if (navbar.classList.contains("menu-open") && !navbar.contains(e.target)) setMenu(false);
+    });
+
+    // Elevation shadow once the page is scrolled
+    const onScroll = () => navbar.classList.toggle("scrolled", window.scrollY > 8);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
   }
 
   // Lang switch UI + translations are handled by assets/js/i18n.js
@@ -85,6 +107,28 @@ document.addEventListener("DOMContentLoaded", () => {
 // Server fans out to Telegram bot, email, and Google Sheets.
 const API_ENDPOINT = "https://mir-orexov-backend.onrender.com/api/requests";
 
+// Form status/progress strings, resolved at send time so they follow the
+// current RU/EN toggle (window.i18n). Shared with quote-modal.js.
+window.formMessages = function () {
+  const en = window.i18n && window.i18n.getLang() === "en";
+  return {
+    sending: en ? "Sending…" : "Отправка…",
+    success: en
+      ? "Request sent! We will contact you shortly."
+      : "Заявка отправлена! Мы свяжемся с вами в ближайшее время.",
+    error: en
+      ? "Could not send the request. Please try again or message us on WhatsApp."
+      : "Не удалось отправить заявку. Попробуйте ещё раз или напишите в WhatsApp.",
+  };
+};
+
+// The backend sleeps on Render's free tier and takes ~30s to cold-start.
+// Ping it as soon as a page with any request form loads, so it is already
+// awake by the time the visitor submits.
+if (document.querySelector("#request-form, #quote-modal")) {
+  fetch("https://mir-orexov-backend.onrender.com/healthz").catch(() => {});
+}
+
 function initForm() {
   const form = document.querySelector("#request-form");
   if (!form) return;
@@ -114,10 +158,12 @@ function initForm() {
     }
 
     const data = Object.fromEntries(new FormData(form).entries());
+    const msg = window.formMessages();
 
     submitBtn.disabled = true;
+    submitBtn.classList.add("btn-loading");
     submitBtn.dataset.originalText = submitBtn.textContent;
-    submitBtn.textContent = "Отправка...";
+    submitBtn.textContent = msg.sending;
     showStatus(statusEl, "", "");
 
     try {
@@ -128,12 +174,13 @@ function initForm() {
       });
       if (!res.ok) throw new Error("Request failed");
 
-      showStatus(statusEl, "Заявка отправлена! Мы свяжемся с вами в ближайшее время.", "success");
+      showStatus(statusEl, msg.success, "success");
       form.reset();
     } catch (err) {
-      showStatus(statusEl, "Не удалось отправить заявку. Попробуйте ещё раз или напишите в WhatsApp.", "error");
+      showStatus(statusEl, msg.error, "error");
     } finally {
       submitBtn.disabled = false;
+      submitBtn.classList.remove("btn-loading");
       submitBtn.textContent = submitBtn.dataset.originalText;
     }
   });

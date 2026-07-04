@@ -17,26 +17,26 @@
           "children": [
             {
               "id": "kuraga",
-              "title": "Курага",
-              "titleEn": "Kuraga",
+              "title": "Курага без косточки (Субхон)",
+              "titleEn": "Pitless Dried Apricot (Subkhon)",
               "img": "assets/img/products/kuraga-kuraga.jpg"
             },
             {
               "id": "limonka",
-              "title": "Курага «Лимонка»",
-              "titleEn": "Dried Apricot Limonka",
+              "title": "Курага «Лимонка» без косточки",
+              "titleEn": "Dried Apricot Limonka, Pitless",
               "img": "assets/img/products/kuraga-limonka.jpg"
             },
             {
               "id": "natural",
-              "title": "Курага натуральная",
-              "titleEn": "Dried Apricot Natural",
+              "title": "Курага натуральная без косточки",
+              "titleEn": "Natural Dried Apricot, Pitless",
               "img": "assets/img/products/kuraga-natural.jpg"
             },
             {
               "id": "turshak",
-              "title": "Курага «Туршак»",
-              "titleEn": "Dried Apricot Turshak",
+              "title": "Курага с косточкой «Туршак»",
+              "titleEn": "Dried Apricot Turshak, With Pit",
               "img": "assets/img/products/turshak.jpg"
             }
           ]
@@ -49,8 +49,8 @@
           "children": [
             {
               "id": "javz",
-              "title": "Изюм «Джавз»",
-              "titleEn": "Raisins Javz",
+              "title": "Изюм «Султан»",
+              "titleEn": "Raisins Sultan",
               "img": "assets/img/products/raisin-javz.jpg"
             },
             {
@@ -73,15 +73,15 @@
             },
             {
               "id": "sultan",
-              "title": "Изюм «Султан»",
-              "titleEn": "Raisins Sultan",
+              "title": "Изюм «Султан» — Абджуш",
+              "titleEn": "Raisins Sultan — Abjush",
               "img": "assets/img/products/raisin-sultan.jpg"
             },
             {
               "id": "black-giant",
-              "title": "Изюм чёрный (гигант)",
-              "titleEn": "Raisins Black (Giant)",
-              "img": "assets/img/products/raisin-black-giant.jpg"
+              "title": "Изюм чёрный (гибрид)",
+              "titleEn": "Raisins Black (Hybrid)",
+              "img": "assets/img/products/izyum_gibrid_1.webp"
             },
             {
               "id": "red-thompson",
@@ -94,6 +94,16 @@
               "title": "Изюм «Шигани» красный",
               "titleEn": "Raisins Shigani Red",
               "img": "assets/img/products/shigani-red.jpg"
+            },
+            {
+              "id": "javz-brown",
+              "title": "Изюм коричневый «Джавз»",
+              "titleEn": "Raisins Brown Javz"
+            },
+            {
+              "id": "red-thompson-aftobi",
+              "title": "Изюм «Красный Томпсон» (Афтоби)",
+              "titleEn": "Raisins Red Thompson (Aftobi)"
             }
           ]
         },
@@ -134,6 +144,12 @@
           "title": "Унаби",
           "titleEn": "Unabi",
           "img": "assets/img/products/unabi.jpg"
+        },
+        {
+          "id": "compote-mix",
+          "title": "Компотная смесь",
+          "titleEn": "Dried Fruit Compote Mix",
+          "img": "assets/img/products/компот.png"
         }
       ]
     },
@@ -408,6 +424,18 @@
           "title": "Горох жареный",
           "titleEn": "Roasted Peas",
           "img": "assets/img/products/pea-roasted.jpg"
+        },
+        {
+          "id": "black-sesame",
+          "title": "Чёрный кунжут",
+          "titleEn": "Black Sesame",
+          "img": "assets/img/products/black-sesame.jpg"
+        },
+        {
+          "id": "chickpea",
+          "title": "Нут",
+          "titleEn": "Chickpea",
+          "img": "assets/img/products/nut.jpg"
         }
       ]
     },
