@@ -707,7 +707,7 @@ button { font-family: inherit; cursor: pointer; }
 
 .partner-slot {
   width: 180px;
-  aspect-ratio: 16/9;
+  aspect-ratio: 4/3;
   flex-shrink: 0;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -723,12 +723,10 @@ button { font-family: inherit; cursor: pointer; }
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: grayscale(1);
-  opacity: 0.65;
-  transition: filter var(--dur-med) var(--ease-out), opacity var(--dur-med) var(--ease-out);
+  transition: transform var(--dur-med) var(--ease-out);
 }
-.partner-slot:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.partner-slot:hover img { filter: grayscale(0); opacity: 1; }
+.partner-slot:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--gold-text); }
+.partner-slot:hover img { transform: scale(1.04); }
 
 @media (max-width: 720px) {
   .partner-slot { width: 140px; }

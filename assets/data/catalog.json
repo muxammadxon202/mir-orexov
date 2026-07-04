@@ -48,10 +48,10 @@
           "img": "assets/img/products/raisin-cover.jpg",
           "children": [
             {
-              "id": "javz",
-              "title": "Изюм «Султан»",
-              "titleEn": "Raisins Sultan",
-              "img": "assets/img/products/raisin-javz.jpg"
+              "id": "black-giant",
+              "title": "Изюм чёрный (гибрид)",
+              "titleEn": "Raisins Black (Hybrid)",
+              "img": "assets/img/products/izyum_gibrid_1.webp"
             },
             {
               "id": "soyagi",
@@ -73,20 +73,20 @@
             },
             {
               "id": "sultan",
-              "title": "Изюм «Султан» — Абджуш",
-              "titleEn": "Raisins Sultan — Abjush",
+              "title": "Изюм коричневый «Джавз»",
+              "titleEn": "Raisins Brown Javz",
               "img": "assets/img/products/raisin-sultan.jpg"
             },
             {
-              "id": "black-giant",
-              "title": "Изюм чёрный (гибрид)",
-              "titleEn": "Raisins Black (Hybrid)",
-              "img": "assets/img/products/izyum_gibrid_1.webp"
+              "id": "javz",
+              "title": "Изюм «Султан» — Абджуш",
+              "titleEn": "Raisins Sultan — Abjush",
+              "img": "assets/img/products/raisin-javz.jpg"
             },
             {
               "id": "red-thompson",
-              "title": "Изюм «Красный Томпсон»",
-              "titleEn": "Raisins Red Thompson",
+              "title": "Изюм «Красный Томпсон»-Афтоби",
+              "titleEn": "Raisins Red Thompson-Aftobi",
               "img": "assets/img/products/red-thompson.jpg"
             },
             {
@@ -94,16 +94,6 @@
               "title": "Изюм «Шигани» красный",
               "titleEn": "Raisins Shigani Red",
               "img": "assets/img/products/shigani-red.jpg"
-            },
-            {
-              "id": "javz-brown",
-              "title": "Изюм коричневый «Джавз»",
-              "titleEn": "Raisins Brown Javz"
-            },
-            {
-              "id": "red-thompson-aftobi",
-              "title": "Изюм «Красный Томпсон» (Афтоби)",
-              "titleEn": "Raisins Red Thompson (Aftobi)"
             }
           ]
         },
@@ -192,10 +182,28 @@
               "titleEn": "Walnut Light"
             },
             {
-              "id": "peeled",
-              "title": "Грецкий орех очищенный",
-              "titleEn": "Walnut Peeled",
-              "img": "assets/img/products/walnut-peeled.jpg"
+              "id": "peeled-grade-1",
+              "title": "Грецкий орех очищенный 1-й сорт",
+              "titleEn": "Peeled Walnut, Grade 1",
+              "img": "assets/img/products/walnut-1-category.jpg"
+            },
+            {
+              "id": "peeled-grade-2",
+              "title": "Грецкий орех очищенный 2-й сорт",
+              "titleEn": "Peeled Walnut, Grade 2",
+              "img": "assets/img/products/walnut-2-category.jpg"
+            },
+            {
+              "id": "peeled-grade-3",
+              "title": "Грецкий орех очищенный 3-й сорт",
+              "titleEn": "Peeled Walnut, Grade 3",
+              "img": "assets/img/products/walnut-3-category.jpg"
+            },
+            {
+              "id": "peeled-confectionery-red",
+              "title": "Грецкий орех очищенный кондитерский «Красный»",
+              "titleEn": "Peeled Walnut, Confectionery \"Red\"",
+              "img": "assets/img/products/walnut-condier.jpg"
             },
             {
               "id": "crushed",
@@ -464,6 +472,12 @@
           "img": "assets/img/products/fresh/cherry.jpg"
         },
         {
+          "id": "sour-cherry",
+          "title": "Вишня",
+          "titleEn": "Sour Cherry",
+          "img": "assets/img/products/fresh/вишня.jpg"
+        },
+        {
           "id": "grapes",
           "title": "Виноград",
           "titleEn": "Grapes",
@@ -474,12 +488,6 @@
           "title": "Лимон",
           "titleEn": "Lemon",
           "img": "assets/img/products/fresh/lemon.jpg"
-        },
-        {
-          "id": "onion",
-          "title": "Лук",
-          "titleEn": "Onion",
-          "img": "assets/img/products/fresh/onion.jpg"
         },
         {
           "id": "peach",
@@ -494,6 +502,18 @@
           "img": "assets/img/products/fresh/plum.jpg"
         },
         {
+          "id": "fig",
+          "title": "Инжир",
+          "titleEn": "Fig",
+          "img": "assets/img/products/fresh/fig.jpg"
+        },
+        {
+          "id": "onion",
+          "title": "Лук",
+          "titleEn": "Onion",
+          "img": "assets/img/products/fresh/onion.jpg"
+        },
+        {
           "id": "potato",
           "title": "Картофель",
           "titleEn": "Potato",
@@ -504,12 +524,6 @@
           "title": "Помидор",
           "titleEn": "Tomato",
           "img": "assets/img/products/fresh/tomato.jpg"
-        },
-        {
-          "id": "fig",
-          "title": "Инжир",
-          "titleEn": "Fig",
-          "img": "assets/img/products/fresh/fig.jpg"
         },
         {
           "id": "cucumber",
