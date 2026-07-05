@@ -188,21 +188,27 @@
               "img": "assets/img/products/walnut-peeled.jpg",
               "children": [
                 {
+                  "id": "peeled-standard",
+                  "title": "Грецкий орех очищенный",
+                  "titleEn": "Peeled Walnut",
+                  "img": "assets/img/products/walnut-peeled.jpg"
+                },
+                {
                   "id": "grade-1",
-                  "title": "1-й сорт",
-                  "titleEn": "Grade 1",
+                  "title": "Грецкий орех очищенный 1-й сорт",
+                  "titleEn": "Peeled Walnut, Grade 1",
                   "img": "assets/img/products/walnut-1-category.jpg"
                 },
                 {
                   "id": "grade-2",
-                  "title": "2-й сорт",
-                  "titleEn": "Grade 2",
+                  "title": "Грецкий орех очищенный 2-й сорт",
+                  "titleEn": "Peeled Walnut, Grade 2",
                   "img": "assets/img/products/walnut-2-category.jpg"
                 },
                 {
                   "id": "grade-3",
-                  "title": "3-й сорт",
-                  "titleEn": "Grade 3",
+                  "title": "Грецкий орех очищенный 3-й сорт",
+                  "titleEn": "Peeled Walnut, Grade 3",
                   "img": "assets/img/products/walnut-3-category.jpg"
                 }
               ]
