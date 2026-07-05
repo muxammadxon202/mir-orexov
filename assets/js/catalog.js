@@ -103,7 +103,7 @@
         const isLeafChild = !child.children || child.disabled;
         const card = document.createElement(isLeafChild ? "div" : "a");
         if (!isLeafChild) card.href = "#/" + [...path, child.id].join("/");
-        card.className = "cat-tile" + (isCategoryLevel ? " cat-tile--category" : "") + (isLeafChild ? " cat-tile--disabled" : "") + (child.disabled ? " cat-tile--empty" : "");
+        card.className = "cat-tile" + (isCategoryLevel ? " cat-tile--category" : "") + (isLeafChild ? " cat-tile--disabled" : "") + (child.disabled ? " cat-tile--empty" : "") + (path[0] === "packaging" ? " cat-tile--packaging" : "");
         const descText = window.i18n && window.i18n.getLang() === "en" ? child.descEn : child.desc;
         if (child.img) {
           card.innerHTML = `<div class="cat-tile-photo"><img src="${child.img}" alt="${t(child)}" loading="lazy" /></div>`;
