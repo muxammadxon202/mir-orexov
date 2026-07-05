@@ -17,25 +17,25 @@
           "children": [
             {
               "id": "kuraga",
-              "title": "Курага без косточки (Субхон)",
+              "title": "Сушёные абрикосы без косточки (Субхон)",
               "titleEn": "Pitless Dried Apricot (Subkhon)",
               "img": "assets/img/products/kuraga-kuraga.jpg"
             },
             {
               "id": "limonka",
-              "title": "Курага «Лимонка» без косточки",
+              "title": "Сушёные абрикосы «Лимонка» без косточки",
               "titleEn": "Dried Apricot Limonka, Pitless",
               "img": "assets/img/products/kuraga-limonka.jpg"
             },
             {
               "id": "natural",
-              "title": "Курага натуральная без косточки",
+              "title": "Сушёные абрикосы натуральные без косточки",
               "titleEn": "Natural Dried Apricot, Pitless",
               "img": "assets/img/products/kuraga-natural.jpg"
             },
             {
               "id": "turshak",
-              "title": "Курага с косточкой «Туршак»",
+              "title": "Сушёные абрикосы с косточкой «Туршак»",
               "titleEn": "Dried Apricot Turshak, With Pit",
               "img": "assets/img/products/turshak.jpg"
             }
