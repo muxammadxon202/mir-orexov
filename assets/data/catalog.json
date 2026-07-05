@@ -214,6 +214,12 @@
               ]
             },
             {
+              "id": "quarters",
+              "title": "Грецкий орех, четвертинка",
+              "titleEn": "Walnut Quarters",
+              "img": "assets/img/products/walnut-quarters.jpg"
+            },
+            {
               "id": "peeled-confectionery-red",
               "title": "Грецкий орех очищенный кондитерский «Красный»",
               "titleEn": "Peeled Walnut, Confectionery \"Red\"",
@@ -224,12 +230,6 @@
               "title": "Грецкий орех измельчённый",
               "titleEn": "Walnut Crushed",
               "img": "assets/img/products/walnut-crushed.jpg"
-            },
-            {
-              "id": "quarters",
-              "title": "Грецкий орех, четвертинка",
-              "titleEn": "Walnut Quarters",
-              "img": "assets/img/products/walnut-quarters.jpg"
             }
           ]
         },
