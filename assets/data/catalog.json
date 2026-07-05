@@ -11,7 +11,7 @@
       "children": [
         {
           "id": "apricot",
-          "title": "Курага",
+          "title": "Сушёные абрикосы",
           "titleEn": "Dried Apricot",
           "img": "assets/img/products/kuraga-base.jpg",
           "children": [
@@ -228,6 +228,38 @@
           ]
         },
         {
+          "id": "peanut",
+          "title": "Арахис",
+          "titleEn": "Peanut",
+          "img": "assets/img/products/peanut-inshell.jpg",
+          "children": [
+            {
+              "id": "inshell",
+              "title": "Арахис в скорлупе",
+              "titleEn": "Peanut In Shell",
+              "img": "assets/img/products/peanut-inshell.jpg"
+            },
+            {
+              "id": "peeled",
+              "title": "Арахис очищенный",
+              "titleEn": "Peanut Peeled",
+              "img": "assets/img/products/peanut-peeled.jpg"
+            },
+            {
+              "id": "blanched",
+              "title": "Арахис бланшированный",
+              "titleEn": "Peanut Blanched",
+              "img": "assets/img/products/peanut-blanched.jpg"
+            },
+            {
+              "id": "crushed",
+              "title": "Арахис измельчённый",
+              "titleEn": "Peanut Crushed",
+              "img": "assets/img/products/peanut-crushed.jpg"
+            }
+          ]
+        },
+        {
           "id": "pistachio",
           "title": "Фисташки",
           "titleEn": "Pistachio",
@@ -330,38 +362,6 @@
               "id": "w320",
               "title": "Кешью W320",
               "titleEn": "Cashew W320"
-            }
-          ]
-        },
-        {
-          "id": "peanut",
-          "title": "Арахис",
-          "titleEn": "Peanut",
-          "img": "assets/img/products/peanut-inshell.jpg",
-          "children": [
-            {
-              "id": "inshell",
-              "title": "Арахис в скорлупе",
-              "titleEn": "Peanut In Shell",
-              "img": "assets/img/products/peanut-inshell.jpg"
-            },
-            {
-              "id": "peeled",
-              "title": "Арахис очищенный",
-              "titleEn": "Peanut Peeled",
-              "img": "assets/img/products/peanut-peeled.jpg"
-            },
-            {
-              "id": "blanched",
-              "title": "Арахис бланшированный",
-              "titleEn": "Peanut Blanched",
-              "img": "assets/img/products/peanut-blanched.jpg"
-            },
-            {
-              "id": "crushed",
-              "title": "Арахис измельчённый",
-              "titleEn": "Peanut Crushed",
-              "img": "assets/img/products/peanut-crushed.jpg"
             }
           ]
         },
@@ -595,7 +595,7 @@
           "id": "bulk",
           "title": "Фасовка",
           "titleEn": "Bulk Packing",
-          "img": "assets/img/products/packaging/фасовка-cover.jpg",
+          "img": "assets/img/products/packaging/lineup.jpg",
           "children": [
             {
               "id": "clear-bags",
