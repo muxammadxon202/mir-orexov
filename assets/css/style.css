@@ -872,6 +872,11 @@ button { font-family: inherit; cursor: pointer; }
 .pf-contact-row a:hover { color: var(--gold-text); }
 
 .footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px 14px;
   margin-top: 18px;
   padding: 12px 20px;
   text-align: center;
@@ -882,6 +887,31 @@ button { font-family: inherit; cursor: pointer; }
   backdrop-filter: blur(6px);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
+}
+
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 14px;
+  border-left: 1px solid var(--border);
+  opacity: 0.85;
+}
+
+.footer-credit a {
+  color: var(--gold-text);
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-credit a:hover {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .footer-credit { padding-left: 0; border-left: none; }
 }
 
 @media (max-width: 720px) {
