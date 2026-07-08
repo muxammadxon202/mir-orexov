@@ -1175,6 +1175,8 @@ button { font-family: inherit; cursor: pointer; }
 .catalog-quote-label { color: var(--text-dim); font-size: var(--fs-small); margin-bottom: 8px; }
 .catalog-quote-name { font-size: 24px; font-weight: 600; margin-bottom: 8px; }
 .catalog-quote-weight { color: var(--gold-text); font-size: var(--fs-small); font-weight: 600; margin-bottom: 24px; }
+.catalog-quote-desc { color: var(--text-dim); font-size: var(--fs-small); line-height: 1.55; margin: 0 0 24px; max-width: 320px; }
+.catalog-quote-desc:empty { display: none; margin: 0; }
 
 .catalog-gallery {
   position: relative;

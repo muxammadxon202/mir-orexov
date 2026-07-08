@@ -147,6 +147,10 @@
       weightEl.textContent = weightText || "";
       weightEl.style.display = weightText ? "" : "none";
 
+      const descEl = quoteEl.querySelector("#catalog-quote-desc");
+      const descText = window.i18n && window.i18n.getLang() === "en" ? node.descEn : node.desc;
+      descEl.textContent = descText || "";
+
       const thumbEl = quoteEl.querySelector("#catalog-quote-thumb");
       const galleryEl = quoteEl.querySelector("#catalog-quote-gallery");
       galleryEl.innerHTML = "";
@@ -170,7 +174,7 @@
       const hideQty = path[0] === "packaging";
       quoteBtn.onclick = () => openQuoteModal(fullName, node.img, { gallery: node.gallery, weight: node.weight, weightEn: node.weightEn, hideQty });
 
-      quoteEl.style.display = "";
+      quoteEl.style.display = "block";
       quoteEl.classList.remove("quote-anim");
       void quoteEl.offsetWidth; // restart the entrance animation on every visit
       quoteEl.classList.add("quote-anim");

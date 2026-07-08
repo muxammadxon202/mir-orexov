@@ -657,6 +657,35 @@
               "title": "Брендированные банки Mir Orexov",
               "titleEn": "Mir Orexov Branded Jars",
               "img": "assets/img/products/packaging/branded-jars.jpg"
+            },
+            {
+              "id": "custom-boxes",
+              "title": "Брендированные коробки под заказ",
+              "titleEn": "Custom Branded Boxes",
+              "img": "assets/img/products/packaging/box3.png",
+              "desc": "Изготавливаем брендированные коробки под любой продукт и дизайн заказчика — тираж, материал и оформление обсуждаются индивидуально.",
+              "descEn": "We manufacture branded boxes for any product and client design — print run, material and artwork are discussed individually.",
+              "gallery": [
+                "assets/img/products/packaging/box3.png",
+                "assets/img/products/packaging/box5.png",
+                "assets/img/products/packaging/box1.png",
+                "assets/img/products/packaging/box2.png",
+                "assets/img/products/packaging/box4.png",
+                "assets/img/products/packaging/psitachio.png"
+              ]
+            },
+            {
+              "id": "private-label",
+              "title": "Приватная марка (Private Label)",
+              "titleEn": "Private Label Packaging",
+              "img": "assets/img/products/packaging/paccing1.png",
+              "desc": "Нанесём ваш логотип на любую упаковку — пакет, банку или дой-пак. Отличное решение для запуска собственной торговой марки.",
+              "descEn": "We print your logo on any packaging — bag, jar or doypack. A great fit for launching your own private label.",
+              "gallery": [
+                "assets/img/products/packaging/paccing1.png",
+                "assets/img/products/packaging/paccing3.png",
+                "assets/img/products/packaging/paccing2.png"
+              ]
             }
           ]
         },
