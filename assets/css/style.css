@@ -34,14 +34,9 @@
   --dur-med: 280ms;
   --dur-cinematic: 700ms;
 
-  /* The navbar entrance waits for the first-visit preloader (2.5s in main.js).
-     On repeat visits (html.repeat-visit, set inline in <head>) there is no
-     preloader, so the navbar animates in right away. */
+  /* The navbar entrance waits for the preloader (2.5s in main.js). */
   --nav-reveal-delay: 2.5s;
 }
-
-html.repeat-visit { --nav-reveal-delay: 0s; }
-html.repeat-visit .preloader { display: none; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }

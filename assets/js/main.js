@@ -1,13 +1,8 @@
 // Mobile nav toggle
 document.addEventListener("DOMContentLoaded", () => {
-  // The 2.5s brand preloader runs only once per browser session; on repeat
-  // navigations <head> sets html.repeat-visit (CSS hides the preloader and
-  // drops the navbar reveal delay), so pages open instantly.
-  const isRepeatVisit = document.documentElement.classList.contains("repeat-visit");
-  try { sessionStorage.setItem("mo-visited", "1"); } catch (e) { /* private mode */ }
-
+  // The 2.5s brand preloader runs on every visit.
   const preloader = document.querySelector(".preloader");
-  if (preloader && !isRepeatVisit) {
+  if (preloader) {
     const minDisplayMs = 2500;
     const start = Date.now();
     const hidePreloader = () => {
@@ -50,6 +45,15 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
   }
+
+  // Footer logo acts as a "back to top" shortcut instead of reloading the
+  // homepage — handy once you've scrolled all the way down to the footer.
+  document.querySelectorAll(".pf-logo-row").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  });
 
   // Lang switch UI + translations are handled by assets/js/i18n.js
 
