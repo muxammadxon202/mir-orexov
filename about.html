@@ -114,7 +114,7 @@
       <div class="container two-col">
         <div class="sam-slider" data-animate>
           <div class="sam-slider__track">
-            <video class="sam-slide active" autoplay muted loop playsinline data-caption-ru="Наши поля и сады" data-caption-en="Our fields and orchards">
+            <video class="sam-slide active" autoplay muted playsinline data-caption-ru="Наши поля и сады" data-caption-en="Our fields and orchards">
               <source src="assets/img/about/own-land-video.mp4" type="video/mp4" />
             </video>
             <img src="assets/img/about/vineyard-rows-1.avif" alt="Ряды виноградника" class="sam-slide" data-caption-ru="Собственные виноградники" data-caption-en="Our own vineyards">
@@ -460,12 +460,32 @@
           slides[current].classList.add('active');
           dots[current].classList.add('active');
           updateCaption();
+          if (slides[current].tagName === 'VIDEO') {
+            slides[current].currentTime = 0;
+            slides[current].play().catch(() => {});
+          }
         }
 
         updateCaption();
 
-        function startAuto() { timer = setInterval(() => goTo(current + 1), 3500); }
-        function stopAuto()  { clearInterval(timer); }
+        // Photo slides advance on a fixed timer; a video slide instead waits
+        // for its own "ended" event, so it always plays through in full
+        // before the slider moves on to the next photo.
+        let videoEndedCleanup = null;
+        function startAuto() {
+          const active = slides[current];
+          if (active.tagName === 'VIDEO') {
+            const onEnded = () => { goTo(current + 1); startAuto(); };
+            active.addEventListener('ended', onEnded, { once: true });
+            videoEndedCleanup = () => active.removeEventListener('ended', onEnded);
+          } else {
+            timer = setTimeout(() => { goTo(current + 1); startAuto(); }, 3500);
+          }
+        }
+        function stopAuto() {
+          clearTimeout(timer);
+          if (videoEndedCleanup) { videoEndedCleanup(); videoEndedCleanup = null; }
+        }
 
         slider.querySelector('.sam-arrow--next').addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
         slider.querySelector('.sam-arrow--prev').addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
