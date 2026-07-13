@@ -11,7 +11,7 @@
   <meta property="og:site_name" content="Mir Orexov Samarkand" />
   <meta property="og:title" content="О компании Mir Orexov Samarkand — экспортёр орехов и сухофруктов из Узбекистана" />
   <meta property="og:description" content="32 года на рынке экспорта орехов и сухофруктов. Собственные сады, современное производство, сертификат ISO, поставки в 30+ стран мира." />
-  <meta property="og:image" content="https://mirorexov.com/assets/img/branding/logo.png" />
+  <meta property="og:image" content="https://mirorexov.com/assets/img/branding/logo.avif" />
   <meta property="og:url" content="https://mirorexov.com/about.html" />
   <meta property="og:locale" content="ru_RU" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -23,7 +23,7 @@
     "name": "Mir Orexov Samarkand",
     "alternateName": "Мир Орехов Самарканд",
     "url": "https://mirorexov.com/",
-    "logo": "https://mirorexov.com/assets/img/branding/logo.png",
+    "logo": "https://mirorexov.com/assets/img/branding/logo.avif",
     "email": "mir_orexov@mail.ru",
     "telephone": ["+998915435555", "+998917080000"],
     "priceRange": "$$",
@@ -37,14 +37,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="assets/img/branding/logo.png" />
+  <link rel="icon" type="image/png" href="assets/img/branding/logo.avif" />
   <link rel="stylesheet" href="assets/css/style.css" />
   <!-- Repeat visits within a session skip the brand preloader (see main.js) -->
   <script>try{if(sessionStorage.getItem("mo-visited"))document.documentElement.classList.add("repeat-visit")}catch(e){}</script>
 </head>
 <body>
   <div class="preloader" aria-hidden="true">
-    <div class="preloader-logo"><img src="assets/img/branding/logo.png" alt="" /></div>
+    <div class="preloader-logo"><img src="assets/img/branding/logo.avif" alt="" /></div>
     <div class="preloader-bar"></div>
   </div>
   <a class="skip-link" href="#main" data-en="Skip to content">Перейти к содержимому</a>
@@ -62,7 +62,7 @@
 
   <header class="navbar">
     <a href="index.html" class="brand">
-      <span class="brand-logo"><img src="assets/img/branding/logo.png" alt="Mir Orexov Samarkand" /></span>
+      <span class="brand-logo"><img src="assets/img/branding/logo.avif" alt="Mir Orexov Samarkand" /></span>
       <span class="brand-name">
         <strong>Mir Orexov</strong>
         <span>SAMARKAND</span>
@@ -112,7 +112,29 @@
 
     <section class="section section--alt">
       <div class="container two-col">
-        <div class="media-placeholder" data-animate data-en="Own farmland photo">Фото собственных земель</div>
+        <div class="sam-slider" data-animate>
+          <div class="sam-slider__track">
+            <video class="sam-slide active" autoplay muted loop playsinline data-caption-ru="Наши поля и сады" data-caption-en="Our fields and orchards">
+              <source src="assets/img/about/own-land-video.mp4" type="video/mp4" />
+            </video>
+            <img src="assets/img/about/vineyard-rows-1.avif" alt="Ряды виноградника" class="sam-slide" data-caption-ru="Собственные виноградники" data-caption-en="Our own vineyards">
+            <img src="assets/img/about/vineyard-rows-2.avif" alt="Виноградник на закате" class="sam-slide" data-caption-ru="Виноградник на закате" data-caption-en="Vineyard at sunset">
+            <img src="assets/img/about/vineyard-harvest.avif" alt="Сбор урожая винограда" class="sam-slide" data-caption-ru="Сбор урожая" data-caption-en="Harvest season">
+            <img src="assets/img/about/vineyard.avif" alt="Тара для урожая в поле" class="sam-slide" data-caption-ru="Подготовка тары к сбору урожая" data-caption-en="Crates ready for harvest">
+            <img src="assets/img/about/vineyard1.avif" alt="Полив садов" class="sam-slide" data-caption-ru="Полив и уход за садами" data-caption-en="Irrigation and orchard care">
+          </div>
+          <div class="sam-slider__caption">Наши поля и сады</div>
+          <div class="sam-slider__dots">
+            <button class="sam-dot active" data-idx="0"></button>
+            <button class="sam-dot" data-idx="1"></button>
+            <button class="sam-dot" data-idx="2"></button>
+            <button class="sam-dot" data-idx="3"></button>
+            <button class="sam-dot" data-idx="4"></button>
+            <button class="sam-dot" data-idx="5"></button>
+          </div>
+          <button class="sam-arrow sam-arrow--prev" aria-label="Назад">&#8592;</button>
+          <button class="sam-arrow sam-arrow--next" aria-label="Вперёд">&#8594;</button>
+        </div>
         <div data-animate>
           <div class="section-eyebrow" data-en="Raw Material Base">Сырьевая база</div>
           <h2 style="margin-bottom: 16px;" data-en="Hundreds of Hectares of Our Own Land">Сотни гектаров собственных земель</h2>
@@ -130,8 +152,8 @@
         </div>
         <div class="sam-slider" data-animate>
           <div class="sam-slider__track">
-            <img src="assets/img/about/logistics/color-sorter.jpg" alt="Цветной сортировщик в цеху" class="sam-slide active" data-caption-ru="Фотосепаратор — цветная сортировка" data-caption-en="Color sorting machine">
-            <img src="assets/img/products/packaging/фасовка-cover.jpg" alt="Линия фасовки" class="sam-slide" data-caption-ru="Линия фасовки готовой продукции" data-caption-en="Finished product packing line">
+            <img src="assets/img/about/logistics/color-sorter.avif" alt="Цветной сортировщик в цеху" class="sam-slide active" data-caption-ru="Фотосепаратор — цветная сортировка" data-caption-en="Color sorting machine">
+            <img src="assets/img/products/packaging/фасовка-cover.avif" alt="Линия фасовки" class="sam-slide" data-caption-ru="Линия фасовки готовой продукции" data-caption-en="Finished product packing line">
           </div>
           <div class="sam-slider__caption">Фотосепаратор — цветная сортировка</div>
           <div class="sam-slider__dots">
@@ -148,19 +170,19 @@
       <div class="container two-col">
         <div class="sam-slider" data-animate>
           <div class="sam-slider__track">
-            <img src="assets/img/about/logistics/truck-loading-1.jpg" alt="Погрузка машины" class="sam-slide active" data-caption-ru="Погрузка фуры на складе" data-caption-en="Loading a truck at the warehouse">
-            <img src="assets/img/about/logistics/truck-red-interior.jpg" alt="Загруженная фура" class="sam-slide" data-caption-ru="Готовая к отправке партия" data-caption-en="A shipment ready for dispatch">
-            <img src="assets/img/about/logistics/truck-bags.jpg" alt="Мешки в фуре" class="sam-slide" data-caption-ru="Отгрузка мешков на экспорт" data-caption-en="Shipping bagged product for export">
-            <img src="assets/img/about/logistics/forklift-warehouse.jpg" alt="Погрузчик на складе" class="sam-slide" data-caption-ru="Погрузка на складе" data-caption-en="Warehouse loading">
-            <img src="assets/img/about/logistics/truck-boxes-1.jpg" alt="Коробки в фуре" class="sam-slide" data-caption-ru="Погрузка коробок в контейнер" data-caption-en="Loading boxes into a container">
-            <img src="assets/img/about/logistics/truck-pallets-wrapped.jpg" alt="Упакованные паллеты" class="sam-slide" data-caption-ru="Паллеты, готовые к перевозке" data-caption-en="Pallets ready for transport">
-            <img src="assets/img/about/logistics/truck-night-loading.jpg" alt="Ночная погрузка" class="sam-slide" data-caption-ru="Отгрузка партии" data-caption-en="Dispatching a shipment">
-            <img src="assets/img/about/logistics/truck-prune-boxes.jpg" alt="Коробки чернослива в фуре" class="sam-slide" data-caption-ru="Погрузка готовой продукции" data-caption-en="Loading finished product">
-            <img src="assets/img/about/logistics/truck-boxes-2.jpg" alt="Коробки в фуре" class="sam-slide" data-caption-ru="Отгрузка на экспорт" data-caption-en="Export shipment">
-            <img src="assets/img/about/logistics/truck-global-village-night.jpg" alt="Погрузка фуры ночью" class="sam-slide" data-caption-ru="Ночная отгрузка партии" data-caption-en="Night shipment loading">
-            <img src="assets/img/about/logistics/truck-global-village-day.jpg" alt="Загруженная фура днём" class="sam-slide" data-caption-ru="Полная загрузка фуры" data-caption-en="Fully loaded truck">
-            <img src="assets/img/about/logistics/truck-global-village-sky.jpg" alt="Загруженная фура на фоне неба" class="sam-slide" data-caption-ru="Готовая к отправке фура" data-caption-en="Truck ready for departure">
-            <img src="assets/img/about/logistics/warehouse-pallets-global-village.jpg" alt="Паллеты на складе" class="sam-slide" data-caption-ru="Паллеты на складе перед отгрузкой" data-caption-en="Pallets in the warehouse before shipping">
+            <img src="assets/img/about/logistics/truck-loading-1.avif" alt="Погрузка машины" class="sam-slide active" data-caption-ru="Погрузка фуры на складе" data-caption-en="Loading a truck at the warehouse">
+            <img src="assets/img/about/logistics/truck-red-interior.avif" alt="Загруженная фура" class="sam-slide" data-caption-ru="Готовая к отправке партия" data-caption-en="A shipment ready for dispatch">
+            <img src="assets/img/about/logistics/truck-bags.avif" alt="Мешки в фуре" class="sam-slide" data-caption-ru="Отгрузка мешков на экспорт" data-caption-en="Shipping bagged product for export">
+            <img src="assets/img/about/logistics/forklift-warehouse.avif" alt="Погрузчик на складе" class="sam-slide" data-caption-ru="Погрузка на складе" data-caption-en="Warehouse loading">
+            <img src="assets/img/about/logistics/truck-boxes-1.avif" alt="Коробки в фуре" class="sam-slide" data-caption-ru="Погрузка коробок в контейнер" data-caption-en="Loading boxes into a container">
+            <img src="assets/img/about/logistics/truck-pallets-wrapped.avif" alt="Упакованные паллеты" class="sam-slide" data-caption-ru="Паллеты, готовые к перевозке" data-caption-en="Pallets ready for transport">
+            <img src="assets/img/about/logistics/truck-night-loading.avif" alt="Ночная погрузка" class="sam-slide" data-caption-ru="Отгрузка партии" data-caption-en="Dispatching a shipment">
+            <img src="assets/img/about/logistics/truck-prune-boxes.avif" alt="Коробки чернослива в фуре" class="sam-slide" data-caption-ru="Погрузка готовой продукции" data-caption-en="Loading finished product">
+            <img src="assets/img/about/logistics/truck-boxes-2.avif" alt="Коробки в фуре" class="sam-slide" data-caption-ru="Отгрузка на экспорт" data-caption-en="Export shipment">
+            <img src="assets/img/about/logistics/truck-global-village-night.avif" alt="Погрузка фуры ночью" class="sam-slide" data-caption-ru="Ночная отгрузка партии" data-caption-en="Night shipment loading">
+            <img src="assets/img/about/logistics/truck-global-village-day.avif" alt="Загруженная фура днём" class="sam-slide" data-caption-ru="Полная загрузка фуры" data-caption-en="Fully loaded truck">
+            <img src="assets/img/about/logistics/truck-global-village-sky.avif" alt="Загруженная фура на фоне неба" class="sam-slide" data-caption-ru="Готовая к отправке фура" data-caption-en="Truck ready for departure">
+            <img src="assets/img/about/logistics/warehouse-pallets-global-village.avif" alt="Паллеты на складе" class="sam-slide" data-caption-ru="Паллеты на складе перед отгрузкой" data-caption-en="Pallets in the warehouse before shipping">
           </div>
           <div class="sam-slider__caption">Погрузка фуры на складе</div>
           <div class="sam-slider__dots">
@@ -198,11 +220,11 @@
         </div>
         <div class="sam-slider" data-animate>
           <div class="sam-slider__track">
-            <img src="assets/img/about/sam-box-1.jpg"  alt="Гофроагрегат Sam Box в цеху" class="sam-slide active" data-caption-ru="Линия по производству гофрокартона" data-caption-en="Corrugated cardboard production line">
-            <img src="assets/img/about/sam-box-2.jpg" alt="Офсетная печатная машина Sam Box" class="sam-slide" data-caption-ru="4-цветный офсетный печатный аппарат" data-caption-en="4-color offset printing press">
-            <img src="assets/img/about/sam-box-3.jpg" alt="Виды гофрокартона Sam Box" class="sam-slide" data-caption-ru="Одно-, двух- и трёхслойный гофрокартон" data-caption-en="Single, double and triple wall board">
-            <img src="assets/img/about/sam-box-4.jpg" alt="Рилёвочный станок Sam Box" class="sam-slide" data-caption-ru="Рилёвка и раскрой коробок" data-caption-en="Box creasing and cutting">
-            <img src="assets/img/about/sam-box-5.jpg" alt="Линия гофрирования Sam Box" class="sam-slide" data-caption-ru="Линия непрерывного гофрирования" data-caption-en="Continuous corrugating line">
+            <img src="assets/img/about/sam-box-1.avif"  alt="Гофроагрегат Sam Box в цеху" class="sam-slide active" data-caption-ru="Линия по производству гофрокартона" data-caption-en="Corrugated cardboard production line">
+            <img src="assets/img/about/sam-box-2.avif" alt="Офсетная печатная машина Sam Box" class="sam-slide" data-caption-ru="4-цветный офсетный печатный аппарат" data-caption-en="4-color offset printing press">
+            <img src="assets/img/about/sam-box-3.avif" alt="Виды гофрокартона Sam Box" class="sam-slide" data-caption-ru="Одно-, двух- и трёхслойный гофрокартон" data-caption-en="Single, double and triple wall board">
+            <img src="assets/img/about/sam-box-4.avif" alt="Рилёвочный станок Sam Box" class="sam-slide" data-caption-ru="Рилёвка и раскрой коробок" data-caption-en="Box creasing and cutting">
+            <img src="assets/img/about/sam-box-5.avif" alt="Линия гофрирования Sam Box" class="sam-slide" data-caption-ru="Линия непрерывного гофрирования" data-caption-en="Continuous corrugating line">
           </div>
           <div class="sam-slider__caption">Линия по производству гофрокартона</div>
           <div class="sam-slider__dots">
@@ -245,11 +267,11 @@
       <div class="container two-col">
         <div class="sam-slider" data-animate>
           <div class="sam-slider__track">
-            <img src="assets/img/about/vineyard-rows-1.jpg" alt="Ряды виноградника" class="sam-slide active" data-caption-ru="Собственные виноградники" data-caption-en="Our own vineyards">
-            <img src="assets/img/about/vineyard-rows-2.jpg" alt="Виноградник на закате" class="sam-slide" data-caption-ru="Виноградник на закате" data-caption-en="Vineyard at sunset">
-            <img src="assets/img/about/vineyard-harvest.jpg" alt="Сбор урожая винограда" class="sam-slide" data-caption-ru="Сбор урожая" data-caption-en="Harvest season">
-            <img src="assets/img/about/vineyard.jpg" alt="Тара для урожая в поле" class="sam-slide" data-caption-ru="Подготовка тары к сбору урожая" data-caption-en="Crates ready for harvest">
-            <img src="assets/img/about/vineyard1.jpg" alt="Полив садов" class="sam-slide" data-caption-ru="Полив и уход за садами" data-caption-en="Irrigation and orchard care">
+            <img src="assets/img/about/vineyard-rows-1.avif" alt="Ряды виноградника" class="sam-slide active" data-caption-ru="Собственные виноградники" data-caption-en="Our own vineyards">
+            <img src="assets/img/about/vineyard-rows-2.avif" alt="Виноградник на закате" class="sam-slide" data-caption-ru="Виноградник на закате" data-caption-en="Vineyard at sunset">
+            <img src="assets/img/about/vineyard-harvest.avif" alt="Сбор урожая винограда" class="sam-slide" data-caption-ru="Сбор урожая" data-caption-en="Harvest season">
+            <img src="assets/img/about/vineyard.avif" alt="Тара для урожая в поле" class="sam-slide" data-caption-ru="Подготовка тары к сбору урожая" data-caption-en="Crates ready for harvest">
+            <img src="assets/img/about/vineyard1.avif" alt="Полив садов" class="sam-slide" data-caption-ru="Полив и уход за садами" data-caption-en="Irrigation and orchard care">
           </div>
           <div class="sam-slider__caption">Собственные виноградники</div>
           <div class="sam-slider__dots">
@@ -296,23 +318,23 @@
         </div>
         <div class="partners-slider" data-animate>
           <div class="partners-track">
-            <div class="partner-slot"><img src="assets/img/partners/pyaterochka.webp" alt="Пятёрочка" loading="lazy" /></div>
-            <div class="partner-slot"><img src="assets/img/partners/lenta.png" alt="Лента" loading="lazy" /></div>
-            <div class="partner-slot"><img src="assets/img/partners/magnit.png" alt="Магнит" loading="lazy" /></div>
-            <div class="partner-slot"><img src="assets/img/partners/global-village.webp" alt="Global Village" loading="lazy" /></div>
-            <div class="partner-slot"><img src="assets/img/partners/sladkaya-zhizn.png" alt="Сладкая Жизнь" loading="lazy" /></div>
-            <div class="partner-slot"><img src="assets/img/partners/lezzeti.png" alt="Lazetti" loading="lazy" /></div>
-            <div class="partner-slot"><img src="assets/img/partners/samarkand-baku.png" alt="Samarkand-Baku Agro Bizness" loading="lazy" /></div>
-            <div class="partner-slot"><img src="assets/img/partners/zumrud-cerez.png" alt="Zumrud Çərəz" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/pyaterochka.avif" alt="Пятёрочка" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/lenta.avif" alt="Лента" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/magnit.avif" alt="Магнит" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/global-village.avif" alt="Global Village" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/sladkaya-zhizn.avif" alt="Сладкая Жизнь" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/lezzeti.avif" alt="Lazetti" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/samarkand-baku.avif" alt="Samarkand-Baku Agro Bizness" loading="lazy" /></div>
+            <div class="partner-slot"><img src="assets/img/partners/zumrud-cerez.avif" alt="Zumrud Çərəz" loading="lazy" /></div>
             <!-- duplicated for a seamless loop -->
-            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/pyaterochka.webp" alt="" loading="lazy" /></div>
-            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/lenta.png" alt="" loading="lazy" /></div>
-            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/magnit.png" alt="" loading="lazy" /></div>
-            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/global-village.webp" alt="" loading="lazy" /></div>
-            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/sladkaya-zhizn.png" alt="" loading="lazy" /></div>
-            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/lezzeti.png" alt="" loading="lazy" /></div>
-            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/samarkand-baku.png" alt="" loading="lazy" /></div>
-            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/zumrud-cerez.png" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/pyaterochka.avif" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/lenta.avif" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/magnit.avif" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/global-village.avif" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/sladkaya-zhizn.avif" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/lezzeti.avif" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/samarkand-baku.avif" alt="" loading="lazy" /></div>
+            <div class="partner-slot" aria-hidden="true"><img src="assets/img/partners/zumrud-cerez.avif" alt="" loading="lazy" /></div>
           </div>
         </div>
       </div>
@@ -325,7 +347,7 @@
       <div class="footer-flat-top">
         <div class="footer-brand-col">
           <a href="index.html" class="pf-logo-row">
-            <span class="pf-logo-mark"><img src="assets/img/branding/logo.png" alt="Mir Orexov Samarkand" /></span>
+            <span class="pf-logo-mark"><img src="assets/img/branding/logo.avif" alt="Mir Orexov Samarkand" /></span>
             <span class="pf-logo-text pf-logo-text--dark">
               <strong>Mir Orexov</strong>
               <span>SAMARKAND</span>

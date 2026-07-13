@@ -7,37 +7,37 @@
       "id": "dried",
       "title": "Сухофрукты",
       "titleEn": "Dried Fruits",
-      "img": "assets/img/catalog/сухофрукты.jpg",
+      "img": "assets/img/catalog/сухофрукты.avif",
       "children": [
         {
           "id": "apricot",
           "title": "Сушёные абрикосы",
           "titleEn": "Dried Apricot",
-          "img": "assets/img/products/kuraga-base.jpg",
+          "img": "assets/img/products/kuraga-base.avif",
           "children": [
             {
               "id": "kuraga",
               "title": "Сушёные абрикосы без косточки (Субхон)",
               "titleEn": "Pitless Dried Apricot (Subkhon)",
-              "img": "assets/img/products/kuraga-kuraga.jpg"
+              "img": "assets/img/products/kuraga-kuraga.avif"
             },
             {
               "id": "limonka",
               "title": "Сушёные абрикосы «Лимонка» без косточки",
               "titleEn": "Dried Apricot Limonka, Pitless",
-              "img": "assets/img/products/kuraga-limonka.jpg"
+              "img": "assets/img/products/kuraga-limonka.avif"
             },
             {
               "id": "natural",
               "title": "Сушёные абрикосы натуральные без косточки",
               "titleEn": "Natural Dried Apricot, Pitless",
-              "img": "assets/img/products/kuraga-natural.jpg"
+              "img": "assets/img/products/kuraga-natural.avif"
             },
             {
               "id": "turshak",
               "title": "Сушёные абрикосы с косточкой «Туршак»",
               "titleEn": "Dried Apricot Turshak, With Pit",
-              "img": "assets/img/products/turshak.jpg"
+              "img": "assets/img/products/turshak.avif"
             }
           ]
         },
@@ -45,55 +45,55 @@
           "id": "raisins",
           "title": "Изюм",
           "titleEn": "Raisins",
-          "img": "assets/img/products/raisin-cover.jpg",
+          "img": "assets/img/products/raisin-cover.avif",
           "children": [
             {
               "id": "black-giant",
               "title": "Изюм чёрный (гибрид)",
               "titleEn": "Raisins Black (Hybrid)",
-              "img": "assets/img/products/izyum_gibrid_1.webp"
+              "img": "assets/img/products/izyum_gibrid_1.avif"
             },
             {
               "id": "soyagi",
               "title": "Изюм «Сояги»",
               "titleEn": "Raisins Soyagi",
-              "img": "assets/img/products/raisin-soyagi.jpg"
+              "img": "assets/img/products/raisin-soyagi.avif"
             },
             {
               "id": "yellow-hybrid",
               "title": "Изюм жёлтый (гибрид)",
               "titleEn": "Raisins Yellow (Hybrid)",
-              "img": "assets/img/products/raisin-yellow-hybrid.jpg"
+              "img": "assets/img/products/raisin-yellow-hybrid.avif"
             },
             {
               "id": "yellow-califar",
               "title": "Изюм жёлтый (Калифар)",
               "titleEn": "Raisins Yellow (Califar)",
-              "img": "assets/img/products/raisin-yellow-califar.jpg"
+              "img": "assets/img/products/raisin-yellow-califar.avif"
             },
             {
               "id": "sultan",
               "title": "Изюм коричневый «Джавз»",
               "titleEn": "Raisins Brown Javz",
-              "img": "assets/img/products/raisin-sultan.jpg"
+              "img": "assets/img/products/raisin-sultan.avif"
             },
             {
               "id": "javz",
               "title": "Изюм «Султан» — Абджуш",
               "titleEn": "Raisins Sultan — Abjush",
-              "img": "assets/img/products/raisin-javz.jpg"
+              "img": "assets/img/products/raisin-javz.avif"
             },
             {
               "id": "red-thompson",
               "title": "Изюм «Красный Томпсон»-Афтоби",
               "titleEn": "Raisins Red Thompson-Aftobi",
-              "img": "assets/img/products/red-thompson.jpg"
+              "img": "assets/img/products/red-thompson.avif"
             },
             {
               "id": "shigani-red",
               "title": "Изюм «Шигани» красный",
               "titleEn": "Raisins Shigani Red",
-              "img": "assets/img/products/shigani-red.jpg"
+              "img": "assets/img/products/shigani-red.avif"
             }
           ]
         },
@@ -101,25 +101,25 @@
           "id": "prune",
           "title": "Чернослив",
           "titleEn": "Prune",
-          "img": "assets/img/products/prune-catalog.jpg",
+          "img": "assets/img/products/prune-catalog.avif",
           "children": [
             {
               "id": "ballonchik",
               "title": "Чернослив «Баллончик»",
               "titleEn": "Prune Ballonchik",
-              "img": "assets/img/products/prune-Чернослив Баллончик.jpg"
+              "img": "assets/img/products/prune-Чернослив Баллончик.avif"
             },
             {
               "id": "larch",
               "title": "Чернослив «Ларч», крупный, без косточек",
               "titleEn": "Prune Larch, Large, Pitless",
-              "img": "assets/img/products/prune-Чернослив Ларч крупный без косточек.jpg"
+              "img": "assets/img/products/prune-Чернослив Ларч крупный без косточек.avif"
             },
             {
               "id": "with-pit",
               "title": "Чернослив с косточкой",
               "titleEn": "Prune With Pit",
-              "img": "assets/img/products/prune-Чернослив с косточкой.jpg"
+              "img": "assets/img/products/prune-Чернослив с косточкой.avif"
             }
           ]
         },
@@ -127,19 +127,19 @@
           "id": "jida",
           "title": "Джида",
           "titleEn": "Jida",
-          "img": "assets/img/products/jida.jpg"
+          "img": "assets/img/products/jida.avif"
         },
         {
           "id": "unabi",
           "title": "Унаби",
           "titleEn": "Unabi",
-          "img": "assets/img/products/unabi.jpg"
+          "img": "assets/img/products/unabi.avif"
         },
         {
           "id": "compote-mix",
           "title": "Компотная смесь",
           "titleEn": "Dried Fruit Compote Mix",
-          "img": "assets/img/products/компот.png"
+          "img": "assets/img/products/компот.avif"
         }
       ]
     },
@@ -147,19 +147,19 @@
       "id": "nuts",
       "title": "Орехи",
       "titleEn": "Nuts",
-      "img": "assets/img/catalog/орехи.jpg",
+      "img": "assets/img/catalog/орехи.avif",
       "children": [
         {
           "id": "walnut",
           "title": "Грецкий орех",
           "titleEn": "Walnut",
-          "img": "assets/img/products/walnut-peeled.jpg",
+          "img": "assets/img/products/walnut-peeled.avif",
           "children": [
             {
               "id": "unpeeled",
               "title": "Грецкий орех неочищенный",
               "titleEn": "Walnut Unpeeled",
-              "img": "assets/img/products/walnut-catalog.jpg"
+              "img": "assets/img/products/walnut-catalog.avif"
             },
             {
               "id": "chandler",
@@ -185,31 +185,31 @@
               "id": "peeled",
               "title": "Грецкий орех очищенный",
               "titleEn": "Peeled Walnut",
-              "img": "assets/img/products/walnut-peeled.jpg",
+              "img": "assets/img/products/walnut-peeled.avif",
               "children": [
                 {
                   "id": "peeled-standard",
                   "title": "Грецкий орех очищенный",
                   "titleEn": "Peeled Walnut",
-                  "img": "assets/img/products/walnut-peeled.jpg"
+                  "img": "assets/img/products/walnut-peeled.avif"
                 },
                 {
                   "id": "grade-1",
                   "title": "Грецкий орех очищенный 1-й сорт",
                   "titleEn": "Peeled Walnut, Grade 1",
-                  "img": "assets/img/products/walnut-1-category.jpg"
+                  "img": "assets/img/products/walnut-1-category.avif"
                 },
                 {
                   "id": "grade-2",
                   "title": "Грецкий орех очищенный 2-й сорт",
                   "titleEn": "Peeled Walnut, Grade 2",
-                  "img": "assets/img/products/walnut-2-category.jpg"
+                  "img": "assets/img/products/walnut-2-category.avif"
                 },
                 {
                   "id": "grade-3",
                   "title": "Грецкий орех очищенный 3-й сорт",
                   "titleEn": "Peeled Walnut, Grade 3",
-                  "img": "assets/img/products/walnut-3-category.jpg"
+                  "img": "assets/img/products/walnut-3-category.avif"
                 }
               ]
             },
@@ -217,19 +217,19 @@
               "id": "quarters",
               "title": "Грецкий орех, четвертинка",
               "titleEn": "Walnut Quarters",
-              "img": "assets/img/products/walnut-quarters.jpg"
+              "img": "assets/img/products/walnut-quarters.avif"
             },
             {
               "id": "peeled-confectionery-red",
               "title": "Грецкий орех очищенный кондитерский «Красный»",
               "titleEn": "Peeled Walnut, Confectionery \"Red\"",
-              "img": "assets/img/products/walnut-condier.jpg"
+              "img": "assets/img/products/walnut-condier.avif"
             },
             {
               "id": "crushed",
               "title": "Грецкий орех измельчённый",
               "titleEn": "Walnut Crushed",
-              "img": "assets/img/products/walnut-crushed.jpg"
+              "img": "assets/img/products/walnut-crushed.avif"
             }
           ]
         },
@@ -237,31 +237,31 @@
           "id": "peanut",
           "title": "Арахис",
           "titleEn": "Peanut",
-          "img": "assets/img/products/peanut-inshell.jpg",
+          "img": "assets/img/products/peanut-inshell.avif",
           "children": [
             {
               "id": "inshell",
               "title": "Арахис в скорлупе",
               "titleEn": "Peanut In Shell",
-              "img": "assets/img/products/peanut-inshell.jpg"
+              "img": "assets/img/products/peanut-inshell.avif"
             },
             {
               "id": "peeled",
               "title": "Арахис очищенный",
               "titleEn": "Peanut Peeled",
-              "img": "assets/img/products/peanut-peeled.jpg"
+              "img": "assets/img/products/peanut-peeled.avif"
             },
             {
               "id": "blanched",
               "title": "Арахис бланшированный",
               "titleEn": "Peanut Blanched",
-              "img": "assets/img/products/peanut-blanched.jpg"
+              "img": "assets/img/products/peanut-blanched.avif"
             },
             {
               "id": "crushed",
               "title": "Арахис измельчённый",
               "titleEn": "Peanut Crushed",
-              "img": "assets/img/products/peanut-crushed.jpg"
+              "img": "assets/img/products/peanut-crushed.avif"
             }
           ]
         },
@@ -269,31 +269,31 @@
           "id": "pistachio",
           "title": "Фисташки",
           "titleEn": "Pistachio",
-          "img": "assets/img/products/pistachio-cover.jpg",
+          "img": "assets/img/products/pistachio-cover.avif",
           "children": [
             {
               "id": "peeled",
               "title": "Фисташки очищенные",
               "titleEn": "Pistachio, Peeled",
-              "img": "assets/img/products/pistachio- Фисташки очищенные.jpg"
+              "img": "assets/img/products/pistachio- Фисташки очищенные.avif"
             },
             {
               "id": "ahmad-agai-iran",
               "title": "Фисташки «Ахмад-Агаи», жареные, солёные (Иран)",
               "titleEn": "Pistachio Ahmad-Agai, Roasted, Salted (Iran)",
-              "img": "assets/img/products/pistachio-Фисташки Ахмад-Агаи жареные, соленые Иран.jpg"
+              "img": "assets/img/products/pistachio-Фисташки Ахмад-Агаи жареные, соленые Иран.avif"
             },
             {
               "id": "turkey-unpeeled-premium",
               "title": "Фисташки неочищенные, жареные, высший сорт (Турция)",
               "titleEn": "Pistachio Unpeeled, Roasted, Premium Grade (Turkey)",
-              "img": "assets/img/products/pistachio-Фисташки Турция неочищенные жареные высший сорт.jpg"
+              "img": "assets/img/products/pistachio-Фисташки Турция неочищенные жареные высший сорт.avif"
             },
             {
               "id": "roasted-salted-iran",
               "title": "Фисташки жареные, солёные (Иран)",
               "titleEn": "Pistachio Roasted, Salted (Iran)",
-              "img": "assets/img/products/pistachio-Фисташки жареные соленые Иран.jpg"
+              "img": "assets/img/products/pistachio-Фисташки жареные соленые Иран.avif"
             }
           ]
         },
@@ -301,25 +301,25 @@
           "id": "almond",
           "title": "Миндаль",
           "titleEn": "Almond",
-          "img": "assets/img/products/almond-inshell-cover.jpg",
+          "img": "assets/img/products/almond-inshell-cover.avif",
           "children": [
             {
               "id": "inshell",
               "title": "Миндаль в скорлупе",
               "titleEn": "Almond In Shell",
-              "img": "assets/img/products/almond-inshell.jpg"
+              "img": "assets/img/products/almond-inshell.avif"
             },
             {
               "id": "unpeeled",
               "title": "Миндаль неочищенный",
               "titleEn": "Almond Unpeeled",
-              "img": "assets/img/products/almond-unpeeled.jpg"
+              "img": "assets/img/products/almond-unpeeled.avif"
             },
             {
               "id": "peeled",
               "title": "Миндаль очищенный",
               "titleEn": "Almond Peeled",
-              "img": "assets/img/products/almond.jpg"
+              "img": "assets/img/products/almond.avif"
             },
             {
               "id": "nonpareil",
@@ -347,7 +347,7 @@
           "id": "cashew",
           "title": "Кешью",
           "titleEn": "Cashew",
-          "img": "assets/img/products/cashew.jpg",
+          "img": "assets/img/products/cashew.avif",
           "children": [
             {
               "id": "w180",
@@ -375,25 +375,25 @@
           "id": "pumpkin-seed",
           "title": "Тыквенная семечка",
           "titleEn": "Pumpkin Seed",
-          "img": "assets/img/products/pumpkin-seed.jpg"
+          "img": "assets/img/products/pumpkin-seed.avif"
         },
         {
           "id": "macadamia",
           "title": "Макадамия",
           "titleEn": "Macadamia",
-          "img": "assets/img/products/macadamia.jpg"
+          "img": "assets/img/products/macadamia.avif"
         },
         {
           "id": "hazelnut",
           "title": "Фундук",
           "titleEn": "Hazelnut",
-          "img": "assets/img/products/hazelnut.jpg"
+          "img": "assets/img/products/hazelnut.avif"
         },
         {
           "id": "apricot-kernels",
           "title": "Абрикосовые косточки",
           "titleEn": "Apricot Kernels",
-          "img": "assets/img/products/apricot-kernels.jpg"
+          "img": "assets/img/products/apricot-kernels.avif"
         }
       ]
     },
@@ -401,43 +401,43 @@
       "id": "legumes",
       "title": "Семена и бобовые",
       "titleEn": "Seeds & Legumes",
-      "img": "assets/img/catalog/бобовые.jpg",
+      "img": "assets/img/catalog/бобовые.avif",
       "children": [
         {
           "id": "mash",
           "title": "Маш",
           "titleEn": "Mung Bean",
-          "img": "assets/img/products/mash.jpg"
+          "img": "assets/img/products/mash.avif"
         },
         {
           "id": "sesame-white",
           "title": "Кунжут белый",
           "titleEn": "White Sesame",
-          "img": "assets/img/products/sesame-white.jpg"
+          "img": "assets/img/products/sesame-white.avif"
         },
         {
           "id": "fasol",
           "title": "Фасоль",
           "titleEn": "Beans",
-          "img": "assets/img/products/fasol-red.jpg",
+          "img": "assets/img/products/fasol-red.avif",
           "children": [
             {
               "id": "red",
               "title": "Фасоль красная",
               "titleEn": "Beans, Red",
-              "img": "assets/img/products/fasol-red.jpg"
+              "img": "assets/img/products/fasol-red.avif"
             },
             {
               "id": "pinto",
               "title": "Фасоль «Пинто»",
               "titleEn": "Beans, Pinto",
-              "img": "assets/img/products/fasol-pinto.jpg"
+              "img": "assets/img/products/fasol-pinto.avif"
             },
             {
               "id": "blackeye",
               "title": "Фасоль «Черноглазка»",
               "titleEn": "Beans, Black-Eyed",
-              "img": "assets/img/products/fasol-blackeye.jpg"
+              "img": "assets/img/products/fasol-blackeye.avif"
             }
           ]
         },
@@ -445,19 +445,19 @@
           "id": "pea-roasted",
           "title": "Горох жареный",
           "titleEn": "Roasted Peas",
-          "img": "assets/img/products/pea-roasted.jpg"
+          "img": "assets/img/products/pea-roasted.avif"
         },
         {
           "id": "black-sesame",
           "title": "Чёрный кунжут",
           "titleEn": "Black Sesame",
-          "img": "assets/img/products/black-sesame.jpg"
+          "img": "assets/img/products/black-sesame.avif"
         },
         {
           "id": "chickpea",
           "title": "Нут",
           "titleEn": "Chickpea",
-          "img": "assets/img/products/nut.jpg"
+          "img": "assets/img/products/nut.avif"
         }
       ]
     },
@@ -465,85 +465,85 @@
       "id": "fruits",
       "title": "Овощи и фрукты",
       "titleEn": "Vegetables & Fruits",
-      "img": "assets/img/catalog/фрукты.jpg",
+      "img": "assets/img/catalog/фрукты.avif",
       "children": [
         {
           "id": "apple",
           "title": "Яблоко",
           "titleEn": "Apple",
-          "img": "assets/img/products/fresh/apple.jpg"
+          "img": "assets/img/products/fresh/apple.avif"
         },
         {
           "id": "apricot-fresh",
           "title": "Абрикос",
           "titleEn": "Apricot",
-          "img": "assets/img/products/fresh/apricot.jpg"
+          "img": "assets/img/products/fresh/apricot.avif"
         },
         {
           "id": "cherry",
           "title": "Черешня",
           "titleEn": "Cherry",
-          "img": "assets/img/products/fresh/cherry.jpg"
+          "img": "assets/img/products/fresh/cherry.avif"
         },
         {
           "id": "sour-cherry",
           "title": "Вишня",
           "titleEn": "Sour Cherry",
-          "img": "assets/img/products/fresh/вишня.jpg"
+          "img": "assets/img/products/fresh/вишня.avif"
         },
         {
           "id": "grapes",
           "title": "Виноград",
           "titleEn": "Grapes",
-          "img": "assets/img/products/fresh/grapes.jpg"
+          "img": "assets/img/products/fresh/grapes.avif"
         },
         {
           "id": "lemon",
           "title": "Лимон",
           "titleEn": "Lemon",
-          "img": "assets/img/products/fresh/lemon.jpg"
+          "img": "assets/img/products/fresh/lemon.avif"
         },
         {
           "id": "peach",
           "title": "Персик",
           "titleEn": "Peach",
-          "img": "assets/img/products/fresh/peach.jpg"
+          "img": "assets/img/products/fresh/peach.avif"
         },
         {
           "id": "plum",
           "title": "Слива",
           "titleEn": "Plum",
-          "img": "assets/img/products/fresh/plum.jpg"
+          "img": "assets/img/products/fresh/plum.avif"
         },
         {
           "id": "fig",
           "title": "Инжир",
           "titleEn": "Fig",
-          "img": "assets/img/products/fresh/fig.jpg"
+          "img": "assets/img/products/fresh/fig.avif"
         },
         {
           "id": "onion",
           "title": "Лук",
           "titleEn": "Onion",
-          "img": "assets/img/products/fresh/onion.jpg"
+          "img": "assets/img/products/fresh/onion.avif"
         },
         {
           "id": "potato",
           "title": "Картофель",
           "titleEn": "Potato",
-          "img": "assets/img/products/fresh/potato.jpg"
+          "img": "assets/img/products/fresh/potato.avif"
         },
         {
           "id": "tomato",
           "title": "Помидор",
           "titleEn": "Tomato",
-          "img": "assets/img/products/fresh/tomato.jpg"
+          "img": "assets/img/products/fresh/tomato.avif"
         },
         {
           "id": "cucumber",
           "title": "Огурец",
           "titleEn": "Cucumber",
-          "img": "assets/img/products/fresh/cucumber.jpg"
+          "img": "assets/img/products/fresh/cucumber.avif"
         }
       ]
     },
@@ -551,43 +551,43 @@
       "id": "candied",
       "title": "Цукаты",
       "titleEn": "Candied Fruit",
-      "img": "assets/img/products/cukaty.jpg",
+      "img": "assets/img/products/cukaty.avif",
       "children": [
         {
           "id": "candied-fruit",
           "title": "Цукаты",
           "titleEn": "Candied Fruit",
-          "img": "assets/img/products/candied-fruit.jpg"
+          "img": "assets/img/products/candied-fruit.avif"
         },
         {
           "id": "dried-apricots",
           "title": "Сушёные абрикосы",
           "titleEn": "Dried Apricots",
-          "img": "assets/img/products/dried-apricots.jpg"
+          "img": "assets/img/products/dried-apricots.avif"
         },
         {
           "id": "dried-pineapple",
           "title": "Сушёные ананасы",
           "titleEn": "Dried Pineapple",
-          "img": "assets/img/products/dried-pineapple.jpg"
+          "img": "assets/img/products/dried-pineapple.avif"
         },
         {
           "id": "dried-banana",
           "title": "Сушёный банан",
           "titleEn": "Dried Banana",
-          "img": "assets/img/products/dried-banana.jpg"
+          "img": "assets/img/products/dried-banana.avif"
         },
         {
           "id": "dried-kiwi",
           "title": "Сушёное киви",
           "titleEn": "Dried Kiwi",
-          "img": "assets/img/products/dried-kiwi.jpg"
+          "img": "assets/img/products/dried-kiwi.avif"
         },
         {
           "id": "dried-mango",
           "title": "Сушёное манго",
           "titleEn": "Dried Mango",
-          "img": "assets/img/products/dried-mango.jpg"
+          "img": "assets/img/products/dried-mango.avif"
         }
       ]
     },
@@ -595,13 +595,13 @@
       "id": "packaging",
       "title": "Упаковка",
       "titleEn": "Packaging",
-      "img": "assets/img/catalog/упаковка.jpg",
+      "img": "assets/img/catalog/упаковка.avif",
       "children": [
         {
           "id": "bulk",
           "title": "Фасовка",
           "titleEn": "Bulk Packing",
-          "img": "assets/img/products/packaging/lineup.jpg",
+          "img": "assets/img/products/packaging/lineup.avif",
           "children": [
             {
               "id": "clear-bags",
@@ -609,13 +609,13 @@
               "titleEn": "Clear Bags",
               "weight": "от 30 г до 1,5 кг",
               "weightEn": "30 g – 1.5 kg",
-              "img": "assets/img/products/packaging/lineup.jpg",
+              "img": "assets/img/products/packaging/lineup.avif",
               "gallery": [
-                "assets/img/products/packaging/lineup.jpg",
-                "assets/img/products/packaging/bag-walnut.jpg",
-                "assets/img/products/packaging/bags-set.jpg",
-                "assets/img/products/packaging/bag-prune.jpg",
-                "assets/img/products/packaging/bags-prune-set.jpg"
+                "assets/img/products/packaging/lineup.avif",
+                "assets/img/products/packaging/bag-walnut.avif",
+                "assets/img/products/packaging/bags-set.avif",
+                "assets/img/products/packaging/bag-prune.avif",
+                "assets/img/products/packaging/bags-prune-set.avif"
               ]
             },
             {
@@ -624,7 +624,7 @@
               "titleEn": "Color Bags",
               "weight": "от 30 г до 1,5 кг",
               "weightEn": "30 g – 1.5 kg",
-              "img": "assets/img/products/packaging/branded-doypack.jpg"
+              "img": "assets/img/products/packaging/branded-doypack.avif"
             },
             {
               "id": "pet-jar",
@@ -632,17 +632,17 @@
               "titleEn": "PET Jar with Screw Cap",
               "weight": "700 г – 1,5 кг",
               "weightEn": "700 g – 1.5 kg",
-              "img": "assets/img/products/packaging/jar-cashew.jpg",
+              "img": "assets/img/products/packaging/jar-cashew.avif",
               "gallery": [
-                "assets/img/products/packaging/jar-cashew.jpg",
-                "assets/img/products/packaging/jar-peanut.jpg"
+                "assets/img/products/packaging/jar-cashew.avif",
+                "assets/img/products/packaging/jar-peanut.avif"
               ]
             },
             {
               "id": "kraft-zip",
               "title": "Крафт-пакет с zip-замком и окном",
               "titleEn": "Kraft Zip-Lock Pouch with Window",
-              "img": "assets/img/products/packaging/doypack-raisins.jpg"
+              "img": "assets/img/products/packaging/doypack-raisins.avif"
             }
           ]
         },
@@ -650,41 +650,41 @@
           "id": "branding",
           "title": "Брендирование",
           "titleEn": "Branding",
-          "img": "assets/img/products/packaging/branded-jars.jpg",
+          "img": "assets/img/products/packaging/branded-jars.avif",
           "children": [
             {
               "id": "branded-jars",
               "title": "Брендированные банки Mir Orexov",
               "titleEn": "Mir Orexov Branded Jars",
-              "img": "assets/img/products/packaging/branded-jars.jpg"
+              "img": "assets/img/products/packaging/branded-jars.avif"
             },
             {
               "id": "custom-boxes",
               "title": "Брендированные коробки под заказ",
               "titleEn": "Custom Branded Boxes",
-              "img": "assets/img/products/packaging/box3.png",
+              "img": "assets/img/products/packaging/box3.avif",
               "desc": "Изготавливаем брендированные коробки под любой продукт и дизайн заказчика — тираж, материал и оформление обсуждаются индивидуально.",
               "descEn": "We manufacture branded boxes for any product and client design — print run, material and artwork are discussed individually.",
               "gallery": [
-                "assets/img/products/packaging/box3.png",
-                "assets/img/products/packaging/box5.png",
-                "assets/img/products/packaging/box1.png",
-                "assets/img/products/packaging/box2.png",
-                "assets/img/products/packaging/box4.png",
-                "assets/img/products/packaging/psitachio.png"
+                "assets/img/products/packaging/box3.avif",
+                "assets/img/products/packaging/box5.avif",
+                "assets/img/products/packaging/box1.avif",
+                "assets/img/products/packaging/box2.avif",
+                "assets/img/products/packaging/box4.avif",
+                "assets/img/products/packaging/psitachio.avif"
               ]
             },
             {
               "id": "private-label",
               "title": "Приватная марка (Private Label)",
               "titleEn": "Private Label Packaging",
-              "img": "assets/img/products/packaging/paccing1.png",
+              "img": "assets/img/products/packaging/paccing1.avif",
               "desc": "Нанесём ваш логотип на любую упаковку — пакет, банку или дой-пак. Отличное решение для запуска собственной торговой марки.",
               "descEn": "We print your logo on any packaging — bag, jar or doypack. A great fit for launching your own private label.",
               "gallery": [
-                "assets/img/products/packaging/paccing1.png",
-                "assets/img/products/packaging/paccing3.png",
-                "assets/img/products/packaging/paccing2.png"
+                "assets/img/products/packaging/paccing1.avif",
+                "assets/img/products/packaging/paccing3.avif",
+                "assets/img/products/packaging/paccing2.avif"
               ]
             }
           ]
