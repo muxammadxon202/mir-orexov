@@ -39,7 +39,7 @@
     });
   }
 
-  fetch("assets/data/news.json")
+  fetch("/assets/data/news.json")
     .then((res) => res.json())
     .then((data) => {
       articles = (data.articles || []).slice().sort((a, b) => new Date(b.date) - new Date(a.date));
