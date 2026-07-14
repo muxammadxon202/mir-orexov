@@ -33,6 +33,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog.html" />
   </url>
   <url>
+    <loc>https://mirorexov.com/sukhofrukty.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/sukhofrukty.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/dry-fruits.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/sukhofrukty.html" />
+  </url>
+  <url>
+    <loc>https://mirorexov.com/en/dry-fruits.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/sukhofrukty.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/dry-fruits.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/sukhofrukty.html" />
+  </url>
+  <url>
     <loc>https://mirorexov.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
