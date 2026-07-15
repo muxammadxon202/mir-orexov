@@ -82,12 +82,15 @@ document.addEventListener("DOMContentLoaded", () => {
   // Count-up animation for stat numbers, triggered when they scroll into view.
   // Values look like "32+", "600т+" — parse the leading integer and preserve
   // whatever suffix follows ("+", "т+"), so only the number animates.
-  const statNums = document.querySelectorAll(".stat-num");
-  if (statNums.length) {
+  function armStatCounters() {
+    const statNums = document.querySelectorAll(".stat-num");
+    if (!statNums.length) return;
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const runCount = (el) => {
+      if (el.dataset.counted) return;
       const match = el.textContent.trim().match(/^(\d+)(.*)$/);
       if (!match) return;
+      el.dataset.counted = "1";
       const target = parseInt(match[1], 10);
       const suffix = match[2];
       el.classList.add("counted");
@@ -95,11 +98,11 @@ document.addEventListener("DOMContentLoaded", () => {
         el.textContent = target + suffix;
         return;
       }
-      const duration = 1400;
+      const duration = 1600;
       const start = performance.now();
       const tick = (now) => {
         const p = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+        const eased = 1 - Math.pow(1 - p, 4); // easeOutQuart — smooth settle
         el.textContent = Math.round(eased * target) + suffix;
         if (p < 1) requestAnimationFrame(tick);
         else el.textContent = target + suffix;
@@ -117,12 +120,39 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           });
         },
-        { threshold: 0.5 }
+        { threshold: 0.6 }
       );
       statNums.forEach((el) => statObserver.observe(el));
     } else {
       statNums.forEach(runCount);
     }
+  }
+
+  // The intro preloader covers the screen for ~2.5s. If the counters were armed
+  // immediately, the hero stats (in view on load) would count up *behind* the
+  // preloader and be done before it lifts — so only the scrolled-to footer
+  // stats appeared to animate. Arm the counters once the preloader is gone.
+  const preloaderEl = document.querySelector(".preloader");
+  if (preloaderEl && !preloaderEl.classList.contains("hidden")) {
+    let armed = false;
+    const armOnce = () => {
+      if (armed) return;
+      armed = true;
+      armStatCounters();
+    };
+    const poll = setInterval(() => {
+      if (preloaderEl.classList.contains("hidden")) {
+        clearInterval(poll);
+        armOnce();
+      }
+    }, 100);
+    // Safety net in case the preloader never gets the hidden class.
+    setTimeout(() => {
+      clearInterval(poll);
+      armOnce();
+    }, 4000);
+  } else {
+    armStatCounters();
   }
 
   // Hero entrance animation: fires once on load, staggered by data-animate-load index

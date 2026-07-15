@@ -52,12 +52,13 @@ body {
   background:
     radial-gradient(ellipse 900px 600px at 15% -10%, rgba(201, 162, 39, 0.08), transparent 60%),
     radial-gradient(ellipse 700px 500px at 100% 20%, rgba(192, 57, 43, 0.06), transparent 60%),
+    linear-gradient(rgba(251, 247, 235, 0.5), rgba(251, 247, 235, 0.5)),
     url("../img/pattern-nuts-lines.png") repeat fixed,
     var(--bg);
-  background-size: auto, auto, 900px, auto;
+  background-size: auto, auto, auto, 900px, auto;
   color: var(--text);
   font-family: "Inter", -apple-system, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: var(--fs-body);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -351,11 +352,10 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--gold-text);
   display: inline-block;
 }
-/* Brief scale pop the moment the count-up starts (added by main.js) */
-.stat-num.counted { animation: stat-pop 0.5s var(--ease-out); }
+/* Gentle scale settle the moment the count-up starts (added by main.js) */
+.stat-num.counted { animation: stat-pop 0.6s var(--ease-out); }
 @keyframes stat-pop {
-  0%   { transform: scale(0.82); }
-  60%  { transform: scale(1.06); }
+  0%   { transform: scale(0.92); }
   100% { transform: scale(1); }
 }
 .stat-label {
@@ -512,8 +512,8 @@ button { font-family: inherit; cursor: pointer; }
 /* Alternate band: card-tinted background with the nut pattern (replaces the
    inline style previously repeated on each such section). */
 .section--alt {
-  background: url("../img/pattern-nuts-lines.png") repeat fixed, var(--bg-card);
-  background-size: 900px, auto;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/pattern-nuts-lines.png") repeat fixed, var(--bg-card);
+  background-size: auto, 900px, auto;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
