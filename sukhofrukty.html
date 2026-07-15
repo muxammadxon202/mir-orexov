@@ -101,7 +101,33 @@
           <h2 style="margin-bottom: 16px;" data-en="Dried Fruits — Full Cycle from Orchard to Export">Сухофрукты — полный цикл от сада до экспорта</h2>
           <p style="color: var(--text-dim);" data-en="Mir Orexov Samarkand is a full-cycle producer of dried fruits from Uzbekistan: we grow a share of the raw fruit ourselves, process and sort it, and ship wholesale batches directly to buyers in 30+ countries — no intermediaries, no resale markup.">Мир Орехов Самарканд — производитель сухофруктов полного цикла из Узбекистана: часть сырья выращиваем сами, перерабатываем и сортируем на собственных мощностях, отгружаем оптовые партии напрямую покупателям в 30+ стран — без посредников и перепродажной наценки.</p>
         </div>
-        <div class="media-placeholder" data-animate data-en="Dried fruit sorting photo">Фото сортировки сухофруктов</div>
+        <div class="sam-slider" data-animate>
+          <div class="sam-slider__track">
+            <video class="sam-slide active" autoplay muted playsinline data-caption-ru="Наше производство сухофруктов" data-caption-en="Our dried fruit production">
+              <source src="assets/img/sukhofrukty-proizvodstvo.mp4" type="video/mp4" />
+            </video>
+            <img src="assets/img/products/kuraga-base.avif" alt="Курага" class="sam-slide" data-caption-ru="Курага" data-caption-en="Dried apricots">
+            <img src="assets/img/products/raisin-cover.avif" alt="Изюм" class="sam-slide" data-caption-ru="Изюм" data-caption-en="Raisins">
+            <img src="assets/img/products/prune-catalog.avif" alt="Чернослив" class="sam-slide" data-caption-ru="Чернослив" data-caption-en="Prunes">
+            <img src="assets/img/products/turshak.avif" alt="Туршак" class="sam-slide" data-caption-ru="Сушёные абрикосы «Туршак»" data-caption-en="Dried apricots Turshak">
+            <img src="assets/img/products/jida.avif" alt="Джида" class="sam-slide" data-caption-ru="Джида" data-caption-en="Jida">
+            <img src="assets/img/products/unabi.avif" alt="Унаби" class="sam-slide" data-caption-ru="Унаби" data-caption-en="Unabi">
+            <img src="assets/img/products/компот.avif" alt="Компотная смесь" class="sam-slide" data-caption-ru="Компотная смесь" data-caption-en="Dried fruit compote mix">
+          </div>
+          <div class="sam-slider__caption">Наше производство сухофруктов</div>
+          <div class="sam-slider__dots">
+            <button class="sam-dot active" data-idx="0"></button>
+            <button class="sam-dot" data-idx="1"></button>
+            <button class="sam-dot" data-idx="2"></button>
+            <button class="sam-dot" data-idx="3"></button>
+            <button class="sam-dot" data-idx="4"></button>
+            <button class="sam-dot" data-idx="5"></button>
+            <button class="sam-dot" data-idx="6"></button>
+            <button class="sam-dot" data-idx="7"></button>
+          </div>
+          <button class="sam-arrow sam-arrow--prev" aria-label="Назад">&#8592;</button>
+          <button class="sam-arrow sam-arrow--next" aria-label="Вперёд">&#8594;</button>
+        </div>
       </div>
     </section>
 
@@ -282,5 +308,76 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/i18n.js"></script>
   <script src="assets/js/chat-widget.js"></script>
+  <script>
+    (function(){
+      function initSlider(slider) {
+        const slides  = slider.querySelectorAll('.sam-slide');
+        const dots    = slider.querySelectorAll('.sam-dot');
+        const caption = slider.querySelector('.sam-slider__caption');
+        let current = 0, timer;
+
+        function updateCaption() {
+          if (!caption) return;
+          const s = slides[current];
+          const isEn = document.documentElement.lang === 'en';
+          caption.textContent = isEn ? s.dataset.captionEn : s.dataset.captionRu;
+        }
+        window.addEventListener('langchange', updateCaption);
+
+        function goTo(idx) {
+          slides[current].classList.remove('active');
+          dots[current].classList.remove('active');
+          current = (idx + slides.length) % slides.length;
+          slides[current].classList.add('active');
+          dots[current].classList.add('active');
+          updateCaption();
+          if (slides[current].tagName === 'VIDEO') {
+            slides[current].currentTime = 0;
+            slides[current].play().catch(() => {});
+          }
+        }
+
+        updateCaption();
+
+        // Photo slides advance on a fixed timer; a video slide instead waits
+        // for its own "ended" event, so it always plays through in full
+        // before the slider moves on to the next photo.
+        let videoEndedCleanup = null;
+        function startAuto() {
+          const active = slides[current];
+          if (active.tagName === 'VIDEO') {
+            const onEnded = () => { goTo(current + 1); startAuto(); };
+            active.addEventListener('ended', onEnded, { once: true });
+            videoEndedCleanup = () => active.removeEventListener('ended', onEnded);
+          } else {
+            timer = setTimeout(() => { goTo(current + 1); startAuto(); }, 3500);
+          }
+        }
+        function stopAuto() {
+          clearTimeout(timer);
+          if (videoEndedCleanup) { videoEndedCleanup(); videoEndedCleanup = null; }
+        }
+
+        slider.querySelector('.sam-arrow--next').addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
+        slider.querySelector('.sam-arrow--prev').addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
+        dots.forEach((d, i) => {
+          d.setAttribute('aria-label', 'Фото ' + (i + 1));
+          d.addEventListener('click', () => { stopAuto(); goTo(+d.dataset.idx); startAuto(); });
+        });
+
+        // Touch swipe
+        let tx = 0;
+        slider.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+        slider.addEventListener('touchend',   e => {
+          const dx = e.changedTouches[0].clientX - tx;
+          if (Math.abs(dx) > 40) { stopAuto(); goTo(current + (dx < 0 ? 1 : -1)); startAuto(); }
+        }, { passive: true });
+
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) startAuto();
+      }
+
+      document.querySelectorAll('.sam-slider').forEach(initSlider);
+    })();
+  </script>
 </body>
 </html>
