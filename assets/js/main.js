@@ -79,6 +79,52 @@ document.addEventListener("DOMContentLoaded", () => {
     animated.forEach((el) => el.classList.add("in-view"));
   }
 
+  // Count-up animation for stat numbers, triggered when they scroll into view.
+  // Values look like "32+", "600т+" — parse the leading integer and preserve
+  // whatever suffix follows ("+", "т+"), so only the number animates.
+  const statNums = document.querySelectorAll(".stat-num");
+  if (statNums.length) {
+    const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const runCount = (el) => {
+      const match = el.textContent.trim().match(/^(\d+)(.*)$/);
+      if (!match) return;
+      const target = parseInt(match[1], 10);
+      const suffix = match[2];
+      el.classList.add("counted");
+      if (prefersReduced) {
+        el.textContent = target + suffix;
+        return;
+      }
+      const duration = 1400;
+      const start = performance.now();
+      const tick = (now) => {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
+        el.textContent = Math.round(eased * target) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+        else el.textContent = target + suffix;
+      };
+      requestAnimationFrame(tick);
+    };
+
+    if ("IntersectionObserver" in window) {
+      const statObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              runCount(entry.target);
+              statObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.5 }
+      );
+      statNums.forEach((el) => statObserver.observe(el));
+    } else {
+      statNums.forEach(runCount);
+    }
+  }
+
   // Hero entrance animation: fires once on load, staggered by data-animate-load index
   const heroAnimated = document.querySelectorAll("[data-animate-load]");
   heroAnimated.forEach((el) => {

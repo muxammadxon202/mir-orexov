@@ -349,6 +349,14 @@ button { font-family: inherit; cursor: pointer; }
   font-size: 28px;
   font-weight: 600;
   color: var(--gold-text);
+  display: inline-block;
+}
+/* Brief scale pop the moment the count-up starts (added by main.js) */
+.stat-num.counted { animation: stat-pop 0.5s var(--ease-out); }
+@keyframes stat-pop {
+  0%   { transform: scale(0.82); }
+  60%  { transform: scale(1.06); }
+  100% { transform: scale(1); }
 }
 .stat-label {
   font-size: var(--fs-small);
@@ -570,6 +578,13 @@ button { font-family: inherit; cursor: pointer; }
   justify-content: center;
   color: var(--gold-text);
   margin-bottom: 16px;
+  transition: transform var(--dur-med) var(--ease-out), background var(--dur-med) var(--ease-out), color var(--dur-med) var(--ease-out);
+}
+/* Icon comes alive when its card is hovered */
+.card:hover .card-icon {
+  transform: scale(1.08) rotate(-4deg);
+  background: var(--gold);
+  color: #fff;
 }
 
 .card h3 { font-size: 17px; margin-bottom: 8px; }
