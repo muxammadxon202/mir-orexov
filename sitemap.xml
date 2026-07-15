@@ -33,6 +33,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog.html" />
   </url>
   <url>
+    <loc>https://mirorexov.com/orehi.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/orehi.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/nuts.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/orehi.html" />
+  </url>
+  <url>
+    <loc>https://mirorexov.com/en/nuts.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/orehi.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/nuts.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/orehi.html" />
+  </url>
+  <url>
     <loc>https://mirorexov.com/sukhofrukty.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

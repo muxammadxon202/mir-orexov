@@ -47,5 +47,17 @@
     document.querySelectorAll(".lang-switch button").forEach((btn) => {
       btn.addEventListener("click", () => setLang(btn.dataset.lang));
     });
+    // On pages where the language switch navigates to a separate URL (the /en/
+    // pages use <a> links, not in-place buttons), persist the chosen language
+    // before the browser follows the link. Without this, clicking "RU" from an
+    // /en/ page lands on the Russian URL but localStorage still says "en", so
+    // i18n re-renders it in English — the switch appears broken.
+    document.querySelectorAll(".lang-switch a[data-lang]").forEach((link) => {
+      link.addEventListener("click", () => {
+        try {
+          localStorage.setItem(STORAGE_KEY, link.dataset.lang);
+        } catch (e) {}
+      });
+    });
   });
 })();
