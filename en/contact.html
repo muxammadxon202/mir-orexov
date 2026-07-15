@@ -126,7 +126,8 @@
               </div>
               <div class="field">
                 <label for="phone">Phone</label>
-                <input id="phone" name="phone" type="tel" placeholder="+998 90 000 00 00" />
+                <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="+998 90 000 00 00" pattern="\+?[0-9\s\-\(\)]{7,20}" title="Phone number only, e.g. +998 90 000 00 00" />
+                <div class="field-error">Please enter a valid phone number</div>
               </div>
             </div>
 

@@ -228,7 +228,10 @@ function initForm() {
     e.preventDefault();
 
     if (!form.checkValidity()) {
-      form.querySelectorAll("[required]").forEach((field) => {
+      // Not just [required] fields — a field like #phone is optional but
+      // still carries a pattern (only digits/+/spaces/parens/dashes), so an
+      // invalid non-empty value needs its own error shown too.
+      form.querySelectorAll("[required], [pattern]").forEach((field) => {
         const errorEl = field.parentElement.querySelector(".field-error");
         if (errorEl) errorEl.classList.toggle("show", !field.checkValidity());
       });
@@ -265,7 +268,7 @@ function initForm() {
     }
   });
 
-  form.querySelectorAll("[required]").forEach((field) => {
+  form.querySelectorAll("[required], [pattern]").forEach((field) => {
     field.addEventListener("blur", () => {
       const errorEl = field.parentElement.querySelector(".field-error");
       if (errorEl) errorEl.classList.toggle("show", !field.checkValidity());
