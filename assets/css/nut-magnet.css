@@ -1,0 +1,214 @@
+/* ============================================================
+   NUT MAGNET BUTTON — Mir Orexov
+   Путь: /assets/css/nut-magnet.css
+   Подключается в <head> после основного стиля.
+
+   ВАЖНО: секция-родитель должна иметь overflow-x: hidden,
+   иначе орехи вызовут горизонтальный скролл на телефоне.
+   (У .hero уже стоит overflow: hidden.)
+   ============================================================ */
+
+/* --- Токены проекта (из :root в style.css) --- */
+.nutbtn{
+  --nb-surface:       var(--brown-900);
+  --nb-surface-hover: var(--brown-800);
+  --nb-text:          var(--cream-50);
+  --nb-nut:           var(--gold-400);
+  --nb-focus-inner:   var(--cream-50);
+  --nb-focus-outer:   var(--gold-400);
+
+  --nb-ease-spring: cubic-bezier(.34, 1.4, .64, 1);
+  --nb-ease-out:    cubic-bezier(.22, 1, .36, 1);
+}
+
+/* ============================================================
+   СТРУКТУРА
+   ============================================================ */
+
+.nutbtn{
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 210px;
+  padding: 17px 36px;
+  border: 0;
+  background: none;
+  border-radius: var(--radius-sm);
+  font: inherit;
+  font-size: var(--fs-base);
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* --- Заливка --- */
+.nutbtn__surface{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  background: var(--nb-surface);
+  transition:
+    background   .25s var(--nb-ease-out),
+    transform    .18s var(--nb-ease-out),
+    box-shadow   .25s var(--nb-ease-out);
+}
+
+/* --- Текст --- */
+.nutbtn__label{
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--nb-text);
+}
+.nutbtn__label svg{
+  width: 16px;
+  height: 16px;
+  transition: transform .25s var(--nb-ease-out);
+}
+
+/* --- Поле орехов --- */
+.nutbtn__field{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.nut{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--size);
+  height: var(--size);
+  margin: calc(var(--size) / -2) 0 0 calc(var(--size) / -2);
+  color: var(--nb-nut);
+  opacity: .62;
+  transform: translate3d(var(--x), var(--y), 0) rotate(var(--r));
+  transition:
+    transform .9s var(--nb-ease-spring) var(--delay),
+    opacity   .5s var(--nb-ease-out)    var(--delay);
+  will-change: transform;
+}
+.nut svg{ width: 100%; height: 100%; display: block; }
+
+/* Силуэт заливкой + деталь линией — форма читается на 20–36px */
+.nut .body{ fill: currentColor; fill-opacity: .34; }
+.nut .line{
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Состояние притяжения — общее для hover и для мобильного триггера */
+.nutbtn.is-attracting .nut{
+  transform: translate3d(0, 0, 0) rotate(0deg) scale(.28);
+  opacity: 1;
+  transition-duration: .6s, .3s;
+  transition-timing-function: var(--nb-ease-spring), var(--nb-ease-out);
+}
+
+/* ============================================================
+   ДЕСКТОП: магнит на наведении
+   ============================================================ */
+@media (hover: hover) and (pointer: fine){
+
+  .nutbtn:hover .nutbtn__surface{
+    background: var(--nb-surface-hover);
+    box-shadow: 0 12px 32px -14px rgba(45, 28, 21, .6);
+  }
+  .nutbtn:hover .nutbtn__label svg{ transform: translateX(4px); }
+
+  .nutbtn:hover .nut,
+  .nutbtn:focus-visible .nut{
+    transform: translate3d(0, 0, 0) rotate(0deg) scale(.28);
+    opacity: 1;
+    transition-duration: .6s, .3s;
+    transition-timing-function: var(--nb-ease-spring), var(--nb-ease-out);
+  }
+}
+
+/* ============================================================
+   ТЕЛЕФОН: тактильное нажатие + разовый сбор при появлении
+   ============================================================ */
+@media (hover: none){
+
+  .nutbtn{
+    min-width: 0;
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 28px;
+    min-height: 52px;   /* тач-таргет с запасом */
+  }
+
+  /* Мгновенный отклик на палец — важнее любой анимации */
+  .nutbtn:active .nutbtn__surface{
+    transform: scale(.97);
+    background: var(--nb-surface-hover);
+    transition-duration: .08s;
+  }
+
+  /* После разового сбора орехи убираются и больше не мешают */
+  .nutbtn.is-settled .nut{
+    opacity: 0;
+    transform: translate3d(0, 0, 0) scale(.2);
+    transition-duration: .45s;
+  }
+}
+
+.nutbtn:active .nutbtn__surface{ transform: scale(.975); }
+
+/* ============================================================
+   ФОКУС
+   ============================================================ */
+.nutbtn:focus-visible{ outline: none; }
+.nutbtn:focus-visible .nutbtn__surface{
+  box-shadow:
+    0 0 0 2px var(--nb-focus-inner),
+    0 0 0 5px var(--nb-focus-outer);
+}
+
+/* ============================================================
+   ВАРИАНТЫ
+   ============================================================ */
+
+/* Золотая — для тёмного фона */
+.nutbtn--gold{
+  --nb-surface:       var(--gold-400);
+  --nb-surface-hover: var(--gold-300);
+  --nb-text:          var(--brown-900);
+  --nb-nut:           var(--gold-300);
+  --nb-focus-inner:   var(--brown-900);
+  --nb-focus-outer:   var(--gold-300);
+}
+.nutbtn--gold .nut{ opacity: .55; }
+
+/* Контурная — вторичное действие */
+.nutbtn--ghost{
+  --nb-surface:       var(--cream-50);
+  --nb-surface-hover: var(--cream-200);
+  --nb-text:          var(--brown-900);
+  --nb-nut:           var(--gold-600);
+}
+.nutbtn--ghost .nutbtn__surface{ border: 1px solid var(--brown-900); }
+.nutbtn--ghost:hover .nutbtn__surface{ box-shadow: none; }
+.nutbtn--ghost .nut{ opacity: .5; }
+
+/* ============================================================
+   ДОСТУПНОСТЬ
+   ============================================================ */
+@media (prefers-reduced-motion: reduce){
+  .nut{ display: none; }
+  .nutbtn__surface,
+  .nutbtn__label svg{
+    transition-duration: .01ms !important;
+  }
+}

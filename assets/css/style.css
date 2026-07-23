@@ -1050,8 +1050,9 @@ button { font-family: inherit; cursor: pointer; }
 .pf-col h4, .footer-about h4 { margin: 0 0 16px; font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
 
 .pf-nav { list-style: none; margin: 0; padding: 0; }
-.pf-nav li { margin-bottom: 12px; }
-.pf-nav a { color: rgba(251, 247, 235, 0.72); text-decoration: none; font-size: var(--fs-base); font-weight: 500; transition: color var(--dur-fast) var(--ease-out), padding-left var(--dur-fast) var(--ease-out); }
+.pf-nav li { margin-bottom: 8px; }
+/* inline-block + vertical padding: same visual rhythm, but ~28px tap height */
+.pf-nav a { display: inline-block; padding-block: 4px; color: rgba(251, 247, 235, 0.72); text-decoration: none; font-size: var(--fs-base); font-weight: 500; transition: color var(--dur-fast) var(--ease-out), padding-left var(--dur-fast) var(--ease-out); }
 .pf-nav a:hover { color: var(--gold); padding-left: 3px; }
 
 .pf-contact-row { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
@@ -1120,12 +1121,28 @@ button { font-family: inherit; cursor: pointer; }
   .footer-flat-cols { grid-template-columns: 1fr 1fr; }
 }
 
+/* ===== Mobile footer: most clients open the site on a phone, so the footer is
+   laid out for one thumb-width column — tight vertical rhythm, three compact
+   stat columns instead of a wrapping 48px row, nav links in two columns to
+   halve the scroll, and everything left-aligned to one edge. ===== */
 @media (max-width: 720px) {
   .footer-flat { padding: 48px 0 0; }
-  .footer-flat-top { flex-direction: column; align-items: flex-start; }
+  .footer-flat-top { flex-direction: column; align-items: flex-start; gap: 32px; padding-bottom: 32px; }
   .footer-slogan { align-items: flex-start; text-align: left; max-width: 100%; }
   .footer-slogan-ru { font-size: var(--fs-lg); }
-  .footer-flat-cols { grid-template-columns: 1fr; gap: 32px; }
+  /* stats: fixed 3-up grid — numbers stay on one line, labels wrap under them */
+  .footer-stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .footer-stats .stat-label { font-size: var(--fs-xs); }
+  .footer-flat-cols { grid-template-columns: 1fr; gap: 32px; padding-top: 32px; }
+  /* nav: two columns cut the footer height roughly in half */
+  .pf-nav { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 24px; }
+  /* extra bottom space so the fixed chat bubble never covers the credit line */
+  .footer-bottom { margin-top: 32px; flex-direction: column; gap: 8px; padding-bottom: 96px; }
 }
 
 /* ===== Forms ===== */
