@@ -1,5 +1,16 @@
 const { google } = require("googleapis");
 
+// Google Sheets evaluates any cell that starts with = + - @ (or a leading
+// tab/CR/LF that Sheets then trims down to one of those) as a FORMULA when the
+// write uses valueInputOption: "USER_ENTERED". Since /api/requests takes fully
+// attacker-controlled text, neutralize every cell by prefixing a single quote
+// so Sheets always treats the value as literal text — this kills stored formula
+// injection (e.g. =IMPORTXML(...) exfiltrating other leads).
+function neutralizeFormula(value) {
+  const s = value == null ? "" : String(value);
+  return /^[\t\r\n]*[=+\-@]/.test(s) ? "'" + s : s;
+}
+
 let sheetsClient = null;
 async function getSheetsClient() {
   if (sheetsClient) return sheetsClient;
@@ -38,7 +49,7 @@ async function appendToSheet(record) {
           record.product,
           record.volume,
           record.message,
-        ],
+        ].map(neutralizeFormula),
       ],
     },
   });
