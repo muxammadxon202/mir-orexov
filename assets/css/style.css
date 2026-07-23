@@ -491,6 +491,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .stat-label {
   font-size: var(--fs-sm);
+  font-weight: 600;
   color: var(--text-dim);
 }
 
@@ -1277,8 +1278,9 @@ button { font-family: inherit; cursor: pointer; }
   margin: -8px 0 0;
   padding: 0 16px 16px;
   font-size: var(--fs-sm);
+  font-weight: 600;
   line-height: 1.5;
-  color: var(--text-dim);
+  color: var(--brown-800);
   text-align: center;
 }
 .cat-tile--disabled .cat-tile-desc { padding-bottom: 12px; }
@@ -1395,27 +1397,31 @@ button { font-family: inherit; cursor: pointer; }
 /* Text always reads above the decorative photo, whatever the card width */
 .cat-card__badge, .cat-card__title, .cat-card__desc, .cat-card__cta { position: relative; z-index: 1; }
 
-/* Cutout variant: the product is cut out from its background (transparent PNG)
-   and sits directly on the gradient — no circle, no ring, no foreign backdrop.
-   A tone-coloured drop-shadow grounds it on the card. */
+/* Diagonal-art variant: generated product photography on a white background,
+   composed as a diagonal cascade. mix-blend-mode: multiply dissolves the white
+   into the card gradient (no cutting needed), so the produce sits right on the
+   pastel wash and the composition bleeds to the card's bottom-right corner. */
 .cat-card__img--cutout {
   border-radius: 0;
   border: none;
   box-shadow: none;
   aspect-ratio: auto;
-  width: 56%;
-  height: auto;
-  max-height: 62%;
-  right: -3%;
-  bottom: -6%;
+  width: auto;
+  height: 100%;
+  max-width: 68%;
+  max-height: none;
+  right: 0;
+  bottom: 0;
   object-fit: contain;
   object-position: right bottom;
-  filter: drop-shadow(0 16px 22px rgba(var(--tone), 0.45));
+  mix-blend-mode: multiply;
+  filter: none;
 }
 .cat-card:hover .cat-card__img--cutout {
   box-shadow: none;
-  transform: translate(2px, 2px) scale(1.07) rotate(2deg);
-  filter: drop-shadow(0 20px 28px rgba(var(--tone), 0.55));
+  transform: scale(1.05) rotate(1.5deg);
+  transform-origin: right bottom;
+  filter: none;
 }
 
 .cat-card__badge {
@@ -1449,8 +1455,9 @@ button { font-family: inherit; cursor: pointer; }
   margin: 0;
   max-width: 26ch; /* keeps text clear of the corner photo */
   font-size: var(--fs-sm);
+  font-weight: 600; /* pastel gradient eats thin strokes — hold the weight */
   line-height: 1.5;
-  color: var(--brown-800);
+  color: var(--brown-900);
 }
 .cat-card__cta {
   display: inline-flex;
@@ -1479,6 +1486,7 @@ button { font-family: inherit; cursor: pointer; }
 @media (max-width: 480px) {
   .cat-card { min-height: 0; padding: 24px 24px 96px; }
   .cat-card__img { width: 50%; }
+  .cat-card__img--cutout { width: auto; height: 82%; max-width: 76%; }
   .cat-card__desc { max-width: none; }
 }
 
