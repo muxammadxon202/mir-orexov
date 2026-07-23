@@ -44,6 +44,24 @@
     return window.i18n && window.i18n.getLang() === "en" ? "Request a Quote" : "Оставить заявку";
   }
 
+  function isEn() {
+    return window.i18n && window.i18n.getLang() === "en";
+  }
+
+  // «6 позиций / 3 позиции / 1 позиция» — proper Russian declension for the badge
+  function countLabel(n) {
+    if (isEn()) return n + (n === 1 ? " item" : " items");
+    const mod10 = n % 10, mod100 = n % 100;
+    const word =
+      mod10 === 1 && mod100 !== 11 ? "позиция"
+      : mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14) ? "позиции"
+      : "позиций";
+    return n + " " + word;
+  }
+
+  const ARROW_SVG =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
   const titleEl = document.querySelector("#catalog-title");
   const breadcrumbEl = document.querySelector("#catalog-breadcrumb");
   const gridEl = document.querySelector("#catalog-grid");
@@ -92,10 +110,33 @@
 
     gridEl.style.display = hasChildren ? "" : "none";
     emptyEl.style.display = !hasChildren && !isLeaf ? "" : "none";
+    // Root shows wide gradient category cards; deeper levels use product tiles
+    gridEl.classList.toggle("grid-cards", isCategoryLevel);
 
     if (hasChildren) {
       gridEl.innerHTML = "";
+      // Every card inherits its family tone: the category's own id at root,
+      // the current branch's top category when drilled in.
+      const toneId = isCategoryLevel ? null : path[0];
       node.children.forEach((child) => {
+        const descText = isEn() ? child.descEn : child.desc;
+
+        // Root level: gradient category card — badge with tone dot, what's
+        // inside, CTA arrow, category photo overflowing the corner.
+        if (isCategoryLevel) {
+          const card = document.createElement("a");
+          card.href = "#/" + child.id;
+          card.className = "cat-card tone-" + child.id;
+          card.innerHTML =
+            (child.img ? `<img class="cat-card__img" src="${child.img}" alt="" aria-hidden="true" loading="lazy" />` : "") +
+            `<span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>${countLabel((child.children || []).length)}</span>` +
+            `<h3 class="cat-card__title">${t(child)}</h3>` +
+            `<p class="cat-card__desc">${descText || ""}</p>` +
+            `<span class="cat-card__cta">${isEn() ? "View" : "Смотреть"}${ARROW_SVG}</span>`;
+          gridEl.appendChild(card);
+          return;
+        }
+
         // A child is a dead end for navigation — either a true leaf (no children
         // key at all) or a collapsed branch (disabled) — in both cases there is
         // nothing further to drill into, so show the quote button right on the
@@ -103,8 +144,7 @@
         const isLeafChild = !child.children || child.disabled;
         const card = document.createElement(isLeafChild ? "div" : "a");
         if (!isLeafChild) card.href = "#/" + [...path, child.id].join("/");
-        card.className = "cat-tile" + (isCategoryLevel ? " cat-tile--category" : "") + (isLeafChild ? " cat-tile--disabled" : "") + (child.disabled ? " cat-tile--empty" : "") + (path[0] === "packaging" ? " cat-tile--packaging" : "");
-        const descText = window.i18n && window.i18n.getLang() === "en" ? child.descEn : child.desc;
+        card.className = "cat-tile" + (toneId ? " tone-" + toneId : "") + (isLeafChild ? " cat-tile--disabled" : "") + (child.disabled ? " cat-tile--empty" : "") + (path[0] === "packaging" ? " cat-tile--packaging" : "");
         if (child.img) {
           card.innerHTML = `<div class="cat-tile-photo"><img src="${child.img}" alt="${t(child)}" loading="lazy" /></div>`;
         } else if (descText) {
@@ -116,6 +156,11 @@
           card.innerHTML = `<div class="cat-tile-photo cat-tile-photo--empty">${t(child)}</div>`;
         }
         card.innerHTML += `<div class="cat-tile-title">${t(child)}</div>`;
+        // Product description under the title (service tiles already carry
+        // their text inside the photo area — don't repeat it).
+        if (descText && child.img) {
+          card.innerHTML += `<p class="cat-tile-desc">${descText}</p>`;
+        }
         if (isLeafChild) {
           const quoteBtn = document.createElement("button");
           quoteBtn.type = "button";

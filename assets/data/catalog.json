@@ -39,7 +39,9 @@
               "titleEn": "Dried Apricot Turshak, With Pit",
               "img": "assets/img/products/turshak.avif"
             }
-          ]
+          ],
+          "desc": "Курага солнечной сушки — сорта от промышленного до люкс.",
+          "descEn": "Sun-dried apricots — grades from industrial to luxe."
         },
         {
           "id": "raisins",
@@ -95,7 +97,9 @@
               "titleEn": "Raisins Shigani Red",
               "img": "assets/img/products/shigani-red.avif"
             }
-          ]
+          ],
+          "desc": "Восемь сортов изюма — от голден до чёрного кишмиша.",
+          "descEn": "Eight raisin varieties — from golden to black kishmish."
         },
         {
           "id": "prune",
@@ -121,27 +125,37 @@
               "titleEn": "Prune With Pit",
               "img": "assets/img/products/prune-Чернослив с косточкой.avif"
             }
-          ]
+          ],
+          "desc": "Чернослив с косточкой и без, мягкая сушка.",
+          "descEn": "Prunes pitted and unpitted, soft-dried."
         },
         {
           "id": "jida",
           "title": "Джида",
           "titleEn": "Jida",
-          "img": "assets/img/products/jida.avif"
+          "img": "assets/img/products/jida.avif",
+          "desc": "Джида — сладкий плод серебристого лоха, восточная классика.",
+          "descEn": "Jida — sweet silverberry fruit, an oriental classic."
         },
         {
           "id": "unabi",
           "title": "Унаби",
           "titleEn": "Unabi",
-          "img": "assets/img/products/unabi.avif"
+          "img": "assets/img/products/unabi.avif",
+          "desc": "Унаби (зизифус) — сушёный «китайский финик».",
+          "descEn": "Unabi (jujube) — the dried “Chinese date”."
         },
         {
           "id": "compote-mix",
           "title": "Компотная смесь",
           "titleEn": "Dried Fruit Compote Mix",
-          "img": "assets/img/products/компот.avif"
+          "img": "assets/img/products/компот.avif",
+          "desc": "Смесь сухофруктов для компота — готовая рецептура.",
+          "descEn": "Dried-fruit compote mix — a ready recipe."
         }
-      ]
+      ],
+      "desc": "Курага, изюм, чернослив, джида, унаби и компотные смеси — солнечная сушка и промышленная калибровка.",
+      "descEn": "Dried apricots, raisins, prunes, jida, unabi and compote mixes — sun-dried and industrially graded."
     },
     {
       "id": "nuts",
@@ -231,7 +245,9 @@
               "titleEn": "Walnut Crushed",
               "img": "assets/img/products/walnut-crushed.avif"
             }
-          ]
+          ],
+          "desc": "Ядро половинки, четвертинки, микс и орех в скорлупе.",
+          "descEn": "Halves, quarters, mixed kernels and in-shell walnuts."
         },
         {
           "id": "peanut",
@@ -263,7 +279,9 @@
               "titleEn": "Peanut Crushed",
               "img": "assets/img/products/peanut-crushed.avif"
             }
-          ]
+          ],
+          "desc": "Арахис сырой, жареный и бланшированный.",
+          "descEn": "Peanuts raw, roasted and blanched."
         },
         {
           "id": "pistachio",
@@ -295,7 +313,9 @@
               "titleEn": "Pistachio Roasted, Salted (Iran)",
               "img": "assets/img/products/pistachio-Фисташки жареные соленые Иран.avif"
             }
-          ]
+          ],
+          "desc": "Фисташки жареные, солёные и натуральные.",
+          "descEn": "Pistachios roasted, salted and natural."
         },
         {
           "id": "almond",
@@ -341,7 +361,9 @@
               "title": "Миндаль Fritz",
               "titleEn": "Almond Fritz"
             }
-          ]
+          ],
+          "desc": "Миндаль сладкий: ядро, жареный и в скорлупе.",
+          "descEn": "Sweet almonds: kernels, roasted and in-shell."
         },
         {
           "id": "cashew",
@@ -369,33 +391,45 @@
               "title": "Кешью W320",
               "titleEn": "Cashew W320"
             }
-          ]
+          ],
+          "desc": "Кешью целый и жареный, экспортная калибровка.",
+          "descEn": "Cashews whole and roasted, export-graded."
         },
         {
           "id": "pumpkin-seed",
           "title": "Тыквенная семечка",
           "titleEn": "Pumpkin Seed",
-          "img": "assets/img/products/pumpkin-seed.avif"
+          "img": "assets/img/products/pumpkin-seed.avif",
+          "desc": "Тыквенная семечка очищенная и в кожуре.",
+          "descEn": "Pumpkin seeds, hulled and in-shell."
         },
         {
           "id": "macadamia",
           "title": "Макадамия",
           "titleEn": "Macadamia",
-          "img": "assets/img/products/macadamia.avif"
+          "img": "assets/img/products/macadamia.avif",
+          "desc": "Макадамия в скорлупе с пропилом.",
+          "descEn": "Macadamia in shell, pre-cut."
         },
         {
           "id": "hazelnut",
           "title": "Фундук",
           "titleEn": "Hazelnut",
-          "img": "assets/img/products/hazelnut.avif"
+          "img": "assets/img/products/hazelnut.avif",
+          "desc": "Фундук — ядро, калиброванный.",
+          "descEn": "Hazelnut kernels, size-graded."
         },
         {
           "id": "apricot-kernels",
           "title": "Абрикосовые косточки",
           "titleEn": "Apricot Kernels",
-          "img": "assets/img/products/apricot-kernels.avif"
+          "img": "assets/img/products/apricot-kernels.avif",
+          "desc": "Сладкое ядро абрикосовой косточки.",
+          "descEn": "Sweet apricot kernels."
         }
-      ]
+      ],
+      "desc": "Грецкий орех, миндаль, фисташки, арахис, кешью, фундук и семечка — ядро и в скорлупе, экспортные сорта.",
+      "descEn": "Walnuts, almonds, pistachios, peanuts, cashews, hazelnuts and seeds — kernels and in-shell, export grades."
     },
     {
       "id": "legumes",
@@ -407,13 +441,17 @@
           "id": "mash",
           "title": "Маш",
           "titleEn": "Mung Bean",
-          "img": "assets/img/products/mash.avif"
+          "img": "assets/img/products/mash.avif",
+          "desc": "Маш зелёный, очищенный и калиброванный.",
+          "descEn": "Green mung beans, cleaned and graded."
         },
         {
           "id": "sesame-white",
           "title": "Кунжут белый",
           "titleEn": "White Sesame",
-          "img": "assets/img/products/sesame-white.avif"
+          "img": "assets/img/products/sesame-white.avif",
+          "desc": "Кунжут белый очищенный, пищевой стандарт.",
+          "descEn": "Hulled white sesame, food grade."
         },
         {
           "id": "fasol",
@@ -439,27 +477,37 @@
               "titleEn": "Beans, Black-Eyed",
               "img": "assets/img/products/fasol-blackeye.avif"
             }
-          ]
+          ],
+          "desc": "Фасоль трёх сортов, фотосортировка.",
+          "descEn": "Kidney beans in three varieties, optically sorted."
         },
         {
           "id": "pea-roasted",
           "title": "Горох жареный",
           "titleEn": "Roasted Peas",
-          "img": "assets/img/products/pea-roasted.avif"
+          "img": "assets/img/products/pea-roasted.avif",
+          "desc": "Горох жареный — снек и ингредиент.",
+          "descEn": "Roasted peas — snack and ingredient."
         },
         {
           "id": "black-sesame",
           "title": "Чёрный кунжут",
           "titleEn": "Black Sesame",
-          "img": "assets/img/products/black-sesame.avif"
+          "img": "assets/img/products/black-sesame.avif",
+          "desc": "Чёрный кунжут натуральный.",
+          "descEn": "Natural black sesame."
         },
         {
           "id": "chickpea",
           "title": "Нут",
           "titleEn": "Chickpea",
-          "img": "assets/img/products/nut.avif"
+          "img": "assets/img/products/nut.avif",
+          "desc": "Нут светлый крупных калибров.",
+          "descEn": "Light chickpeas, large calibres."
         }
-      ]
+      ],
+      "desc": "Маш, нут, фасоль, белый и чёрный кунжут, жареный горох — очистка и сортировка на собственных линиях.",
+      "descEn": "Mung beans, chickpeas, kidney beans, white and black sesame, roasted peas — cleaned and sorted in-house."
     },
     {
       "id": "fruits",
@@ -471,81 +519,109 @@
           "id": "apple",
           "title": "Яблоко",
           "titleEn": "Apple",
-          "img": "assets/img/products/fresh/apple.avif"
+          "img": "assets/img/products/fresh/apple.avif",
+          "desc": "Яблоки из собственных садов, сортовые.",
+          "descEn": "Orchard apples, varietal."
         },
         {
           "id": "apricot-fresh",
           "title": "Абрикос",
           "titleEn": "Apricot",
-          "img": "assets/img/products/fresh/apricot.avif"
+          "img": "assets/img/products/fresh/apricot.avif",
+          "desc": "Свежий абрикос транспортной зрелости.",
+          "descEn": "Fresh apricots picked at shipping ripeness."
         },
         {
           "id": "cherry",
           "title": "Черешня",
           "titleEn": "Cherry",
-          "img": "assets/img/products/fresh/cherry.avif"
+          "img": "assets/img/products/fresh/cherry.avif",
+          "desc": "Черешня отборная, холодовая цепь.",
+          "descEn": "Select sweet cherries, cold chain."
         },
         {
           "id": "sour-cherry",
           "title": "Вишня",
           "titleEn": "Sour Cherry",
-          "img": "assets/img/products/fresh/вишня.avif"
+          "img": "assets/img/products/fresh/вишня.avif",
+          "desc": "Вишня для ритейла и переработки.",
+          "descEn": "Sour cherries for retail and processing."
         },
         {
           "id": "grapes",
           "title": "Виноград",
           "titleEn": "Grapes",
-          "img": "assets/img/products/fresh/grapes.avif"
+          "img": "assets/img/products/fresh/grapes.avif",
+          "desc": "Виноград столовых сортов, включая кишмиш.",
+          "descEn": "Table grapes, including kishmish."
         },
         {
           "id": "lemon",
           "title": "Лимон",
           "titleEn": "Lemon",
-          "img": "assets/img/products/fresh/lemon.avif"
+          "img": "assets/img/products/fresh/lemon.avif",
+          "desc": "Ароматный узбекский лимон.",
+          "descEn": "Fragrant Uzbek lemons."
         },
         {
           "id": "peach",
           "title": "Персик",
           "titleEn": "Peach",
-          "img": "assets/img/products/fresh/peach.avif"
+          "img": "assets/img/products/fresh/peach.avif",
+          "desc": "Персик сезонный, бережная упаковка.",
+          "descEn": "Seasonal peaches, gently packed."
         },
         {
           "id": "plum",
           "title": "Слива",
           "titleEn": "Plum",
-          "img": "assets/img/products/fresh/plum.avif"
+          "img": "assets/img/products/fresh/plum.avif",
+          "desc": "Слива свежая экспортных сортов.",
+          "descEn": "Fresh plums, export varieties."
         },
         {
           "id": "fig",
           "title": "Инжир",
           "titleEn": "Fig",
-          "img": "assets/img/products/fresh/fig.avif"
+          "img": "assets/img/products/fresh/fig.avif",
+          "desc": "Инжир свежий — деликатная логистика.",
+          "descEn": "Fresh figs with delicate logistics."
         },
         {
           "id": "onion",
           "title": "Лук",
           "titleEn": "Onion",
-          "img": "assets/img/products/fresh/onion.avif"
+          "img": "assets/img/products/fresh/onion.avif",
+          "desc": "Лук репчатый — сетка и биг-бэг.",
+          "descEn": "Onions in nets and big bags."
         },
         {
           "id": "potato",
           "title": "Картофель",
           "titleEn": "Potato",
-          "img": "assets/img/products/fresh/potato.avif"
+          "img": "assets/img/products/fresh/potato.avif",
+          "desc": "Картофель продовольственный, калиброванный.",
+          "descEn": "Graded table potatoes."
         },
         {
           "id": "tomato",
           "title": "Помидор",
           "titleEn": "Tomato",
-          "img": "assets/img/products/fresh/tomato.avif"
+          "img": "assets/img/products/fresh/tomato.avif",
+          "desc": "Помидоры грунтовые, сезонные объёмы.",
+          "descEn": "Field tomatoes in seasonal volumes."
         },
         {
           "id": "cucumber",
           "title": "Огурец",
           "titleEn": "Cucumber",
-          "img": "assets/img/products/fresh/cucumber.avif"
+          "img": "assets/img/products/fresh/cucumber.avif",
+          "desc": "Огурцы свежие для ритейла.",
+          "descEn": "Fresh cucumbers for retail."
         }
-      ]
+      ],
+      "desc": "Яблоки, черешня, виноград, инжир, лимоны и овощи открытого грунта — сезонные поставки рефрижераторами.",
+      "descEn": "Apples, cherries, grapes, figs, lemons and field vegetables — seasonal reefer shipments."
     },
     {
       "id": "candied",
@@ -557,39 +633,53 @@
           "id": "candied-fruit",
           "title": "Цукаты",
           "titleEn": "Candied Fruit",
-          "img": "assets/img/products/candied-fruit.avif"
+          "img": "assets/img/products/candied-fruit.avif",
+          "desc": "Ассорти цукатов — кубик и слайс.",
+          "descEn": "Candied fruit mix — dice and slices."
         },
         {
           "id": "dried-apricots",
           "title": "Сушёные абрикосы",
           "titleEn": "Dried Apricots",
-          "img": "assets/img/products/dried-apricots.avif"
+          "img": "assets/img/products/dried-apricots.avif",
+          "desc": "Яркий сушёный абрикос — слайс и половинки.",
+          "descEn": "Bright dried apricot slices and halves."
         },
         {
           "id": "dried-pineapple",
           "title": "Сушёные ананасы",
           "titleEn": "Dried Pineapple",
-          "img": "assets/img/products/dried-pineapple.avif"
+          "img": "assets/img/products/dried-pineapple.avif",
+          "desc": "Ананас сушёный — кольца и кубики.",
+          "descEn": "Dried pineapple rings and dice."
         },
         {
           "id": "dried-banana",
           "title": "Сушёный банан",
           "titleEn": "Dried Banana",
-          "img": "assets/img/products/dried-banana.avif"
+          "img": "assets/img/products/dried-banana.avif",
+          "desc": "Банан сушёный чипсами.",
+          "descEn": "Dried banana chips."
         },
         {
           "id": "dried-kiwi",
           "title": "Сушёное киви",
           "titleEn": "Dried Kiwi",
-          "img": "assets/img/products/dried-kiwi.avif"
+          "img": "assets/img/products/dried-kiwi.avif",
+          "desc": "Киви сушёное, слайс.",
+          "descEn": "Dried kiwi slices."
         },
         {
           "id": "dried-mango",
           "title": "Сушёное манго",
           "titleEn": "Dried Mango",
-          "img": "assets/img/products/dried-mango.avif"
+          "img": "assets/img/products/dried-mango.avif",
+          "desc": "Манго сушёное — с сахаром и без.",
+          "descEn": "Dried mango, sweetened and unsweetened."
         }
-      ]
+      ],
+      "desc": "Цукаты и сушёные ананас, банан, киви, манго — яркая витрина для розничных сетей.",
+      "descEn": "Candied fruit and dried pineapple, banana, kiwi and mango — a bright shelf line for retail."
     },
     {
       "id": "packaging",
@@ -644,7 +734,9 @@
               "titleEn": "Kraft Zip-Lock Pouch with Window",
               "img": "assets/img/products/packaging/doypack-raisins.avif"
             }
-          ]
+          ],
+          "desc": "Фасовка от розничного пакета до 10 кг и биг-бэги.",
+          "descEn": "Packing from retail pouches to 10 kg and big bags."
         },
         {
           "id": "branding",
@@ -687,7 +779,9 @@
                 "assets/img/products/packaging/paccing2.avif"
               ]
             }
-          ]
+          ],
+          "desc": "Печать вашей марки на пакете и коробе.",
+          "descEn": "Your brand printed on pouches and boxes."
         },
         {
           "id": "turnkey",
@@ -697,7 +791,9 @@
           "descEn": "Turnkey packing: product, corrugated packaging and branding — all under our own control, from a single supplier.",
           "service": true
         }
-      ]
+      ],
+      "desc": "Фасовка от розничных пакетов до биг-бэгов, брендирование и готовые решения под вашу марку.",
+      "descEn": "Packing from retail pouches to big bags, branding and turnkey private-label solutions."
     }
   ]
 }
