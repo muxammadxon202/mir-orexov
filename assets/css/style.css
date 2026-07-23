@@ -2332,10 +2332,19 @@ button { font-family: inherit; cursor: pointer; }
   text-align: center;
   box-shadow: var(--shadow-lg);
 }
+/* Same nut-texture wash as the footer's dark block — gold, low opacity, texture not drawing */
+.cta-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/pattern-nuts-lines-alt.png") repeat;
+  background-size: 900px;
+  opacity: 0.06;
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(-15deg);
+  pointer-events: none;
+}
 .cta-band__inner { position: relative; z-index: 1; max-width: 720px; margin: 0 auto; }
 .cta-band .section-eyebrow { color: var(--gold); }
 .cta-band h2 { color: #fff; margin-bottom: 14px; }
 .cta-band p { color: rgba(251, 247, 235, 0.82); font-size: var(--fs-lg); line-height: 1.55; margin-bottom: 30px; }
 .cta-band__actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
-.cta-band .btn-outline { color: #fff; border-color: rgba(251, 247, 235, 0.45); background: transparent; }
-.cta-band .btn-outline:hover { background: rgba(251, 247, 235, 0.12); border-color: #fff; color: #fff; }
