@@ -2337,7 +2337,7 @@ button { font-family: inherit; cursor: pointer; }
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../img/pattern-nuts-lines-alt.png") repeat;
+  background: url("../img/pattern-nuts-lines.png") repeat;
   background-size: 900px;
   opacity: 0.06;
   filter: invert(1) sepia(1) saturate(5) hue-rotate(-15deg);
