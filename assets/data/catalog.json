@@ -155,7 +155,8 @@
         }
       ],
       "desc": "Курага, изюм, чернослив, джида, унаби и компотные смеси — солнечная сушка и промышленная калибровка.",
-      "descEn": "Dried apricots, raisins, prunes, jida, unabi and compote mixes — sun-dried and industrially graded."
+      "descEn": "Dried apricots, raisins, prunes, jida, unabi and compote mixes — sun-dried and industrially graded.",
+      "cutout": "assets/img/catalog/cutout/dried.png"
     },
     {
       "id": "nuts",
@@ -429,7 +430,8 @@
         }
       ],
       "desc": "Грецкий орех, миндаль, фисташки, арахис, кешью, фундук и семечка — ядро и в скорлупе, экспортные сорта.",
-      "descEn": "Walnuts, almonds, pistachios, peanuts, cashews, hazelnuts and seeds — kernels and in-shell, export grades."
+      "descEn": "Walnuts, almonds, pistachios, peanuts, cashews, hazelnuts and seeds — kernels and in-shell, export grades.",
+      "cutout": "assets/img/catalog/cutout/nuts.png"
     },
     {
       "id": "legumes",
@@ -507,7 +509,8 @@
         }
       ],
       "desc": "Маш, нут, фасоль, белый и чёрный кунжут, жареный горох — очистка и сортировка на собственных линиях.",
-      "descEn": "Mung beans, chickpeas, kidney beans, white and black sesame, roasted peas — cleaned and sorted in-house."
+      "descEn": "Mung beans, chickpeas, kidney beans, white and black sesame, roasted peas — cleaned and sorted in-house.",
+      "cutout": "assets/img/catalog/cutout/legumes.png"
     },
     {
       "id": "fruits",
@@ -621,7 +624,8 @@
         }
       ],
       "desc": "Яблоки, черешня, виноград, инжир, лимоны и овощи открытого грунта — сезонные поставки рефрижераторами.",
-      "descEn": "Apples, cherries, grapes, figs, lemons and field vegetables — seasonal reefer shipments."
+      "descEn": "Apples, cherries, grapes, figs, lemons and field vegetables — seasonal reefer shipments.",
+      "cutout": "assets/img/catalog/cutout/fruits.png"
     },
     {
       "id": "candied",
@@ -679,7 +683,8 @@
         }
       ],
       "desc": "Цукаты и сушёные ананас, банан, киви, манго — яркая витрина для розничных сетей.",
-      "descEn": "Candied fruit and dried pineapple, banana, kiwi and mango — a bright shelf line for retail."
+      "descEn": "Candied fruit and dried pineapple, banana, kiwi and mango — a bright shelf line for retail.",
+      "cutout": "assets/img/catalog/cutout/candied.png"
     },
     {
       "id": "packaging",
@@ -793,7 +798,8 @@
         }
       ],
       "desc": "Фасовка от розничных пакетов до биг-бэгов, брендирование и готовые решения под вашу марку.",
-      "descEn": "Packing from retail pouches to big bags, branding and turnkey private-label solutions."
+      "descEn": "Packing from retail pouches to big bags, branding and turnkey private-label solutions.",
+      "cutout": "assets/img/catalog/cutout/packaging.png"
     }
   ]
 }

@@ -14,6 +14,9 @@ function absolutize(node) {
   if (node.img && !node.img.startsWith("/") && !/^https?:\/\//.test(node.img)) {
     node.img = "/" + node.img;
   }
+  if (node.cutout && !node.cutout.startsWith("/") && !/^https?:\/\//.test(node.cutout)) {
+    node.cutout = "/" + node.cutout;
+  }
   if (Array.isArray(node.gallery)) {
     node.gallery = node.gallery.map((src) =>
       src && !src.startsWith("/") && !/^https?:\/\//.test(src) ? "/" + src : src

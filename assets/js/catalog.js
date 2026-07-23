@@ -127,8 +127,12 @@
           const card = document.createElement("a");
           card.href = "#/" + child.id;
           card.className = "cat-card tone-" + child.id;
+          // Prefer the background-removed cutout: the product sits directly on
+          // the gradient instead of inside a clipped photo circle.
+          const art = child.cutout || child.img;
+          const artClass = "cat-card__img" + (child.cutout ? " cat-card__img--cutout" : "");
           card.innerHTML =
-            (child.img ? `<img class="cat-card__img" src="${child.img}" alt="" aria-hidden="true" loading="lazy" />` : "") +
+            (art ? `<img class="${artClass}" src="${art}" alt="" aria-hidden="true" loading="lazy" />` : "") +
             `<span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>${countLabel((child.children || []).length)}</span>` +
             `<h3 class="cat-card__title">${t(child)}</h3>` +
             `<p class="cat-card__desc">${descText || ""}</p>` +

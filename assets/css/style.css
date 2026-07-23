@@ -1395,6 +1395,29 @@ button { font-family: inherit; cursor: pointer; }
 /* Text always reads above the decorative photo, whatever the card width */
 .cat-card__badge, .cat-card__title, .cat-card__desc, .cat-card__cta { position: relative; z-index: 1; }
 
+/* Cutout variant: the product is cut out from its background (transparent PNG)
+   and sits directly on the gradient — no circle, no ring, no foreign backdrop.
+   A tone-coloured drop-shadow grounds it on the card. */
+.cat-card__img--cutout {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  aspect-ratio: auto;
+  width: 56%;
+  height: auto;
+  max-height: 62%;
+  right: -3%;
+  bottom: -6%;
+  object-fit: contain;
+  object-position: right bottom;
+  filter: drop-shadow(0 16px 22px rgba(var(--tone), 0.45));
+}
+.cat-card:hover .cat-card__img--cutout {
+  box-shadow: none;
+  transform: translate(2px, 2px) scale(1.07) rotate(2deg);
+  filter: drop-shadow(0 20px 28px rgba(var(--tone), 0.55));
+}
+
 .cat-card__badge {
   display: inline-flex;
   align-items: center;
