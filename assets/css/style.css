@@ -1234,6 +1234,7 @@ button { font-family: inherit; cursor: pointer; }
 .tone-packaging { --tone: 131, 116, 96;  }
 
 .cat-tile {
+  position: relative;
   display: block;
   /* tone tint at two alphas + white base; alpha pair flips on even cards below */
   --tone-a1: 0.14;
@@ -1245,11 +1246,31 @@ button { font-family: inherit; cursor: pointer; }
   border-radius: var(--radius-md);
   overflow: hidden;
   box-shadow: 0 8px 24px -14px rgba(var(--tone), 0.4);
-  transition: transform var(--dur-med) var(--ease-cinematic), box-shadow var(--dur-med) var(--ease-cinematic);
+  transition: transform var(--dur-med) var(--ease-cinematic), box-shadow var(--dur-med) var(--ease-cinematic), border-color var(--dur-med) var(--ease-out);
 }
-.cat-tile:hover { transform: translateY(-4px); box-shadow: 0 18px 40px -16px rgba(var(--tone), 0.5); }
+.cat-tile:hover {
+  transform: translateY(-6px) scale(1.015);
+  border-color: rgba(var(--tone), 0.55);
+  box-shadow: 0 22px 44px -16px rgba(var(--tone), 0.55);
+}
+.cat-tile:active { transform: translateY(-2px) scale(0.99); }
 /* even cards run a deeper tint so the grid shimmers instead of repeating */
 .cat-tile:nth-child(even) { --tone-a1: 0.22; --tone-a2: 0.07; }
+
+/* tone wash deepens on hover (mirrors .cat-card::before) */
+.cat-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(160deg, rgba(var(--tone), 0.12), transparent 65%);
+  opacity: 0;
+  transition: opacity 0.35s var(--ease-out);
+  pointer-events: none;
+}
+.cat-tile:hover::before { opacity: 1; }
+/* the title picks up the family tone underline */
+.cat-tile:hover .cat-tile-title { color: var(--gold-text); }
 
 /* product description line on tiles */
 .cat-tile-desc {
@@ -1313,24 +1334,66 @@ button { font-family: inherit; cursor: pointer; }
   box-shadow: 0 10px 28px -14px rgba(var(--tone), 0.45);
   transition: transform var(--dur-med) var(--ease-cinematic), box-shadow var(--dur-med) var(--ease-cinematic);
 }
-.cat-card:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 24px 48px -18px rgba(var(--tone), 0.55); }
+.cat-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: rgba(var(--tone), 0.55);
+  box-shadow: 0 28px 56px -18px rgba(var(--tone), 0.6);
+}
+.cat-card:active { transform: translateY(-2px) scale(0.99); }
 /* deeper tint on even cards — a shimmering grid, not six copies of one colour */
 .cat-card:nth-child(even) { --tone-a1: 0.3; --tone-a2: 0.09; }
 
+/* Hover layer 1: the tone gradient deepens (custom props can't transition,
+   so a pre-rendered wash fades in instead) */
+.cat-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 120% at 100% 100%, rgba(var(--tone), 0.22), transparent 60%),
+    linear-gradient(135deg, rgba(var(--tone), 0.12), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.35s var(--ease-out);
+  pointer-events: none;
+}
+.cat-card:hover::before { opacity: 1; }
+
+/* Hover layer 2: a light sheen sweeps across the card once */
+.cat-card::after,
+.cat-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.35) 50%, transparent 60%);
+  transform: translateX(-130%);
+  transition: transform 0.7s var(--ease-cinematic);
+  pointer-events: none;
+}
+.cat-card:hover::after,
+.cat-tile:hover::after { transform: translateX(130%); }
+
 .cat-card__img {
   position: absolute;
-  right: -10%;
-  bottom: -16%;
-  width: 46%;
+  right: -14%;
+  bottom: -20%;
+  width: 48%;
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.7);
   box-shadow: 0 12px 32px -10px rgba(var(--tone), 0.55);
   pointer-events: none;
-  transition: transform 0.5s cubic-bezier(0.34, 1.4, 0.64, 1);
+  transition: transform 0.5s cubic-bezier(0.34, 1.4, 0.64, 1), box-shadow 0.35s var(--ease-out);
 }
-.cat-card:hover .cat-card__img { transform: scale(1.1) rotate(3deg); }
+/* Hover layer 3: the photo springs outward (never toward the text) with a thicker ring */
+.cat-card:hover .cat-card__img {
+  transform: translate(3px, 3px) scale(1.1) rotate(4deg);
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.55), 0 16px 40px -10px rgba(var(--tone), 0.6);
+}
+
+/* Text always reads above the decorative photo, whatever the card width */
+.cat-card__badge, .cat-card__title, .cat-card__desc, .cat-card__cta { position: relative; z-index: 1; }
 
 .cat-card__badge {
   display: inline-flex;
@@ -1348,8 +1411,16 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--brown-800);
 }
 .cat-card__badge .dot { width: 8px; height: 8px; border-radius: 50%; background: rgb(var(--tone)); flex-shrink: 0; }
+/* Hover layer 4: the badge dot sends out tone-coloured pulses */
+.cat-card:hover .cat-card__badge .dot { animation: dot-pulse 1.1s var(--ease-out) infinite; }
+@keyframes dot-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(var(--tone), 0.5); }
+  100% { box-shadow: 0 0 0 9px rgba(var(--tone), 0); }
+}
 
-.cat-card__title { font-size: var(--fs-lg); line-height: 1.3; margin-bottom: 8px; color: var(--brown-900); }
+.cat-card__title { font-size: var(--fs-lg); line-height: 1.3; margin-bottom: 8px; color: var(--brown-900); transition: transform 0.35s var(--ease-out); }
+/* Hover layer 5: text block leans in a touch */
+.cat-card:hover .cat-card__title { transform: translateX(3px); }
 .cat-card__desc {
   flex-grow: 1;
   margin: 0;
@@ -1367,20 +1438,25 @@ button { font-family: inherit; cursor: pointer; }
   font-weight: 600;
   color: var(--brown-900);
 }
-.cat-card__cta svg { width: 16px; height: 16px; transition: transform var(--dur-med) var(--ease-out); }
-.cat-card:hover .cat-card__cta svg { transform: translateX(4px); }
+.cat-card__cta svg {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border-radius: 50%;
+  transition: transform var(--dur-med) var(--ease-out), background var(--dur-med) var(--ease-out);
+}
+/* Hover layer 6: the arrow slides into a tone-tinted circle */
+.cat-card:hover .cat-card__cta svg { transform: translateX(5px); background: rgba(var(--tone), 0.22); }
 
 /* catalog root switches the auto grid to wider card columns */
 .grid-auto.grid-cards { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 
-/* Phone: the corner-overflow photo would run into the text, so it becomes a
-   compact medallion pinned to the top-right corner and the text takes the
-   full card width. */
+/* Phone: same corner-overflow circle as desktop. The extra bottom padding
+   reserves the lower-right area for the photo so text never runs under it. */
 @media (max-width: 480px) {
-  .cat-card { min-height: 0; padding: 24px; }
-  .cat-card__img { top: 24px; right: 24px; bottom: auto; width: 72px; }
+  .cat-card { min-height: 0; padding: 24px 24px 96px; }
+  .cat-card__img { width: 50%; }
   .cat-card__desc { max-width: none; }
-  .cat-card__title { padding-right: 88px; }
 }
 
 .grid-auto {
@@ -1413,7 +1489,7 @@ button { font-family: inherit; cursor: pointer; }
   letter-spacing: 0.08em; /* П3: positive tracking on small caps */
 }
 
-.cat-tile-title { padding: 16px; font-size: var(--fs-base); font-weight: 600; text-align: center; }
+.cat-tile-title { padding: 16px; font-size: var(--fs-base); font-weight: 600; text-align: center; transition: color var(--dur-fast) var(--ease-out); }
 
 .cat-tile-photo--service {
   display: flex;
