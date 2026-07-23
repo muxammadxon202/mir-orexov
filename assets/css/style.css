@@ -45,20 +45,31 @@
   --green-800: #1B3F28;
   --green-900: #122B1B;
 
-  /* --- Semantic tokens (П8): one primary for actions — deep green («природа/качество»).
-         Gold = decorative details only (dividers, icons, hover). Red = logo + rare accents/errors. --- */
-  --bg: var(--cream-100);
+  /* Warm browns: the site's text and — per П21 — its action color (green is out of the
+     action palette entirely; it survives only in form success feedback). */
+  --brown-800: #453D37;
+  --brown-900: #2D1C15;
+
+  /* --- Background levels (П22): exactly three, nothing else --- */
+  --bg-page:   var(--cream-50);   /* весь сайт */
+  --bg-subtle: var(--cream-100);  /* чередующиеся секции */
+  --bg-dark:   var(--brown-900);  /* только футер */
+
+  /* --- Semantic tokens: dark brown is the single action color (buttons, chat toggle,
+         focus ring). Gold = decorative details only (dividers, icons, hover).
+         Red = logo + rare accents/errors. --- */
+  --bg: var(--bg-page);
   --bg-card: #FFFFFF;
   --bg-card-hover: var(--cream-200);
-  --primary: var(--green-600);
-  --primary-hover: var(--green-700);
+  --primary: var(--brown-900);
+  --primary-hover: var(--brown-800);
   --red: var(--red-500);
   --red-hover: var(--red-600);
   --gold: var(--gold-400);
   --gold-text: var(--gold-700);
   --gold-soft: rgba(201, 162, 39, 0.12);
-  --text: var(--cream-900);
-  --text-dim: #453D37;
+  --text: var(--brown-900);
+  --text-dim: var(--brown-800);
   --border: rgba(138, 106, 20, 0.22);
 
   /* --- Typography (П1): modular scale ×1.25 — no font sizes outside this list --- */
@@ -92,8 +103,9 @@
   --container: 1280px;
   --gutter: clamp(1rem, 4vw, 3rem);
 
-  --radius-lg: 16px;
-  --radius-md: 12px;
+  /* П7: two radii and no more — media/cards 20px, buttons/fields 8px */
+  --radius-lg: 20px;
+  --radius-md: 20px;
   --radius-sm: 8px;
 
   /* Warm-tinted layered shadows: soft and diffuse so they read as depth,
@@ -278,6 +290,32 @@ button { font-family: inherit; cursor: pointer; }
 /* Mobile-only CTA inside the dropdown menu (the .nav-right one is hidden there) */
 .nav-menu .nav-cta-mobile { display: none; }
 
+/* П16: «Орехи»/«Сухофрукты» live under «Каталог» as a dropdown so top nav mirrors the footer */
+.nav-item { position: relative; display: flex; align-items: center; }
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 190px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  padding: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out), visibility var(--dur-fast) var(--ease-out);
+  z-index: 60;
+}
+.nav-item:hover .nav-dropdown,
+.nav-item:focus-within .nav-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+.nav-dropdown a { padding: 8px 12px; border-radius: var(--radius-sm); }
+.nav-dropdown a::after { display: none; }
+.nav-dropdown a:hover { background: var(--gold-soft); color: var(--gold-text); }
+
 .nav-right { display: flex; align-items: center; gap: 12px; }
 
 .lang-switch {
@@ -330,9 +368,12 @@ button { font-family: inherit; cursor: pointer; }
 
 .btn-primary {
   background: var(--primary);
-  color: #fff;
+  color: var(--cream-50);
 }
-.btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(38, 85, 55, 0.28); }
+.btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(45, 28, 21, 0.28); }
+
+/* П3 (экран 2): the about-section CTA — dark plate, generous padding */
+.btn-lg { padding: 14px 32px; }
 
 .btn-outline {
   background: rgba(251, 247, 235, 0.65);
@@ -363,7 +404,8 @@ button { font-family: inherit; cursor: pointer; }
 /* ===== Hero ===== */
 .hero {
   position: relative;
-  padding: 64px 0 96px;
+  /* П24: one vertical rhythm for every band, no exceptions */
+  padding-block: clamp(4rem, 10vw, 8rem);
   overflow: hidden;
 }
 
@@ -596,24 +638,13 @@ button { font-family: inherit; cursor: pointer; }
 /* П12: uniform vertical rhythm for every section band */
 .section { padding-block: clamp(4rem, 10vw, 8rem); }
 
-/* Alternate band: card-tinted background with the nut pattern (replaces the
-   inline style previously repeated on each such section). */
+/* Alternate band (П22): the subtle cream level with the nut pattern kept as a faint texture */
 .section--alt {
-  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/pattern-nuts-lines.png") repeat fixed, var(--bg-card);
+  background: linear-gradient(rgba(251, 247, 235, 0.55), rgba(251, 247, 235, 0.55)), url("../img/pattern-nuts-lines.png") repeat fixed, var(--bg-subtle);
   background-size: auto, 900px, auto;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
 }
-
-/* П10: dark band — one-two dark sections give the light page rhythm and pause.
-   rgba values below are cream-100 at reduced alpha. */
-.section--dark { background: var(--cream-900); }
-.section--dark .two-col { background: transparent; padding: 0; }
-.section--dark .section-eyebrow { color: var(--gold); }
-.section--dark h2 { color: var(--cream-50); }
-.section--dark p { color: rgba(251, 247, 235, 0.75); }
-.section--dark .btn-outline { background: transparent; border-color: rgba(251, 247, 235, 0.3); color: var(--cream-50); }
-.section--dark .btn-outline:hover { background: transparent; border-color: var(--gold); color: var(--gold); }
 
 .section-head {
   text-align: center;
@@ -752,6 +783,38 @@ button { font-family: inherit; cursor: pointer; }
   padding: 32px;
 }
 .two-col img, .media-placeholder { border-radius: var(--radius-lg); aspect-ratio: 4/3; background: rgba(251, 247, 235, 0.78); backdrop-filter: blur(6px); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--text-dim); }
+/* П9 (экран 2): paragraph copy in this section must hold ≥4.5:1 — brown-800, not lighter */
+.two-col p { color: var(--brown-800); }
+
+/* П8 (экран 2): «О компании» — text ~47% / photo ~53%, single 1280 container */
+.two-col--about { grid-template-columns: 1fr 1.1fr; gap: 80px; }
+
+/* П6 (экран 2): phone shot cleanup — crop up onto the machine (floor + cable out of
+   frame) and pull the green cast out with a warm grade */
+.about-photo {
+  border-radius: var(--radius-lg);
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: 50% 18%;
+  width: 100%;
+  box-shadow: var(--shadow-md);
+  filter: sepia(0.12) hue-rotate(-8deg) saturate(1.05);
+}
+
+/* П4 (экран 2): fact row under the CTA — small caps with gold dot separators */
+.fact-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--brown-800);
+}
+.fact-row .fact-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
 
 /* ===== Dark feature block (Why Choose Us) ===== */
 .two-col--dark { background: var(--cream-900); }
@@ -855,18 +918,42 @@ button { font-family: inherit; cursor: pointer; }
 .cert-tile img { width: 100%; height: 100%; object-fit: contain; }
 
 /* ===== Footer ===== */
-/* П10: the footer is the page's second dark band — a firm close after the light sections.
+/* П10 (экран 1): the dark block runs edge to edge — no card, no radius, no outer margins.
+   Content inside still aligns to the same 1280 container (П23).
    rgba(251,247,235,…) values are cream-100 at reduced alpha. */
 .footer {
-  padding: 48px 48px 0;
+  padding: 0;
   overflow: visible;
 }
 
 .footer-flat {
-  background: var(--cream-900);
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(251, 247, 235, 0.14);
-  padding: 48px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-dark);
+  border-radius: 0;
+  border: none;
+  padding: 64px 0 0;
+}
+
+/* П12: the nut pattern moves inside the dark block — gold, 5% opacity, texture not drawing */
+.footer-flat::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/pattern-nuts-lines.png") repeat;
+  background-size: 900px;
+  opacity: 0.05;
+  filter: invert(1) sepia(1) saturate(5) hue-rotate(-15deg);
+  pointer-events: none;
+}
+.footer-flat > * { position: relative; }
+
+.footer-flat-top,
+.footer-flat-cols,
+.footer-bottom {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
 }
 
 .footer-flat-top {
@@ -920,12 +1007,16 @@ button { font-family: inherit; cursor: pointer; }
   max-width: 460px;
 }
 
+/* П14–П15: 48px between the metrics, labels left-aligned under their numbers,
+   and a thin gold divider + 40px air between the slogan and the stats */
 .footer-stats {
   display: flex;
-  gap: 32px;
-  margin-top: 16px;
+  gap: 48px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(201, 162, 39, 0.25);
 }
-.footer-stats > div { text-align: right; }
+.footer-stats > div { text-align: left; }
 .footer-stats .stat-num { font-size: var(--fs-lg); }
 .footer-stats .stat-label { font-size: var(--fs-xs); }
 /* On the dark footer the muted bronze fails contrast — lift numbers to bright gold */
@@ -946,14 +1037,14 @@ button { font-family: inherit; cursor: pointer; }
   color: var(--gold);
 }
 
+/* П13: fixed column rhythm instead of space-between drift */
 .footer-flat-cols {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1.2fr;
   gap: 64px;
   padding-top: 32px;
-  flex-wrap: wrap;
 }
-.footer-about { max-width: 340px; }
+.footer-about { max-width: 480px; }
 .footer-about p { font-size: var(--fs-sm); color: rgba(251, 247, 235, 0.72); line-height: 1.6; margin: 0; }
 
 .pf-col h4, .footer-about h4 { margin: 0 0 16px; font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
@@ -965,35 +1056,39 @@ button { font-family: inherit; cursor: pointer; }
 
 .pf-contact-row { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
 .pf-contact-row:last-child { margin-bottom: 0; }
+/* П18: 40×40 tap target, 20px glyph */
 .pf-icon {
-  width: 38px; height: 38px;
-  border-radius: var(--radius-md);
+  width: 40px; height: 40px;
+  border-radius: var(--radius-sm);
   flex-shrink: 0;
   display: flex; align-items: center; justify-content: center;
   background: rgba(251, 247, 235, 0.08);
   color: var(--gold);
 }
-.pf-icon svg { width: 17px; height: 17px; }
+.pf-icon svg { width: 20px; height: 20px; }
 .pf-contact-row a, .pf-contact-row span.pf-static { font-size: var(--fs-sm); font-weight: 600; color: var(--cream-50); text-decoration: none; }
-.pf-phone-stack { display: flex; flex-direction: column; gap: 2px; }
+/* П19: the two phone numbers get visible air between them */
+.pf-phone-stack { display: flex; flex-direction: column; gap: 8px; }
 .pf-contact-row a:hover { color: var(--gold); }
 
+/* П11: copyright lives inside the dark block, separated by a thin gold line */
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 8px 16px;
-  margin-top: 16px;
-  padding: 12px 24px;
+  margin-top: 48px;
+  max-width: none;
+  padding-block: 24px;
   text-align: center;
-  color: var(--text);
+  color: rgba(251, 247, 235, 0.65);
   font-weight: 500;
   font-size: var(--fs-sm);
-  background: rgba(251, 247, 235, 0.78);
-  backdrop-filter: blur(6px);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  background: transparent;
+  border: none;
+  border-top: 1px solid rgba(201, 162, 39, 0.15);
+  border-radius: 0;
 }
 
 .footer-credit {
@@ -1001,7 +1096,7 @@ button { font-family: inherit; cursor: pointer; }
   align-items: center;
   gap: 5px;
   padding-left: 16px;
-  border-left: 1px solid var(--border);
+  border-left: 1px solid rgba(251, 247, 235, 0.2);
   opacity: 0.85;
 }
 
@@ -1021,13 +1116,16 @@ button { font-family: inherit; cursor: pointer; }
   .footer-credit { padding-left: 0; border-left: none; }
 }
 
+@media (max-width: 1024px) {
+  .footer-flat-cols { grid-template-columns: 1fr 1fr; }
+}
+
 @media (max-width: 720px) {
-  .footer { padding: 32px 24px 0; }
-  .footer-flat { padding: 24px; }
+  .footer-flat { padding: 48px 0 0; }
   .footer-flat-top { flex-direction: column; align-items: flex-start; }
   .footer-slogan { align-items: flex-start; text-align: left; max-width: 100%; }
   .footer-slogan-ru { font-size: var(--fs-lg); }
-  .footer-flat-cols { gap: 32px; }
+  .footer-flat-cols { grid-template-columns: 1fr; gap: 32px; }
 }
 
 /* ===== Forms ===== */
@@ -1528,6 +1626,18 @@ button { font-family: inherit; cursor: pointer; }
   .navbar.menu-open .nav-menu a { padding: 12px 4px; font-size: var(--fs-base); border-radius: var(--radius-sm); }
   .navbar.menu-open .nav-menu a.active { color: var(--gold-text); }
   .navbar.menu-open .nav-menu a::after { display: none; }
+  /* П16: in the mobile menu the dropdown unfolds inline as indented items */
+  .navbar.menu-open .nav-item { flex-direction: column; align-items: stretch; }
+  .navbar.menu-open .nav-dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    padding: 0 0 0 16px;
+  }
   .navbar.menu-open .nav-menu .nav-cta-mobile {
     display: inline-flex;
     margin-top: 12px;
@@ -1562,17 +1672,6 @@ button { font-family: inherit; cursor: pointer; }
   gap: 12px;
 }
 
-.chat-widget-label {
-  font-size: var(--fs-xs);
-  font-weight: 600;
-  color: var(--text-dim);
-  background: rgba(251, 247, 235, 0.92);
-  backdrop-filter: blur(6px);
-  padding: 4px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-}
-
 .chat-widget-items {
   display: flex;
   flex-direction: column;
@@ -1599,18 +1698,19 @@ button { font-family: inherit; cursor: pointer; }
 .chat-widget-items a:hover { transform: scale(1.08); background: var(--gold-soft); }
 .chat-widget-items a svg { width: 22px; height: 22px; }
 
+/* П21: dark brown plate with a gold glyph — no green anywhere in the action palette */
 .chat-widget-toggle {
   width: 56px; height: 56px;
   border-radius: 50%;
   border: none;
   display: flex; align-items: center; justify-content: center;
-  background: var(--primary);
-  color: #fff;
+  background: var(--brown-900);
+  color: var(--gold);
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(38, 85, 55, 0.45);
+  box-shadow: 0 8px 24px rgba(45, 28, 21, 0.4);
   transition: transform var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out);
 }
-.chat-widget-toggle:hover { background: var(--primary-hover); transform: scale(1.06); }
+.chat-widget-toggle:hover { background: var(--brown-800); transform: scale(1.06); }
 /* П14: optical — the speech-bubble tail pulls visual weight up, nudge the glyph 1px down */
 .chat-widget-toggle svg { width: 24px; height: 24px; transform: translateY(1px); transition: transform var(--dur-med) var(--ease-cinematic); }
 .chat-widget.open .chat-widget-toggle svg { transform: translateY(1px) scale(0.9); }
