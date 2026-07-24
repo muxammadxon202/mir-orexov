@@ -51,13 +51,57 @@
       capEl.textContent = text;
       capEl.classList.toggle("show", !!text);
     }
-    function setActive(i) {
+    const step = box.closest(".process-step");
+    const numEl = step && step.querySelector(".process-step__num");
+
+    // Swipe feedback: the step number flips + glows, a few gold petals scatter
+    // from the photo, and the incoming image slides in from the swipe direction.
+    // Only fires on an actual swipe — the shared auto-tick stays a quiet cross-fade.
+    function reactNum() {
+      if (reduce || !numEl) return;
+      numEl.classList.remove("pfade-react");
+      void numEl.offsetWidth; // restart the animation
+      numEl.classList.add("pfade-react");
+      // Timer cleanup rather than animationend: reliable even when the tab
+      // isn't compositing (background/hidden), so the class never lingers.
+      setTimeout(() => numEl.classList.remove("pfade-react"), 680);
+    }
+    function spawnPetals() {
+      if (reduce) return;
+      for (let k = 0; k < 7; k++) {
+        const p = document.createElement("span");
+        p.className = "pfade-petal";
+        const ang = Math.random() * Math.PI * 2;
+        const dist = 26 + Math.random() * 46;
+        p.style.setProperty("--px", Math.round(Math.cos(ang) * dist) + "px");
+        p.style.setProperty("--py", Math.round(Math.sin(ang) * dist - 20) + "px");
+        p.style.setProperty("--rot", Math.round(Math.random() * 220 - 110) + "deg");
+        p.style.setProperty("--d", Math.round(Math.random() * 90) + "ms");
+        p.style.left = 34 + Math.random() * 32 + "%";
+        p.style.top = 38 + Math.random() * 26 + "%";
+        box.appendChild(p);
+        // Timer removal (not animationend) so petals are always cleaned up,
+        // even in a hidden/non-compositing tab where animationend never fires.
+        setTimeout(() => p.remove(), 900);
+      }
+    }
+
+    function setActive(i, opts) {
+      opts = opts || {};
       imgs[idx].classList.remove("active");
       if (dots[idx]) dots[idx].classList.remove("active");
       idx = (i + imgs.length) % imgs.length;
-      imgs[idx].classList.add("active");
+      const cur = imgs[idx];
+      cur.classList.add("active");
       if (dots[idx]) dots[idx].classList.add("active");
       paintCaption();
+      if (opts.swipe && !reduce) {
+        const cls = opts.dir < 0 ? "pfade-in-right" : "pfade-in-left";
+        cur.classList.add(cls);
+        setTimeout(() => cur.classList.remove(cls), 520);
+        reactNum();
+        spawnPetals();
+      }
     }
     function pause(ms) { pausedUntil = Date.now() + ms; }
 
@@ -82,8 +126,8 @@
       if (downX === null) return;
       const dx = e.clientX - downX;
       downX = null;
-      if (dx <= -THRESHOLD) setActive(idx + 1);
-      else if (dx >= THRESHOLD) setActive(idx - 1);
+      if (dx <= -THRESHOLD) setActive(idx + 1, { swipe: true, dir: -1 });
+      else if (dx >= THRESHOLD) setActive(idx - 1, { swipe: true, dir: 1 });
       pause(PAUSE_MS);
     });
     box.addEventListener("pointercancel", () => { downX = null; pause(PAUSE_MS); });
