@@ -31,6 +31,7 @@
 
     const tone = AVATAR_TONES[i % AVATAR_TONES.length];
     card.innerHTML =
+      '<div class="tstm-card__inner">' +
       '<svg class="tstm-quote" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 7C6.5 7 4.5 9.4 4.5 12.4V17h4.8v-4.8H7.1c0-1.7 1-2.7 2.4-2.9V7zm9 0c-3 0-5 2.4-5 5.4V17h4.8v-4.8h-2.2c0-1.7 1-2.7 2.4-2.9V7z"/></svg>' +
       '<p class="tstm-text">' + escapeHtml(t.quote) + "</p>" +
       '<div class="tstm-person">' +
@@ -43,6 +44,7 @@
       '<span class="tstm-role">' + escapeHtml([t.role, t.company].filter(Boolean).join(", ")) + "</span>" +
       '<span class="tstm-loc">' + (t.flag ? t.flag + " " : "") + escapeHtml(t.country || "") + "</span>" +
       "</span>" +
+      "</div>" +
       "</div>";
 
     // Photo present but broken → drop it, initials stay visible underneath.
@@ -85,10 +87,20 @@
     move();
   }
 
+  // Pixel-based transform off the REAL per-slide step. Measure it from the gap
+  // between two cards' layout positions (offsetLeft is immune to the track's
+  // transform), not a single card's box width — those differ by a few px and a
+  // percentage/box-width step drifts, piling up over 30+ cards and pushing them
+  // off-screen on mobile.
+  function cardWidth() {
+    return cards.length > 1
+      ? cards[1].offsetLeft - cards[0].offsetLeft
+      : cards[0].getBoundingClientRect().width;
+  }
+
   function move() {
-    const pct = index * (100 / visible);
     track.style.transition = reduceMotion ? "none" : "";
-    track.style.transform = "translate3d(-" + pct + "%,0,0)";
+    track.style.transform = "translate3d(" + (-index * cardWidth()) + "px,0,0)";
     Array.from(dotsWrap.children).forEach((d, i) => d.classList.toggle("active", i === index));
     prevBtn.disabled = index <= 0;
     nextBtn.disabled = index >= maxIndex;
@@ -125,9 +137,7 @@
   function onMove(x) {
     if (!dragging) return;
     moved = x - startX;
-    const base = index * (100 / visible);
-    const pxPct = (moved / root.offsetWidth) * 100;
-    track.style.transform = "translate3d(calc(-" + base + "% + " + pxPct + "%),0,0)";
+    track.style.transform = "translate3d(" + (-index * cardWidth() + moved) + "px,0,0)";
   }
   function onUp() {
     if (!dragging) return;
@@ -166,6 +176,15 @@
         if (index > maxIndex) index = maxIndex;
         buildDots();
         layout();
+      } else {
+        // Same card count, but card width changed — re-apply the px transform
+        // so the active slide stays aligned instead of drifting after resize.
+        const prev = track.style.transition;
+        track.style.transition = "none";
+        move();
+        // force reflow, then restore the animated transition
+        void track.offsetWidth;
+        track.style.transition = prev;
       }
     }, 150);
   });

@@ -2114,11 +2114,18 @@ button { font-family: inherit; cursor: pointer; }
 }
 .tstm-track:active { cursor: grabbing; }
 
+/* The cell is the flex item — sized to exactly 100%/visible via JS. The gutter
+   is its padding (NOT a margin), so the percentage transform lines up exactly
+   and cards never drift on mobile. All visuals live on the inner wrapper. */
 .tstm-card {
   flex: 0 0 100%;
   min-width: 0;
   box-sizing: border-box;
-  margin: 8px;
+  padding: 8px;
+}
+.tstm-card__inner {
+  height: 100%;
+  box-sizing: border-box;
   padding: 32px 28px 26px;
   display: flex;
   flex-direction: column;
@@ -2132,8 +2139,8 @@ button { font-family: inherit; cursor: pointer; }
   transform: scale(0.97);
   transition: opacity 520ms var(--ease-out), transform 520ms var(--ease-out), box-shadow var(--dur-med) var(--ease-out);
 }
-.tstm-card.is-active { opacity: 1; transform: scale(1); box-shadow: var(--shadow-md); }
-.tstm-card:hover.is-active { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.tstm-card.is-active .tstm-card__inner { opacity: 1; transform: scale(1); box-shadow: var(--shadow-md); }
+.tstm-card:hover.is-active .tstm-card__inner { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 
 .tstm-quote { width: 34px; height: 34px; fill: rgb(var(--tone)); opacity: 0.5; margin-bottom: 14px; flex-shrink: 0; }
 .tstm-text {
@@ -2197,13 +2204,14 @@ button { font-family: inherit; cursor: pointer; }
 .tstm-dot.active { width: 26px; background: rgb(var(--tone)); }
 
 @media (max-width: 480px) {
-  .tstm-card { padding: 26px 22px 22px; }
+  .tstm-card { padding: 6px; }
+  .tstm-card__inner { padding: 26px 22px 22px; }
   .tstm-controls { gap: 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .tstm-track { transition: none; }
-  .tstm-card { transition: opacity 200ms linear; transform: none; }
-  .tstm-card.is-active { transform: none; }
+  .tstm-card__inner { transition: opacity 200ms linear; transform: none; }
+  .tstm-card.is-active .tstm-card__inner { transform: none; }
 }
 
 /* ===== "How we work" — 4-step process =====
