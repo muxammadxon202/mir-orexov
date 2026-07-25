@@ -1,25 +1,9 @@
 // Mobile nav toggle
 document.addEventListener("DOMContentLoaded", () => {
-  // The 2.5s brand preloader runs on every visit.
-  const preloader = document.querySelector(".preloader");
-  if (preloader) {
-    const minDisplayMs = 2500;
-    const start = Date.now();
-    const hidePreloader = () => {
-      const elapsed = Date.now() - start;
-      const wait = Math.max(0, minDisplayMs - elapsed);
-      setTimeout(() => {
-        preloader.classList.add("hidden");
-        document.body.style.overflow = "";
-      }, wait);
-    };
-    document.body.style.overflow = "hidden";
-    if (document.readyState === "complete") {
-      hidePreloader();
-    } else {
-      window.addEventListener("load", hidePreloader, { once: true });
-    }
-  }
+  // The brand preloader used to block scrolling for 2500ms on every visit,
+  // which capped LCP at 2.5s. It is gone: the hero now animates in via the
+  // existing [data-animate-load] CSS transition with content visible from the
+  // first paint.
 
   const toggle = document.querySelector(".nav-toggle");
   const navbar = document.querySelector(".navbar");
@@ -128,40 +112,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // The intro preloader covers the screen for ~2.5s. If the counters were armed
-  // immediately, the hero stats (in view on load) would count up *behind* the
-  // preloader and be done before it lifts — so only the scrolled-to footer
-  // stats appeared to animate. Arm the counters once the preloader is gone.
-  const preloaderEl = document.querySelector(".preloader");
-  if (preloaderEl && !preloaderEl.classList.contains("hidden")) {
-    let armed = false;
-    const armOnce = () => {
-      if (armed) return;
-      armed = true;
-      armStatCounters();
-    };
-    const poll = setInterval(() => {
-      if (preloaderEl.classList.contains("hidden")) {
-        clearInterval(poll);
-        armOnce();
-      }
-    }, 100);
-    // Safety net in case the preloader never gets the hidden class.
-    setTimeout(() => {
-      clearInterval(poll);
-      armOnce();
-    }, 4000);
-  } else {
-    armStatCounters();
-  }
+  // No preloader to wait on any more — the counters arm immediately and the
+  // IntersectionObserver inside armStatCounters() decides when each stat runs.
+  armStatCounters();
 
-  // Hero entrance animation: fires once on load, staggered by data-animate-load index
-  const heroAnimated = document.querySelectorAll("[data-animate-load]");
-  heroAnimated.forEach((el) => {
-    const step = Number(el.dataset.animateLoad) || 0;
-    el.style.transitionDelay = `${150 + step * 120}ms`;
-    requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add("in-view")));
-  });
+  // The hero entrance is CSS-only now (see [data-animate-load] keyframes in
+  // style.css) so the LCP text never waits on JS or on requestAnimationFrame.
 
   // Hero particles (generated, respects reduced-motion)
   const particleField = document.querySelector(".particles");

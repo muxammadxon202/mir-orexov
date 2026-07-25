@@ -123,8 +123,8 @@
   --dur-med: 280ms;
   --dur-cinematic: 700ms;
 
-  /* The navbar entrance waits for the preloader (2.5s in main.js). */
-  --nav-reveal-delay: 2.5s;
+  /* Preloader is gone — the navbar drops in immediately. */
+  --nav-reveal-delay: 0s;
 }
 
 * { box-sizing: border-box; }
@@ -142,7 +142,7 @@ body {
     radial-gradient(ellipse 900px 600px at 15% -10%, rgba(201, 162, 39, 0.08), transparent 60%),
     radial-gradient(ellipse 700px 500px at 100% 20%, rgba(192, 57, 43, 0.06), transparent 60%),
     linear-gradient(rgba(251, 247, 235, 0.5), rgba(251, 247, 235, 0.5)),
-    url("../img/pattern-nuts-lines.png") repeat fixed,
+    url("../img/pattern-nuts-lines.png") repeat,
     var(--bg);
   background-size: auto, auto, auto, 900px, auto;
   color: var(--text);
@@ -165,7 +165,10 @@ h3 { font-weight: 600; font-size: var(--fs-lg); line-height: 1.3; }
 p { max-width: 65ch; }
 
 a { color: inherit; text-decoration: none; }
-img { max-width: 100%; display: block; }
+/* width/height attributes are now on every <img> to reserve layout space
+   (CLS). height:auto keeps the aspect ratio when CSS sizes only the width;
+   components that need a fixed box (object-fit covers) override it. */
+img { max-width: 100%; height: auto; display: block; }
 ul { margin: 0; padding: 0; list-style: none; }
 button { font-family: inherit; cursor: pointer; }
 
@@ -215,9 +218,7 @@ button { font-family: inherit; cursor: pointer; }
   background: rgba(251, 247, 235, 0.85);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  /* Matches the preloader's 2.5s minimum display time (assets/js/main.js) so the
-     navbar drops in right as the preloader fades, instead of sitting static underneath it.
-     --nav-reveal-delay collapses to 0s on repeat visits (no preloader). */
+  /* Entrance runs on first paint; no preloader to wait for. */
   animation: nav-reveal 600ms var(--ease-cinematic) var(--nav-reveal-delay) both;
   transition: box-shadow var(--dur-med) var(--ease-out), background var(--dur-med) var(--ease-out);
 }
@@ -644,7 +645,7 @@ button { font-family: inherit; cursor: pointer; }
 
 /* Alternate band (П22): the subtle cream level with the nut pattern kept as a faint texture */
 .section--alt {
-  background: linear-gradient(rgba(251, 247, 235, 0.55), rgba(251, 247, 235, 0.55)), url("../img/pattern-nuts-lines.png") repeat fixed, var(--bg-subtle);
+  background: linear-gradient(rgba(251, 247, 235, 0.55), rgba(251, 247, 235, 0.55)), url("../img/pattern-nuts-lines.png") repeat, var(--bg-subtle);
   background-size: auto, 900px, auto;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -667,9 +668,29 @@ button { font-family: inherit; cursor: pointer; }
 [data-animate] { opacity: 0; transform: translateY(32px) scale(0.98); transition: opacity var(--dur-cinematic) var(--ease-cinematic), transform var(--dur-cinematic) var(--ease-cinematic); }
 [data-animate].in-view { opacity: 1; transform: translateY(0) scale(1); }
 
-/* Hero entrance: fires immediately on load (not scroll-gated), staggered by data-animate-load index */
-[data-animate-load] { opacity: 0; transform: translateY(20px); transition: opacity 900ms var(--ease-cinematic), transform 900ms var(--ease-cinematic); }
-[data-animate-load].in-view { opacity: 1; transform: translateY(0); }
+/* Hero entrance: pure CSS, staggered by the data-animate-load index.
+   This used to be a JS class toggle inside a double requestAnimationFrame, which
+   meant the LCP text stayed at opacity 0 whenever rAF was throttled (hidden or
+   backgrounded tab) or main.js was slow. As a keyframe animation it is owned by
+   the compositor and always resolves. */
+[data-animate-load] { animation: hero-load-in 900ms var(--ease-cinematic) both; }
+[data-animate-load="0"] { animation-delay: 150ms; }
+[data-animate-load="1"] { animation-delay: 270ms; }
+[data-animate-load="2"] { animation-delay: 390ms; }
+[data-animate-load="3"] { animation-delay: 510ms; }
+[data-animate-load="4"] { animation-delay: 630ms; }
+[data-animate-load="5"] { animation-delay: 750ms; }
+
+@keyframes hero-load-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Reduced motion: show it instantly rather than sliding it in. The global
+   reduced-motion block collapses the duration, this drops the offset too. */
+@media (prefers-reduced-motion: reduce) {
+  [data-animate-load] { animation: none; opacity: 1; transform: none; }
+}
 
 /* ===== Advantage cards ===== */
 .grid-4 {
@@ -1770,64 +1791,6 @@ button { font-family: inherit; cursor: pointer; }
 
 @media (prefers-reduced-motion: reduce) {
   .modal-overlay, .modal-card { transition-duration: 0.01ms; }
-}
-
-/* ===== Preloader ===== */
-.preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  background: var(--bg);
-  transition: opacity 500ms var(--ease-cinematic), visibility 500ms var(--ease-cinematic);
-}
-
-.preloader.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
-
-.preloader-logo {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
-  overflow: hidden;
-  animation: preloader-pulse 1.6s ease-in-out infinite;
-}
-
-.preloader-logo img { width: 100%; height: 100%; object-fit: cover; }
-
-@keyframes preloader-pulse {
-  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(201, 162, 39, 0.35); }
-  50% { transform: scale(1.04); box-shadow: 0 0 0 12px rgba(201, 162, 39, 0); }
-}
-
-.preloader-bar {
-  width: 160px;
-  height: 2px;
-  background: var(--border);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-}
-
-.preloader-bar::after {
-  content: "";
-  display: block;
-  height: 100%;
-  width: 100%;
-  background: var(--gold);
-  transform: translateX(-100%);
-  animation: preloader-fill 2.4s var(--ease-cinematic) forwards;
-}
-
-@keyframes preloader-fill {
-  to { transform: translateX(0); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .preloader-logo { animation: none; }
-  .preloader-bar::after { animation-duration: 0.01ms; }
 }
 
 /* ===== Skip link ===== */

@@ -15,7 +15,9 @@
   <meta property="og:site_name" content="Mir Orexov Samarkand" />
   <meta property="og:title" content="Wholesale Dry Fruits from Uzbekistan — Mir Orexov Samarkand" />
   <meta property="og:description" content="Wholesale dry fruits from the producer: dried apricots, raisins, prunes, jida, unabi. Direct supply from Samarkand, Uzbekistan to 30+ countries, no middlemen." />
-  <meta property="og:image" content="https://mirorexov.com/assets/img/branding/logo.png" />
+  <meta property="og:image" content="https://mirorexov.com/assets/img/og-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://mirorexov.com/en/dry-fruits.html" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="ru_RU" />
@@ -33,15 +35,15 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="../assets/img/branding/logo.png" />
+  <link rel="preload" href="assets/fonts/playfair-display-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/branding/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/branding/apple-touch-icon-180.png" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
   <div class="preloader hidden" aria-hidden="true">
-    <div class="preloader-logo"><img src="../assets/img/branding/logo.png" alt="" /></div>
+    <div class="preloader-logo"><img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="" /></div>
     <div class="preloader-bar"></div>
   </div>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -56,7 +58,7 @@
 
   <header class="navbar">
     <a href="index.html" class="brand">
-      <span class="brand-logo"><img src="../assets/img/branding/logo.png" alt="Mir Orexov Samarkand" /></span>
+      <span class="brand-logo"><img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
       <span class="brand-name">
         <strong>Mir Orexov</strong>
         <span>SAMARKAND</span>
@@ -108,16 +110,16 @@
         </div>
         <div class="sam-slider" data-animate>
           <div class="sam-slider__track">
-            <video class="sam-slide active" autoplay muted playsinline data-caption-ru="Наше производство сухофруктов" data-caption-en="Our dried fruit production">
+            <video class="sam-slide active" autoplay muted playsinline loop preload="none" poster="../assets/img/sukhofrukty-proizvodstvo-poster.jpg" data-caption-ru="Наше производство сухофруктов" data-caption-en="Our dried fruit production">
               <source src="../assets/img/sukhofrukty-proizvodstvo.mp4" type="video/mp4" />
             </video>
-            <img src="../assets/img/products/kuraga-base.avif" alt="Dried apricots" class="sam-slide" data-caption-ru="Курага" data-caption-en="Dried apricots">
-            <img src="../assets/img/products/raisin-cover.avif" alt="Raisins" class="sam-slide" data-caption-ru="Изюм" data-caption-en="Raisins">
-            <img src="../assets/img/products/prune-catalog.avif" alt="Prunes" class="sam-slide" data-caption-ru="Чернослив" data-caption-en="Prunes">
-            <img src="../assets/img/products/turshak.avif" alt="Dried apricots Turshak" class="sam-slide" data-caption-ru="Сушёные абрикосы «Туршак»" data-caption-en="Dried apricots Turshak">
-            <img src="../assets/img/products/jida.avif" alt="Jida" class="sam-slide" data-caption-ru="Джида" data-caption-en="Jida">
-            <img src="../assets/img/products/unabi.avif" alt="Unabi" class="sam-slide" data-caption-ru="Унаби" data-caption-en="Unabi">
-            <img src="../assets/img/products/компот.avif" alt="Dried fruit compote mix" class="sam-slide" data-caption-ru="Компотная смесь" data-caption-en="Dried fruit compote mix">
+            <img loading="lazy" src="../assets/img/products/kuraga-base.avif" width="800" height="800" alt="Dried apricots" class="sam-slide" data-caption-ru="Курага" data-caption-en="Dried apricots">
+            <img loading="lazy" src="../assets/img/products/raisin-cover.avif" width="900" height="900" alt="Raisins" class="sam-slide" data-caption-ru="Изюм" data-caption-en="Raisins">
+            <img loading="lazy" src="../assets/img/products/prune-catalog.avif" width="630" height="630" alt="Prunes" class="sam-slide" data-caption-ru="Чернослив" data-caption-en="Prunes">
+            <img loading="lazy" src="../assets/img/products/turshak.avif" width="900" height="889" alt="Dried apricots Turshak" class="sam-slide" data-caption-ru="Сушёные абрикосы «Туршак»" data-caption-en="Dried apricots Turshak">
+            <img loading="lazy" src="../assets/img/products/jida.avif" width="630" height="630" alt="Jida" class="sam-slide" data-caption-ru="Джида" data-caption-en="Jida">
+            <img loading="lazy" src="../assets/img/products/unabi.avif" width="630" height="630" alt="Unabi" class="sam-slide" data-caption-ru="Унаби" data-caption-en="Unabi">
+            <img loading="lazy" src="../assets/img/products/компот.avif" width="534" height="543" alt="Dried fruit compote mix" class="sam-slide" data-caption-ru="Компотная смесь" data-caption-en="Dried fruit compote mix">
           </div>
           <div class="sam-slider__caption">Our dried fruit production</div>
           <div class="sam-slider__dots">
@@ -204,7 +206,7 @@
       <div class="footer-flat-top">
         <div class="footer-brand-col">
           <a href="index.html" class="pf-logo-row">
-            <span class="pf-logo-mark"><img src="../assets/img/branding/logo.png" alt="Mir Orexov Samarkand" /></span>
+            <span class="pf-logo-mark"><img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
             <span class="pf-logo-text pf-logo-text--dark">
               <strong>Mir Orexov</strong>
               <span>SAMARKAND</span>
@@ -309,75 +311,9 @@
     </button>
   </div>
 
-  <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/i18n.js"></script>
-  <script src="../assets/js/chat-widget.js"></script>
-  <script>
-    (function(){
-      function initSlider(slider) {
-        const slides  = slider.querySelectorAll('.sam-slide');
-        const dots    = slider.querySelectorAll('.sam-dot');
-        const caption = slider.querySelector('.sam-slider__caption');
-        let current = 0, timer;
-
-        function updateCaption() {
-          if (!caption) return;
-          const s = slides[current];
-          const isEn = document.documentElement.lang === 'en';
-          caption.textContent = isEn ? s.dataset.captionEn : s.dataset.captionRu;
-        }
-        window.addEventListener('langchange', updateCaption);
-
-        function goTo(idx) {
-          slides[current].classList.remove('active');
-          dots[current].classList.remove('active');
-          current = (idx + slides.length) % slides.length;
-          slides[current].classList.add('active');
-          dots[current].classList.add('active');
-          updateCaption();
-          if (slides[current].tagName === 'VIDEO') {
-            slides[current].currentTime = 0;
-            slides[current].play().catch(() => {});
-          }
-        }
-
-        updateCaption();
-
-        let videoEndedCleanup = null;
-        function startAuto() {
-          const active = slides[current];
-          if (active.tagName === 'VIDEO') {
-            const onEnded = () => { goTo(current + 1); startAuto(); };
-            active.addEventListener('ended', onEnded, { once: true });
-            videoEndedCleanup = () => active.removeEventListener('ended', onEnded);
-          } else {
-            timer = setTimeout(() => { goTo(current + 1); startAuto(); }, 3500);
-          }
-        }
-        function stopAuto() {
-          clearTimeout(timer);
-          if (videoEndedCleanup) { videoEndedCleanup(); videoEndedCleanup = null; }
-        }
-
-        slider.querySelector('.sam-arrow--next').addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
-        slider.querySelector('.sam-arrow--prev').addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
-        dots.forEach((d, i) => {
-          d.setAttribute('aria-label', 'Photo ' + (i + 1));
-          d.addEventListener('click', () => { stopAuto(); goTo(+d.dataset.idx); startAuto(); });
-        });
-
-        let tx = 0;
-        slider.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
-        slider.addEventListener('touchend',   e => {
-          const dx = e.changedTouches[0].clientX - tx;
-          if (Math.abs(dx) > 40) { stopAuto(); goTo(current + (dx < 0 ? 1 : -1)); startAuto(); }
-        }, { passive: true });
-
-        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) startAuto();
-      }
-
-      document.querySelectorAll('.sam-slider').forEach(initSlider);
-    })();
-  </script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/chat-widget.js" defer></script>
+  <script src="../assets/js/sam-slider.js" defer></script>
 </body>
 </html>

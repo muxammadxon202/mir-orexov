@@ -28,8 +28,19 @@
       el.setAttribute("aria-label", lang === "en" ? el.dataset.enAriaLabel : el.dataset.ruAriaLabel);
     });
 
+    // The switch is a pair of toggle buttons, so the active one is reported as
+    // pressed — the `active` class alone is invisible to screen readers. On the
+    // /en/ pages the switch is made of links instead (they navigate to another
+    // URL), where aria-current is the right equivalent.
     document.querySelectorAll(".lang-switch button").forEach((btn) => {
-      btn.classList.toggle("active", btn.dataset.lang === lang);
+      const on = btn.dataset.lang === lang;
+      btn.classList.toggle("active", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+
+    document.querySelectorAll(".lang-switch a[data-lang]").forEach((link) => {
+      if (link.dataset.lang === lang) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
     });
 
     window.dispatchEvent(new CustomEvent("langchange", { detail: { lang } }));

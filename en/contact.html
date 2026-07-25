@@ -15,7 +15,9 @@
   <meta property="og:site_name" content="Mir Orexov Samarkand" />
   <meta property="og:title" content="Contact — Order Wholesale Nuts & Dried Fruits from Uzbekistan | Mir Orexov" />
   <meta property="og:description" content="Get in touch to buy wholesale nuts, dried apricots, raisins and other dried fruits from Samarkand. WhatsApp, Telegram, Email — fast response." />
-  <meta property="og:image" content="https://mirorexov.com/assets/img/branding/logo.png" />
+  <meta property="og:image" content="https://mirorexov.com/assets/img/og-card.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="https://mirorexov.com/en/contact.html" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="ru_RU" />
@@ -39,17 +41,13 @@
   }
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" type="image/png" href="../assets/img/branding/logo.png" />
+  <link rel="preload" href="assets/fonts/playfair-display-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/branding/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/branding/apple-touch-icon-180.png" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
-  <div class="preloader" aria-hidden="true">
-    <div class="preloader-logo"><img src="../assets/img/branding/logo.png" alt="" /></div>
-    <div class="preloader-bar"></div>
-  </div>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="top-bar">
@@ -65,7 +63,7 @@
 
   <header class="navbar">
     <a href="index.html" class="brand">
-      <span class="brand-logo"><img src="../assets/img/branding/logo.png" alt="Mir Orexov Samarkand" /></span>
+      <span class="brand-logo"><img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
       <span class="brand-name">
         <strong>Mir Orexov</strong>
         <span>SAMARKAND</span>
@@ -301,7 +299,7 @@
       <div class="footer-flat-top">
         <div class="footer-brand-col">
           <a href="index.html" class="pf-logo-row">
-            <span class="pf-logo-mark"><img src="../assets/img/branding/logo.png" alt="Mir Orexov Samarkand" /></span>
+            <span class="pf-logo-mark"><img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
             <span class="pf-logo-text pf-logo-text--dark">
               <strong>Mir Orexov</strong>
               <span>SAMARKAND</span>
@@ -405,8 +403,9 @@
     </button>
   </div>
 
-  <script src="../assets/js/main.js"></script>
-  <script src="../assets/js/i18n.js"></script>
-  <script src="../assets/js/chat-widget.js"></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/i18n.js" defer></script>
+  <script src="../assets/js/chat-widget.js" defer></script>
+  <script src="../assets/js/form-a11y.js" defer></script>
 </body>
 </html>

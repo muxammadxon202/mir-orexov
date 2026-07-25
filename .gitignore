@@ -4,3 +4,14 @@ node_modules/
 !.env.example
 *.log
 .DS_Store
+
+# graphify knowledge-graph output: hundreds of JSON caches, regenerable
+graphify-out/
+
+# local scratch
+*.tmp
+
+# Raw camera/source originals kept locally only — the site ships the optimized
+# derivatives (assets/img/expo/*.webp etc.). Committing multi-MB sources to a
+# GitHub Pages repo bloats every clone.
+assets/img/Выставки/
