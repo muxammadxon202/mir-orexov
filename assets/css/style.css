@@ -2116,6 +2116,26 @@ html.intro-seen .preloader { display: none; }
   .sam-arrow { width: 34px; height: 34px; font-size: var(--fs-base); }
 }
 
+
+/* Frame counter used instead of dots on sliders with more than 8 frames */
+.sam-slider__dots[hidden] { display: none; }
+
+.sam-slider__counter {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(45, 28, 21, 0.6);
+  backdrop-filter: blur(4px);
+  color: var(--cream-50);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.04em;
+}
 /* ===== News page ===== */
 .news-card { display: flex; flex-direction: column; }
 .news-card-body { padding: 24px; }
@@ -2429,3 +2449,342 @@ html.intro-seen .preloader { display: none; }
 .cta-band h2 { color: #fff; margin-bottom: 14px; }
 .cta-band p { color: rgba(251, 247, 235, 0.82); font-size: var(--fs-lg); line-height: 1.55; margin-bottom: 30px; }
 .cta-band__actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+/* ===================================================================
+   About page — full-bleed hero + stage flow
+   Scoped to .about-page so nothing here can leak into other pages.
+   =================================================================== */
+
+/* --- 1. Curtain hero ---------------------------------------------
+   The photo is sticky at the top of the viewport while the content
+   block below scrolls up over it, so the hero reads as a curtain
+   being drawn rather than as a panel scrolling away. */
+.about-hero {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.about-hero__media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.about-hero__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* the signboard sits on the left of the frame — keep it in shot */
+  object-position: 25% center;
+  /* parallax start state; JS eases it back to 1 as the page scrolls */
+  transform: scale(1.08);
+  transform-origin: 30% 50%;
+  will-change: transform;
+}
+
+/* Left-weighted scrim so the copy stays legible without dimming the
+   whole photograph. */
+.about-hero__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(20, 15, 8, 0.72) 0%, rgba(20, 15, 8, 0.35) 45%, transparent 70%);
+}
+
+.about-hero__inner {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* the fixed bars sit over the top of the frame, so dead-centre reads low */
+  padding-bottom: 7vh;
+}
+
+.about-hero__copy { max-width: 40ch; }
+
+.about-hero__kicker {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 20px;
+}
+
+.about-hero h1 {
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--cream-50);
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.about-hero__lead {
+  font-size: var(--fs-lg);
+  line-height: 1.5;
+  font-weight: 500;
+  color: rgba(251, 247, 235, 0.88);
+  margin: 0;
+  max-width: 46ch;
+}
+
+/* staggered entrance */
+.about-hero__kicker,
+.about-hero h1,
+.about-hero__lead,
+.about-hero__scroll { animation: hero-rise 800ms var(--ease-cinematic) both; }
+.about-hero__kicker { animation-delay: 120ms; }
+.about-hero h1      { animation-delay: 240ms; }
+.about-hero__lead   { animation-delay: 360ms; }
+.about-hero__scroll { animation-delay: 520ms; }
+
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.about-hero__scroll {
+  position: absolute;
+  left: 50%;
+  bottom: 32px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream-50);
+  opacity: 0.85;
+}
+.about-hero__scroll svg { width: 26px; height: 26px; animation: scroll-nudge 2s ease-in-out infinite; }
+
+@keyframes scroll-nudge {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50%      { transform: translateY(7px); opacity: 1; }
+}
+
+/* --- 2. The content curtain ---------------------------------------
+   Sits above the hero and slides over it. The nut pattern lives here,
+   faint, so it never runs under the text cards themselves. */
+.about-flow {
+  position: relative;
+  z-index: 1;
+  /* Fully opaque: a translucent curtain would let the sticky hero show
+     through the content. The nut texture therefore rides on its own layer
+     below, instead of being washed out by an overlay gradient. */
+  background: var(--bg-page);
+  border-radius: 32px 32px 0 0;
+  box-shadow: 0 -24px 60px -20px rgba(45, 28, 21, 0.35);
+}
+
+/* The house nut pattern, same as the rest of the site, held at a strength
+   where it reads as texture and never competes with the copy. */
+.about-flow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: url("../img/pattern-nuts-lines.png") repeat;
+  background-size: 900px;
+  opacity: 0.28;
+  pointer-events: none;
+  z-index: 0;
+}
+.about-flow > * { position: relative; z-index: 1; }
+
+/* --- 3. Stages ---------------------------------------------------- */
+.stage { position: relative; }
+
+.stage__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/* zebra: even stages put the media on the right */
+.stage--reverse .stage__media { order: 2; }
+.stage--reverse .stage__body  { order: 1; }
+
+.stage__head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.stage__num {
+  font-family: var(--font-display);
+  font-size: var(--fs-3xl);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--gold);
+  letter-spacing: -0.02em;
+}
+
+/* The nut texture is a backdrop, not a bed for type: each copy column gets
+   its own cream panel so the pattern reads around the card, never under the
+   words. */
+.stage__body {
+  background: rgba(254, 252, 246, 0.86);
+  backdrop-filter: blur(4px);
+  border-radius: var(--radius-lg);
+  padding: clamp(20px, 3vw, 32px);
+}
+.stage__body h2 { margin-bottom: 16px; }
+.stage__body p  { color: var(--text-dim); }
+
+/* thin gold thread linking the stage numbers into one production line */
+.stage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, rgba(201, 162, 39, 0.35) 18%, rgba(201, 162, 39, 0.35) 82%, transparent);
+  pointer-events: none;
+}
+.stage:first-of-type::before { top: 40%; }
+.stage:last-of-type::before  { bottom: 55%; }
+
+/* scroll-in. Gated behind .js-reveal, which about-hero.js sets on <html>:
+   without JS the content simply shows, never a blank page. */
+.js-reveal .stage__body[data-reveal],
+.js-reveal .stage__media[data-reveal] {
+  opacity: 0;
+  transition: opacity 700ms var(--ease-cinematic), transform 700ms var(--ease-cinematic);
+}
+.stage__body[data-reveal] { transform: translateY(30px); }
+.stage__media[data-reveal] { transform: scale(0.96); transition-delay: 150ms; }
+.js-reveal .stage__body[data-reveal].revealed,
+.js-reveal .stage__media[data-reveal].revealed { opacity: 1; transform: none; }
+
+/* --- 4. Closing CTA ---------------------------------------------- */
+.about-cta {
+  background: var(--brown-900);
+  border-radius: var(--radius-lg);
+  padding: clamp(2.5rem, 6vw, 4rem);
+  text-align: center;
+}
+.about-cta h2 { color: var(--cream-50); margin-bottom: 16px; }
+.about-cta p {
+  color: rgba(251, 247, 235, 0.75);
+  margin: 0 auto 32px;
+  max-width: 52ch;
+}
+.about-cta .btn-gold {
+  background: var(--gold);
+  color: var(--brown-900);
+  font-weight: 600;
+}
+.about-cta .btn-gold:hover {
+  background: var(--gold-300);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(201, 162, 39, 0.3);
+}
+
+/* --- 5. Transparent navbar over the hero -------------------------- */
+/* The contact strip and the navbar are lifted out of the flow so the hero
+   photograph starts at the very first pixel of the page and fills a true
+   100vh. --topbar-h is measured by about-hero.js (36px is the desktop
+   default) so the navbar always sits exactly under the strip. */
+.about-page { --topbar-h: 36px; }
+
+.about-page .top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  background: transparent;
+  color: rgba(251, 247, 235, 0.9);
+  transition: background var(--dur-med) var(--ease-out), color var(--dur-med) var(--ease-out);
+}
+.about-page .top-bar .top-bar-item { color: rgba(251, 247, 235, 0.9); }
+
+.about-page .navbar {
+  /* The shared entrance animation slides the bar down from -14px; here the bar
+     is fixed over the photograph and the intro already covers the first
+     moment, so the extra movement is dropped rather than risk the bar being
+     caught mid-slide. */
+  animation: none;
+  position: fixed;
+  top: var(--topbar-h);
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: transparent;
+  border-bottom-color: transparent;
+  backdrop-filter: none;
+  transition: background var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out), border-color var(--dur-med) var(--ease-out);
+}
+.about-page .navbar:not(.nav-lifted) .nav-menu a,
+.about-page .navbar:not(.nav-lifted) .brand-name strong,
+.about-page .navbar:not(.nav-lifted) .nav-toggle { color: var(--cream-50); }
+.about-page .navbar:not(.nav-lifted) .brand-name span { color: var(--gold); }
+.about-page .navbar:not(.nav-lifted) .lang-switch { border-color: rgba(251, 247, 235, 0.35); }
+.about-page .navbar:not(.nav-lifted) .lang-switch a,
+.about-page .navbar:not(.nav-lifted) .lang-switch button { color: rgba(251, 247, 235, 0.8); }
+.about-page .navbar:not(.nav-lifted) .lang-switch .active { background: rgba(251, 247, 235, 0.16); color: var(--cream-50); }
+.about-page .top-bar.nav-lifted {
+  background: var(--cream-200);
+  color: var(--text-dim);
+}
+.about-page .top-bar.nav-lifted .top-bar-item { color: var(--text-dim); }
+
+.about-page .navbar.nav-lifted {
+  background: rgba(251, 247, 235, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom-color: var(--border);
+  box-shadow: var(--shadow-sm);
+}
+/* the hero sits at z-index 0, so the sticky bar already renders above it */
+
+/* --- 6. Mobile ---------------------------------------------------- */
+@media (max-width: 900px) {
+  .stage__grid { grid-template-columns: 1fr; gap: 32px; }
+  .stage--reverse .stage__media,
+  .stage--reverse .stage__body { order: initial; }
+  /* number → text → carousel on one column */
+  .stage__media { order: 2; }
+  .stage__body  { order: 1; }
+  .stage::before { left: 0; }
+}
+
+@media (max-width: 720px) {
+  .about-hero__media::after {
+    background: linear-gradient(0deg, rgba(20, 15, 8, 0.85) 0%, rgba(20, 15, 8, 0.5) 45%, rgba(20, 15, 8, 0.2) 100%);
+  }
+  .about-hero__inner { justify-content: flex-end; padding-bottom: 96px; }
+  /* nowrap would push the headline off a narrow screen */
+  .about-hero h1 { white-space: normal; }
+  .about-hero__copy { max-width: none; }
+  .about-hero__lead { font-size: var(--fs-base); }
+  .about-flow { border-radius: 24px 24px 0 0; }
+  .stage::before { display: none; }
+}
+
+/* --- 7. Reduced motion -------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .about-hero { position: relative; }
+  .about-hero__media img { transform: none !important; }
+  .about-hero__scroll svg { animation: none; }
+  .about-hero__kicker,
+  .about-hero h1,
+  .about-hero__lead,
+  .about-hero__scroll { animation: none; }
+  .js-reveal .stage__body[data-reveal],
+  .js-reveal .stage__media[data-reveal] { opacity: 1; transform: none; transition: none; }
+}

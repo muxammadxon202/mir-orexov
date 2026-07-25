@@ -95,6 +95,21 @@
       status.textContent = text ? position + ': ' + text : position;
     }
 
+    // Past eight frames a dot row turns into visual noise (and an unusable
+    // hit target), so those sliders get a "6 / 12" counter instead.
+    const dotsWrap = slider.querySelector('.sam-slider__dots');
+    let counter = null;
+    if (dotsWrap && slides.length > 8) {
+      dotsWrap.hidden = true;
+      counter = document.createElement('div');
+      counter.className = 'sam-slider__counter';
+      dotsWrap.insertAdjacentElement('afterend', counter);
+    }
+
+    function updateCounter() {
+      if (counter) counter.textContent = (current + 1) + ' / ' + slides.length;
+    }
+
     function updateCaption() {
       if (!caption) return;
       const s = slides[current];
@@ -109,6 +124,7 @@
       slides[current].classList.add('active');
       dots[current].classList.add('active');
       updateCaption();
+      updateCounter();
       syncSlideState();
       announce();
       if (slides[current].tagName === 'VIDEO') {
@@ -118,6 +134,7 @@
     }
 
     updateCaption();
+    updateCounter();
     applyLabels();
     syncSlideState();
     // No announce() here on purpose: the first slide is not a change.

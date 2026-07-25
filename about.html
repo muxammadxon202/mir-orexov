@@ -47,7 +47,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/branding/apple-touch-icon-180.png" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body>
+<body class="about-page">
   <div class="preloader" aria-hidden="true">
     <div class="preloader-logo"><img src="assets/img/branding/logo-192.webp" alt="" width="192" height="192" /></div>
     <div class="preloader-bar"></div>
@@ -103,27 +103,91 @@
   </header>
 
   <main id="main">
-    <section class="page-header">
-      <div class="container">
-        <h1 data-en="About Us">О компании</h1>
-        <p data-en="Mir Orexov Samarkand — a full-cycle producer, processor and exporter, not a reseller">Мир Орехов Самарканд (Mir Orexov) — компания полного цикла: от поля до контейнера, а не перекупщик</p>
+    <!-- HERO -->
+    <section class="about-hero">
+      <div class="about-hero__media">
+        <img src="assets/img/about/factory-facade-1920.webp"
+             srcset="assets/img/about/factory-facade-1200.webp 1200w, assets/img/about/factory-facade-1920.webp 1920w"
+             sizes="100vw" width="1920" height="1383" alt="Производственная площадка Mir Orexov в Самарканде" fetchpriority="high" />
       </div>
-    </section>
-
-    <section class="section" style="padding-top: 0;">
-      <div class="container two-col">
-        <div data-animate>
-          <div class="section-eyebrow" data-en="Full Cycle">Полный цикл</div>
-          <h2 style="margin-bottom: 16px;" data-en="From Our Own Land to Your Warehouse">От собственной земли — до вашего склада</h2>
-          <p style="color: var(--text-dim);" data-en="Mir Orexov Samarkand is not a trading intermediary. We are a vertically integrated producer: sourcing, processing and export run under one roof, on our own land, so quality is controlled at every link of the chain — not just checked at the border.">Mir Orexov Samarkand — не торговый посредник, а вертикально интегрированный производитель. Выращивание, переработка и экспорт находятся под нашим прямым управлением, на собственной земле, поэтому качество контролируется на каждом звене цепочки — а не проверяется постфактум на границе.</p>
+      <div class="about-hero__inner">
+        <div class="about-hero__copy">
+          <div class="about-hero__kicker" data-en="MIR OREXOV SAMARKAND">МИР ОРЕХОВ САМАРКАНД</div>
+          <h1 data-en="About Us">О компании</h1>
+          <p class="about-hero__lead" data-en="Mir Orexov is a full-cycle company: our own orchards, processing, packaging and export under one management. From the field to the container &mdash; with no middlemen.">Mir Orexov — компания полного цикла: собственные сады, переработка, упаковка и экспорт под одним управлением. От поля до контейнера — без перекупщиков.</p>
         </div>
-        <div class="media-placeholder" data-animate data-en="Company history photo">Фото истории компании</div>
+      </div>
+      <div class="about-hero__scroll" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
       </div>
     </section>
 
-    <section class="section section--alt">
-      <div class="container two-col">
-        <div class="sam-slider" data-animate>
+    <div class="about-flow">
+      <section class="section" style="padding-top: clamp(3rem, 7vw, 5rem);">
+        <div class="container two-col stage__grid">
+          <div class="stage__body" data-reveal>
+            <div class="section-eyebrow" data-en="Full Cycle">Полный цикл</div>
+            <h2 style="margin-bottom: 16px;" data-en="From Our Own Land to Your Warehouse">От собственной земли — до вашего склада</h2>
+            <p style="color: var(--text-dim);" data-en="Mir Orexov Samarkand is not a trading intermediary. We are a vertically integrated producer: sourcing, processing and export run under one roof, on our own land, so quality is controlled at every link of the chain &mdash; not just checked at the border.">Mir Orexov Samarkand — не торговый посредник, а вертикально интегрированный производитель. Выращивание, переработка и экспорт находятся под нашим прямым управлением, на собственной земле, поэтому качество контролируется на каждом звене цепочки — а не проверяется постфактум на границе.</p>
+          </div>
+          <div class="stage__media" data-reveal>
+            <div class="sam-slider">
+              <div class="sam-slider__track">
+                <img src="assets/img/about/cycle/vineyard-1.webp" width="480" height="270" alt="Виноградник Mir Orexov" class="sam-slide active" data-caption-ru="Собственные виноградники" data-caption-en="Our own vineyards">
+                <img loading="lazy" src="assets/img/about/cycle/vineyard-2.webp" width="480" height="319" alt="Ряды виноградника" class="sam-slide" data-caption-ru="Ряды виноградника в сезон" data-caption-en="Vineyard rows in season">
+                <img loading="lazy" src="assets/img/about/cycle/vineyard-3.webp" width="480" height="270" alt="Виноградник с воздуха" class="sam-slide" data-caption-ru="Площади под виноградом" data-caption-en="Land under vine">
+                <img loading="lazy" src="assets/img/about/cycle/walnut-orchard-1.webp" width="480" height="320" alt="Сад грецкого ореха" class="sam-slide" data-caption-ru="Сады грецкого ореха" data-caption-en="Walnut orchards">
+                <img loading="lazy" src="assets/img/about/cycle/walnut-orchard-2.webp" width="427" height="320" alt="Ореховые деревья" class="sam-slide" data-caption-ru="Ореховые деревья на своих полях" data-caption-en="Walnut trees on our own fields">
+                <img loading="lazy" src="assets/img/about/cycle/walnut-orchard-3.webp" width="480" height="269" alt="Ореховый сад" class="sam-slide" data-caption-ru="Уход за ореховым садом" data-caption-en="Tending the walnut grove">
+                <img loading="lazy" src="assets/img/about/cycle/cleaning-belt-1.webp" width="1200" height="630" alt="Лента очистки ореха" class="sam-slide" data-caption-ru="Линия очистки ореха" data-caption-en="Nut cleaning line">
+                <img loading="lazy" src="assets/img/about/cycle/cleaning-belt-2.webp" width="956" height="1280" alt="Очистка грецкого ореха" class="sam-slide" data-caption-ru="Ручной контроль на ленте" data-caption-en="Hand inspection on the belt">
+                <img loading="lazy" src="assets/img/about/cycle/cleaning-belt-3.webp" width="1280" height="960" alt="Конвейер очистки" class="sam-slide" data-caption-ru="Конвейер очистки и калибровки" data-caption-en="Cleaning and grading conveyor">
+                <img loading="lazy" src="assets/img/about/cycle/sorting-1.webp" width="640" height="480" alt="Сортировка продукции" class="sam-slide" data-caption-ru="Очистка и сортировка" data-caption-en="Cleaning and sorting">
+                <img loading="lazy" src="assets/img/about/cycle/sorting-2.webp" width="1080" height="1080" alt="Сортировочный цех" class="sam-slide" data-caption-ru="Сортировочный цех" data-caption-en="The sorting workshop">
+                <img loading="lazy" src="assets/img/about/cycle/sorting-3.webp" width="1068" height="712" alt="Калибровка партии" class="sam-slide" data-caption-ru="Калибровка партии" data-caption-en="Grading a batch">
+                <img loading="lazy" src="assets/img/about/cycle/sorting-4.webp" width="960" height="1280" alt="Работа на линии сортировки" class="sam-slide" data-caption-ru="Работа на линии сортировки" data-caption-en="Working the sorting line">
+                <img loading="lazy" src="assets/img/about/cycle/sorting-5.webp" width="678" height="452" alt="Готовая к фасовке партия" class="sam-slide" data-caption-ru="Партия готова к фасовке" data-caption-en="Batch ready for packing">
+                <img loading="lazy" src="assets/img/about/cycle/raisin-drying-1.webp" width="678" height="452" alt="Сушка изюма" class="sam-slide" data-caption-ru="Естественная сушка изюма" data-caption-en="Natural raisin drying">
+                <img loading="lazy" src="assets/img/about/cycle/raisin-drying-2.webp" width="686" height="386" alt="Сушильные площадки" class="sam-slide" data-caption-ru="Сушильные площадки" data-caption-en="The drying yards">
+                <img loading="lazy" src="assets/img/about/logistics/color-sorter.avif" width="1280" height="959" alt="Фотосепаратор" class="sam-slide" data-caption-ru="Фотосепаратор — цветная сортировка" data-caption-en="Photo separator — color sorting">
+                <img loading="lazy" src="assets/img/products/packaging/фасовка-cover.avif" width="1280" height="853" alt="Линия фасовки" class="sam-slide" data-caption-ru="Фасовка готовой продукции" data-caption-en="Packing the finished product">
+                <img loading="lazy" src="assets/img/about/logistics/truck-loading-1.avif" width="720" height="1280" alt="Погрузка машины" class="sam-slide" data-caption-ru="Погрузка партии на складе" data-caption-en="Loading a shipment at the warehouse">
+                <img loading="lazy" src="assets/img/about/logistics/truck-global-village-day.avif" width="960" height="1280" alt="Загруженная фура" class="sam-slide" data-caption-ru="Отгрузка на экспорт" data-caption-en="Dispatch for export">
+              </div>
+              <div class="sam-slider__caption">Собственные виноградники</div>
+              <div class="sam-slider__dots">
+                <button class="sam-dot active" data-idx="0"></button>
+                <button class="sam-dot" data-idx="1"></button>
+                <button class="sam-dot" data-idx="2"></button>
+                <button class="sam-dot" data-idx="3"></button>
+                <button class="sam-dot" data-idx="4"></button>
+                <button class="sam-dot" data-idx="5"></button>
+                <button class="sam-dot" data-idx="6"></button>
+                <button class="sam-dot" data-idx="7"></button>
+                <button class="sam-dot" data-idx="8"></button>
+                <button class="sam-dot" data-idx="9"></button>
+                <button class="sam-dot" data-idx="10"></button>
+                <button class="sam-dot" data-idx="11"></button>
+                <button class="sam-dot" data-idx="12"></button>
+                <button class="sam-dot" data-idx="13"></button>
+                <button class="sam-dot" data-idx="14"></button>
+                <button class="sam-dot" data-idx="15"></button>
+                <button class="sam-dot" data-idx="16"></button>
+                <button class="sam-dot" data-idx="17"></button>
+                <button class="sam-dot" data-idx="18"></button>
+                <button class="sam-dot" data-idx="19"></button>
+              </div>
+              <button class="sam-arrow sam-arrow--prev" aria-label="Назад" data-en-aria-label="Previous">&#8592;</button>
+              <button class="sam-arrow sam-arrow--next" aria-label="Вперёд" data-en-aria-label="Next">&#8594;</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section class="section stage">
+      <div class="container two-col stage__grid">
+        <div class="stage__media" data-reveal>
+          <div class="sam-slider">
           <div class="sam-slider__track">
             <video class="sam-slide active" autoplay muted playsinline loop preload="none" poster="assets/img/about/own-land-poster.jpg" width="720" height="1280" data-caption-ru="Наши поля и сады" data-caption-en="Our fields and orchards">
               <source src="assets/img/about/own-land-video-540.mp4" type="video/mp4" />
@@ -146,22 +210,24 @@
           <button class="sam-arrow sam-arrow--prev" aria-label="Назад">&#8592;</button>
           <button class="sam-arrow sam-arrow--next" aria-label="Вперёд">&#8594;</button>
         </div>
-        <div data-animate>
-          <div class="section-eyebrow" data-en="Raw Material Base">Сырьевая база</div>
+        </div>
+        <div class="stage__body" data-reveal>
+          <div class="stage__head"><span class="stage__num">01</span><div class="section-eyebrow" data-en="Raw Material Base">Сырьевая база</div></div>
           <h2 style="margin-bottom: 16px;" data-en="Hundreds of Hectares of Our Own Land">Сотни гектаров собственных земель</h2>
           <p style="color: var(--text-dim);" data-en="We grow a significant share of our product ourselves, on hundreds of hectares of company-owned orchards and fields. This gives us full control of quality from the field onward — and removes our dependence on third-party suppliers and the volume or price risk that comes with them.">Значительную часть продукции мы выращиваем сами — на сотнях гектаров собственных садов и полей. Это даёт полный контроль качества от поля до прилавка и снимает зависимость от сторонних поставщиков, а вместе с ней — риски по объёму и цене.</p>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container two-col">
-        <div data-animate>
-          <div class="section-eyebrow" data-en="Production">Производство</div>
+    <section class="section stage stage--reverse">
+      <div class="container two-col stage__grid">
+        <div class="stage__body" data-reveal>
+          <div class="stage__head"><span class="stage__num">02</span><div class="section-eyebrow" data-en="Production">Производство</div></div>
           <h2 style="margin-bottom: 16px;" data-en="Modern Processing and Storage Facilities">Современные перерабатывающие мощности</h2>
           <p style="color: var(--text-dim);" data-en="Our own processing workshops and warehouses with climate and humidity control ensure correct storage and consistent grading at industrial scale — batch after batch, season after season.">Собственные перерабатывающие цеха и склады с контролем климата и влажности обеспечивают правильное хранение и стабильную сортировку в промышленных объёмах — партия за партией, сезон за сезоном.</p>
         </div>
-        <div class="sam-slider" data-animate>
+        <div class="stage__media" data-reveal>
+          <div class="sam-slider">
           <div class="sam-slider__track">
             <img src="assets/img/about/logistics/color-sorter.avif" width="1280" height="959" alt="Цветной сортировщик в цеху" class="sam-slide active" data-caption-ru="Фотосепаратор — цветная сортировка" data-caption-en="Color sorting machine">
             <img loading="lazy" src="assets/img/products/packaging/фасовка-cover.avif" width="1280" height="853" alt="Линия фасовки" class="sam-slide" data-caption-ru="Линия фасовки готовой продукции" data-caption-en="Finished product packing line">
@@ -174,12 +240,45 @@
           <button class="sam-arrow sam-arrow--prev" aria-label="Назад">&#8592;</button>
           <button class="sam-arrow sam-arrow--next" aria-label="Вперёд">&#8594;</button>
         </div>
+        </div>
       </div>
     </section>
 
-    <section class="section section--alt">
-      <div class="container two-col">
-        <div class="sam-slider" data-animate>
+    <section class="section stage">
+      <div class="container two-col stage__grid">
+        <div class="stage__body" data-reveal>
+          <div class="stage__head"><span class="stage__num">03</span><div class="section-eyebrow" data-en="Packaging">Упаковка</div></div>
+          <h2 style="margin-bottom: 16px;" data-en="Our Own Packaging Production — Sam Box">Собственное производство упаковки — Sam Box</h2>
+          <p style="color: var(--text-dim);" data-en="Under our own brand, Sam Box, we produce corrugated cardboard and boxes for nuts, dried fruit and other goods. This means we can deliver a complete turnkey solution — product, packaging and branding from a single supplier, with no third party in between.">Под собственным брендом Sam Box мы производим гофрокартон и коробки для орехов, сухофруктов и другой продукции. Это позволяет нам закрывать потребности клиента «под ключ» — продукт, упаковка и брендирование от одного поставщика, без посредников.</p>
+        </div>
+        <div class="stage__media" data-reveal>
+          <div class="sam-slider">
+          <div class="sam-slider__track">
+            <img src="assets/img/about/sam-box-1-1400.avif" width="1400" height="1050"  alt="Гофроагрегат Sam Box в цеху" class="sam-slide active" data-caption-ru="Линия по производству гофрокартона" data-caption-en="Corrugated cardboard production line">
+            <img loading="lazy" src="assets/img/about/sam-box-2.avif" width="1024" height="643" alt="Офсетная печатная машина Sam Box" class="sam-slide" data-caption-ru="4-цветный офсетный печатный аппарат" data-caption-en="4-color offset printing press">
+            <img loading="lazy" src="assets/img/about/sam-box-3.avif" width="2000" height="2000" alt="Виды гофрокартона Sam Box" class="sam-slide" data-caption-ru="Одно-, двух- и трёхслойный гофрокартон" data-caption-en="Single, double and triple wall board">
+            <img loading="lazy" src="assets/img/about/sam-box-4.avif" width="750" height="750" alt="Рилёвочный станок Sam Box" class="sam-slide" data-caption-ru="Рилёвка и раскрой коробок" data-caption-en="Box creasing and cutting">
+            <img loading="lazy" src="assets/img/about/sam-box-5.avif" width="998" height="546" alt="Линия гофрирования Sam Box" class="sam-slide" data-caption-ru="Линия непрерывного гофрирования" data-caption-en="Continuous corrugating line">
+          </div>
+          <div class="sam-slider__caption">Линия по производству гофрокартона</div>
+          <div class="sam-slider__dots">
+            <button class="sam-dot active" data-idx="0"></button>
+            <button class="sam-dot" data-idx="1"></button>
+            <button class="sam-dot" data-idx="2"></button>
+            <button class="sam-dot" data-idx="3"></button>
+            <button class="sam-dot" data-idx="4"></button>
+          </div>
+          <button class="sam-arrow sam-arrow--prev" aria-label="Назад">&#8592;</button>
+          <button class="sam-arrow sam-arrow--next" aria-label="Вперёд">&#8594;</button>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stage stage--reverse">
+      <div class="container two-col stage__grid">
+        <div class="stage__media" data-reveal>
+          <div class="sam-slider">
           <div class="sam-slider__track">
             <img src="assets/img/about/logistics/truck-loading-1.avif" width="720" height="1280" alt="Погрузка машины" class="sam-slide active" data-caption-ru="Погрузка фуры на складе" data-caption-en="Loading a truck at the warehouse">
             <img loading="lazy" src="assets/img/about/logistics/truck-red-interior.avif" width="589" height="1280" alt="Загруженная фура" class="sam-slide" data-caption-ru="Готовая к отправке партия" data-caption-en="A shipment ready for dispatch">
@@ -214,65 +313,18 @@
           <button class="sam-arrow sam-arrow--prev" aria-label="Назад">&#8592;</button>
           <button class="sam-arrow sam-arrow--next" aria-label="Вперёд">&#8594;</button>
         </div>
-        <div data-animate>
-          <div class="section-eyebrow" data-en="Export">Экспорт</div>
+        </div>
+        <div class="stage__body" data-reveal>
+          <div class="stage__head"><span class="stage__num">04</span><div class="section-eyebrow" data-en="Export">Экспорт</div></div>
           <h2 style="margin-bottom: 16px;" data-en="Regular Shipments Abroad">Регулярные отгрузки за рубеж</h2>
           <p style="color: var(--text-dim);" data-en="Every batch is loaded, checked and dispatched by our own logistics team — full truckloads and containers heading to partners across 30+ countries every month.">Каждую партию грузит, проверяет и отправляет наша собственная логистическая команда — полные фуры и контейнеры ежемесячно уходят к партнёрам в 30+ стран.</p>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container two-col">
-        <div data-animate>
-          <div class="section-eyebrow" data-en="Packaging">Упаковка</div>
-          <h2 style="margin-bottom: 16px;" data-en="Our Own Packaging Production — Sam Box">Собственное производство упаковки — Sam Box</h2>
-          <p style="color: var(--text-dim);" data-en="Under our own brand, Sam Box, we produce corrugated cardboard and boxes for nuts, dried fruit and other goods. This means we can deliver a complete turnkey solution — product, packaging and branding from a single supplier, with no third party in between.">Под собственным брендом Sam Box мы производим гофрокартон и коробки для орехов, сухофруктов и другой продукции. Это позволяет нам закрывать потребности клиента «под ключ» — продукт, упаковка и брендирование от одного поставщика, без посредников.</p>
-        </div>
-        <div class="sam-slider" data-animate>
-          <div class="sam-slider__track">
-            <img src="assets/img/about/sam-box-1-1400.avif" width="1400" height="1050"  alt="Гофроагрегат Sam Box в цеху" class="sam-slide active" data-caption-ru="Линия по производству гофрокартона" data-caption-en="Corrugated cardboard production line">
-            <img loading="lazy" src="assets/img/about/sam-box-2.avif" width="1024" height="643" alt="Офсетная печатная машина Sam Box" class="sam-slide" data-caption-ru="4-цветный офсетный печатный аппарат" data-caption-en="4-color offset printing press">
-            <img loading="lazy" src="assets/img/about/sam-box-3.avif" width="2000" height="2000" alt="Виды гофрокартона Sam Box" class="sam-slide" data-caption-ru="Одно-, двух- и трёхслойный гофрокартон" data-caption-en="Single, double and triple wall board">
-            <img loading="lazy" src="assets/img/about/sam-box-4.avif" width="750" height="750" alt="Рилёвочный станок Sam Box" class="sam-slide" data-caption-ru="Рилёвка и раскрой коробок" data-caption-en="Box creasing and cutting">
-            <img loading="lazy" src="assets/img/about/sam-box-5.avif" width="998" height="546" alt="Линия гофрирования Sam Box" class="sam-slide" data-caption-ru="Линия непрерывного гофрирования" data-caption-en="Continuous corrugating line">
-          </div>
-          <div class="sam-slider__caption">Линия по производству гофрокартона</div>
-          <div class="sam-slider__dots">
-            <button class="sam-dot active" data-idx="0"></button>
-            <button class="sam-dot" data-idx="1"></button>
-            <button class="sam-dot" data-idx="2"></button>
-            <button class="sam-dot" data-idx="3"></button>
-            <button class="sam-dot" data-idx="4"></button>
-          </div>
-          <button class="sam-arrow sam-arrow--prev" aria-label="Назад">&#8592;</button>
-          <button class="sam-arrow sam-arrow--next" aria-label="Вперёд">&#8594;</button>
-        </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="section-head" data-animate>
-          <div class="section-eyebrow" data-en="By the Numbers">В цифрах</div>
-          <h2 data-en="The Scale of Our Work">Масштаб нашей работы</h2>
-        </div>
-        <div class="numbers-row" style="justify-content: center;" data-animate>
-          <div>
-            <div class="stat-num">32+</div>
-            <div class="stat-label" data-en="years on the export market">лет на рынке экспорта</div>
-          </div>
-          <div>
-            <div class="stat-num">30+</div>
-            <div class="stat-label" data-en="export countries">стран экспорта</div>
-          </div>
-          <div>
-            <div class="stat-num">600т+</div>
-            <div class="stat-label" data-en="monthly volume">объём в месяц</div>
-          </div>
-        </div>
-      </div>
-    </section>
+
+
 
     <section class="section">
       <div class="container two-col">
@@ -379,6 +431,44 @@
       </div>
     </section>
 
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <div class="section-eyebrow" data-en="By the Numbers">В цифрах</div>
+            <h2 data-en="The Scale of Our Work">Масштаб нашей работы</h2>
+          </div>
+          <div class="numbers-row" style="justify-content: center;" data-reveal>
+            <div>
+              <div class="stat-num">32+</div>
+              <div class="stat-label" data-en="years on the export market">лет на рынке экспорта</div>
+            </div>
+            <div>
+              <div class="stat-num">30+</div>
+              <div class="stat-label" data-en="export countries">стран экспорта</div>
+            </div>
+            <div>
+              <div class="stat-num">600т+</div>
+              <div class="stat-label" data-en="monthly volume">объём в месяц</div>
+            </div>
+            <div>
+              <div class="stat-num">70+</div>
+              <div class="stat-label" data-en="product varieties">видов продукции</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="about-cta" data-reveal>
+            <h2 data-en="We Work Directly — With No Middlemen">Работаем напрямую — без посредников</h2>
+            <p data-en="Own orchards, own processing, own packaging and our own logistics team. Tell us the product and the volume — we will come back with a price and a shipping schedule.">Собственные сады, переработка, упаковка и своя логистическая команда. Напишите, какой продукт и объём нужен — вернёмся с ценой и графиком отгрузки.</p>
+            <a href="contact.html" class="btn btn-gold btn-lg" data-en="Request a Quote">Оставить заявку</a>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
@@ -496,5 +586,6 @@
   <script src="assets/js/i18n.js" defer></script>
   <script src="assets/js/chat-widget.js" defer></script>
   <script src="assets/js/sam-slider.js" defer></script>
+  <script src="assets/js/about-hero.js" defer></script>
 </body>
 </html>
