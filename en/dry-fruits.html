@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script>try{localStorage.setItem("lang","en")}catch(e){}</script>
+  <script>try{if(sessionStorage.getItem("intro"))document.documentElement.className+=" intro-seen";else sessionStorage.setItem("intro","1")}catch(e){}</script>
   <title>Wholesale Dry Fruits from Uzbekistan — Mir Orexov Samarkand</title>
   <meta name="description" content="Wholesale dry fruits from the producer: dried apricots, raisins, prunes, jida, unabi. Direct supply from Samarkand, Uzbekistan to 30+ countries, no middlemen." />
   <link rel="canonical" href="https://mirorexov.com/en/dry-fruits.html" />
@@ -35,15 +36,19 @@
   }
   </script>
 
-  <link rel="preload" href="assets/fonts/playfair-display-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="assets/css/fonts.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/branding/favicon-32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/branding/apple-touch-icon-180.png" />
+  <link rel="preload" href="../assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../assets/css/fonts.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/branding/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/branding/apple-touch-icon-180.png" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
 <body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-logo"><img src="../assets/img/branding/logo-192.webp" alt="" width="192" height="192" /></div>
+    <div class="preloader-bar"></div>
+  </div>
   <div class="preloader hidden" aria-hidden="true">
-    <div class="preloader-logo"><img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="" /></div>
+    <div class="preloader-logo"><img src="../assets/img/branding/logo-192.webp" srcset="../assets/img/branding/logo-96.webp 96w, ../assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="" /></div>
     <div class="preloader-bar"></div>
   </div>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -58,7 +63,7 @@
 
   <header class="navbar">
     <a href="index.html" class="brand">
-      <span class="brand-logo"><img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
+      <span class="brand-logo"><img src="../assets/img/branding/logo-192.webp" srcset="../assets/img/branding/logo-96.webp 96w, ../assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
       <span class="brand-name">
         <strong>Mir Orexov</strong>
         <span>SAMARKAND</span>
@@ -163,7 +168,7 @@
           </div>
         </div>
         <div style="text-align: center; margin-top: 32px;" data-animate>
-          <a href="catalog.html#/dried" class="btn btn-primary">View Full Catalog</a>
+          <a href="../en/catalog/dried/" class="btn btn-primary">View Full Catalog</a>
         </div>
       </div>
     </section>
@@ -206,7 +211,7 @@
       <div class="footer-flat-top">
         <div class="footer-brand-col">
           <a href="index.html" class="pf-logo-row">
-            <span class="pf-logo-mark"><img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
+            <span class="pf-logo-mark"><img src="../assets/img/branding/logo-192.webp" srcset="../assets/img/branding/logo-96.webp 96w, ../assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
             <span class="pf-logo-text pf-logo-text--dark">
               <strong>Mir Orexov</strong>
               <span>SAMARKAND</span>

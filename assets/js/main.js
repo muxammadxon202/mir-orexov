@@ -112,9 +112,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  // No preloader to wait on any more — the counters arm immediately and the
-  // IntersectionObserver inside armStatCounters() decides when each stat runs.
-  armStatCounters();
+  // The brand intro covers the screen for ~1.1s on the first page of a session.
+  // Arming the counters immediately would run the hero count-up behind it, so
+  // wait it out — but only when it is actually on screen (CSS hides it for the
+  // rest of the session and under reduced-motion).
+  const intro = document.querySelector(".preloader");
+  const introVisible = intro && getComputedStyle(intro).display !== "none";
+  if (introVisible) setTimeout(armStatCounters, 1250);
+  else armStatCounters();
 
   // The hero entrance is CSS-only now (see [data-animate-load] keyframes in
   // style.css) so the LCP text never waits on JS or on requestAnimationFrame.

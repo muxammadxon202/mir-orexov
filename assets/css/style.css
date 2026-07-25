@@ -674,12 +674,19 @@ button { font-family: inherit; cursor: pointer; }
    backgrounded tab) or main.js was slow. As a keyframe animation it is owned by
    the compositor and always resolves. */
 [data-animate-load] { animation: hero-load-in 900ms var(--ease-cinematic) both; }
-[data-animate-load="0"] { animation-delay: 150ms; }
-[data-animate-load="1"] { animation-delay: 270ms; }
-[data-animate-load="2"] { animation-delay: 390ms; }
-[data-animate-load="3"] { animation-delay: 510ms; }
-[data-animate-load="4"] { animation-delay: 630ms; }
-[data-animate-load="5"] { animation-delay: 750ms; }
+[data-animate-load="0"] { animation-delay: 1150ms; }
+[data-animate-load="1"] { animation-delay: 1270ms; }
+[data-animate-load="2"] { animation-delay: 1390ms; }
+[data-animate-load="3"] { animation-delay: 1510ms; }
+[data-animate-load="4"] { animation-delay: 1630ms; }
+[data-animate-load="5"] { animation-delay: 1750ms; }
+
+html.intro-seen [data-animate-load="0"] { animation-delay: 100ms; }
+html.intro-seen [data-animate-load="1"] { animation-delay: 200ms; }
+html.intro-seen [data-animate-load="2"] { animation-delay: 300ms; }
+html.intro-seen [data-animate-load="3"] { animation-delay: 400ms; }
+html.intro-seen [data-animate-load="4"] { animation-delay: 500ms; }
+html.intro-seen [data-animate-load="5"] { animation-delay: 600ms; }
 
 @keyframes hero-load-in {
   from { opacity: 0; transform: translateY(20px); }
@@ -1791,6 +1798,69 @@ button { font-family: inherit; cursor: pointer; }
 
 @media (prefers-reduced-motion: reduce) {
   .modal-overlay, .modal-card { transition-duration: 0.01ms; }
+}
+
+/* ===== Brand intro =====
+   The old version blocked scrolling for a hard-coded 2500ms via JS on every
+   single visit, which capped LCP at 2.5s. This one keeps the brand moment but
+   pays far less for it: it is pure CSS (no JS to hide it, so it can never get
+   stuck), it fades itself out after ~1.1s, and an inline head guard marks the
+   rest of the session with .intro-seen so internal navigation is instant. */
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  background: var(--bg);
+  animation: intro-out 420ms var(--ease-cinematic) 1100ms both;
+}
+
+/* Second visit onward: never rendered at all. */
+html.intro-seen .preloader { display: none; }
+
+@keyframes intro-out {
+  to { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+
+.preloader-logo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: intro-pulse 1.4s ease-in-out infinite;
+}
+.preloader-logo img { width: 100%; height: 100%; object-fit: cover; }
+
+@keyframes intro-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(201, 162, 39, 0.35); }
+  50% { transform: scale(1.04); box-shadow: 0 0 0 12px rgba(201, 162, 39, 0); }
+}
+
+.preloader-bar {
+  width: 160px;
+  height: 2px;
+  background: var(--border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.preloader-bar::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--gold);
+  transform: translateX(-100%);
+  animation: intro-fill 1.1s var(--ease-cinematic) forwards;
+}
+@keyframes intro-fill { to { transform: translateX(0); } }
+
+/* Reduced motion: skip the intro entirely rather than flash it. */
+@media (prefers-reduced-motion: reduce) {
+  .preloader { display: none; }
 }
 
 /* ===== Skip link ===== */

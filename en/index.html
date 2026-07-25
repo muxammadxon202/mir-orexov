@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script>try{localStorage.setItem("lang","en")}catch(e){}</script>
+  <script>try{if(sessionStorage.getItem("intro"))document.documentElement.className+=" intro-seen";else sessionStorage.setItem("intro","1")}catch(e){}</script>
   <title>Wholesale Nuts & Dried Fruits from Uzbekistan — Direct Export | Mir Orexov Samarkand</title>
   <meta name="description" content="Exporter of nuts and dried fruits from Uzbekistan: walnuts, pistachios, almonds, dried apricots, raisins. In-house processing, certified quality, FCA/FOB shipping to 30+ countries — no intermediaries. (Samarkand)" />
   <link rel="canonical" href="https://mirorexov.com/en/" />
@@ -51,14 +52,18 @@
   }
   </script>
 
-  <link rel="preload" href="assets/fonts/playfair-display-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="assets/css/fonts.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/branding/favicon-32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/branding/apple-touch-icon-180.png" />
+  <link rel="preload" href="../assets/fonts/playfair-display-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="../assets/css/fonts.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/branding/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/branding/apple-touch-icon-180.png" />
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="../assets/css/nut-magnet.css" />
 </head>
 <body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-logo"><img src="../assets/img/branding/logo-192.webp" alt="" width="192" height="192" /></div>
+    <div class="preloader-bar"></div>
+  </div>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="top-bar">
@@ -71,7 +76,7 @@
 
   <header class="navbar">
     <a href="index.html" class="brand">
-      <span class="brand-logo"><img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
+      <span class="brand-logo"><img src="../assets/img/branding/logo-192.webp" srcset="../assets/img/branding/logo-96.webp 96w, ../assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
       <span class="brand-name">
         <strong>Mir Orexov</strong>
         <span>SAMARKAND</span>
@@ -142,7 +147,7 @@
           <div class="ring ring-1"><div class="orbit" id="orbit-1"></div></div>
           <div class="ring ring-3"><div class="orbit" id="orbit-3"></div></div>
           <div class="orb">
-            <img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="" />
+            <img src="../assets/img/branding/logo-192.webp" srcset="../assets/img/branding/logo-96.webp 96w, ../assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="" />
           </div>
           <div class="particles"></div>
         </div>
@@ -198,42 +203,42 @@
           <p>Main categories of export products</p>
         </div>
         <div class="grid-3">
-          <a href="catalog.html#/dried" class="cat-card tone-dried">
+          <a href="../en/catalog/dried/" class="cat-card tone-dried">
             <img class="cat-card__img cat-card__img--cutout" src="../assets/img/catalog/cutout/dried.webp" width="900" height="900" alt="" aria-hidden="true" loading="lazy" />
             <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>6 items</span>
             <h3 class="cat-card__title">Dried Fruits</h3>
             <p class="cat-card__desc">Dried apricots, raisins, prunes, jida, unabi and compote mixes — sun-dried and industrially graded.</p>
             <span class="cat-card__cta">View<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a href="catalog.html#/nuts" class="cat-card tone-nuts">
+          <a href="../en/catalog/nuts/" class="cat-card tone-nuts">
             <img class="cat-card__img cat-card__img--cutout" src="../assets/img/catalog/cutout/nuts.webp" width="900" height="900" alt="" aria-hidden="true" loading="lazy" />
             <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>9 items</span>
             <h3 class="cat-card__title">Nuts</h3>
             <p class="cat-card__desc">Walnuts, almonds, pistachios, peanuts, cashews, hazelnuts and seeds — kernels and in-shell, export grades.</p>
             <span class="cat-card__cta">View<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a href="catalog.html#/legumes" class="cat-card tone-legumes">
+          <a href="../en/catalog/legumes/" class="cat-card tone-legumes">
             <img class="cat-card__img cat-card__img--cutout" src="../assets/img/catalog/cutout/legumes.webp" width="900" height="900" alt="" aria-hidden="true" loading="lazy" />
             <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>6 items</span>
             <h3 class="cat-card__title">Seeds &amp; Legumes</h3>
             <p class="cat-card__desc">Mung beans, chickpeas, kidney beans, white and black sesame, roasted peas — cleaned and sorted in-house.</p>
             <span class="cat-card__cta">View<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a href="catalog.html#/fruits" class="cat-card tone-fruits">
+          <a href="../en/catalog/fruits/" class="cat-card tone-fruits">
             <img class="cat-card__img cat-card__img--cutout" src="../assets/img/catalog/cutout/fruits.webp" width="900" height="900" alt="" aria-hidden="true" loading="lazy" />
             <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>13 items</span>
             <h3 class="cat-card__title">Vegetables &amp; Fruits</h3>
             <p class="cat-card__desc">Apples, cherries, grapes, figs, lemons and field vegetables — seasonal reefer shipments.</p>
             <span class="cat-card__cta">View<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a href="catalog.html#/candied" class="cat-card tone-candied">
+          <a href="../en/catalog/candied/" class="cat-card tone-candied">
             <img class="cat-card__img cat-card__img--cutout" src="../assets/img/catalog/cutout/candied.webp" width="900" height="900" alt="" aria-hidden="true" loading="lazy" />
             <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>6 items</span>
             <h3 class="cat-card__title">Candied Fruit</h3>
             <p class="cat-card__desc">Candied fruit and dried pineapple, banana, kiwi and mango — a bright shelf line for retail.</p>
             <span class="cat-card__cta">View<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a href="catalog.html#/packaging" class="cat-card tone-packaging">
+          <a href="../en/catalog/packaging/" class="cat-card tone-packaging">
             <img class="cat-card__img cat-card__img--cutout" src="../assets/img/catalog/cutout/packaging.webp" width="900" height="900" alt="" aria-hidden="true" loading="lazy" />
             <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>3 items</span>
             <h3 class="cat-card__title">Packaging</h3>
@@ -351,7 +356,7 @@
       <div class="footer-flat-top">
         <div class="footer-brand-col">
           <a href="index.html" class="pf-logo-row">
-            <span class="pf-logo-mark"><img src="assets/img/branding/logo-192.webp" srcset="assets/img/branding/logo-96.webp 96w, assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
+            <span class="pf-logo-mark"><img src="../assets/img/branding/logo-192.webp" srcset="../assets/img/branding/logo-96.webp 96w, ../assets/img/branding/logo-192.webp 192w" sizes="96px" width="192" height="192" alt="Mir Orexov Samarkand" /></span>
             <span class="pf-logo-text pf-logo-text--dark">
               <strong>Mir Orexov</strong>
               <span>SAMARKAND</span>
