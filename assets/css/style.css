@@ -2769,6 +2769,36 @@ html.intro-seen .preloader { display: none; }
   box-shadow: none;
 }
 
+/* Over a busy picture a transparent bar still has to be legible, but a halo
+   on every label reads as a glow. Weight and a dark ink carry the running
+   text; the language switch is two letters with no mass to carry anything, so
+   it keeps a translucent cream chip. */
+.hero-page--light .top-bar:not(.nav-lifted) .top-bar-item,
+.hero-page--light .navbar:not(.nav-lifted):not(.menu-open) .nav-menu a,
+.hero-page--light .navbar:not(.nav-lifted):not(.menu-open) .brand-name strong,
+.hero-page--light .navbar:not(.nav-lifted):not(.menu-open) .nav-toggle {
+  color: var(--brown-900);
+  font-weight: 700;
+}
+.hero-page--light .navbar:not(.nav-lifted):not(.menu-open) .brand-name span {
+  color: var(--gold-900);
+  font-weight: 700;
+}
+.hero-page--light .navbar:not(.nav-lifted):not(.menu-open) .lang-switch {
+  background: rgba(254, 252, 246, 0.82);
+  backdrop-filter: blur(8px);
+  border-color: rgba(45, 28, 21, 0.28);
+}
+.hero-page--light .navbar:not(.nav-lifted):not(.menu-open) .lang-switch a,
+.hero-page--light .navbar:not(.nav-lifted):not(.menu-open) .lang-switch button {
+  color: var(--brown-800);
+  font-weight: 700;
+}
+.hero-page--light .navbar:not(.nav-lifted):not(.menu-open) .lang-switch .active {
+  background: var(--brown-900);
+  color: var(--cream-50);
+}
+
 /* ---- Solid state: curtain closed, or the mobile menu open ---- */
 .hero-page .top-bar.nav-lifted {
   background: var(--cream-200);
@@ -2816,51 +2846,26 @@ html.intro-seen .preloader { display: none; }
 
 
 /* ---- Artwork hero ----
-   A composed product graphic rather than a photograph, and it is shown exactly
-   as delivered: no wash, no mask, no panel over the picture. Legibility is
-   carried entirely by the type — heavier weight plus a tight cream halo on the
-   glyphs, which lights the few millimetres around each letter without touching
-   the product behind it. */
+   A composed product graphic rather than a photograph, shown exactly as
+   delivered: no wash, no mask, no panel. Readability comes from weight and a
+   dark ink only — an earlier cream halo around the glyphs made the type look
+   like it was glowing. */
 .page-hero--art .page-hero__media::after { background: none; }
 
-.page-hero--art .page-hero__kicker {
-  color: var(--gold-800);
-  font-weight: 700;
-  text-shadow: 0 0 10px rgba(254, 252, 246, 0.95), 0 0 20px rgba(254, 252, 246, 0.8);
-}
-.page-hero--art h1 {
-  color: var(--brown-900);
-  font-weight: 700;
-  text-shadow:
-    0 0 12px rgba(254, 252, 246, 0.98),
-    0 0 26px rgba(254, 252, 246, 0.9),
-    0 0 46px rgba(254, 252, 246, 0.7);
-}
-.page-hero--art .page-hero__lead {
-  color: var(--brown-900);
-  font-weight: 700;
-  text-shadow:
-    0 0 8px rgba(254, 252, 246, 0.98),
-    0 0 16px rgba(254, 252, 246, 0.95),
-    0 0 30px rgba(254, 252, 246, 0.8),
-    0 1px 1px rgba(254, 252, 246, 1);
-}
-.page-hero--art .page-hero__scroll {
-  color: var(--brown-900);
-  text-shadow: 0 0 12px rgba(254, 252, 246, 0.95);
-}
+.page-hero--art .page-hero__kicker { color: var(--gold-900); font-weight: 800; }
+.page-hero--art h1 { color: var(--brown-900); font-weight: 700; }
+.page-hero--art .page-hero__lead { color: var(--brown-900); font-weight: 700; }
+.page-hero--art .page-hero__scroll { color: var(--brown-900); }
 
 @media (max-width: 720px) {
-  /* The portrait cut matches the viewport almost exactly, so object-position
-     had nothing to pan — the artwork simply started under the bars with its top
-     row of fruit hidden. It is lowered by the height of the two bars instead,
-     which drops the mark and both product masses towards the middle of the
-     screen and lets the hero's own cream (sampled from the artwork's ground)
-     fill the strip behind the transparent header. */
-  .page-hero--art { background: #FAE8CD; }
-  .page-hero--art .page-hero__media { top: calc(var(--topbar-h) + var(--navbar-h)); }
+  /* The phone artwork carries 240px of its own cream added above the
+     composition, which drops the mark from 21% to about 31% of the screen —
+     CSS could not do this because the portrait cut matches the viewport almost
+     exactly, leaving object-position nothing to pan. The copy hugs the bottom
+     so it stays inside the empty area the artwork ends with. */
+  .page-hero--art { background: #FEF4E2; }
   .page-hero--art .page-hero__media img { object-position: 50% center; }
-  .page-hero--art .page-hero__inner { justify-content: flex-end; padding-bottom: 88px; }
+  .page-hero--art .page-hero__inner { justify-content: flex-end; padding-bottom: 40px; }
 }
 
 /* Catalog breadcrumbs sit at the top of the content curtain, where the
