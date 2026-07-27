@@ -106,9 +106,14 @@
     <!-- HERO -->
     <section class="page-hero page-hero--art">
       <div class="page-hero__media">
-        <img src="assets/img/hero/catalog-hero-1920.webp"
-             srcset="assets/img/hero/catalog-hero-1200.webp 1200w, assets/img/hero/catalog-hero-1920.webp 1920w"
-             sizes="100vw" width="1672" height="941" alt="Сухофрукты и орехи Mir Orexov" fetchpriority="high" />
+        <picture>
+          <source media="(max-width: 720px)"
+                  srcset="assets/img/hero/catalog-hero-mobile-720.webp 720w, assets/img/hero/catalog-hero-mobile-1080.webp 941w"
+                  sizes="100vw" width="941" height="1672" />
+          <img src="assets/img/hero/catalog-hero-1920.webp"
+               srcset="assets/img/hero/catalog-hero-1200.webp 1200w, assets/img/hero/catalog-hero-1920.webp 1920w"
+               sizes="100vw" width="1672" height="941" alt="Сухофрукты и орехи Mir Orexov" fetchpriority="high" />
+        </picture>
       </div>
       <div class="page-hero__inner">
         <div class="page-hero__copy">
