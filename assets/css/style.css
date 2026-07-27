@@ -2852,7 +2852,24 @@ html.intro-seen .preloader { display: none; }
    like it was glowing. */
 .page-hero--art .page-hero__media::after { background: none; }
 
-.page-hero--art .page-hero__kicker { color: var(--gold-900); font-weight: 800; }
+/* The kicker is a single short line of small caps and it sits at the top of the
+   copy block — which rides up into the fruit as soon as the headline wraps to
+   two lines (it does the moment you drill into a category). Neither weight nor
+   colour saves 12px letters there, so it becomes a chip: the same pill the
+   homepage badge uses, on its own cream ground. Readable over any part of the
+   artwork without putting anything over the artwork itself. */
+.page-hero--art .page-hero__kicker {
+  display: inline-flex;
+  align-items: center;
+  padding: 7px 16px;
+  border-radius: 999px;
+  background: rgba(254, 252, 246, 0.92);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(138, 106, 20, 0.28);
+  box-shadow: 0 6px 18px -10px rgba(45, 28, 21, 0.4);
+  color: var(--gold-800);
+  font-weight: 800;
+}
 .page-hero--art h1 { color: var(--brown-900); font-weight: 700; }
 .page-hero--art .page-hero__lead { color: var(--brown-900); font-weight: 700; }
 .page-hero--art .page-hero__scroll { color: var(--brown-900); }
