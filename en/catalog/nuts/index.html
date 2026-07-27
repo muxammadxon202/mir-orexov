@@ -115,8 +115,12 @@
       <div class="nav-item">
         <a href="../../../en/catalog.html" class="active">Catalog</a>
         <div class="nav-dropdown">
-          <a href="../../../en/nuts.html">Nuts</a>
           <a href="../../../en/dry-fruits.html">Dried Fruits</a>
+          <a href="../../../en/nuts.html">Nuts</a>
+          <a href="../../../en/catalog/legumes">Seeds &amp; Legumes</a>
+          <a href="../../../en/catalog/fruits">Vegetables &amp; Fruits</a>
+          <a href="../../../en/catalog/candied">Candied Fruit</a>
+          <a href="../../../en/catalog/packaging">Packaging</a>
         </div>
       </div>
       <a href="../../../en/about.html">About Us</a>
@@ -159,7 +163,7 @@
             <div class="spec-row"><dt>Category</dt><dd>Nuts</dd></div>
             
           </dl>
-          <a class="btn btn-primary btn-lg" href="../../../en/contact.html">Request a Quote</a>
+          <button type="button" class="btn btn-primary btn-lg" id="page-quote-btn">Request a Quote</button>
         </div>
       </div>
     </section>
@@ -167,47 +171,97 @@
     <section class="section" style="padding-top:0">
       <div class="container">
         <h2 class="product-section-title">In this category</h2>
-        <div class="grid-auto">
-          <a class="cat-tile tone-nuts" href="walnut/">
-            <div class="cat-tile-photo"><img src="../../../assets/img/products/walnut-peeled.avif" alt="Walnut" loading="lazy" /></div>
-            <div class="cat-tile-title">Walnut</div>
+        <div class="grid-auto grid-cards">
+          <a class="cat-card tone-nuts" href="walnut/">
+            <img class="cat-card__img" src="../../../assets/img/products/walnut-peeled.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>5 items</span>
+            <h3 class="cat-card__title">Walnut</h3>
+            <p class="cat-card__desc">Halves, quarters, mixed kernels and in-shell walnuts.</p>
+            <span class="cat-card__cta">View<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="cat-tile tone-nuts" href="peanut/">
-            <div class="cat-tile-photo"><img src="../../../assets/img/products/peanut-inshell.avif" alt="Peanut" loading="lazy" /></div>
-            <div class="cat-tile-title">Peanut</div>
+          <a class="cat-card tone-nuts" href="peanut/">
+            <img class="cat-card__img" src="../../../assets/img/products/peanut-inshell.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>4 items</span>
+            <h3 class="cat-card__title">Peanut</h3>
+            <p class="cat-card__desc">Peanuts raw, roasted and blanched.</p>
+            <span class="cat-card__cta">View<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="cat-tile tone-nuts" href="pistachio/">
-            <div class="cat-tile-photo"><img src="../../../assets/img/products/pistachio-cover.avif" alt="Pistachio" loading="lazy" /></div>
-            <div class="cat-tile-title">Pistachio</div>
+          <a class="cat-card tone-nuts" href="pistachio/">
+            <img class="cat-card__img" src="../../../assets/img/products/pistachio-cover.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>4 items</span>
+            <h3 class="cat-card__title">Pistachio</h3>
+            <p class="cat-card__desc">Pistachios roasted, salted and natural.</p>
+            <span class="cat-card__cta">View<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
-          <a class="cat-tile tone-nuts" href="almond/">
-            <div class="cat-tile-photo"><img src="../../../assets/img/products/almond-inshell-cover.avif" alt="Almond" loading="lazy" /></div>
-            <div class="cat-tile-title">Almond</div>
+          <a class="cat-card tone-nuts" href="almond/">
+            <img class="cat-card__img" src="../../../assets/img/products/almond-inshell-cover.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>3 items</span>
+            <h3 class="cat-card__title">Almond</h3>
+            <p class="cat-card__desc">Sweet almonds: kernels, roasted and in-shell.</p>
+            <span class="cat-card__cta">View<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
           </a>
           <a class="cat-tile tone-nuts" href="cashew/">
             <div class="cat-tile-photo"><img src="../../../assets/img/products/cashew.avif" alt="Cashew" loading="lazy" /></div>
             <div class="cat-tile-title">Cashew</div>
+            <p class="cat-tile-desc">Cashews whole and roasted, export-graded.</p>
           </a>
           <a class="cat-tile tone-nuts" href="pumpkin-seed/">
             <div class="cat-tile-photo"><img src="../../../assets/img/products/pumpkin-seed.avif" alt="Pumpkin Seed" loading="lazy" /></div>
             <div class="cat-tile-title">Pumpkin Seed</div>
+            <p class="cat-tile-desc">Pumpkin seeds, hulled and in-shell.</p>
           </a>
           <a class="cat-tile tone-nuts" href="macadamia/">
             <div class="cat-tile-photo"><img src="../../../assets/img/products/macadamia.avif" alt="Macadamia" loading="lazy" /></div>
             <div class="cat-tile-title">Macadamia</div>
+            <p class="cat-tile-desc">Macadamia in shell, pre-cut.</p>
           </a>
           <a class="cat-tile tone-nuts" href="hazelnut/">
             <div class="cat-tile-photo"><img src="../../../assets/img/products/hazelnut.avif" alt="Hazelnut" loading="lazy" /></div>
             <div class="cat-tile-title">Hazelnut</div>
+            <p class="cat-tile-desc">Hazelnut kernels, size-graded.</p>
           </a>
           <a class="cat-tile tone-nuts" href="apricot-kernels/">
             <div class="cat-tile-photo"><img src="../../../assets/img/products/apricot-kernels.avif" alt="Apricot Kernels" loading="lazy" /></div>
             <div class="cat-tile-title">Apricot Kernels</div>
+            <p class="cat-tile-desc">Sweet apricot kernels.</p>
           </a>
         </div>
       </div>
     </section>
   </main>
+
+  <div class="modal-overlay" id="quote-modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title">
+      <button type="button" class="modal-close" id="quote-modal-close" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+      </button>
+      <img id="quote-modal-thumb" class="modal-thumb" alt="" />
+      <div id="quote-modal-gallery" class="catalog-gallery catalog-gallery--modal"></div>
+      <h3 id="quote-modal-title">Request a Quote</h3>
+      <p class="modal-item-name" id="quote-modal-item"></p>
+      <p class="modal-item-weight" id="quote-modal-weight"></p>
+
+      <form id="quote-modal-form" novalidate>
+        <div class="field">
+          <label for="qm-name">Name<span class="required">*</span></label>
+          <input id="qm-name" name="name" type="text" required placeholder="Your name" />
+          <div class="field-error">Please enter your name</div>
+        </div>
+        <div class="field">
+          <label for="qm-contact">Phone or Email<span class="required">*</span></label>
+          <input id="qm-contact" name="contact" type="text" required placeholder="+998 90 000 00 00 or email" />
+          <div class="field-error">Please enter a contact</div>
+        </div>
+        <div class="field" id="qm-volume-field">
+          <label for="qm-volume"><span id="qm-volume-label">Volume (tons)</span><span class="required">*</span></label>
+          <input id="qm-volume" name="volume" type="number" min="0.1" step="0.1" required placeholder="e.g. 20" />
+          <div class="field-error" id="qm-volume-error">Please enter the volume in tons</div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+        <div class="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="footer-flat">
@@ -235,7 +289,7 @@
               <div class="stat-label">export countries</div>
             </div>
             <div>
-              <div class="stat-num">600t+</div>
+              <div class="stat-num">300t+</div>
               <div class="stat-label">per month</div>
             </div>
           </div>
@@ -322,6 +376,22 @@
 
   <script src="../../../assets/js/main.js" defer></script>
   <script src="../../../assets/js/i18n.js" defer></script>
+  <script src="../../../assets/js/quote-modal.js" defer></script>
   <script src="../../../assets/js/chat-widget.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var btn = document.getElementById("page-quote-btn");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        if (!window.openQuoteModal) return;
+        window.openQuoteModal("Nuts", "../../../assets/img/catalog/орехи.avif", {
+          gallery: [],
+          weight: "",
+          weightEn: "",
+          hideQty: false
+        });
+      });
+    });
+  </script>
 </body>
 </html>

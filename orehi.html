@@ -61,8 +61,12 @@
       <div class="nav-item">
         <a href="catalog.html" data-en="Catalog">Каталог</a>
         <div class="nav-dropdown">
-          <a href="orehi.html" data-en="Nuts">Орехи</a>
           <a href="sukhofrukty.html" data-en="Dried Fruits">Сухофрукты</a>
+          <a href="orehi.html" data-en="Nuts">Орехи</a>
+          <a href="catalog/legumes/" data-en="Seeds &amp; Legumes">Семена и бобовые</a>
+          <a href="catalog/fruits/" data-en="Vegetables &amp; Fruits">Овощи и фрукты</a>
+          <a href="catalog/candied/" data-en="Candied Fruit">Цукаты</a>
+          <a href="catalog/packaging/" data-en="Packaging">Упаковка</a>
         </div>
       </div>
       <a href="about.html" data-en="About Us">О нас</a>
@@ -131,23 +135,60 @@
           <div class="section-eyebrow" data-en="Assortment">Ассортимент</div>
           <h2 data-en="Which Nuts We Supply">Какие орехи мы поставляем</h2>
         </div>
-        <div class="grid-4" data-animate>
-          <div class="card">
-            <h3 data-en="Walnut">Грецкий орех</h3>
-            <p data-en="In shell and peeled (grades 1–3), quarters, confectionery and crushed. Chandler, Paper Shell, Extra Light, Light.">В скорлупе и очищенный (1–3 сорт), четвертинка, кондитерский и измельчённый. Chandler, Paper Shell, Extra Light, Light.</p>
-          </div>
-          <div class="card">
-            <h3 data-en="Pistachio">Фисташки</h3>
-            <p data-en="Peeled, roasted and salted — Ahmad-Agai (Iran), premium unpeeled (Turkey).">Очищенные, жареные и солёные — «Ахмад-Агаи» (Иран), неочищенные высший сорт (Турция).</p>
-          </div>
-          <div class="card">
-            <h3 data-en="Almond">Миндаль</h3>
-            <p data-en="In shell, unpeeled and peeled. Nonpareil, Carmel, Mission, Fritz.">В скорлупе, неочищенный и очищенный. Nonpareil, Carmel, Mission, Fritz.</p>
-          </div>
-          <div class="card">
-            <h3 data-en="Peanut, Cashew, Hazelnut & Macadamia">Арахис, кешью, фундук и макадамия</h3>
-            <p data-en="Peanuts (in shell, peeled, blanched, crushed), cashew W180/W210, hazelnut and macadamia.">Арахис (в скорлупе, очищенный, бланшированный, измельчённый), кешью W180/W210, фундук и макадамия.</p>
-          </div>
+        <div class="grid-auto grid-cards" data-animate>
+          <a class="cat-card tone-nuts" href="catalog/nuts/walnut/">
+            <img class="cat-card__img" src="assets/img/products/walnut-peeled.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span><span data-en="5 items">5 позиций</span></span>
+            <h3 class="cat-card__title" data-en="Walnut">Грецкий орех</h3>
+            <p class="cat-card__desc" data-en="Halves, quarters, mixed kernels and in-shell walnuts.">Ядро половинки, четвертинки, микс и орех в скорлупе.</p>
+            <span class="cat-card__cta"><span data-en="View">Смотреть</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="cat-card tone-nuts" href="catalog/nuts/peanut/">
+            <img class="cat-card__img" src="assets/img/products/peanut-inshell.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span><span data-en="4 items">4 позиции</span></span>
+            <h3 class="cat-card__title" data-en="Peanut">Арахис</h3>
+            <p class="cat-card__desc" data-en="Peanuts raw, roasted and blanched.">Арахис сырой, жареный и бланшированный.</p>
+            <span class="cat-card__cta"><span data-en="View">Смотреть</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="cat-card tone-nuts" href="catalog/nuts/pistachio/">
+            <img class="cat-card__img" src="assets/img/products/pistachio-cover.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span><span data-en="4 items">4 позиции</span></span>
+            <h3 class="cat-card__title" data-en="Pistachio">Фисташки</h3>
+            <p class="cat-card__desc" data-en="Pistachios roasted, salted and natural.">Фисташки жареные, солёные и натуральные.</p>
+            <span class="cat-card__cta"><span data-en="View">Смотреть</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="cat-card tone-nuts" href="catalog/nuts/almond/">
+            <img class="cat-card__img" src="assets/img/products/almond-inshell-cover.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span><span data-en="3 items">3 позиции</span></span>
+            <h3 class="cat-card__title" data-en="Almond">Миндаль</h3>
+            <p class="cat-card__desc" data-en="Sweet almonds: kernels, roasted and in-shell.">Миндаль сладкий: ядро, жареный и в скорлупе.</p>
+            <span class="cat-card__cta"><span data-en="View">Смотреть</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="cat-tile tone-nuts" href="catalog/nuts/cashew/">
+            <div class="cat-tile-photo"><img src="assets/img/products/cashew.avif" alt="Кешью" loading="lazy" /></div>
+            <div class="cat-tile-title" data-en="Cashew">Кешью</div>
+            <p class="cat-tile-desc" data-en="Cashews whole and roasted, export-graded.">Кешью целый и жареный, экспортная калибровка.</p>
+          </a>
+          <a class="cat-tile tone-nuts" href="catalog/nuts/pumpkin-seed/">
+            <div class="cat-tile-photo"><img src="assets/img/products/pumpkin-seed.avif" alt="Тыквенная семечка" loading="lazy" /></div>
+            <div class="cat-tile-title" data-en="Pumpkin Seed">Тыквенная семечка</div>
+            <p class="cat-tile-desc" data-en="Pumpkin seeds, hulled and in-shell.">Тыквенная семечка очищенная и в кожуре.</p>
+          </a>
+          <a class="cat-tile tone-nuts" href="catalog/nuts/macadamia/">
+            <div class="cat-tile-photo"><img src="assets/img/products/macadamia.avif" alt="Макадамия" loading="lazy" /></div>
+            <div class="cat-tile-title" data-en="Macadamia">Макадамия</div>
+            <p class="cat-tile-desc" data-en="Macadamia in shell, pre-cut.">Макадамия в скорлупе с пропилом.</p>
+          </a>
+          <a class="cat-tile tone-nuts" href="catalog/nuts/hazelnut/">
+            <div class="cat-tile-photo"><img src="assets/img/products/hazelnut.avif" alt="Фундук" loading="lazy" /></div>
+            <div class="cat-tile-title" data-en="Hazelnut">Фундук</div>
+            <p class="cat-tile-desc" data-en="Hazelnut kernels, size-graded.">Фундук — ядро, калиброванный.</p>
+          </a>
+          <a class="cat-tile tone-nuts" href="catalog/nuts/apricot-kernels/">
+            <div class="cat-tile-photo"><img src="assets/img/products/apricot-kernels.avif" alt="Абрикосовые косточки" loading="lazy" /></div>
+            <div class="cat-tile-title" data-en="Apricot Kernels">Абрикосовые косточки</div>
+            <p class="cat-tile-desc" data-en="Sweet apricot kernels.">Сладкое ядро абрикосовой косточки.</p>
+          </a>
         </div>
         <div style="text-align: center; margin-top: 32px;" data-animate>
           <a href="catalog/nuts/" class="btn btn-primary" data-en="View Full Catalog">Смотреть полный каталог</a>
@@ -171,7 +212,7 @@
             <div class="stat-label" data-en="export countries">стран экспорта</div>
           </div>
           <div>
-            <div class="stat-num">600т+</div>
+            <div class="stat-num">300т+</div>
             <div class="stat-label" data-en="monthly volume">объём в месяц</div>
           </div>
         </div>
@@ -214,7 +255,7 @@
               <div class="stat-label" data-en="export countries">стран экспорта</div>
             </div>
             <div>
-              <div class="stat-num">600т+</div>
+              <div class="stat-num">300т+</div>
               <div class="stat-label" data-en="per month">в месяц</div>
             </div>
           </div>

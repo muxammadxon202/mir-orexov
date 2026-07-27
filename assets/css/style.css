@@ -885,52 +885,6 @@ html.intro-seen [data-animate-load="5"] { animation-delay: 600ms; }
 .numbers-row[style*="center"] { margin-left: auto; margin-right: auto; }
 .numbers-row .stat-num { font-size: var(--fs-3xl); }
 
-/* ===== Partners auto-scrolling slider (placeholders until real partner logos are supplied) ===== */
-.partners-slider {
-  overflow: hidden;
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-}
-.partners-track {
-  display: flex;
-  gap: 24px;
-  width: max-content;
-  animation: partners-scroll 28s linear infinite;
-}
-.partners-slider:hover .partners-track { animation-play-state: paused; }
-
-@keyframes partners-scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
-.partner-slot {
-  width: 180px;
-  aspect-ratio: 4/3;
-  flex-shrink: 0;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  background: var(--bg-card);
-  box-shadow: var(--shadow-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 16px 24px;
-  transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out);
-}
-.partner-slot img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  transition: transform var(--dur-med) var(--ease-out);
-}
-.partner-slot:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: var(--gold-text); }
-.partner-slot:hover img { transform: scale(1.04); }
-
-@media (max-width: 720px) {
-  .partner-slot { width: 140px; }
-}
-
 /* ===== Certificates ===== */
 .cert-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
 .cert-tile {
@@ -2847,10 +2801,15 @@ html.intro-seen .preloader { display: none; }
 
 /* ---- Artwork hero ----
    A composed product graphic rather than a photograph, shown exactly as
-   delivered: no wash, no mask, no panel. Readability comes from weight and a
-   dark ink only — an earlier cream halo around the glyphs made the type look
-   like it was glowing. */
-.page-hero--art .page-hero__media::after { background: none; }
+   delivered: no wash, no mask, no panel over the artwork itself — readability
+   there comes from weight and dark ink only. The one exception is the fixed
+   nav strip at the very top: the artwork's brightness varies by crop/viewport
+   and can't guarantee contrast for the logo + menu sitting on top of it, so a
+   short, fixed-height scrim (not a percentage — must stay pinned to the nav's
+   own height, not stretch with a tall hero) darkens just that band. */
+.page-hero--art .page-hero__media::after {
+  background: linear-gradient(180deg, rgba(20, 15, 8, 0.58) 0, rgba(20, 15, 8, 0.32) 90px, transparent 170px);
+}
 
 /* The kicker is a single short line of small caps and it sits at the top of the
    copy block — which rides up into the fruit as soon as the headline wraps to

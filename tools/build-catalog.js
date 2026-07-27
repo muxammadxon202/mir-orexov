@@ -57,6 +57,21 @@ const title = (n, en) => (en && n.titleEn ? n.titleEn : n.title) || '';
 const desc = (n, en) => (en ? n.descEn : n.desc) || '';
 const weight = (n, en) => (en ? n.weightEn : n.weight) || '';
 
+const ARROW_SVG =
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+
+/** "6 позиций / 3 позиции / 1 позиция" — mirrors assets/js/catalog.js countLabel()
+ *  so the statically generated root-category cards match the dynamic ones. */
+function countLabel(n, en) {
+  if (en) return n + (n === 1 ? ' item' : ' items');
+  const mod10 = n % 10, mod100 = n % 100;
+  const word =
+    mod10 === 1 && mod100 !== 11 ? 'позиция'
+    : mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14) ? 'позиции'
+    : 'позиций';
+  return n + ' ' + word;
+}
+
 /**
  * Origin is inherited: a node uses the nearest ancestor that declares one, so a
  * bought-in line (candied fruit from China) can override the default without
@@ -102,12 +117,17 @@ function extractChrome() {
     ru: {
       topbar: grab(src, /<div class="top-bar">/, '</div>\n\n  <header'),
       header: grab(src, /<header class="navbar">/, '</header>'),
+      // The "Request a Quote" modal (assets/js/quote-modal.js) — lifted so a
+      // generated product page can open it in place instead of just linking
+      // to contact.html, matching catalog.html's own leaf-product behavior.
+      modal: grab(src, /<div class="modal-overlay" id="quote-modal"/, '</form>\n    </div>\n  </div>'),
       footer: grab(src, /<footer class="footer">/, '</footer>'),
       chat: grab(src, /<div class="chat-widget"/, '</div>\n\n  <script'),
     },
     en: {
       topbar: grab(srcEn, /<div class="top-bar">/, '</div>\n\n  <header'),
       header: grab(srcEn, /<header class="navbar">/, '</header>'),
+      modal: grab(srcEn, /<div class="modal-overlay" id="quote-modal"/, '</form>\n    </div>\n  </div>'),
       footer: grab(srcEn, /<footer class="footer">/, '</footer>'),
       chat: grab(srcEn, /<div class="chat-widget"/, '</div>\n\n  <script'),
     },
@@ -218,17 +238,40 @@ function page({ en, depth, url, altUrl, node, trail, children }) {
     ? `<img src="${esc(img)}" alt="${esc(name)}" class="product-hero-photo" />`
     : '';
 
+  // Rich gradient category cards — badge, description, cutout art, CTA arrow —
+  // for pages one level below the (page-less) catalog root, mirroring
+  // assets/js/catalog.js's showRichCards rule (path.length <= 1) so the
+  // homepage, the dynamic catalog.html and these static pages all agree on
+  // where "still browsing categories" ends and "here's a product" begins.
+  // A generated page's own trail already includes itself, so trail.length
+  // here is exactly catalog.js's path.length for the equivalent hash view.
+  const richCards = trail.length <= 1;
+
   const childHtml = children && children.length
     ? `<section class="section" style="padding-top:0">
       <div class="container">
         <h2 class="product-section-title">${esc(L.inCat)}</h2>
-        <div class="grid-auto">
+        <div class="grid-auto${richCards ? ' grid-cards' : ''}">
           ${children
             .map((c) => {
+              const cIsBranch = c.children && c.children.length > 0;
+              const cDesc = desc(c, en);
+              if (richCards && cIsBranch) {
+                const art = c.cutout ? rel(c.cutout, depth) : c.img ? rel(c.img, depth) : '';
+                const artClass = 'cat-card__img' + (c.cutout ? ' cat-card__img--cutout' : '');
+                return `<a class="cat-card tone-${esc(cat.id)}" href="${esc(c.id)}/">
+            ${art ? `<img class="${artClass}" src="${esc(art)}" alt="" aria-hidden="true" loading="lazy" />` : ''}
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span>${esc(countLabel(c.children.length, en))}</span>
+            <h3 class="cat-card__title">${esc(T(c))}</h3>
+            <p class="cat-card__desc">${esc(cDesc)}</p>
+            <span class="cat-card__cta">${en ? 'View' : 'Смотреть'}${ARROW_SVG}</span>
+          </a>`;
+              }
               const cImg = c.img ? rel(c.img, depth) : '';
               return `<a class="cat-tile tone-${esc(cat.id)}" href="${esc(c.id)}/">
             ${cImg ? `<div class="cat-tile-photo"><img src="${esc(cImg)}" alt="${esc(T(c))}" loading="lazy" /></div>` : ''}
             <div class="cat-tile-title">${esc(T(c))}</div>
+            ${cDesc && cImg ? `<p class="cat-tile-desc">${esc(cDesc)}</p>` : ''}
           </a>`;
             })
             .join('\n          ')}
@@ -304,7 +347,7 @@ ${JSON.stringify(breadcrumbLd, null, 2)}
             <div class="spec-row"><dt>${en ? 'Category' : 'Категория'}</dt><dd>${esc(trailNames.join(' / '))}</dd></div>
             ${w ? `<div class="spec-row"><dt>${esc(L.packing)}</dt><dd>${esc(w)}</dd></div>` : ''}
           </dl>
-          <a class="btn btn-primary btn-lg" href="${a}${en ? 'en/' : ''}contact.html">${esc(L.request)}</a>
+          <button type="button" class="btn btn-primary btn-lg" id="page-quote-btn">${esc(L.request)}</button>
         </div>
       </div>
     </section>
@@ -312,13 +355,31 @@ ${JSON.stringify(breadcrumbLd, null, 2)}
     ${childHtml}
   </main>
 
+  ${reroot(chrome.modal, depth, en)}
+
   ${reroot(chrome.footer, depth, en)}
 
   ${reroot(chrome.chat, depth, en)}
 
   <script src="${a}assets/js/main.js" defer></script>
   <script src="${a}assets/js/i18n.js" defer></script>
+  <script src="${a}assets/js/quote-modal.js" defer></script>
   <script src="${a}assets/js/chat-widget.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var btn = document.getElementById("page-quote-btn");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        if (!window.openQuoteModal) return;
+        window.openQuoteModal(${JSON.stringify(name)}, ${JSON.stringify(img || '')}, {
+          gallery: ${JSON.stringify(gallery)},
+          weight: ${JSON.stringify(w || '')},
+          weightEn: ${JSON.stringify(weight(node, true) || '')},
+          hideQty: ${JSON.stringify(cat.id === 'packaging')}
+        });
+      });
+    });
+  </script>
 </body>
 </html>
 `;

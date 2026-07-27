@@ -73,8 +73,12 @@
       <div class="nav-item">
         <a href="catalog.html" data-en="Catalog">Каталог</a>
         <div class="nav-dropdown">
-          <a href="orehi.html" data-en="Nuts">Орехи</a>
           <a href="sukhofrukty.html" data-en="Dried Fruits">Сухофрукты</a>
+          <a href="orehi.html" data-en="Nuts">Орехи</a>
+          <a href="catalog/legumes/" data-en="Seeds &amp; Legumes">Семена и бобовые</a>
+          <a href="catalog/fruits/" data-en="Vegetables &amp; Fruits">Овощи и фрукты</a>
+          <a href="catalog/candied/" data-en="Candied Fruit">Цукаты</a>
+          <a href="catalog/packaging/" data-en="Packaging">Упаковка</a>
         </div>
       </div>
       <a href="about.html" data-en="About Us">О нас</a>
@@ -147,23 +151,48 @@
           <div class="section-eyebrow" data-en="Assortment">Ассортимент</div>
           <h2 data-en="Which Dried Fruits We Supply">Какие сухофрукты мы поставляем</h2>
         </div>
-        <div class="grid-4" data-animate>
-          <div class="card">
-            <h3 data-en="Dried Apricot (Kuraga)">Курага</h3>
-            <p data-en="Pitless Subkhon, Limonka, natural pitless, and Turshak with pit.">Без косточки «Субхон», «Лимонка», натуральная без косточки, и «Туршак» с косточкой.</p>
-          </div>
-          <div class="card">
-            <h3 data-en="Raisins">Изюм</h3>
-            <p data-en="8 varieties: black and yellow hybrid, Soyagi, Califar, Sultan, Javz, Red Thompson-Aftobi, Shigani red.">8 сортов: чёрный и жёлтый гибрид, «Сояги», «Калифар», «Султан», «Джавз», «Красный Томпсон-Афтоби», «Шигани» красный.</p>
-          </div>
-          <div class="card">
-            <h3 data-en="Prunes">Чернослив</h3>
-            <p data-en="Ballonchik, large pitless Larch, and with pit.">«Баллончик», крупный без косточек «плоский», и с косточкой.</p>
-          </div>
-          <div class="card">
-            <h3 data-en="Jida, Unabi & Compote Mix">Джида, унаби и компотная смесь</h3>
-            <p data-en="Traditional Central Asian dried fruits, plus a ready dried fruit compote mix.">Традиционные среднеазиатские сухофрукты, а также готовая компотная смесь.</p>
-          </div>
+        <div class="grid-auto grid-cards" data-animate>
+          <a class="cat-card tone-dried" href="catalog/dried/apricot/">
+            <img class="cat-card__img" src="assets/img/products/kuraga-base.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span><span data-en="4 items">4 позиции</span></span>
+            <h3 class="cat-card__title" data-en="Dried Apricot">Сушёные абрикосы</h3>
+            <p class="cat-card__desc" data-en="Sun-dried apricots — grades from industrial to luxe.">Курага солнечной сушки — сорта от промышленного до люкс.</p>
+            <span class="cat-card__cta"><span data-en="View">Смотреть</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="cat-card tone-dried" href="catalog/dried/raisins/">
+            <img class="cat-card__img" src="assets/img/products/raisin-cover.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span><span data-en="8 items">8 позиций</span></span>
+            <h3 class="cat-card__title" data-en="Raisins">Изюм</h3>
+            <p class="cat-card__desc" data-en="Eight raisin varieties — from golden to black kishmish.">Восемь сортов изюма — от голден до чёрного кишмиша.</p>
+            <span class="cat-card__cta"><span data-en="View">Смотреть</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="cat-card tone-dried" href="catalog/dried/prune/">
+            <img class="cat-card__img" src="assets/img/products/prune-catalog.avif" alt="" aria-hidden="true" loading="lazy" />
+            <span class="cat-card__badge"><span class="dot" aria-hidden="true"></span><span data-en="3 items">3 позиции</span></span>
+            <h3 class="cat-card__title" data-en="Prune">Чернослив</h3>
+            <p class="cat-card__desc" data-en="Prunes pitted and unpitted, soft-dried.">Чернослив с косточкой и без, мягкая сушка.</p>
+            <span class="cat-card__cta"><span data-en="View">Смотреть</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a class="cat-tile tone-dried" href="catalog/dried/dried-fig/">
+            <div class="cat-tile-photo"><img src="assets/img/products/dried-fig.webp" alt="Сушёный инжир" loading="lazy" /></div>
+            <div class="cat-tile-title" data-en="Dried Figs">Сушёный инжир</div>
+            <p class="cat-tile-desc" data-en="Dried figs — dense honeyed flesh with the seeds intact.">Сушёный инжир — вяленые плоды с плотной медовой мякотью и семенами.</p>
+          </a>
+          <a class="cat-tile tone-dried" href="catalog/dried/jida/">
+            <div class="cat-tile-photo"><img src="assets/img/products/jida.avif" alt="Джида" loading="lazy" /></div>
+            <div class="cat-tile-title" data-en="Jida">Джида</div>
+            <p class="cat-tile-desc" data-en="Jida — sweet silverberry fruit, an oriental classic.">Джида — сладкий плод серебристого лоха, восточная классика.</p>
+          </a>
+          <a class="cat-tile tone-dried" href="catalog/dried/unabi/">
+            <div class="cat-tile-photo"><img src="assets/img/products/unabi.avif" alt="Унаби" loading="lazy" /></div>
+            <div class="cat-tile-title" data-en="Unabi">Унаби</div>
+            <p class="cat-tile-desc" data-en="Unabi (jujube) — the dried &ldquo;Chinese date&rdquo;.">Унаби (зизифус) — сушёный «китайский финик».</p>
+          </a>
+          <a class="cat-tile tone-dried" href="catalog/dried/compote-mix/">
+            <div class="cat-tile-photo"><img src="assets/img/products/компот.avif" alt="Компотная смесь" loading="lazy" /></div>
+            <div class="cat-tile-title" data-en="Dried Fruit Compote Mix">Компотная смесь</div>
+            <p class="cat-tile-desc" data-en="Dried-fruit compote mix — a ready recipe.">Смесь сухофруктов для компота — готовая рецептура.</p>
+          </a>
         </div>
         <div style="text-align: center; margin-top: 32px;" data-animate>
           <a href="catalog/dried/" class="btn btn-primary" data-en="View Full Catalog">Смотреть полный каталог</a>
@@ -187,7 +216,7 @@
             <div class="stat-label" data-en="export countries">стран экспорта</div>
           </div>
           <div>
-            <div class="stat-num">600т+</div>
+            <div class="stat-num">300т+</div>
             <div class="stat-label" data-en="monthly volume">объём в месяц</div>
           </div>
         </div>
@@ -230,7 +259,7 @@
               <div class="stat-label" data-en="export countries">стран экспорта</div>
             </div>
             <div>
-              <div class="stat-num">600т+</div>
+              <div class="stat-num">300т+</div>
               <div class="stat-label" data-en="per month">в месяц</div>
             </div>
           </div>

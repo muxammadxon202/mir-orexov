@@ -112,11 +112,15 @@
     const hasChildren = node.children && node.children.length > 0;
     const isLeaf = !node.children;
     const isCategoryLevel = path.length === 0;
+    // Rich gradient cards read as "you're still browsing categories" — used at
+    // the absolute root AND one level in, so the homepage → catalog → nav
+    // dropdown all land on the same visual language instead of the root alone
+    // looking rich and everything else looking like a plain product list.
+    const showRichCards = path.length <= 1;
 
     gridEl.style.display = hasChildren ? "" : "none";
     emptyEl.style.display = !hasChildren && !isLeaf ? "" : "none";
-    // Root shows wide gradient category cards; deeper levels use product tiles
-    gridEl.classList.toggle("grid-cards", isCategoryLevel);
+    gridEl.classList.toggle("grid-cards", showRichCards);
 
     if (hasChildren) {
       gridEl.innerHTML = "";
@@ -125,13 +129,21 @@
       const toneId = isCategoryLevel ? null : path[0];
       node.children.forEach((child) => {
         const descText = isEn() ? child.descEn : child.desc;
+        // A real sub-category to browse further, as opposed to a single
+        // product that's a dead end for navigation.
+        const childIsBranch = child.children && child.children.length > 0 && !child.disabled;
 
-        // Root level: gradient category card — badge with tone dot, what's
-        // inside, CTA arrow, category photo overflowing the corner.
-        if (isCategoryLevel) {
+        // Rich gradient category card — badge with tone dot, what's inside,
+        // CTA arrow, category photo overflowing the corner. Only for children
+        // that are themselves still a category (leaf products keep the
+        // lighter tile treatment below, quote button and all).
+        if (showRichCards && childIsBranch) {
           const card = document.createElement("a");
-          card.href = "#/" + child.id;
-          card.className = "cat-card tone-" + child.id;
+          card.href = "#/" + [...path, child.id].join("/");
+          // Root cards each get their own tone; one level in, every card
+          // shares the parent category's tone so the section reads as one.
+          const cardTone = isCategoryLevel ? child.id : path[0];
+          card.className = "cat-card tone-" + cardTone;
           // Prefer the background-removed cutout: the product sits directly on
           // the gradient instead of inside a clipped photo circle.
           const art = child.cutout || child.img;

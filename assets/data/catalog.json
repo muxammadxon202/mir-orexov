@@ -115,8 +115,8 @@
             },
             {
               "id": "larch",
-              "title": "Чернослив «Ларч», крупный, без косточек",
-              "titleEn": "Prune Larch, Large, Pitless",
+              "title": "Чернослив «плоский», крупный, без косточек",
+              "titleEn": "Prune Flat, Large, Pitless",
               "img": "assets/img/products/prune-Чернослив Ларч крупный без косточек.avif"
             },
             {
@@ -183,26 +183,6 @@
               "title": "Грецкий орех неочищенный",
               "titleEn": "Walnut Unpeeled",
               "img": "assets/img/products/walnut-catalog.avif"
-            },
-            {
-              "id": "chandler",
-              "title": "Грецкий орех Chandler",
-              "titleEn": "Walnut Chandler"
-            },
-            {
-              "id": "paper-shell",
-              "title": "Грецкий орех Paper Shell",
-              "titleEn": "Walnut Paper Shell"
-            },
-            {
-              "id": "extra-light",
-              "title": "Грецкий орех Extra Light",
-              "titleEn": "Walnut Extra Light"
-            },
-            {
-              "id": "light",
-              "title": "Грецкий орех Light",
-              "titleEn": "Walnut Light"
             },
             {
               "id": "peeled",
@@ -349,26 +329,6 @@
               "title": "Миндаль очищенный",
               "titleEn": "Almond Peeled",
               "img": "assets/img/products/almond.avif"
-            },
-            {
-              "id": "nonpareil",
-              "title": "Миндаль Nonpareil",
-              "titleEn": "Almond Nonpareil"
-            },
-            {
-              "id": "carmel",
-              "title": "Миндаль Carmel",
-              "titleEn": "Almond Carmel"
-            },
-            {
-              "id": "mission",
-              "title": "Миндаль Mission",
-              "titleEn": "Almond Mission"
-            },
-            {
-              "id": "fritz",
-              "title": "Миндаль Fritz",
-              "titleEn": "Almond Fritz"
             }
           ],
           "desc": "Миндаль сладкий: ядро, жареный и в скорлупе.",
@@ -379,28 +339,6 @@
           "title": "Кешью",
           "titleEn": "Cashew",
           "img": "assets/img/products/cashew.avif",
-          "children": [
-            {
-              "id": "w180",
-              "title": "Кешью W180",
-              "titleEn": "Cashew W180"
-            },
-            {
-              "id": "w210",
-              "title": "Кешью W210",
-              "titleEn": "Cashew W210"
-            },
-            {
-              "id": "w240",
-              "title": "Кешью W240",
-              "titleEn": "Cashew W240"
-            },
-            {
-              "id": "w320",
-              "title": "Кешью W320",
-              "titleEn": "Cashew W320"
-            }
-          ],
           "desc": "Кешью целый и жареный, экспортная калибровка.",
           "descEn": "Cashews whole and roasted, export-graded."
         },
@@ -707,7 +645,6 @@
           "id": "bulk",
           "title": "Фасовка",
           "titleEn": "Bulk Packing",
-          "img": "assets/img/products/packaging/lineup.avif",
           "children": [
             {
               "id": "clear-bags",

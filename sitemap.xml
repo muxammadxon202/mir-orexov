@@ -273,22 +273,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/almond/" />
   </url>
   <url>
-    <loc>https://mirorexov.com/catalog/nuts/cashew/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/cashew/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/" />
-  </url>
-  <url>
     <loc>https://mirorexov.com/catalog/legumes/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -721,70 +705,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/walnut/unpeeled/" />
   </url>
   <url>
-    <loc>https://mirorexov.com/catalog/nuts/walnut/chandler/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/walnut/chandler/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/walnut/chandler/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/walnut/chandler/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/walnut/chandler/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/walnut/chandler/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/walnut/chandler/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/walnut/chandler/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/catalog/nuts/walnut/paper-shell/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/walnut/paper-shell/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/walnut/paper-shell/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/walnut/paper-shell/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/walnut/paper-shell/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/walnut/paper-shell/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/walnut/paper-shell/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/walnut/paper-shell/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/catalog/nuts/walnut/extra-light/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/walnut/extra-light/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/walnut/extra-light/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/walnut/extra-light/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/walnut/extra-light/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/walnut/extra-light/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/walnut/extra-light/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/walnut/extra-light/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/catalog/nuts/walnut/light/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/walnut/light/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/walnut/light/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/walnut/light/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/walnut/light/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/walnut/light/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/walnut/light/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/walnut/light/" />
-  </url>
-  <url>
     <loc>https://mirorexov.com/catalog/nuts/walnut/peeled/peeled-standard/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1073,132 +993,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/almond/peeled/" />
   </url>
   <url>
-    <loc>https://mirorexov.com/catalog/nuts/almond/nonpareil/</loc>
+    <loc>https://mirorexov.com/catalog/nuts/cashew/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/almond/nonpareil/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/almond/nonpareil/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/almond/nonpareil/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/" />
   </url>
   <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/almond/nonpareil/</loc>
+    <loc>https://mirorexov.com/en/catalog/nuts/cashew/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/almond/nonpareil/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/almond/nonpareil/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/almond/nonpareil/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/catalog/nuts/almond/carmel/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/almond/carmel/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/almond/carmel/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/almond/carmel/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/almond/carmel/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/almond/carmel/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/almond/carmel/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/almond/carmel/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/catalog/nuts/almond/mission/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/almond/mission/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/almond/mission/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/almond/mission/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/almond/mission/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/almond/mission/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/almond/mission/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/almond/mission/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/catalog/nuts/almond/fritz/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/almond/fritz/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/almond/fritz/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/almond/fritz/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/almond/fritz/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/almond/fritz/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/almond/fritz/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/almond/fritz/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/catalog/nuts/cashew/w180/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/w180/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/w180/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/w180/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/cashew/w180/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/w180/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/w180/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/w180/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/catalog/nuts/cashew/w210/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/w210/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/w210/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/w210/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/cashew/w210/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/w210/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/w210/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/w210/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/catalog/nuts/cashew/w240/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/w240/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/w240/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/w240/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/cashew/w240/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/w240/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/w240/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/w240/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/catalog/nuts/cashew/w320/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/w320/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/w320/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/w320/" />
-  </url>
-  <url>
-    <loc>https://mirorexov.com/en/catalog/nuts/cashew/w320/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/w320/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/w320/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/w320/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/nuts/cashew/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/nuts/cashew/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/nuts/cashew/" />
   </url>
   <url>
     <loc>https://mirorexov.com/catalog/nuts/pumpkin-seed/</loc>
