@@ -29,6 +29,9 @@
       if (topbar) {
         page.style.setProperty("--topbar-h", topbar.offsetHeight + "px");
       }
+      if (navbar) {
+        page.style.setProperty("--navbar-h", navbar.offsetHeight + "px");
+      }
       // 80% of the hero: by then the content has covered most of the photo.
       trigger = hero.offsetHeight * 0.8;
     };

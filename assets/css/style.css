@@ -2700,57 +2700,76 @@ html.intro-seen .preloader { display: none; }
    photograph starts at the very first pixel of the page and fills a true
    100vh. --topbar-h is measured by page-hero.js (36px is the desktop
    default) so the navbar always sits exactly under the strip. */
-.hero-page { --topbar-h: 36px; }
+.hero-page { --topbar-h: 36px; --navbar-h: 80px; }
 
+/* Both bars are lifted out of the flow so the hero starts at the very first
+   pixel of the page. --topbar-h and --navbar-h are measured by page-hero.js. */
 .hero-page .top-bar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 101;
-  background: transparent;
-  color: rgba(251, 247, 235, 0.9);
   transition: background var(--dur-med) var(--ease-out), color var(--dur-med) var(--ease-out);
 }
-.hero-page .top-bar .top-bar-item { color: rgba(251, 247, 235, 0.9); }
 
 .hero-page .navbar {
   /* The shared entrance animation slides the bar down from -14px; here the bar
-     is fixed over the photograph and the intro already covers the first
-     moment, so the extra movement is dropped rather than risk the bar being
-     caught mid-slide. */
+     is fixed over the hero and the intro already covers the first moment, so
+     the extra movement is dropped rather than risk it being caught mid-slide. */
   animation: none;
   position: fixed;
   top: var(--topbar-h);
   left: 0;
   right: 0;
   z-index: 100;
+  transition: background var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out), border-color var(--dur-med) var(--ease-out);
+}
+
+/* ---- Transparent-over-hero treatment ----
+   Only for pages whose hero is a DARK photograph. It is switched off while the
+   mobile menu is open (the dropdown panel is cream — light labels on it are
+   invisible) and once .nav-lifted marks the curtain as closed. A light hero
+   opts out entirely via .hero-page--light: cream text on pale artwork cannot
+   be read at any size. */
+.hero-page:not(.hero-page--light) .top-bar:not(.nav-lifted) {
+  background: transparent;
+  color: rgba(251, 247, 235, 0.9);
+}
+.hero-page:not(.hero-page--light) .top-bar:not(.nav-lifted) .top-bar-item { color: rgba(251, 247, 235, 0.9); }
+
+.hero-page:not(.hero-page--light) .navbar:not(.nav-lifted):not(.menu-open) {
   background: transparent;
   border-bottom-color: transparent;
   backdrop-filter: none;
-  transition: background var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out), border-color var(--dur-med) var(--ease-out);
 }
-.hero-page .navbar:not(.nav-lifted) .nav-menu a,
-.hero-page .navbar:not(.nav-lifted) .brand-name strong,
-.hero-page .navbar:not(.nav-lifted) .nav-toggle { color: var(--cream-50); }
-.hero-page .navbar:not(.nav-lifted) .brand-name span { color: var(--gold); }
-.hero-page .navbar:not(.nav-lifted) .lang-switch { border-color: rgba(251, 247, 235, 0.35); }
-.hero-page .navbar:not(.nav-lifted) .lang-switch a,
-.hero-page .navbar:not(.nav-lifted) .lang-switch button { color: rgba(251, 247, 235, 0.8); }
-.hero-page .navbar:not(.nav-lifted) .lang-switch .active { background: rgba(251, 247, 235, 0.16); color: var(--cream-50); }
-.hero-page .top-bar.nav-lifted {
+.hero-page:not(.hero-page--light) .navbar:not(.nav-lifted):not(.menu-open) .nav-menu a,
+.hero-page:not(.hero-page--light) .navbar:not(.nav-lifted):not(.menu-open) .brand-name strong,
+.hero-page:not(.hero-page--light) .navbar:not(.nav-lifted):not(.menu-open) .nav-toggle { color: var(--cream-50); }
+.hero-page:not(.hero-page--light) .navbar:not(.nav-lifted):not(.menu-open) .brand-name span { color: var(--gold); }
+.hero-page:not(.hero-page--light) .navbar:not(.nav-lifted):not(.menu-open) .lang-switch { border-color: rgba(251, 247, 235, 0.35); }
+.hero-page:not(.hero-page--light) .navbar:not(.nav-lifted):not(.menu-open) .lang-switch a,
+.hero-page:not(.hero-page--light) .navbar:not(.nav-lifted):not(.menu-open) .lang-switch button { color: rgba(251, 247, 235, 0.8); }
+.hero-page:not(.hero-page--light) .navbar:not(.nav-lifted):not(.menu-open) .lang-switch .active { background: rgba(251, 247, 235, 0.16); color: var(--cream-50); }
+
+/* ---- Solid state: curtain closed, menu open, or a light hero ---- */
+.hero-page .top-bar.nav-lifted,
+.hero-page--light .top-bar {
   background: var(--cream-200);
   color: var(--text-dim);
 }
-.hero-page .top-bar.nav-lifted .top-bar-item { color: var(--text-dim); }
+.hero-page .top-bar.nav-lifted .top-bar-item,
+.hero-page--light .top-bar .top-bar-item { color: var(--text-dim); }
 
-.hero-page .navbar.nav-lifted {
-  background: rgba(251, 247, 235, 0.94);
+.hero-page .navbar.nav-lifted,
+.hero-page .navbar.menu-open,
+.hero-page--light .navbar {
+  background: rgba(251, 247, 235, 0.96);
   backdrop-filter: blur(12px);
   border-bottom-color: var(--border);
   box-shadow: var(--shadow-sm);
 }
-/* the hero sits at z-index 0, so the sticky bar already renders above it */
+
 
 /* --- 6. Mobile ---------------------------------------------------- */
 @media (max-width: 900px) {
@@ -2764,12 +2783,11 @@ html.intro-seen .preloader { display: none; }
 }
 
 @media (max-width: 720px) {
-  /* A landscape photograph inside a full-height portrait viewport gets cropped
-     down to a narrow vertical sliver — the facade turned into a patch of wall.
-     Shortening the hero brings its aspect ratio closer to the picture's, so far
-     more of the frame survives while the section still reads as full-bleed. */
-  .page-hero { height: 68svh; min-height: 420px; }
-  .page-hero__media img { object-position: 32% center; }
+  /* The hero stays full-screen on phones — the curtain only reads if the image
+     owns the whole first screen. A landscape frame in a portrait viewport shows
+     roughly its middle third, so the crop is aimed rather than shortened: 30%
+     keeps the signboard, which sits left of centre, inside the visible band. */
+  .page-hero__media img { object-position: 30% center; }
   .page-hero__media::after {
     background: linear-gradient(0deg, rgba(20, 15, 8, 0.85) 0%, rgba(20, 15, 8, 0.5) 45%, rgba(20, 15, 8, 0.2) 100%);
   }
@@ -2783,37 +2801,32 @@ html.intro-seen .preloader { display: none; }
 }
 
 
-/* Artwork hero (composed product graphic rather than a photograph) */
+/* ---- Artwork hero ----
+   A composed product graphic on a pale cream ground, not a photograph. It fills
+   the screen exactly like the photo hero and draws the same curtain, but the
+   contrast is inverted: a light scrim and dark type, because cream text on pale
+   artwork cannot be read. The bars stay solid for the same reason
+   (.hero-page--light). */
 .page-hero--art { background: var(--cream-100); }
-.page-hero--art .page-hero__media img {
-  object-fit: cover;
-  object-position: 50% center;
-}
+.page-hero--art .page-hero__media img { object-position: 50% center; }
+
 .page-hero--art .page-hero__media::after {
-  background: linear-gradient(90deg, rgba(20, 15, 8, 0.78) 0%, rgba(20, 15, 8, 0.45) 42%, rgba(20, 15, 8, 0.08) 68%, transparent 100%);
+  background: linear-gradient(90deg, rgba(254, 252, 246, 0.94) 0%, rgba(254, 252, 246, 0.82) 38%, rgba(254, 252, 246, 0.35) 62%, rgba(254, 252, 246, 0) 82%);
 }
+.page-hero--art .page-hero__kicker { color: var(--gold-700); }
+.page-hero--art h1 { color: var(--brown-900); }
+.page-hero--art .page-hero__lead { color: var(--brown-800); }
+.page-hero--art .page-hero__scroll { color: var(--brown-800); }
 
 @media (max-width: 720px) {
-  /* Contained, not cropped: the whole dried-fruit/nut composition stays
-     visible, anchored to the top with the copy in the space below. */
-  .page-hero--art { height: auto; min-height: 0; }
-  .page-hero--art .page-hero__media { position: relative; aspect-ratio: 16 / 9; }
-  .page-hero--art .page-hero__media img { object-fit: cover; object-position: 50% 42%; }
+  /* Portrait crops a 16:9 graphic to its centre band — which is where the mark
+     and the heaviest product detail sit, so the crop still reads. The scrim
+     turns bottom-up to sit the copy on the calmer lower half. */
+  .page-hero--art .page-hero__media img { object-position: 50% 46%; }
   .page-hero--art .page-hero__media::after {
-    background: linear-gradient(0deg, rgba(20, 15, 8, 0.55) 0%, rgba(20, 15, 8, 0.12) 55%, transparent 100%);
+    background: linear-gradient(0deg, rgba(254, 252, 246, 0.96) 0%, rgba(254, 252, 246, 0.88) 38%, rgba(254, 252, 246, 0.4) 62%, rgba(254, 252, 246, 0.1) 100%);
   }
-  .page-hero--art .page-hero__inner {
-    position: relative;
-    height: auto;
-    padding-block: 28px 36px;
-  }
-  .page-hero--art .page-hero__kicker { color: var(--gold-text); }
-  .page-hero--art .page-hero h1,
-  .page-hero--art h1 { color: var(--text); }
-  .page-hero--art .page-hero__lead { color: var(--text-dim); }
-  .page-hero--art .page-hero__scroll { display: none; }
 }
-
 
 /* Catalog breadcrumbs sit at the top of the content curtain, where the
    retired page header used to put them. */
