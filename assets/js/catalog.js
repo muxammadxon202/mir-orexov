@@ -87,8 +87,12 @@
     const node = nodeAtPath(path) || root;
     const trail = [root, ...path.map((_, i) => nodeAtPath(path.slice(0, i + 1)))];
 
-    titleEl.textContent = trail.map((n) => t(n)).join(" / ");
+    // Both are optional chrome: a page that drops them (the catalog hero, for
+    // instance, once carried neither) must still render its grid rather than
+    // throwing here and leaving the skeletons up forever.
+    if (titleEl) titleEl.textContent = trail.map((n) => t(n)).join(" / ");
 
+    if (breadcrumbEl) {
     breadcrumbEl.innerHTML = "";
     trail.forEach((n, i) => {
       const link = document.createElement("a");
@@ -103,6 +107,7 @@
         breadcrumbEl.appendChild(sep);
       }
     });
+    }
 
     const hasChildren = node.children && node.children.length > 0;
     const isLeaf = !node.children;

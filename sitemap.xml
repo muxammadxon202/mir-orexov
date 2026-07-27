@@ -641,6 +641,22 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/dried/prune/with-pit/" />
   </url>
   <url>
+    <loc>https://mirorexov.com/catalog/dried/dried-fig/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/dried/dried-fig/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/dried/dried-fig/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/dried/dried-fig/" />
+  </url>
+  <url>
+    <loc>https://mirorexov.com/en/catalog/dried/dried-fig/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://mirorexov.com/catalog/dried/dried-fig/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://mirorexov.com/en/catalog/dried/dried-fig/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mirorexov.com/catalog/dried/dried-fig/" />
+  </url>
+  <url>
     <loc>https://mirorexov.com/catalog/dried/jida/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

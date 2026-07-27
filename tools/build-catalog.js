@@ -57,6 +57,26 @@ const title = (n, en) => (en && n.titleEn ? n.titleEn : n.title) || '';
 const desc = (n, en) => (en ? n.descEn : n.desc) || '';
 const weight = (n, en) => (en ? n.weightEn : n.weight) || '';
 
+/**
+ * Origin is inherited: a node uses the nearest ancestor that declares one, so a
+ * bought-in line (candied fruit from China) can override the default without
+ * repeating the field on every leaf. Falls back to our own production.
+ */
+const DEFAULT_ORIGIN = { ru: 'Узбекистан, Самаркандская область', en: 'Uzbekistan, Samarkand region', country: 'Uzbekistan' };
+function originOf(trail, en) {
+  for (let i = trail.length - 1; i >= 0; i--) {
+    const n = trail[i];
+    if (en ? n.originEn : n.origin) return en ? n.originEn : n.origin;
+  }
+  return en ? DEFAULT_ORIGIN.en : DEFAULT_ORIGIN.ru;
+}
+function originCountryOf(trail) {
+  for (let i = trail.length - 1; i >= 0; i--) {
+    if (trail[i].originCountry) return trail[i].originCountry;
+  }
+  return DEFAULT_ORIGIN.country;
+}
+
 /** Root-relative asset path ("assets/img/x.avif") -> correct ../ prefix. */
 function rel(assetPath, depth) {
   if (!assetPath) return '';
@@ -144,11 +164,11 @@ function page({ en, depth, url, altUrl, node, trail, children }) {
   const L = en
     ? { catalog: 'Catalog', home: 'Home', request: 'Request a Quote', inCat: 'In this category',
         packing: 'Packing', related: 'Other items in', all: 'All categories',
-        lead: (c) => `Wholesale supply from Uzbekistan. Direct export, own processing, FCA/FOB shipping to 30+ countries.`,
+        lead: (c) => `Wholesale supply from Uzbekistan. Direct export, own processing, shipping to 30+ countries.`,
         metaSuffix: 'wholesale from Uzbekistan | Mir Orexov' }
     : { catalog: 'Каталог', home: 'Главная', request: 'Оставить заявку', inCat: 'В этой категории',
         packing: 'Фасовка', related: 'Другие позиции раздела', all: 'Все категории',
-        lead: (c) => `Оптовые поставки из Узбекистана. Прямой экспорт, собственная переработка, отгрузка FCA/FOB в 30+ стран.`,
+        lead: (c) => `Оптовые поставки из Узбекистана. Прямой экспорт, собственная переработка, поставки в 30+ стран.`,
         metaSuffix: 'оптом из Узбекистана | Mir Orexov' };
 
   const trailNames = trail.map(T);
@@ -173,7 +193,7 @@ function page({ en, depth, url, altUrl, node, trail, children }) {
     ...(node.img ? { image: `${ORIGIN}/${String(node.img).replace(/^\/+/, '')}` } : {}),
     brand: { '@type': 'Brand', name: 'Mir Orexov Samarkand' },
     manufacturer: { '@type': 'Organization', name: 'Mir Orexov Samarkand', address: { '@type': 'PostalAddress', addressLocality: 'Samarkand', addressCountry: 'UZ' } },
-    countryOfOrigin: { '@type': 'Country', name: 'Uzbekistan' },
+    countryOfOrigin: { '@type': 'Country', name: originCountryOf(trail) },
     url,
   };
   const breadcrumbLd = {
@@ -280,10 +300,9 @@ ${JSON.stringify(breadcrumbLd, null, 2)}
           <h2 class="product-name">${esc(name)}</h2>
           ${description ? `<p class="product-lead">${esc(description)}</p>` : ''}
           <dl class="spec-list">
-            <div class="spec-row"><dt>${en ? 'Origin' : 'Происхождение'}</dt><dd>${en ? 'Uzbekistan, Samarkand region' : 'Узбекистан, Самаркандская область'}</dd></div>
+            <div class="spec-row"><dt>${en ? 'Origin' : 'Происхождение'}</dt><dd>${esc(originOf(trail, en))}</dd></div>
             <div class="spec-row"><dt>${en ? 'Category' : 'Категория'}</dt><dd>${esc(trailNames.join(' / '))}</dd></div>
             ${w ? `<div class="spec-row"><dt>${esc(L.packing)}</dt><dd>${esc(w)}</dd></div>` : ''}
-            <div class="spec-row"><dt>${en ? 'Terms' : 'Условия'}</dt><dd>FCA / FOB</dd></div>
           </dl>
           <a class="btn btn-primary btn-lg" href="${a}${en ? 'en/' : ''}contact.html">${esc(L.request)}</a>
         </div>

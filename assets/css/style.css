@@ -2452,14 +2452,14 @@ html.intro-seen .preloader { display: none; }
 
 /* ===================================================================
    About page — full-bleed hero + stage flow
-   Scoped to .about-page so nothing here can leak into other pages.
+   Scoped to .hero-page so nothing here can leak into other pages.
    =================================================================== */
 
 /* --- 1. Curtain hero ---------------------------------------------
    The photo is sticky at the top of the viewport while the content
    block below scrolls up over it, so the hero reads as a curtain
    being drawn rather than as a panel scrolling away. */
-.about-hero {
+.page-hero {
   position: sticky;
   top: 0;
   z-index: 0;
@@ -2468,13 +2468,13 @@ html.intro-seen .preloader { display: none; }
   overflow: hidden;
 }
 
-.about-hero__media {
+.page-hero__media {
   position: absolute;
   inset: 0;
   overflow: hidden;
 }
 
-.about-hero__media img {
+.page-hero__media img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2488,14 +2488,14 @@ html.intro-seen .preloader { display: none; }
 
 /* Left-weighted scrim so the copy stays legible without dimming the
    whole photograph. */
-.about-hero__media::after {
+.page-hero__media::after {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(90deg, rgba(20, 15, 8, 0.72) 0%, rgba(20, 15, 8, 0.35) 45%, transparent 70%);
 }
 
-.about-hero__inner {
+.page-hero__inner {
   position: relative;
   z-index: 2;
   height: 100%;
@@ -2509,9 +2509,9 @@ html.intro-seen .preloader { display: none; }
   padding-bottom: 7vh;
 }
 
-.about-hero__copy { max-width: 40ch; }
+.page-hero__copy { max-width: 40ch; }
 
-.about-hero__kicker {
+.page-hero__kicker {
   font-size: var(--fs-sm);
   font-weight: 600;
   letter-spacing: 0.15em;
@@ -2520,7 +2520,7 @@ html.intro-seen .preloader { display: none; }
   margin-bottom: 20px;
 }
 
-.about-hero h1 {
+.page-hero h1 {
   font-size: clamp(2.2rem, 4.5vw, 4rem);
   line-height: 1.05;
   letter-spacing: -0.02em;
@@ -2529,7 +2529,7 @@ html.intro-seen .preloader { display: none; }
   white-space: nowrap;
 }
 
-.about-hero__lead {
+.page-hero__lead {
   font-size: var(--fs-lg);
   line-height: 1.5;
   font-weight: 500;
@@ -2539,21 +2539,21 @@ html.intro-seen .preloader { display: none; }
 }
 
 /* staggered entrance */
-.about-hero__kicker,
-.about-hero h1,
-.about-hero__lead,
-.about-hero__scroll { animation: hero-rise 800ms var(--ease-cinematic) both; }
-.about-hero__kicker { animation-delay: 120ms; }
-.about-hero h1      { animation-delay: 240ms; }
-.about-hero__lead   { animation-delay: 360ms; }
-.about-hero__scroll { animation-delay: 520ms; }
+.page-hero__kicker,
+.page-hero h1,
+.page-hero__lead,
+.page-hero__scroll { animation: hero-rise 800ms var(--ease-cinematic) both; }
+.page-hero__kicker { animation-delay: 120ms; }
+.page-hero h1      { animation-delay: 240ms; }
+.page-hero__lead   { animation-delay: 360ms; }
+.page-hero__scroll { animation-delay: 520ms; }
 
 @keyframes hero-rise {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.about-hero__scroll {
+.page-hero__scroll {
   position: absolute;
   left: 50%;
   bottom: 32px;
@@ -2567,7 +2567,7 @@ html.intro-seen .preloader { display: none; }
   color: var(--cream-50);
   opacity: 0.85;
 }
-.about-hero__scroll svg { width: 26px; height: 26px; animation: scroll-nudge 2s ease-in-out infinite; }
+.page-hero__scroll svg { width: 26px; height: 26px; animation: scroll-nudge 2s ease-in-out infinite; }
 
 @keyframes scroll-nudge {
   0%, 100% { transform: translateY(0); opacity: 0.7; }
@@ -2577,7 +2577,7 @@ html.intro-seen .preloader { display: none; }
 /* --- 2. The content curtain ---------------------------------------
    Sits above the hero and slides over it. The nut pattern lives here,
    faint, so it never runs under the text cards themselves. */
-.about-flow {
+.page-flow {
   position: relative;
   z-index: 1;
   /* Fully opaque: a translucent curtain would let the sticky hero show
@@ -2590,7 +2590,7 @@ html.intro-seen .preloader { display: none; }
 
 /* The house nut pattern, same as the rest of the site, held at a strength
    where it reads as texture and never competes with the copy. */
-.about-flow::before {
+.page-flow::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -2601,7 +2601,7 @@ html.intro-seen .preloader { display: none; }
   pointer-events: none;
   z-index: 0;
 }
-.about-flow > * { position: relative; z-index: 1; }
+.page-flow > * { position: relative; z-index: 1; }
 
 /* --- 3. Stages ---------------------------------------------------- */
 .stage { position: relative; }
@@ -2659,7 +2659,7 @@ html.intro-seen .preloader { display: none; }
 .stage:first-of-type::before { top: 40%; }
 .stage:last-of-type::before  { bottom: 55%; }
 
-/* scroll-in. Gated behind .js-reveal, which about-hero.js sets on <html>:
+/* scroll-in. Gated behind .js-reveal, which page-hero.js sets on <html>:
    without JS the content simply shows, never a blank page. */
 .js-reveal .stage__body[data-reveal],
 .js-reveal .stage__media[data-reveal] {
@@ -2698,11 +2698,11 @@ html.intro-seen .preloader { display: none; }
 /* --- 5. Transparent navbar over the hero -------------------------- */
 /* The contact strip and the navbar are lifted out of the flow so the hero
    photograph starts at the very first pixel of the page and fills a true
-   100vh. --topbar-h is measured by about-hero.js (36px is the desktop
+   100vh. --topbar-h is measured by page-hero.js (36px is the desktop
    default) so the navbar always sits exactly under the strip. */
-.about-page { --topbar-h: 36px; }
+.hero-page { --topbar-h: 36px; }
 
-.about-page .top-bar {
+.hero-page .top-bar {
   position: fixed;
   top: 0;
   left: 0;
@@ -2712,9 +2712,9 @@ html.intro-seen .preloader { display: none; }
   color: rgba(251, 247, 235, 0.9);
   transition: background var(--dur-med) var(--ease-out), color var(--dur-med) var(--ease-out);
 }
-.about-page .top-bar .top-bar-item { color: rgba(251, 247, 235, 0.9); }
+.hero-page .top-bar .top-bar-item { color: rgba(251, 247, 235, 0.9); }
 
-.about-page .navbar {
+.hero-page .navbar {
   /* The shared entrance animation slides the bar down from -14px; here the bar
      is fixed over the photograph and the intro already covers the first
      moment, so the extra movement is dropped rather than risk the bar being
@@ -2730,21 +2730,21 @@ html.intro-seen .preloader { display: none; }
   backdrop-filter: none;
   transition: background var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out), border-color var(--dur-med) var(--ease-out);
 }
-.about-page .navbar:not(.nav-lifted) .nav-menu a,
-.about-page .navbar:not(.nav-lifted) .brand-name strong,
-.about-page .navbar:not(.nav-lifted) .nav-toggle { color: var(--cream-50); }
-.about-page .navbar:not(.nav-lifted) .brand-name span { color: var(--gold); }
-.about-page .navbar:not(.nav-lifted) .lang-switch { border-color: rgba(251, 247, 235, 0.35); }
-.about-page .navbar:not(.nav-lifted) .lang-switch a,
-.about-page .navbar:not(.nav-lifted) .lang-switch button { color: rgba(251, 247, 235, 0.8); }
-.about-page .navbar:not(.nav-lifted) .lang-switch .active { background: rgba(251, 247, 235, 0.16); color: var(--cream-50); }
-.about-page .top-bar.nav-lifted {
+.hero-page .navbar:not(.nav-lifted) .nav-menu a,
+.hero-page .navbar:not(.nav-lifted) .brand-name strong,
+.hero-page .navbar:not(.nav-lifted) .nav-toggle { color: var(--cream-50); }
+.hero-page .navbar:not(.nav-lifted) .brand-name span { color: var(--gold); }
+.hero-page .navbar:not(.nav-lifted) .lang-switch { border-color: rgba(251, 247, 235, 0.35); }
+.hero-page .navbar:not(.nav-lifted) .lang-switch a,
+.hero-page .navbar:not(.nav-lifted) .lang-switch button { color: rgba(251, 247, 235, 0.8); }
+.hero-page .navbar:not(.nav-lifted) .lang-switch .active { background: rgba(251, 247, 235, 0.16); color: var(--cream-50); }
+.hero-page .top-bar.nav-lifted {
   background: var(--cream-200);
   color: var(--text-dim);
 }
-.about-page .top-bar.nav-lifted .top-bar-item { color: var(--text-dim); }
+.hero-page .top-bar.nav-lifted .top-bar-item { color: var(--text-dim); }
 
-.about-page .navbar.nav-lifted {
+.hero-page .navbar.nav-lifted {
   background: rgba(251, 247, 235, 0.94);
   backdrop-filter: blur(12px);
   border-bottom-color: var(--border);
@@ -2764,27 +2764,76 @@ html.intro-seen .preloader { display: none; }
 }
 
 @media (max-width: 720px) {
-  .about-hero__media::after {
+  /* A landscape photograph inside a full-height portrait viewport gets cropped
+     down to a narrow vertical sliver — the facade turned into a patch of wall.
+     Shortening the hero brings its aspect ratio closer to the picture's, so far
+     more of the frame survives while the section still reads as full-bleed. */
+  .page-hero { height: 68svh; min-height: 420px; }
+  .page-hero__media img { object-position: 32% center; }
+  .page-hero__media::after {
     background: linear-gradient(0deg, rgba(20, 15, 8, 0.85) 0%, rgba(20, 15, 8, 0.5) 45%, rgba(20, 15, 8, 0.2) 100%);
   }
-  .about-hero__inner { justify-content: flex-end; padding-bottom: 96px; }
+  .page-hero__inner { justify-content: flex-end; padding-bottom: 64px; }
   /* nowrap would push the headline off a narrow screen */
-  .about-hero h1 { white-space: normal; }
-  .about-hero__copy { max-width: none; }
-  .about-hero__lead { font-size: var(--fs-base); }
-  .about-flow { border-radius: 24px 24px 0 0; }
+  .page-hero h1 { white-space: normal; }
+  .page-hero__copy { max-width: none; }
+  .page-hero__lead { font-size: var(--fs-base); }
+  .page-flow { border-radius: 24px 24px 0 0; }
   .stage::before { display: none; }
 }
 
+
+/* Artwork hero (composed product graphic rather than a photograph) */
+.page-hero--art { background: var(--cream-100); }
+.page-hero--art .page-hero__media img {
+  object-fit: cover;
+  object-position: 50% center;
+}
+.page-hero--art .page-hero__media::after {
+  background: linear-gradient(90deg, rgba(20, 15, 8, 0.78) 0%, rgba(20, 15, 8, 0.45) 42%, rgba(20, 15, 8, 0.08) 68%, transparent 100%);
+}
+
+@media (max-width: 720px) {
+  /* Contained, not cropped: the whole dried-fruit/nut composition stays
+     visible, anchored to the top with the copy in the space below. */
+  .page-hero--art { height: auto; min-height: 0; }
+  .page-hero--art .page-hero__media { position: relative; aspect-ratio: 16 / 9; }
+  .page-hero--art .page-hero__media img { object-fit: cover; object-position: 50% 42%; }
+  .page-hero--art .page-hero__media::after {
+    background: linear-gradient(0deg, rgba(20, 15, 8, 0.55) 0%, rgba(20, 15, 8, 0.12) 55%, transparent 100%);
+  }
+  .page-hero--art .page-hero__inner {
+    position: relative;
+    height: auto;
+    padding-block: 28px 36px;
+  }
+  .page-hero--art .page-hero__kicker { color: var(--gold-text); }
+  .page-hero--art .page-hero h1,
+  .page-hero--art h1 { color: var(--text); }
+  .page-hero--art .page-hero__lead { color: var(--text-dim); }
+  .page-hero--art .page-hero__scroll { display: none; }
+}
+
+
+/* Catalog breadcrumbs sit at the top of the content curtain, where the
+   retired page header used to put them. */
+.catalog-breadcrumb {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: 24px var(--gutter) 0;
+  justify-content: flex-start;
+}
+.catalog-breadcrumb:empty { display: none; }
+
 /* --- 7. Reduced motion -------------------------------------------- */
 @media (prefers-reduced-motion: reduce) {
-  .about-hero { position: relative; }
-  .about-hero__media img { transform: none !important; }
-  .about-hero__scroll svg { animation: none; }
-  .about-hero__kicker,
-  .about-hero h1,
-  .about-hero__lead,
-  .about-hero__scroll { animation: none; }
+  .page-hero { position: relative; }
+  .page-hero__media img { transform: none !important; }
+  .page-hero__scroll svg { animation: none; }
+  .page-hero__kicker,
+  .page-hero h1,
+  .page-hero__lead,
+  .page-hero__scroll { animation: none; }
   .js-reveal .stage__body[data-reveal],
   .js-reveal .stage__media[data-reveal] { opacity: 1; transform: none; transition: none; }
 }

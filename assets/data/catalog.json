@@ -130,6 +130,14 @@
           "descEn": "Prunes pitted and unpitted, soft-dried."
         },
         {
+          "id": "dried-fig",
+          "title": "Сушёный инжир",
+          "titleEn": "Dried Figs",
+          "img": "assets/img/products/dried-fig.webp",
+          "desc": "Сушёный инжир — вяленые плоды с плотной медовой мякотью и семенами.",
+          "descEn": "Dried figs — dense honeyed flesh with the seeds intact."
+        },
+        {
           "id": "jida",
           "title": "Джида",
           "titleEn": "Jida",
@@ -684,7 +692,10 @@
       ],
       "desc": "Цукаты и сушёные ананас, банан, киви, манго — яркая витрина для розничных сетей.",
       "descEn": "Candied fruit and dried pineapple, banana, kiwi and mango — a bright shelf line for retail.",
-      "cutout": "assets/img/catalog/cutout/candied.webp"
+      "cutout": "assets/img/catalog/cutout/candied.webp",
+      "origin": "Китай, провинция Фуцзянь (Чжанчжоу)",
+      "originEn": "China, Fujian province (Zhangzhou)",
+      "originCountry": "China"
     },
     {
       "id": "packaging",

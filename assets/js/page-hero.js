@@ -1,11 +1,11 @@
 // About page: floating bars, hero parallax, stage reveal.
-// Every effect is opt-in per element (.about-page, .about-hero__media img,
+// Every effect is opt-in per element (.hero-page, .page-hero__media img,
 // [data-reveal]) so this file is inert on any page that does not use them.
 (function () {
   "use strict";
 
-  const page = document.querySelector(".about-page");
-  const hero = document.querySelector(".about-hero");
+  const page = document.querySelector(".hero-page");
+  const hero = document.querySelector(".page-hero");
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   // --- Floating bars --------------------------------------------------
@@ -60,7 +60,7 @@
   // The photo eases from scale(1.08) to scale(1) and dims as the content
   // curtain rises over it. Driven off scrollY inside rAF so the handler
   // itself never touches layout.
-  const heroImg = document.querySelector(".about-hero__media img");
+  const heroImg = document.querySelector(".page-hero__media img");
 
   if (heroImg && hero) {
     let ticking = false;

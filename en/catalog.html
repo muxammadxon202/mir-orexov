@@ -48,7 +48,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/branding/apple-touch-icon-180.png" />
   <link rel="stylesheet" href="../assets/css/style.css" />
 </head>
-<body>
+<body class="hero-page">
   <div class="preloader" aria-hidden="true">
     <div class="preloader-logo"><img src="../assets/img/branding/logo-192.webp" alt="" width="192" height="192" /></div>
     <div class="preloader-bar"></div>
@@ -104,39 +104,54 @@
   </header>
 
   <main id="main">
-    <section class="page-header">
-      <div class="container">
-        <h1 id="catalog-title">Catalog</h1>
-        <nav class="breadcrumb" id="catalog-breadcrumb" aria-label="Breadcrumb"></nav>
+    <!-- HERO -->
+    <section class="page-hero page-hero--art">
+      <div class="page-hero__media">
+        <img src="../assets/img/hero/catalog-hero-1920.webp"
+             srcset="../assets/img/hero/catalog-hero-1200.webp 1200w, ../assets/img/hero/catalog-hero-1920.webp 1920w"
+             sizes="100vw" width="1672" height="941" alt="Mir Orexov nuts and dried fruits" fetchpriority="high" />
+      </div>
+      <div class="page-hero__inner">
+        <div class="page-hero__copy">
+          <div class="page-hero__kicker">PRODUCT RANGE</div>
+          <h1 id="catalog-title">Catalog</h1>
+          <p class="page-hero__lead">Nuts, dried fruits, seeds and legumes, fresh produce, candied fruit and packaging — 88 items in six categories. Every position with its own grade, packing and specification.</p>
+        </div>
+      </div>
+      <div class="page-hero__scroll" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
       </div>
     </section>
 
-    <section class="section" style="padding-top: 0;">
-      <div class="container">
-        <div class="grid-auto" id="catalog-grid">
-          <!-- Skeleton placeholders: replaced by catalog.js as soon as catalog.json arrives -->
-          <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
-          <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
-          <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
-          <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
-          <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
-        </div>
+    <div class="page-flow">
+      <nav class="breadcrumb catalog-breadcrumb" id="catalog-breadcrumb" aria-label="Breadcrumb"></nav>
+      <section class="section" style="padding-top: 0;">
+        <div class="container">
+          <div class="grid-auto" id="catalog-grid">
+            <!-- Skeleton placeholders: replaced by catalog.js as soon as catalog.json arrives -->
+            <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
+            <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
+            <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
+            <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
+            <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
+          </div>
 
-        <div id="catalog-empty" class="catalog-empty">
-          <p>Coming soon — no products in this category yet.</p>
-        </div>
+          <div id="catalog-empty" class="catalog-empty">
+            <p>Coming soon — no products in this category yet.</p>
+          </div>
 
-        <div id="catalog-quote" class="catalog-quote">
-          <img id="catalog-quote-thumb" class="catalog-quote-thumb" alt="" />
-          <div id="catalog-quote-gallery" class="catalog-gallery"></div>
-          <p class="catalog-quote-label">You are interested in:</p>
-          <p class="catalog-quote-name" id="catalog-quote-name"></p>
-          <p class="catalog-quote-weight" id="catalog-quote-weight"></p>
-          <p class="catalog-quote-desc" id="catalog-quote-desc"></p>
-          <button type="button" id="catalog-quote-link" class="btn btn-primary">Request a Quote</button>
+          <div id="catalog-quote" class="catalog-quote">
+            <img id="catalog-quote-thumb" class="catalog-quote-thumb" alt="" />
+            <div id="catalog-quote-gallery" class="catalog-gallery"></div>
+            <p class="catalog-quote-label">You are interested in:</p>
+            <p class="catalog-quote-name" id="catalog-quote-name"></p>
+            <p class="catalog-quote-weight" id="catalog-quote-weight"></p>
+            <p class="catalog-quote-desc" id="catalog-quote-desc"></p>
+            <button type="button" id="catalog-quote-link" class="btn btn-primary">Request a Quote</button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 
   <div class="modal-overlay" id="quote-modal" aria-hidden="true">
@@ -287,6 +302,7 @@
   <script src="../assets/js/quote-modal.js" defer></script>
   <script src="../assets/js/catalog.js" defer></script>
   <script src="../assets/js/chat-widget.js" defer></script>
+  <script src="../assets/js/page-hero.js" defer></script>
   <script src="../assets/js/form-a11y.js" defer></script>
 </body>
 </html>
