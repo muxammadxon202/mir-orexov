@@ -318,6 +318,14 @@ button { font-family: inherit; cursor: pointer; }
 .nav-item:focus-within .nav-dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
 .nav-dropdown a { padding: 8px 12px; border-radius: var(--radius-sm); }
 .nav-dropdown a::after { display: none; }
+/* The dropdown panel is always a light card (--bg-card), regardless of the
+   navbar's own white/dark text scheme on hero pages — its links must stay
+   dark, or a hero-page's white nav-text rule makes them invisible on this
+   light popup (#2026-07-28 regression). !important because the hero-page
+   selectors this overrides are deliberately specific (they target real
+   transparent-over-photo nav links) and outrank this one on specificity. */
+.hero-page .nav-dropdown a,
+.hero-page--light .nav-dropdown a { color: var(--text) !important; }
 .nav-dropdown a:hover { background: var(--gold-soft); color: var(--gold-text); }
 
 .nav-right { display: flex; align-items: center; gap: 12px; }
@@ -847,6 +855,45 @@ html.intro-seen [data-animate-load="5"] { animation-delay: 600ms; }
   color: var(--brown-800);
 }
 .fact-row .fact-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); flex-shrink: 0; }
+
+/* ===== Product page (generated catalog leaf pages) ===== */
+.product-hero-photo { width: 100%; object-fit: cover; }
+
+.product-gallery {
+  position: relative;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  cursor: grab;
+  touch-action: pan-y;
+}
+.product-gallery:active { cursor: grabbing; }
+.product-gallery__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 520ms var(--ease-out);
+  -webkit-user-drag: none;
+  user-select: none;
+}
+.product-gallery__img.active { opacity: 1; }
+
+.product-info .product-name { margin-bottom: 16px; }
+
+.spec-list { margin: 20px 0 28px; border-top: 1px solid var(--border); }
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.spec-row dt { color: var(--text-dim); font-weight: 500; }
+.spec-row dd { margin: 0; color: var(--brown-800); font-weight: 600; text-align: right; }
 
 /* ===== Dark feature block (Why Choose Us) ===== */
 .two-col--dark { background: var(--cream-900); }
