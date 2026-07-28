@@ -117,12 +117,15 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="page-hero">
+    <section class="page-hero page-hero--news">
       <div class="page-hero__media">
-        <img src="../../assets/img/news/f-istanbul-2026/hero-1920.webp"
-             srcset="../../assets/img/news/f-istanbul-2026/hero-1000.webp 1000w, ../../assets/img/news/f-istanbul-2026/hero-1920.webp 1920w"
-             sizes="100vw" width="1920" height="843" style="object-position: 12% 38%;"
-             alt="Стенды выставки F.Istanbul, Стамбул" fetchpriority="high" />
+        <picture>
+          <source media="(max-width: 720px)" srcset="../../assets/img/news/f-istanbul-2026/venue.webp" />
+          <img src="../../assets/img/news/f-istanbul-2026/hero-1920.webp"
+               srcset="../../assets/img/news/f-istanbul-2026/hero-1000.webp 1000w, ../../assets/img/news/f-istanbul-2026/hero-1920.webp 1920w"
+               sizes="100vw" width="1920" height="843"
+               alt="Стенды выставки F.Istanbul, Стамбул" fetchpriority="high" />
+        </picture>
       </div>
       <div class="page-hero__inner">
         <div class="page-hero__copy">
@@ -137,12 +140,16 @@
     </section>
 
     <div class="page-flow">
-      <section class="section" style="padding-top: clamp(2.5rem, 6vw, 4rem);">
+      <section class="section" style="padding-top: clamp(2.5rem, 6vw, 4rem); padding-bottom: 0;">
         <div class="container">
           <nav class="breadcrumb catalog-breadcrumb" aria-label="Хлебные крошки">
             <a href="../../index.html" data-en="Home">Главная</a><span class="breadcrumb-sep">›</span><a href="../../news.html" data-en="News">Новости</a><span class="breadcrumb-sep">›</span><span aria-current="page" data-en="Mir Orexov at F.Istanbul 2026">Mir Orexov на F.Istanbul 2026</span>
           </nav>
+        </div>
+      </section>
 
+      <section class="section">
+        <div class="container two-col two-col--about" style="align-items: start;">
           <div class="article-body" data-reveal>
             <time class="news-card-date" datetime="2026-07-27" data-en="27 July 2026">27 июля 2026</time>
 
@@ -163,14 +170,10 @@
             <p data-en="We look forward to meeting current and future partners at the show to discuss volumes, pricing and logistics for direct supply from Uzbekistan.">Мы будем рады встретиться на выставке с действующими и будущими партнёрами, обсудить объёмы, цены и логистику поставок из Узбекистана напрямую от производителя.</p>
             <p data-en="Stay tuned &mdash; we&rsquo;ll share our exact booth and hall number closer to the event.">Следите за нашими новостями — ближе к выставке мы сообщим точный номер стенда и павильона.</p>
           </div>
-        </div>
-      </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-eyebrow" data-en="Photo Report">Фоторепортаж</div>
-          <h2 style="margin-bottom: 24px;" data-en="What F.Istanbul Looks Like">Как выглядит F.Istanbul</h2>
-          <div class="sam-slider" data-carousel-label="Фотографии с выставки F.Istanbul" data-carousel-label-en="Photos from F.Istanbul">
+          <div data-reveal>
+            <div class="section-eyebrow" data-en="Photo Report">Фоторепортаж</div>
+            <div class="sam-slider" data-carousel-label="Фотографии с выставки F.Istanbul" data-carousel-label-en="Photos from F.Istanbul">
             <div class="sam-slider__track">
               <img src="../../assets/img/news/f-istanbul-2026/venue.webp" width="939" height="919" alt="Вход на выставку F.Istanbul" class="sam-slide active" data-caption-ru="Вход на F.Istanbul, Стамбул" data-caption-en="Entrance to F.Istanbul, Istanbul">
               <img loading="lazy" src="../../assets/img/news/f-istanbul-2026/hall-confectionery.webp" width="1200" height="680" alt="Кондитерский павильон выставки F.Istanbul" class="sam-slide" data-caption-ru="Кондитерский павильон выставки" data-caption-en="The confectionery hall">
@@ -184,6 +187,7 @@
             </div>
             <button class="sam-arrow sam-arrow--prev" aria-label="Назад" data-en-aria-label="Previous">&#8592;</button>
             <button class="sam-arrow sam-arrow--next" aria-label="Вперёд" data-en-aria-label="Next">&#8594;</button>
+            </div>
           </div>
         </div>
       </section>

@@ -888,7 +888,7 @@ html.intro-seen [data-animate-load="5"] { animation-delay: 600ms; }
 .product-info .product-name { margin-bottom: 16px; }
 
 /* ===== News article body (e.g. news/f-istanbul-2026/) ===== */
-.article-body { max-width: 720px; margin: 0 auto; }
+.article-body { max-width: none; }
 .article-body .news-card-date { display: block; color: var(--gold-text); font-weight: 600; font-size: var(--fs-sm); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 20px; }
 .article-body p { color: var(--brown-800); line-height: 1.7; margin: 0 0 18px; max-width: none; }
 .article-body h3 { margin: 32px 0 12px; }
@@ -2591,6 +2591,21 @@ html.intro-seen .preloader { display: none; }
 @keyframes scroll-nudge {
   0%, 100% { transform: translateY(0); opacity: 0.7; }
   50%      { transform: translateY(7px); opacity: 1; }
+}
+
+/* F.Istanbul news hero: the source banner has its own baked-in headline
+   ("26-29 AUGUST 2026 ISTANBUL EXPO CENTER") running almost the full frame,
+   so the standard left scrim isn't dark or wide enough to keep our copy from
+   visually fighting it — widen and deepen it just for this hero. Desktop
+   keeps the wide landscape banner; mobile switches (via <picture>) to the
+   venue entrance photo instead, since a portrait crop of the banner has no
+   clean area left once the baked-in text is avoided. */
+.page-hero--news .page-hero__media::after {
+  background: linear-gradient(90deg, rgba(15, 10, 6, 0.88) 0%, rgba(15, 10, 6, 0.58) 48%, rgba(15, 10, 6, 0.18) 76%, transparent 92%);
+}
+.page-hero--news .page-hero__media img { object-position: 8% 40%; }
+@media (max-width: 720px) {
+  .page-hero--news .page-hero__media img { object-position: 62% 38%; }
 }
 
 /* --- 2. The content curtain ---------------------------------------

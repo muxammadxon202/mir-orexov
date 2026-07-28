@@ -115,12 +115,15 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="page-hero">
+    <section class="page-hero page-hero--news">
       <div class="page-hero__media">
-        <img src="../../../assets/img/news/f-istanbul-2026/hero-1920.webp"
-             srcset="../../../assets/img/news/f-istanbul-2026/hero-1000.webp 1000w, ../../../assets/img/news/f-istanbul-2026/hero-1920.webp 1920w"
-             sizes="100vw" width="1920" height="843" style="object-position: 12% 38%;"
-             alt="F.Istanbul trade fair booths, Istanbul" fetchpriority="high" />
+        <picture>
+          <source media="(max-width: 720px)" srcset="../../../assets/img/news/f-istanbul-2026/venue.webp" />
+          <img src="../../../assets/img/news/f-istanbul-2026/hero-1920.webp"
+               srcset="../../../assets/img/news/f-istanbul-2026/hero-1000.webp 1000w, ../../../assets/img/news/f-istanbul-2026/hero-1920.webp 1920w"
+               sizes="100vw" width="1920" height="843"
+               alt="F.Istanbul trade fair booths, Istanbul" fetchpriority="high" />
+        </picture>
       </div>
       <div class="page-hero__inner">
         <div class="page-hero__copy">
@@ -135,12 +138,16 @@
     </section>
 
     <div class="page-flow">
-      <section class="section" style="padding-top: clamp(2.5rem, 6vw, 4rem);">
+      <section class="section" style="padding-top: clamp(2.5rem, 6vw, 4rem); padding-bottom: 0;">
         <div class="container">
           <nav class="breadcrumb catalog-breadcrumb" aria-label="Breadcrumb">
             <a href="../../../en/index.html">Home</a><span class="breadcrumb-sep">›</span><a href="../../../en/news.html">News</a><span class="breadcrumb-sep">›</span><span aria-current="page">Mir Orexov at F.Istanbul 2026</span>
           </nav>
+        </div>
+      </section>
 
+      <section class="section">
+        <div class="container two-col two-col--about" style="align-items: start;">
           <div class="article-body" data-reveal>
             <time class="news-card-date" datetime="2026-07-27">27 July 2026</time>
 
@@ -161,27 +168,24 @@
             <p>We look forward to meeting current and future partners at the show to discuss volumes, pricing and logistics for direct supply from Uzbekistan.</p>
             <p>Stay tuned — we&rsquo;ll share our exact booth and hall number closer to the event.</p>
           </div>
-        </div>
-      </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-eyebrow">Photo Report</div>
-          <h2 style="margin-bottom: 24px;">What F.Istanbul Looks Like</h2>
-          <div class="sam-slider" data-carousel-label="Photos from F.Istanbul">
-            <div class="sam-slider__track">
-              <img src="../../../assets/img/news/f-istanbul-2026/venue.webp" width="939" height="919" alt="Entrance to F.Istanbul" class="sam-slide active" data-caption-en="Entrance to F.Istanbul, Istanbul" data-caption-ru="Entrance to F.Istanbul, Istanbul">
-              <img loading="lazy" src="../../../assets/img/news/f-istanbul-2026/hall-confectionery.webp" width="1200" height="680" alt="The confectionery hall at F.Istanbul" class="sam-slide" data-caption-en="The confectionery hall" data-caption-ru="The confectionery hall">
-              <img loading="lazy" src="../../../assets/img/news/f-istanbul-2026/hall-toys.webp" width="1600" height="897" alt="One of the exhibition halls at F.Istanbul" class="sam-slide" data-caption-en="One of the exhibition halls" data-caption-ru="One of the exhibition halls">
+          <div data-reveal>
+            <div class="section-eyebrow">Photo Report</div>
+            <div class="sam-slider" data-carousel-label="Photos from F.Istanbul">
+              <div class="sam-slider__track">
+                <img src="../../../assets/img/news/f-istanbul-2026/venue.webp" width="939" height="919" alt="Entrance to F.Istanbul" class="sam-slide active" data-caption-en="Entrance to F.Istanbul, Istanbul" data-caption-ru="Entrance to F.Istanbul, Istanbul">
+                <img loading="lazy" src="../../../assets/img/news/f-istanbul-2026/hall-confectionery.webp" width="1200" height="680" alt="The confectionery hall at F.Istanbul" class="sam-slide" data-caption-en="The confectionery hall" data-caption-ru="The confectionery hall">
+                <img loading="lazy" src="../../../assets/img/news/f-istanbul-2026/hall-toys.webp" width="1600" height="897" alt="One of the exhibition halls at F.Istanbul" class="sam-slide" data-caption-en="One of the exhibition halls" data-caption-ru="One of the exhibition halls">
+              </div>
+              <div class="sam-slider__caption">Entrance to F.Istanbul, Istanbul</div>
+              <div class="sam-slider__dots">
+                <button class="sam-dot active" data-idx="0"></button>
+                <button class="sam-dot" data-idx="1"></button>
+                <button class="sam-dot" data-idx="2"></button>
+              </div>
+              <button class="sam-arrow sam-arrow--prev" aria-label="Previous">&#8592;</button>
+              <button class="sam-arrow sam-arrow--next" aria-label="Next">&#8594;</button>
             </div>
-            <div class="sam-slider__caption">Entrance to F.Istanbul, Istanbul</div>
-            <div class="sam-slider__dots">
-              <button class="sam-dot active" data-idx="0"></button>
-              <button class="sam-dot" data-idx="1"></button>
-              <button class="sam-dot" data-idx="2"></button>
-            </div>
-            <button class="sam-arrow sam-arrow--prev" aria-label="Previous">&#8592;</button>
-            <button class="sam-arrow sam-arrow--next" aria-label="Next">&#8594;</button>
           </div>
         </div>
       </section>
