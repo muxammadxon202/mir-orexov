@@ -896,6 +896,14 @@ html.intro-seen [data-animate-load="5"] { animation-delay: 600ms; }
 .article-body li { color: var(--brown-800); line-height: 1.6; margin-bottom: 8px; }
 .article-body li:last-child { margin-bottom: 0; }
 
+/* The article text usually runs longer than one photo, so the two-col row
+   would otherwise leave the media column's empty space showing once its
+   content ends — pin it instead, so it tracks the text as it scrolls. */
+.fi-media-col { position: sticky; top: calc(var(--topbar-h, 0px) + var(--navbar-h, 0px) + 24px); }
+@media (max-width: 1024px) {
+  .fi-media-col { position: static; }
+}
+
 .spec-list { margin: 20px 0 28px; border-top: 1px solid var(--border); }
 .spec-row {
   display: flex;
