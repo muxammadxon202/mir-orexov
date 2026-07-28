@@ -111,9 +111,12 @@
     <!-- HERO -->
     <section class="page-hero">
       <div class="page-hero__media">
-        <img src="../assets/img/about/factory-facade-1920.webp"
-             srcset="../assets/img/about/factory-facade-1200.webp 1200w, ../assets/img/about/factory-facade-1920.webp 1920w"
-             sizes="100vw" width="1920" height="1383" alt="Mir Orexov production site in Samarkand" fetchpriority="high" />
+        <picture>
+          <source media="(max-width: 720px)" srcset="../assets/img/about/hero-mobile.webp" />
+          <img src="../assets/img/about/factory-facade-1920.webp"
+               srcset="../assets/img/about/factory-facade-1200.webp 1200w, ../assets/img/about/factory-facade-1920.webp 1920w"
+               sizes="100vw" width="1920" height="1383" alt="Mir Orexov production site in Samarkand" fetchpriority="high" />
+        </picture>
       </div>
       <div class="page-hero__inner">
         <div class="page-hero__copy">

@@ -2601,20 +2601,30 @@ html.intro-seen .preloader { display: none; }
   50%      { transform: translateY(7px); opacity: 1; }
 }
 
-/* F.Istanbul news hero: the source banner has its own baked-in headline
-   ("26-29 AUGUST 2026 ISTANBUL EXPO CENTER") running almost the full frame,
-   so the standard left scrim isn't dark or wide enough to keep our copy from
-   visually fighting it — widen and deepen it just for this hero. Desktop
-   keeps the wide landscape banner; mobile switches (via <picture>) to the
-   venue entrance photo instead, since a portrait crop of the banner has no
-   clean area left once the baked-in text is avoided. */
-.page-hero--news .page-hero__media::after {
-  background: linear-gradient(90deg, rgba(15, 10, 6, 0.88) 0%, rgba(15, 10, 6, 0.58) 48%, rgba(15, 10, 6, 0.18) 76%, transparent 92%);
-}
-.page-hero--news .page-hero__media img { object-position: 8% 40%; }
+/* F.Istanbul news hero: the headline copy moved off the photo entirely (into
+   the .article-hero-head card below), so the hero is just the banner shown
+   as delivered — no scrim needed, the image is dark on its own. Desktop
+   keeps the wide landscape banner; mobile switches (via <picture>) to a
+   dedicated portrait crop. */
+.page-hero--plain .page-hero__media::after { background: none; }
+.page-hero--news .page-hero__media img { object-position: 50% 35%; }
 @media (max-width: 720px) {
-  .page-hero--news .page-hero__media img { object-position: 62% 38%; }
+  .page-hero--news .page-hero__media img { object-position: 50% 30%; }
 }
+
+/* Heading card that replaced the on-photo hero copy: a light, more
+   transparent panel than the standard .two-col card (0.78) so the page
+   background reads through it instead of sitting fully opaque. */
+.article-hero-head {
+  background: rgba(251, 247, 235, 0.55);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  max-width: 640px;
+}
+.article-hero-head h1 { margin-bottom: 10px; }
+.article-hero-head p { color: var(--brown-800); margin: 0; max-width: 52ch; }
 
 /* --- 2. The content curtain ---------------------------------------
    Sits above the hero and slides over it. The nut pattern lives here,
