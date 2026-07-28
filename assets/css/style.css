@@ -884,6 +884,15 @@ html.intro-seen [data-animate-load="5"] { animation-delay: 600ms; }
 
 .product-info .product-name { margin-bottom: 16px; }
 
+/* ===== News article body (e.g. news/f-istanbul-2026/) ===== */
+.article-body { max-width: 720px; margin: 0 auto; }
+.article-body .news-card-date { display: block; color: var(--gold-text); font-weight: 600; font-size: var(--fs-sm); letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 20px; }
+.article-body p { color: var(--brown-800); line-height: 1.7; margin: 0 0 18px; max-width: none; }
+.article-body h3 { margin: 32px 0 12px; }
+.article-body ul { list-style: disc; padding-left: 1.3em; margin: 0 0 18px; }
+.article-body li { color: var(--brown-800); line-height: 1.6; margin-bottom: 8px; }
+.article-body li:last-child { margin-bottom: 0; }
+
 .spec-list { margin: 20px 0 28px; border-top: 1px solid var(--border); }
 .spec-row {
   display: flex;

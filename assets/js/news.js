@@ -5,9 +5,11 @@
 
   function t(article) {
     const lang = window.i18n ? window.i18n.getLang() : "ru";
+    const isEn = lang === "en" && article.titleEn;
     return {
-      title: (lang === "en" && article.titleEn) || article.title,
-      body: (lang === "en" && article.bodyEn) || article.body,
+      title: (isEn && article.titleEn) || article.title,
+      excerpt: (isEn && (article.excerptEn || article.bodyEn)) || article.excerpt || article.body,
+      url: (isEn && article.urlEn) || article.url || "",
     };
   }
 
@@ -23,16 +25,16 @@
   function render() {
     gridEl.innerHTML = "";
     articles.forEach((article) => {
-      const { title, body } = t(article);
-      const card = document.createElement("article");
+      const { title, excerpt, url } = t(article);
+      const card = document.createElement(url ? "a" : "article");
       card.className = "cat-tile news-card";
-      const excerptHtml = window.marked ? window.marked.parse(body || "") : (body || "");
+      if (url) card.href = url;
       card.innerHTML = `
         ${article.image ? `<div class="cat-tile-photo"><img src="${article.image}" alt="${title}" loading="lazy" /></div>` : ""}
         <div class="news-card-body">
           <time class="news-card-date">${formatDate(article.date)}</time>
           <h3 class="news-card-title">${title}</h3>
-          <div class="news-card-excerpt">${excerptHtml}</div>
+          <div class="news-card-excerpt"><p>${excerpt || ""}</p></div>
         </div>
       `;
       gridEl.appendChild(card);
