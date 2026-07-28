@@ -337,7 +337,8 @@ button { font-family: inherit; cursor: pointer; }
   overflow: hidden;
 }
 
-.lang-switch button {
+.lang-switch button,
+.lang-switch a {
   background: transparent;
   color: var(--text-dim);
   border: none;
@@ -347,8 +348,10 @@ button { font-family: inherit; cursor: pointer; }
   transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
 }
 
-.lang-switch button.active { background: var(--gold-soft); color: var(--gold-text); }
-.lang-switch button:not(.active):hover { color: var(--text); }
+.lang-switch button.active,
+.lang-switch a.active { background: var(--gold-soft); color: var(--gold-text); }
+.lang-switch button:not(.active):hover,
+.lang-switch a:not(.active):hover { color: var(--text); }
 
 .nav-toggle {
   display: none;
