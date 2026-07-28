@@ -108,7 +108,7 @@
 
   <main id="main">
     <!-- HERO -->
-    <section class="page-hero">
+    <section class="page-hero page-hero--art">
       <div class="page-hero__media">
         <picture>
           <source media="(max-width: 720px)"
@@ -133,8 +133,26 @@
 
     <div class="page-flow">
       <nav class="breadcrumb catalog-breadcrumb" id="catalog-breadcrumb" aria-label="Хлебные крошки"></nav>
+
+      <section class="section" id="catalog-hero-section" style="padding-top: 0; display: none;">
+        <div class="container two-col product-page" id="catalog-hero">
+          <div class="product-media">
+            <img id="catalog-hero-photo" class="product-hero-photo" alt="" />
+            <div id="catalog-hero-gallery" class="catalog-gallery" style="display: none;"></div>
+          </div>
+          <div class="product-info">
+            <div class="section-eyebrow" id="catalog-hero-eyebrow"></div>
+            <h2 class="product-name" id="catalog-hero-name"></h2>
+            <p class="product-lead" id="catalog-hero-lead"></p>
+            <dl class="spec-list" id="catalog-hero-specs"></dl>
+            <button type="button" class="btn btn-primary btn-lg" id="catalog-hero-quote-btn" data-en="Request a Quote">Оставить заявку</button>
+          </div>
+        </div>
+      </section>
+
       <section class="section" style="padding-top: 0;">
         <div class="container">
+          <h2 class="product-section-title" id="catalog-grid-title" style="display: none;" data-en="In this category">В этой категории</h2>
           <div class="grid-auto" id="catalog-grid">
             <!-- Skeleton placeholders: replaced by catalog.js as soon as catalog.json arrives -->
             <div class="skeleton-tile" aria-hidden="true"><div class="skeleton-tile__photo skeleton-shimmer"></div><div class="skeleton-tile__line skeleton-shimmer"></div></div>
@@ -146,16 +164,6 @@
 
           <div id="catalog-empty" class="catalog-empty">
             <p data-en="Coming soon — no products in this category yet.">Скоро в каталоге — пока нет товаров в этой категории.</p>
-          </div>
-
-          <div id="catalog-quote" class="catalog-quote">
-            <img id="catalog-quote-thumb" class="catalog-quote-thumb" alt="" />
-            <div id="catalog-quote-gallery" class="catalog-gallery"></div>
-            <p class="catalog-quote-label" data-en="You are interested in:">Вас интересует:</p>
-            <p class="catalog-quote-name" id="catalog-quote-name"></p>
-            <p class="catalog-quote-weight" id="catalog-quote-weight"></p>
-            <p class="catalog-quote-desc" id="catalog-quote-desc"></p>
-            <button type="button" id="catalog-quote-link" class="btn btn-primary" data-en="Request a Quote">Оставить заявку</button>
           </div>
         </div>
       </section>

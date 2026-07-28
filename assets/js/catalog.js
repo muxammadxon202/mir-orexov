@@ -65,8 +65,28 @@
   const titleEl = document.querySelector("#catalog-title");
   const breadcrumbEl = document.querySelector("#catalog-breadcrumb");
   const gridEl = document.querySelector("#catalog-grid");
+  const gridTitleEl = document.querySelector("#catalog-grid-title");
   const emptyEl = document.querySelector("#catalog-empty");
-  const quoteEl = document.querySelector("#catalog-quote");
+  const heroSectionEl = document.querySelector("#catalog-hero-section");
+  const heroPhotoEl = document.querySelector("#catalog-hero-photo");
+  const heroGalleryEl = document.querySelector("#catalog-hero-gallery");
+  const heroEyebrowEl = document.querySelector("#catalog-hero-eyebrow");
+  const heroNameEl = document.querySelector("#catalog-hero-name");
+  const heroLeadEl = document.querySelector("#catalog-hero-lead");
+  const heroSpecsEl = document.querySelector("#catalog-hero-specs");
+  const heroQuoteBtn = document.querySelector("#catalog-hero-quote-btn");
+
+  // Origin is inherited from the nearest ancestor that declares one (e.g. candied
+  // fruit sourced from China), falling back to our own Samarkand production —
+  // mirrors originOf() in tools/build-catalog.js so the two renderers agree.
+  const DEFAULT_ORIGIN = { ru: "Узбекистан, Самаркандская область", en: "Uzbekistan, Samarkand region" };
+  function originOf(trail) {
+    for (let i = trail.length - 1; i >= 0; i--) {
+      const v = isEn() ? trail[i].originEn : trail[i].origin;
+      if (v) return v;
+    }
+    return isEn() ? DEFAULT_ORIGIN.en : DEFAULT_ORIGIN.ru;
+  }
 
   function nodeAtPath(path) {
     let node = root;
@@ -117,6 +137,76 @@
     emptyEl.style.display = !hasChildren && !isLeaf ? "" : "none";
     // Root shows wide gradient category cards; deeper levels use product tiles
     gridEl.classList.toggle("grid-cards", isCategoryLevel);
+
+    // Every node below the root — whether it's a true leaf product or a
+    // category that also carries its own photo/description (e.g. "Сушёные
+    // абрикосы" itself, above its four varieties) — gets the same product
+    // card the static /catalog/... pages render, so the two routes into the
+    // same content never disagree again.
+    const showHero = !isCategoryLevel && (hasChildren || isLeaf) && (node.img || node.desc);
+    if (heroSectionEl) heroSectionEl.style.display = showHero ? "" : "none";
+    if (gridTitleEl) gridTitleEl.style.display = showHero && hasChildren ? "" : "none";
+
+    if (showHero) {
+      const descText = isEn() ? node.descEn : node.desc;
+      const gallery = Array.isArray(node.gallery) ? node.gallery : [];
+      const ancestorNames = trail.slice(1, -1).map(t);
+      const categoryNames = trail.slice(1).map(t);
+
+      if (heroEyebrowEl) heroEyebrowEl.textContent = ancestorNames.join(" · ") || (isEn() ? "Catalog" : "Каталог");
+      if (heroNameEl) heroNameEl.textContent = t(node);
+      if (heroLeadEl) {
+        heroLeadEl.textContent = descText || "";
+        heroLeadEl.style.display = descText ? "" : "none";
+      }
+
+      if (heroSpecsEl) {
+        heroSpecsEl.innerHTML = "";
+        const rows = [
+          [isEn() ? "Origin" : "Происхождение", originOf(trail)],
+          [isEn() ? "Category" : "Категория", categoryNames.join(" / ") || t(node)],
+        ];
+        const weightText = isEn() ? node.weightEn : node.weight;
+        if (weightText) rows.push([isEn() ? "Packing" : "Фасовка", weightText]);
+        rows.forEach(([label, value]) => {
+          const row = document.createElement("div");
+          row.className = "spec-row";
+          const dt = document.createElement("dt");
+          dt.textContent = label;
+          const dd = document.createElement("dd");
+          dd.textContent = value;
+          row.appendChild(dt);
+          row.appendChild(dd);
+          heroSpecsEl.appendChild(row);
+        });
+      }
+
+      if (heroPhotoEl && heroGalleryEl) {
+        if (gallery.length > 1) {
+          heroPhotoEl.style.display = "none";
+          heroGalleryEl.style.display = "";
+          heroGalleryEl.innerHTML = "";
+          buildGallery(heroGalleryEl, gallery, t(node));
+        } else {
+          heroGalleryEl.style.display = "none";
+          heroGalleryEl.innerHTML = "";
+          if (node.img) {
+            heroPhotoEl.src = node.img;
+            heroPhotoEl.alt = t(node);
+            heroPhotoEl.style.display = "";
+          } else {
+            heroPhotoEl.style.display = "none";
+          }
+        }
+      }
+
+      if (heroQuoteBtn) {
+        const fullName = categoryNames.join(" — ") || t(node);
+        const hideQty = path[0] === "packaging";
+        heroQuoteBtn.onclick = () =>
+          openQuoteModal(fullName, node.img, { gallery: node.gallery, weight: node.weight, weightEn: node.weightEn, hideQty });
+      }
+    }
 
     if (hasChildren) {
       gridEl.innerHTML = "";
@@ -189,53 +279,6 @@
       });
     }
 
-    if (isLeaf) {
-      const fullName = trail
-        .slice(1)
-        .map((n) => t(n))
-        .join(" — ");
-      quoteEl.querySelector("#catalog-quote-name").textContent = fullName;
-
-      const weightEl = quoteEl.querySelector("#catalog-quote-weight");
-      const weightText = window.i18n && window.i18n.getLang() === "en" ? node.weightEn : node.weight;
-      weightEl.textContent = weightText || "";
-      weightEl.style.display = weightText ? "" : "none";
-
-      const descEl = quoteEl.querySelector("#catalog-quote-desc");
-      const descText = window.i18n && window.i18n.getLang() === "en" ? node.descEn : node.desc;
-      descEl.textContent = descText || "";
-
-      const thumbEl = quoteEl.querySelector("#catalog-quote-thumb");
-      const galleryEl = quoteEl.querySelector("#catalog-quote-gallery");
-      galleryEl.innerHTML = "";
-
-      if (node.gallery && node.gallery.length > 1) {
-        thumbEl.style.display = "none";
-        galleryEl.style.display = "";
-        buildGallery(galleryEl, node.gallery, fullName);
-      } else {
-        galleryEl.style.display = "none";
-        if (node.img) {
-          thumbEl.src = node.img;
-          thumbEl.alt = fullName;
-          thumbEl.style.display = "";
-        } else {
-          thumbEl.style.display = "none";
-        }
-      }
-
-      const quoteBtn = quoteEl.querySelector("#catalog-quote-link");
-      const hideQty = path[0] === "packaging";
-      quoteBtn.onclick = () => openQuoteModal(fullName, node.img, { gallery: node.gallery, weight: node.weight, weightEn: node.weightEn, hideQty });
-
-      quoteEl.style.display = "block";
-      quoteEl.classList.remove("quote-anim");
-      void quoteEl.offsetWidth; // restart the entrance animation on every visit
-      quoteEl.classList.add("quote-anim");
-    } else {
-      quoteEl.style.display = "none";
-      quoteEl.classList.remove("quote-anim");
-    }
   }
 
   function buildTilePreview(photoEl, images, alt) {
