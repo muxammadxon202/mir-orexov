@@ -2863,14 +2863,23 @@ html.intro-seen .preloader { display: none; }
 
 /* ---- Artwork hero ----
    A composed product graphic rather than a photograph, shown exactly as
-   delivered: no wash, no mask, no panel over the artwork itself — readability
-   there comes from weight and dark ink only. The one exception is the fixed
-   nav strip at the very top: the artwork's brightness varies by crop/viewport
-   and can't guarantee contrast for the logo + menu sitting on top of it, so a
-   short, fixed-height scrim (not a percentage — must stay pinned to the nav's
-   own height, not stretch with a tall hero) darkens just that band. */
+   delivered — the artwork itself is never masked or washed. The nav strip at
+   the very top always gets a short, fixed-height scrim (pinned to the nav's
+   own height, not stretching with a tall hero) since its brightness varies by
+   crop/viewport. On desktop the root/category copy block sits mid-frame,
+   over whatever the artwork happens to put there (the logo medallion, in the
+   default crop) — bold dark ink alone can't hold contrast against that, so
+   desktop also gets the same left-weighted scrim the photographic heroes
+   (e.g. About) use, same idea as the top band: darken behind the copy only. */
 .page-hero--art .page-hero__media::after {
   background: linear-gradient(180deg, rgba(20, 15, 8, 0.58) 0, rgba(20, 15, 8, 0.32) 90px, transparent 170px);
+}
+@media (min-width: 721px) {
+  .page-hero--art .page-hero__media::after {
+    background:
+      linear-gradient(180deg, rgba(20, 15, 8, 0.58) 0, rgba(20, 15, 8, 0.32) 90px, transparent 170px),
+      linear-gradient(90deg, rgba(20, 15, 8, 0.6) 0%, rgba(20, 15, 8, 0.28) 42%, transparent 62%);
+  }
 }
 
 /* The kicker is a single short line of small caps and it sits at the top of the
@@ -2894,6 +2903,15 @@ html.intro-seen .preloader { display: none; }
 .page-hero--art h1 { color: var(--brown-900); font-weight: 700; }
 .page-hero--art .page-hero__lead { color: var(--brown-900); font-weight: 700; }
 .page-hero--art .page-hero__scroll { color: var(--brown-900); }
+
+/* Dark ink reads straight off the light artwork on mobile (no scrim there).
+   Desktop now sits on the darkened scrim above, so it needs the light ink
+   every other photographic hero uses over its own scrim. */
+@media (min-width: 721px) {
+  .page-hero--art h1 { color: var(--cream-50); }
+  .page-hero--art .page-hero__lead { color: rgba(251, 247, 235, 0.88); }
+  .page-hero--art .page-hero__scroll { color: var(--cream-50); }
+}
 
 @media (max-width: 720px) {
   /* The phone artwork carries 240px of its own cream added above the
