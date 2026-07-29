@@ -267,8 +267,20 @@ function page({ en, depth, url, altUrl, node, trail, children }) {
             .map((c) => {
               const cDesc = desc(c, en);
               const cImg = c.img ? rel(c.img, depth) : '';
+              // Matches catalog.js's three-way fallback: a real photo, else a
+              // service icon for a description-only entry (e.g. "Готовые
+              // решения" — no photo of its own, it's a turnkey offering, not
+              // a single product), else just the bare title.
+              const photoHtml = cImg
+                ? `<div class="cat-tile-photo"><img src="${esc(cImg)}" alt="${esc(T(c))}" loading="lazy" /></div>`
+                : cDesc
+                ? `<div class="cat-tile-photo cat-tile-photo--service">
+              <svg class="cat-tile-service-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 13a8 8 0 0116 0"/><rect x="2" y="13" width="5" height="7" rx="1.5"/><rect x="17" y="13" width="5" height="7" rx="1.5"/><path d="M20 20a4 4 0 01-4 4h-2"/></svg>
+              <p class="cat-tile-service-desc">${esc(cDesc)}</p>
+            </div>`
+                : `<div class="cat-tile-photo cat-tile-photo--empty">${esc(T(c))}</div>`;
               return `<a class="cat-tile tone-${esc(cat.id)}" href="${esc(c.id)}/">
-            ${cImg ? `<div class="cat-tile-photo"><img src="${esc(cImg)}" alt="${esc(T(c))}" loading="lazy" /></div>` : ''}
+            ${photoHtml}
             <div class="cat-tile-title">${esc(T(c))}</div>
             ${cDesc && cImg ? `<p class="cat-tile-desc">${esc(cDesc)}</p>` : ''}
           </a>`;

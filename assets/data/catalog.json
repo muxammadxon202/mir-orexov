@@ -645,6 +645,7 @@
           "id": "bulk",
           "title": "Фасовка",
           "titleEn": "Bulk Packing",
+          "img": "assets/img/products/packaging/lineup.avif",
           "children": [
             {
               "id": "clear-bags",
@@ -699,8 +700,8 @@
           "children": [
             {
               "id": "branded-jars",
-              "title": "Брендированные банки",
-              "titleEn": "Branded Jars",
+              "title": "Брендированные пакеты Mir Orexov",
+              "titleEn": "Mir Orexov Branded Pouches",
               "img": "assets/img/products/packaging/branded-pouch-almonds.webp",
               "gallery": [
                 "assets/img/products/packaging/branded-pouch-almonds.webp",
