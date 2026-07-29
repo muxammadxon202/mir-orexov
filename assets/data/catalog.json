@@ -699,9 +699,15 @@
           "children": [
             {
               "id": "branded-jars",
-              "title": "Брендированные банки Mir Orexov",
-              "titleEn": "Mir Orexov Branded Jars",
-              "img": "assets/img/products/packaging/branded-jars.avif"
+              "title": "Брендированные банки",
+              "titleEn": "Branded Jars",
+              "img": "assets/img/products/packaging/branded-pouch-almonds.webp",
+              "gallery": [
+                "assets/img/products/packaging/branded-pouch-almonds.webp",
+                "assets/img/products/packaging/branded-pouch-seeds.webp",
+                "assets/img/products/packaging/branded-pouch-pistachios.webp",
+                "assets/img/products/packaging/branded-pouch-cashews.webp"
+              ]
             },
             {
               "id": "custom-boxes",

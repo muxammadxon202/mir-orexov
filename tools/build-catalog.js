@@ -232,6 +232,18 @@ function page({ en, depth, url, altUrl, node, trail, children }) {
     )
     .join('<span class="breadcrumb-sep">›</span>');
 
+  // The rich photo+spec-list card only makes sense for something you'd
+  // actually buy as a unit: a true leaf product, or the Packaging › Branding
+  // line (each of its children — jars, boxes, private label — is itself a
+  // distinct branded product worth a hero). Every other branch (Сухофрукты,
+  // Орехи, and their own sub-branches) is a category umbrella covering many
+  // different items, so showing one stock photo as if it were "the product"
+  // misrepresents it — those get the plain header only, then straight to
+  // the children grid.
+  const isBranch = !!children;
+  const inBranding = trail[0] && trail[0].id === 'packaging' && trail[1] && trail[1].id === 'branding';
+  const showProductHero = !isBranch || inBranding;
+
   const galleryHtml = gallery.length > 1
     ? `<div class="product-gallery" data-pfade>${gallery
         .map((g, i) => `<img src="${esc(g)}" alt="${esc(name)}" loading="${i ? 'lazy' : 'eager'}" class="product-gallery__img${i ? '' : ' active'}" />`)
@@ -322,7 +334,7 @@ ${JSON.stringify(breadcrumbLd, null, 2)}
       </div>
     </section>
 
-    <section class="section" style="padding-top:0">
+    ${showProductHero ? `<section class="section" style="padding-top:0">
       <div class="container two-col product-page">
         <div class="product-media">${galleryHtml}</div>
         <div class="product-info">
@@ -337,7 +349,7 @@ ${JSON.stringify(breadcrumbLd, null, 2)}
           <button type="button" class="btn btn-primary btn-lg" id="page-quote-btn">${esc(L.request)}</button>
         </div>
       </div>
-    </section>
+    </section>` : ''}
 
     ${childHtml}
   </main>

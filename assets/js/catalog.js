@@ -138,14 +138,20 @@
     // Root shows wide gradient category cards; deeper levels use product tiles
     gridEl.classList.toggle("grid-cards", isCategoryLevel);
 
-    // Every node below the root — whether it's a true leaf product or a
-    // category that also carries its own photo/description (e.g. "Сушёные
-    // абрикосы" itself, above its four varieties) — gets the same product
-    // card the static /catalog/... pages render, so the two routes into the
-    // same content never disagree again.
-    const showHero = !isCategoryLevel && (hasChildren || isLeaf) && (node.img || node.desc);
+    // The rich photo+spec-list card only makes sense for something you'd
+    // actually buy as a unit: a true leaf product, or the Packaging ›
+    // Branding line (each of its children — jars, boxes, private label — is
+    // itself a distinct branded product worth a hero). Every other branch is
+    // a category umbrella covering many different items, so one stock photo
+    // standing in as "the product" misrepresents it — those just get the
+    // grid, matching tools/build-catalog.js's static output.
+    const inBranding = path[0] === "packaging" && path[1] === "branding";
+    const showHero = !isCategoryLevel && (isLeaf || inBranding) && (node.img || node.desc);
     if (heroSectionEl) heroSectionEl.style.display = showHero ? "" : "none";
-    if (gridTitleEl) gridTitleEl.style.display = showHero && hasChildren ? "" : "none";
+    // Matches build-catalog.js: the "In this category" heading runs above
+    // the grid on every non-root branch page, independent of whether the
+    // hero card above it is showing.
+    if (gridTitleEl) gridTitleEl.style.display = !isCategoryLevel && hasChildren ? "" : "none";
 
     if (showHero) {
       const descText = isEn() ? node.descEn : node.desc;
