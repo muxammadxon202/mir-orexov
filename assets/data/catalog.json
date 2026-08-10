@@ -28,8 +28,8 @@
               "dryingMethodEn": "Solar",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "10 кг (картонная коробка)",
-              "weightEn": "10 kg carton box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "limonka",
@@ -44,8 +44,8 @@
               "dryingMethodEn": "Processed",
               "sulphurDioxide": "Обработано SO2",
               "sulphurDioxideEn": "SO2 Treated",
-              "weight": "5 кг | 10 кг (коробка)",
-              "weightEn": "5kg | 10kg box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "natural",
@@ -60,8 +60,8 @@
               "dryingMethodEn": "Solar",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "10 кг (картонная коробка)",
-              "weightEn": "10kg carton box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "turshak",
@@ -76,8 +76,8 @@
               "dryingMethodEn": "Processed",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "5/10 кг",
-              "weightEn": "5/10 kg"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             }
           ],
           "desc": "Курага солнечной сушки — сорта от промышленного до люкс.",
@@ -102,14 +102,24 @@
               "dryingMethodEn": "Shade dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "5 кг | 10 кг (коробка)",
-              "weightEn": "5kg | 10kg box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "soyagi",
               "title": "Изюм «Сояги»",
               "titleEn": "Raisins Soyagi",
-              "img": "assets/img/products/raisin-soyagi.avif"
+              "img": "assets/img/products/raisin-soyagi.avif",
+              "variety": "Изюм жёлтый, гибрид",
+              "varietyEn": "Raisins: Golden",
+              "moisture": "14-16%",
+              "moistureEn": "14-16 %",
+              "dryingMethod": "Обработанный",
+              "dryingMethodEn": "Processed",
+              "sulphurDioxide": "Обработано SO2",
+              "sulphurDioxideEn": "SO2 Treated",
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "yellow-hybrid",
@@ -124,8 +134,8 @@
               "dryingMethodEn": "Processed",
               "sulphurDioxide": "Обработано SO2",
               "sulphurDioxideEn": "SO2 Treated",
-              "weight": "5 кг | 10 кг (коробка)",
-              "weightEn": "5kg | 10kg box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "yellow-califar",
@@ -140,14 +150,24 @@
               "dryingMethodEn": "Processed",
               "sulphurDioxide": "Обработано SO2",
               "sulphurDioxideEn": "SO2 Treated",
-              "weight": "5 кг | 10 кг (коробка)",
-              "weightEn": "5kg | 10kg box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "sultan",
               "title": "Изюм коричневый «Джавз»",
               "titleEn": "Raisins Brown Javz",
-              "img": "assets/img/products/raisin-sultan.avif"
+              "img": "assets/img/products/raisin-sultan.avif",
+              "variety": "Изюм «Абджуш» (Султан)",
+              "varietyEn": "Raisins: Abjush",
+              "moisture": "14-16%",
+              "moistureEn": "14-16 %",
+              "dryingMethod": "Обработанный",
+              "dryingMethodEn": "Processed",
+              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxideEn": "Absent",
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "javz",
@@ -162,8 +182,8 @@
               "dryingMethodEn": "Processed",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "5 кг | 10 кг (коробка)",
-              "weightEn": "5kg | 10kg box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "red-thompson",
@@ -178,8 +198,8 @@
               "dryingMethodEn": "Sund dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "5 кг | 10 кг (коробка)",
-              "weightEn": "5kg | 10kg box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "shigani-red",
@@ -194,8 +214,8 @@
               "dryingMethodEn": "Sund dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "5 кг | 10 кг (коробка)",
-              "weightEn": "5kg | 10kg box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             }
           ],
           "desc": "Восемь сортов изюма — от голден до чёрного кишмиша.",
@@ -220,8 +240,8 @@
               "dryingMethodEn": "Processed",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "5 кг | 10 кг (коробка)",
-              "weightEn": "5kg | 10kg box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "larch",
@@ -236,8 +256,8 @@
               "dryingMethodEn": "Sun drying",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "10 кг (коробка)",
-              "weightEn": "10 kg box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "with-pit",
@@ -252,8 +272,8 @@
               "dryingMethodEn": "Mechanically dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "10 кг",
-              "weightEn": "10 kg"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             }
           ],
           "desc": "Чернослив с косточкой и без, мягкая сушка.",
@@ -265,7 +285,17 @@
           "titleEn": "Dried Figs",
           "img": "assets/img/products/dried-fig.webp",
           "desc": "Сушёный инжир — вяленые плоды с плотной медовой мякотью и семенами.",
-          "descEn": "Dried figs — dense honeyed flesh with the seeds intact."
+          "descEn": "Dried figs — dense honeyed flesh with the seeds intact.",
+          "variety": "Унаби, высший сорт",
+          "varietyEn": "JUJUBE high",
+          "moisture": "20-22%",
+          "moistureEn": "20-22 %",
+          "dryingMethod": "Солнечная сушка",
+          "dryingMethodEn": "Sun dried",
+          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxideEn": "Absent",
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         },
         {
           "id": "jida",
@@ -273,7 +303,17 @@
           "titleEn": "Jida",
           "img": "assets/img/products/jida.avif",
           "desc": "Джида — сладкий плод серебристого лоха, восточная классика.",
-          "descEn": "Jida — sweet silverberry fruit, an oriental classic."
+          "descEn": "Jida — sweet silverberry fruit, an oriental classic.",
+          "variety": "Унаби, высший сорт",
+          "varietyEn": "JUJUBE high",
+          "moisture": "20-22%",
+          "moistureEn": "20-22 %",
+          "dryingMethod": "Солнечная сушка",
+          "dryingMethodEn": "Sun dried",
+          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxideEn": "Absent",
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         },
         {
           "id": "unabi",
@@ -290,8 +330,8 @@
           "dryingMethodEn": "Sun dried",
           "sulphurDioxide": "Не содержит SO2",
           "sulphurDioxideEn": "Absent",
-          "weight": "25 кг (мешок)",
-          "weightEn": "25kg bag"
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         },
         {
           "id": "compote-mix",
@@ -308,13 +348,15 @@
           "dryingMethodEn": "Sun dried",
           "sulphurDioxide": "SO2 1800 ppm",
           "sulphurDioxideEn": "1800 ppm",
-          "weight": "20 кг (мешок)",
-          "weightEn": "20kg bag"
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         }
       ],
       "desc": "Курага, изюм, чернослив, джида, унаби и компотные смеси — солнечная сушка и промышленная калибровка.",
       "descEn": "Dried apricots, raisins, prunes, jida, unabi and compote mixes — sun-dried and industrially graded.",
-      "cutout": "assets/img/catalog/cutout/dried.webp"
+      "cutout": "assets/img/catalog/cutout/dried.webp",
+      "origin": "Узбекистан",
+      "originEn": "Uzbekistan"
     },
     {
       "id": "nuts",
@@ -341,8 +383,8 @@
               "dryingMethodEn": "Mechanically dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "10 кг (картонная коробка)",
-              "weightEn": "10 kg carton box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "peeled",
@@ -363,26 +405,56 @@
                   "dryingMethodEn": "Mechanically dried",
                   "sulphurDioxide": "Не содержит SO2",
                   "sulphurDioxideEn": "Absent",
-                  "weight": "10 кг (картонная коробка)",
-                  "weightEn": "10 kg carton box"
+                  "weight": "5-10 кг (коробка)",
+                  "weightEn": "5-10 kg (box)"
                 },
                 {
                   "id": "grade-1",
                   "title": "Грецкий орех очищенный 1-й сорт",
                   "titleEn": "Peeled Walnut, Grade 1",
-                  "img": "assets/img/products/walnut-1-category.avif"
+                  "img": "assets/img/products/walnut-1-category.avif",
+                  "variety": "Грецкий орех очищенный, целые половинки 1/1",
+                  "varietyEn": "Walnut Kernels 1/1",
+                  "moisture": "5-6%",
+                  "moistureEn": "5-6%",
+                  "dryingMethod": "Механическая сушка",
+                  "dryingMethodEn": "Mechanically dried",
+                  "sulphurDioxide": "Не содержит SO2",
+                  "sulphurDioxideEn": "Absent",
+                  "weight": "5-10 кг (коробка)",
+                  "weightEn": "5-10 kg (box)"
                 },
                 {
                   "id": "grade-2",
                   "title": "Грецкий орех очищенный 2-й сорт",
                   "titleEn": "Peeled Walnut, Grade 2",
-                  "img": "assets/img/products/walnut-2-category.avif"
+                  "img": "assets/img/products/walnut-2-category.avif",
+                  "variety": "Грецкий орех очищенный, целые половинки 1/1",
+                  "varietyEn": "Walnut Kernels 1/1",
+                  "moisture": "5-6%",
+                  "moistureEn": "5-6%",
+                  "dryingMethod": "Механическая сушка",
+                  "dryingMethodEn": "Mechanically dried",
+                  "sulphurDioxide": "Не содержит SO2",
+                  "sulphurDioxideEn": "Absent",
+                  "weight": "5-10 кг (коробка)",
+                  "weightEn": "5-10 kg (box)"
                 },
                 {
                   "id": "grade-3",
                   "title": "Грецкий орех очищенный 3-й сорт",
                   "titleEn": "Peeled Walnut, Grade 3",
-                  "img": "assets/img/products/walnut-3-category.avif"
+                  "img": "assets/img/products/walnut-3-category.avif",
+                  "variety": "Грецкий орех очищенный, целые половинки 1/1",
+                  "varietyEn": "Walnut Kernels 1/1",
+                  "moisture": "5-6%",
+                  "moistureEn": "5-6%",
+                  "dryingMethod": "Механическая сушка",
+                  "dryingMethodEn": "Mechanically dried",
+                  "sulphurDioxide": "Не содержит SO2",
+                  "sulphurDioxideEn": "Absent",
+                  "weight": "5-10 кг (коробка)",
+                  "weightEn": "5-10 kg (box)"
                 }
               ]
             },
@@ -390,19 +462,49 @@
               "id": "quarters",
               "title": "Грецкий орех, четвертинка",
               "titleEn": "Walnut Quarters",
-              "img": "assets/img/products/walnut-quarters.avif"
+              "img": "assets/img/products/walnut-quarters.avif",
+              "variety": "Грецкий орех очищенный, целые половинки 1/1",
+              "varietyEn": "Walnut Kernels 1/1",
+              "moisture": "5-6%",
+              "moistureEn": "5-6%",
+              "dryingMethod": "Механическая сушка",
+              "dryingMethodEn": "Mechanically dried",
+              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxideEn": "Absent",
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "peeled-confectionery-red",
               "title": "Грецкий орех очищенный кондитерский «Красный»",
               "titleEn": "Peeled Walnut, Confectionery \"Red\"",
-              "img": "assets/img/products/walnut-condier.avif"
+              "img": "assets/img/products/walnut-condier.avif",
+              "variety": "Грецкий орех очищенный, целые половинки 1/1",
+              "varietyEn": "Walnut Kernels 1/1",
+              "moisture": "5-6%",
+              "moistureEn": "5-6%",
+              "dryingMethod": "Механическая сушка",
+              "dryingMethodEn": "Mechanically dried",
+              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxideEn": "Absent",
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "crushed",
               "title": "Грецкий орех измельчённый",
               "titleEn": "Walnut Crushed",
-              "img": "assets/img/products/walnut-crushed.avif"
+              "img": "assets/img/products/walnut-crushed.avif",
+              "variety": "Грецкий орех очищенный, целые половинки 1/1",
+              "varietyEn": "Walnut Kernels 1/1",
+              "moisture": "5-6%",
+              "moistureEn": "5-6%",
+              "dryingMethod": "Механическая сушка",
+              "dryingMethodEn": "Mechanically dried",
+              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxideEn": "Absent",
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             }
           ],
           "desc": "Ядро половинки, четвертинки, микс и орех в скорлупе.",
@@ -427,8 +529,8 @@
               "dryingMethodEn": "Factory-dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "18 кг (мешок)",
-              "weightEn": "18kg bag"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "peeled",
@@ -443,8 +545,8 @@
               "dryingMethodEn": "factory-dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "18 кг (мешок)",
-              "weightEn": "18kg bag"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "blanched",
@@ -457,14 +559,22 @@
               "moistureEn": "7-10%",
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
-              "weight": "25 кг (мешок)",
-              "weightEn": "25kg bag"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "crushed",
               "title": "Арахис измельчённый",
               "titleEn": "Peanut Crushed",
-              "img": "assets/img/products/peanut-crushed.avif"
+              "img": "assets/img/products/peanut-crushed.avif",
+              "variety": "Арахис бланшированный, дробленый, 5мм+",
+              "varietyEn": "Peanuts kernels blanched split 5mm+",
+              "moisture": "7-10%",
+              "moistureEn": "7-10%",
+              "dryingMethod": "Механическая сушка",
+              "dryingMethodEn": "Mechanically dried",
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             }
           ],
           "desc": "Арахис сырой, жареный и бланшированный.",
@@ -489,14 +599,24 @@
               "dryingMethodEn": "Sun dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "20 кг (мешок)",
-              "weightEn": "20 kg bag"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "ahmad-agai-iran",
               "title": "Фисташки «Ахмад-Агаи», жареные, солёные (Иран)",
               "titleEn": "Pistachio Ahmad-Agai, Roasted, Salted (Iran)",
-              "img": "assets/img/products/pistachio-Фисташки Ахмад-Агаи жареные, соленые Иран.avif"
+              "img": "assets/img/products/pistachio-Фисташки Ахмад-Агаи жареные, соленые Иран.avif",
+              "variety": "Фисташки очищенные, высший сорт",
+              "varietyEn": "Pistachio kernels high",
+              "moisture": "6%",
+              "moistureEn": "6%",
+              "dryingMethod": "Солнечная сушка",
+              "dryingMethodEn": "Sun dried",
+              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxideEn": "Absent",
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "turkey-unpeeled-premium",
@@ -511,14 +631,24 @@
               "dryingMethodEn": "Sun dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "20 кг (мешок)",
-              "weightEn": "20 kg bag"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "roasted-salted-iran",
               "title": "Фисташки жареные, солёные (Иран)",
               "titleEn": "Pistachio Roasted, Salted (Iran)",
-              "img": "assets/img/products/pistachio-Фисташки жареные соленые Иран.avif"
+              "img": "assets/img/products/pistachio-Фисташки жареные соленые Иран.avif",
+              "variety": "Фисташки очищенные, высший сорт",
+              "varietyEn": "Pistachio kernels high",
+              "moisture": "6%",
+              "moistureEn": "6%",
+              "dryingMethod": "Солнечная сушка",
+              "dryingMethodEn": "Sun dried",
+              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxideEn": "Absent",
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             }
           ],
           "desc": "Фисташки жареные, солёные и натуральные.",
@@ -543,8 +673,8 @@
               "dryingMethodEn": "Factory-dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "5 кг | 10 кг (коробка)",
-              "weightEn": "5kg | 10kg box"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "unpeeled",
@@ -559,8 +689,8 @@
               "dryingMethodEn": "Factory-dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "20 кг (мешок)",
-              "weightEn": "20 kg bag"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "peeled",
@@ -575,8 +705,8 @@
               "dryingMethodEn": "Mechanically dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "20 кг (мешок)",
-              "weightEn": "20 kg bag"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             }
           ],
           "desc": "Миндаль сладкий: ядро, жареный и в скорлупе.",
@@ -629,13 +759,15 @@
           "dryingMethodEn": "factory-dried",
           "sulphurDioxide": "Обработано SO2",
           "sulphurDioxideEn": "SO2 Treated",
-          "weight": "40 кг (мешок)",
-          "weightEn": "40kg bag"
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         }
       ],
       "desc": "Грецкий орех, миндаль, фисташки, арахис, кешью, фундук и семечка — ядро и в скорлупе, экспортные сорта.",
       "descEn": "Walnuts, almonds, pistachios, peanuts, cashews, hazelnuts and seeds — kernels and in-shell, export grades.",
-      "cutout": "assets/img/catalog/cutout/nuts.webp"
+      "cutout": "assets/img/catalog/cutout/nuts.webp",
+      "origin": "Узбекистан",
+      "originEn": "Uzbekistan"
     },
     {
       "id": "legumes",
@@ -658,8 +790,8 @@
           "dryingMethodEn": "Mechanically dried",
           "sulphurDioxide": "Не содержит SO2",
           "sulphurDioxideEn": "Absent",
-          "weight": "25 кг (мешок)",
-          "weightEn": "25kg bag"
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         },
         {
           "id": "sesame-white",
@@ -676,8 +808,8 @@
           "dryingMethodEn": "Sun dried",
           "sulphurDioxide": "Не содержит SO2",
           "sulphurDioxideEn": "Absent",
-          "weight": "25 кг (мешок)",
-          "weightEn": "25 kg bag"
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         },
         {
           "id": "fasol",
@@ -698,8 +830,8 @@
               "dryingMethodEn": "factory-dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "25 кг (мешок)",
-              "weightEn": "25kg bag"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "pinto",
@@ -714,8 +846,8 @@
               "dryingMethodEn": "Mechanically dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "25 кг (мешок)",
-              "weightEn": "25kg bag"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             },
             {
               "id": "blackeye",
@@ -730,8 +862,8 @@
               "dryingMethodEn": "Mechanically dried",
               "sulphurDioxide": "Не содержит SO2",
               "sulphurDioxideEn": "Absent",
-              "weight": "25 кг (мешок)",
-              "weightEn": "25kg bag"
+              "weight": "5-10 кг (коробка)",
+              "weightEn": "5-10 kg (box)"
             }
           ],
           "desc": "Фасоль трёх сортов, фотосортировка.",
@@ -768,8 +900,8 @@
           "dryingMethodEn": "Mechanically dried",
           "sulphurDioxide": "Не содержит SO2",
           "sulphurDioxideEn": "Absent",
-          "weight": "25 кг (мешок)",
-          "weightEn": "25kg bag"
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         }
       ],
       "desc": "Маш, нут, фасоль, белый и чёрный кунжут, жареный горох — очистка и сортировка на собственных линиях.",
@@ -903,7 +1035,17 @@
           "titleEn": "Candied Fruit",
           "img": "assets/img/products/candied-fruit.avif",
           "desc": "Ассорти цукатов — кубик и слайс.",
-          "descEn": "Candied fruit mix — dice and slices."
+          "descEn": "Candied fruit mix — dice and slices.",
+          "variety": "Цукаты ассорти, глазированные",
+          "varietyEn": "Assorted candied fruit, glazed",
+          "moisture": "18-20%",
+          "moistureEn": "18-20%",
+          "dryingMethod": "Обработанный (сахарный сироп)",
+          "dryingMethodEn": "Processed (sugar syrup)",
+          "sulphurDioxide": "Обработано SO2",
+          "sulphurDioxideEn": "SO2 Treated",
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         },
         {
           "id": "dried-apricots",
@@ -911,7 +1053,17 @@
           "titleEn": "Dried Apricots",
           "img": "assets/img/products/dried-apricots.avif",
           "desc": "Яркий сушёный абрикос — слайс и половинки.",
-          "descEn": "Bright dried apricot slices and halves."
+          "descEn": "Bright dried apricot slices and halves.",
+          "variety": "Цукаты из абрикоса",
+          "varietyEn": "Candied apricot",
+          "moisture": "18-20%",
+          "moistureEn": "18-20%",
+          "dryingMethod": "Обработанный (сахарный сироп)",
+          "dryingMethodEn": "Processed (sugar syrup)",
+          "sulphurDioxide": "Обработано SO2",
+          "sulphurDioxideEn": "SO2 Treated",
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         },
         {
           "id": "dried-pineapple",
@@ -919,7 +1071,17 @@
           "titleEn": "Dried Pineapple",
           "img": "assets/img/products/dried-pineapple.avif",
           "desc": "Ананас сушёный — кольца и кубики.",
-          "descEn": "Dried pineapple rings and dice."
+          "descEn": "Dried pineapple rings and dice.",
+          "variety": "Цукаты из ананаса",
+          "varietyEn": "Candied pineapple",
+          "moisture": "18-20%",
+          "moistureEn": "18-20%",
+          "dryingMethod": "Обработанный (сахарный сироп)",
+          "dryingMethodEn": "Processed (sugar syrup)",
+          "sulphurDioxide": "Обработано SO2",
+          "sulphurDioxideEn": "SO2 Treated",
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         },
         {
           "id": "dried-banana",
@@ -927,7 +1089,17 @@
           "titleEn": "Dried Banana",
           "img": "assets/img/products/dried-banana.avif",
           "desc": "Банан сушёный чипсами.",
-          "descEn": "Dried banana chips."
+          "descEn": "Dried banana chips.",
+          "variety": "Цукаты из банана",
+          "varietyEn": "Candied banana",
+          "moisture": "15-18%",
+          "moistureEn": "15-18%",
+          "dryingMethod": "Обработанный (сахарный сироп)",
+          "dryingMethodEn": "Processed (sugar syrup)",
+          "sulphurDioxide": "Обработано SO2",
+          "sulphurDioxideEn": "SO2 Treated",
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         },
         {
           "id": "dried-kiwi",
@@ -935,7 +1107,17 @@
           "titleEn": "Dried Kiwi",
           "img": "assets/img/products/dried-kiwi.avif",
           "desc": "Киви сушёное, слайс.",
-          "descEn": "Dried kiwi slices."
+          "descEn": "Dried kiwi slices.",
+          "variety": "Цукаты из киви",
+          "varietyEn": "Candied kiwi",
+          "moisture": "18-20%",
+          "moistureEn": "18-20%",
+          "dryingMethod": "Обработанный (сахарный сироп)",
+          "dryingMethodEn": "Processed (sugar syrup)",
+          "sulphurDioxide": "Обработано SO2",
+          "sulphurDioxideEn": "SO2 Treated",
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         },
         {
           "id": "dried-mango",
@@ -943,7 +1125,17 @@
           "titleEn": "Dried Mango",
           "img": "assets/img/products/dried-mango.avif",
           "desc": "Манго сушёное — с сахаром и без.",
-          "descEn": "Dried mango, sweetened and unsweetened."
+          "descEn": "Dried mango, sweetened and unsweetened.",
+          "variety": "Цукаты из манго",
+          "varietyEn": "Candied mango",
+          "moisture": "18-20%",
+          "moistureEn": "18-20%",
+          "dryingMethod": "Обработанный (сахарный сироп)",
+          "dryingMethodEn": "Processed (sugar syrup)",
+          "sulphurDioxide": "Обработано SO2",
+          "sulphurDioxideEn": "SO2 Treated",
+          "weight": "5-10 кг (коробка)",
+          "weightEn": "5-10 kg (box)"
         }
       ],
       "desc": "Цукаты и сушёные ананас, банан, киви, манго — яркая витрина для розничных сетей.",
