@@ -356,7 +356,11 @@ ${JSON.stringify(breadcrumbLd, null, 2)}
           <dl class="spec-list">
             <div class="spec-row"><dt>${en ? 'Origin' : 'Происхождение'}</dt><dd>${esc(originOf(trail, en))}</dd></div>
             <div class="spec-row"><dt>${en ? 'Category' : 'Категория'}</dt><dd>${esc(trailNames.join(' / '))}</dd></div>
+            ${(en ? node.varietyEn : node.variety) ? `<div class="spec-row"><dt>${en ? 'Variety' : 'Разнообразие'}</dt><dd>${esc(en ? node.varietyEn : node.variety)}</dd></div>` : ''}
+            ${(en ? node.moistureEn : node.moisture) ? `<div class="spec-row"><dt>${en ? 'Moisture' : 'Влажность'}</dt><dd>${esc(en ? node.moistureEn : node.moisture)}</dd></div>` : ''}
+            ${(en ? node.dryingMethodEn : node.dryingMethod) ? `<div class="spec-row"><dt>${en ? 'Drying Method' : 'Метод сушки'}</dt><dd>${esc(en ? node.dryingMethodEn : node.dryingMethod)}</dd></div>` : ''}
             ${w ? `<div class="spec-row"><dt>${esc(L.packing)}</dt><dd>${esc(w)}</dd></div>` : ''}
+            ${(en ? node.sulphurDioxideEn : node.sulphurDioxide) ? `<div class="spec-row"><dt>${en ? 'Sulphur Dioxide' : 'Диоксид серы'}</dt><dd>${esc(en ? node.sulphurDioxideEn : node.sulphurDioxide)}</dd></div>` : ''}
           </dl>
           <button type="button" class="btn btn-primary btn-lg" id="page-quote-btn">${esc(L.request)}</button>
         </div>

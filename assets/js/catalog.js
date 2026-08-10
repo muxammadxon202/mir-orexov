@@ -172,8 +172,16 @@
           [isEn() ? "Origin" : "Происхождение", originOf(trail)],
           [isEn() ? "Category" : "Категория", categoryNames.join(" / ") || t(node)],
         ];
+        const varietyText = isEn() ? node.varietyEn : node.variety;
+        if (varietyText) rows.push([isEn() ? "Variety" : "Разнообразие", varietyText]);
+        const moistureText = isEn() ? node.moistureEn : node.moisture;
+        if (moistureText) rows.push([isEn() ? "Moisture" : "Влажность", moistureText]);
+        const dryingText = isEn() ? node.dryingMethodEn : node.dryingMethod;
+        if (dryingText) rows.push([isEn() ? "Drying Method" : "Метод сушки", dryingText]);
         const weightText = isEn() ? node.weightEn : node.weight;
         if (weightText) rows.push([isEn() ? "Packing" : "Фасовка", weightText]);
+        const so2Text = isEn() ? node.sulphurDioxideEn : node.sulphurDioxide;
+        if (so2Text) rows.push([isEn() ? "Sulphur Dioxide" : "Диоксид серы", so2Text]);
         rows.forEach(([label, value]) => {
           const row = document.createElement("div");
           row.className = "spec-row";
@@ -242,14 +250,16 @@
           return;
         }
 
-        // A child is a dead end for navigation — either a true leaf (no children
-        // key at all) or a collapsed branch (disabled) — in both cases there is
-        // nothing further to drill into, so show the quote button right on the
-        // card instead of making the whole thing a link to another screen.
-        const isLeafChild = !child.children || child.disabled;
-        const card = document.createElement(isLeafChild ? "div" : "a");
-        if (!isLeafChild) card.href = "#/" + [...path, child.id].join("/");
-        card.className = "cat-tile" + (toneId ? " tone-" + toneId : "") + (isLeafChild ? " cat-tile--disabled" : "") + (child.disabled ? " cat-tile--empty" : "") + (path[0] === "packaging" ? " cat-tile--packaging" : "");
+        // Only a collapsed branch (disabled — every real child behind it got
+        // filtered out) is a genuine dead end with nothing to navigate to.
+        // A true leaf (no children key at all) now links through to its own
+        // page instead of putting a direct-order button on the tile, so its
+        // photo, full spec list and CTA all live in one place (matches
+        // build-catalog.js's static product page).
+        const isDeadEnd = !!child.disabled;
+        const card = document.createElement(isDeadEnd ? "div" : "a");
+        if (!isDeadEnd) card.href = "#/" + [...path, child.id].join("/");
+        card.className = "cat-tile" + (toneId ? " tone-" + toneId : "") + (isDeadEnd ? " cat-tile--disabled cat-tile--empty" : "") + (path[0] === "packaging" ? " cat-tile--packaging" : "");
         if (child.img) {
           card.innerHTML = `<div class="cat-tile-photo"><img src="${child.img}" alt="${t(child)}" loading="lazy" /></div>`;
         } else if (descText) {
@@ -266,7 +276,7 @@
         if (descText && child.img) {
           card.innerHTML += `<p class="cat-tile-desc">${descText}</p>`;
         }
-        if (isLeafChild) {
+        if (isDeadEnd) {
           const quoteBtn = document.createElement("button");
           quoteBtn.type = "button";
           quoteBtn.className = "btn btn-primary btn-sm cat-tile-quote-btn";
