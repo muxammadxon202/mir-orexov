@@ -250,16 +250,21 @@
           return;
         }
 
-        // Only a collapsed branch (disabled — every real child behind it got
+        // A collapsed branch (disabled — every real child behind it got
         // filtered out) is a genuine dead end with nothing to navigate to.
-        // A true leaf (no children key at all) now links through to its own
-        // page instead of putting a direct-order button on the tile, so its
-        // photo, full spec list and CTA all live in one place (matches
-        // build-catalog.js's static product page).
-        const isDeadEnd = !!child.disabled;
-        const card = document.createElement(isDeadEnd ? "div" : "a");
-        if (!isDeadEnd) card.href = "#/" + [...path, child.id].join("/");
-        card.className = "cat-tile" + (toneId ? " tone-" + toneId : "") + (isDeadEnd ? " cat-tile--disabled cat-tile--empty" : "") + (path[0] === "packaging" ? " cat-tile--packaging" : "");
+        // For a true leaf (no children key), Packaging and Fruits/Vegetables
+        // keep the quick-order button right on the tile (no real spec sheet
+        // to show — packaging is sold as a service, produce is just fresh
+        // stock); everywhere else (dried fruit, nuts, legumes, candied) the
+        // tile links through to its own page instead, where the photo, full
+        // spec list and CTA all live together (matches build-catalog.js's
+        // static product page).
+        const isLeaf = !child.children;
+        const inQuickOrderCategory = path[0] === "packaging" || path[0] === "fruits";
+        const showOnTileButton = !!child.disabled || (isLeaf && inQuickOrderCategory);
+        const card = document.createElement(showOnTileButton ? "div" : "a");
+        if (!showOnTileButton) card.href = "#/" + [...path, child.id].join("/");
+        card.className = "cat-tile" + (toneId ? " tone-" + toneId : "") + (child.disabled ? " cat-tile--disabled cat-tile--empty" : "") + (path[0] === "packaging" ? " cat-tile--packaging" : "");
         if (child.img) {
           card.innerHTML = `<div class="cat-tile-photo"><img src="${child.img}" alt="${t(child)}" loading="lazy" /></div>`;
         } else if (descText) {
@@ -276,7 +281,7 @@
         if (descText && child.img) {
           card.innerHTML += `<p class="cat-tile-desc">${descText}</p>`;
         }
-        if (isDeadEnd) {
+        if (showOnTileButton) {
           const quoteBtn = document.createElement("button");
           quoteBtn.type = "button";
           quoteBtn.className = "btn btn-primary btn-sm cat-tile-quote-btn";
