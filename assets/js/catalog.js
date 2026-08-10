@@ -79,7 +79,7 @@
   // Origin is inherited from the nearest ancestor that declares one (e.g. candied
   // fruit sourced from China), falling back to our own Samarkand production —
   // mirrors originOf() in tools/build-catalog.js so the two renderers agree.
-  const DEFAULT_ORIGIN = { ru: "Узбекистан, Самаркандская область", en: "Uzbekistan, Samarkand region" };
+  const DEFAULT_ORIGIN = { ru: "Узбекистан", en: "Uzbekistan" };
   function originOf(trail) {
     for (let i = trail.length - 1; i >= 0; i--) {
       const v = isEn() ? trail[i].originEn : trail[i].origin;

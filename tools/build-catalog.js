@@ -62,7 +62,7 @@ const weight = (n, en) => (en ? n.weightEn : n.weight) || '';
  * bought-in line (candied fruit from China) can override the default without
  * repeating the field on every leaf. Falls back to our own production.
  */
-const DEFAULT_ORIGIN = { ru: 'Узбекистан, Самаркандская область', en: 'Uzbekistan, Samarkand region', country: 'Uzbekistan' };
+const DEFAULT_ORIGIN = { ru: 'Узбекистан', en: 'Uzbekistan', country: 'Uzbekistan' };
 function originOf(trail, en) {
   for (let i = trail.length - 1; i >= 0; i--) {
     const n = trail[i];
