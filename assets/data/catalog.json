@@ -26,10 +26,10 @@
               "moistureEn": "18-22%",
               "dryingMethod": "Солнечная сушка",
               "dryingMethodEn": "Solar",
-              "sulphurDioxide": "Не содержит SO2",
-              "sulphurDioxideEn": "Absent",
+              "sulphurDioxide": "Обработано SO2",
+              "sulphurDioxideEn": "SO2 Treated",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "limonka",
@@ -45,7 +45,7 @@
               "sulphurDioxide": "Обработано SO2",
               "sulphurDioxideEn": "SO2 Treated",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "natural",
@@ -58,10 +58,10 @@
               "moistureEn": "18-22%",
               "dryingMethod": "Солнечная сушка",
               "dryingMethodEn": "Solar",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "turshak",
@@ -74,10 +74,10 @@
               "moistureEn": "22-24 %",
               "dryingMethod": "Обработанный",
               "dryingMethodEn": "Processed",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             }
           ],
           "desc": "Курага солнечной сушки — сорта от промышленного до люкс.",
@@ -100,10 +100,10 @@
               "moistureEn": "14-16 %",
               "dryingMethod": "Теневая сушка",
               "dryingMethodEn": "Shade dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "soyagi",
@@ -116,10 +116,10 @@
               "moistureEn": "14-16 %",
               "dryingMethod": "Обработанный",
               "dryingMethodEn": "Processed",
-              "sulphurDioxide": "Обработано SO2",
-              "sulphurDioxideEn": "SO2 Treated",
+              "sulphurDioxide": "Отсутствует",
+              "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "yellow-hybrid",
@@ -135,7 +135,7 @@
               "sulphurDioxide": "Обработано SO2",
               "sulphurDioxideEn": "SO2 Treated",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "yellow-califar",
@@ -151,7 +151,7 @@
               "sulphurDioxide": "Обработано SO2",
               "sulphurDioxideEn": "SO2 Treated",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "sultan",
@@ -164,10 +164,10 @@
               "moistureEn": "14-16 %",
               "dryingMethod": "Обработанный",
               "dryingMethodEn": "Processed",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "javz",
@@ -180,10 +180,10 @@
               "moistureEn": "14-16 %",
               "dryingMethod": "Обработанный",
               "dryingMethodEn": "Processed",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "red-thompson",
@@ -196,10 +196,10 @@
               "moistureEn": "14-16 %",
               "dryingMethod": "Солнечная сушка",
               "dryingMethodEn": "Sund dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "shigani-red",
@@ -212,10 +212,10 @@
               "moistureEn": "14-16%",
               "dryingMethod": "Солнечная сушка",
               "dryingMethodEn": "Sund dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             }
           ],
           "desc": "Восемь сортов изюма — от голден до чёрного кишмиша.",
@@ -238,10 +238,10 @@
               "moistureEn": "25%-27%",
               "dryingMethod": "Обработанный",
               "dryingMethodEn": "Processed",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "larch",
@@ -254,10 +254,10 @@
               "moistureEn": "20-25%",
               "dryingMethod": "Солнечная сушка",
               "dryingMethodEn": "Sun drying",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "with-pit",
@@ -270,10 +270,10 @@
               "moistureEn": "22 -24 %",
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             }
           ],
           "desc": "Чернослив с косточкой и без, мягкая сушка.",
@@ -292,10 +292,10 @@
           "moistureEn": "20-22 %",
           "dryingMethod": "Солнечная сушка",
           "dryingMethodEn": "Sun dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "jida",
@@ -310,10 +310,10 @@
           "moistureEn": "20-22 %",
           "dryingMethod": "Солнечная сушка",
           "dryingMethodEn": "Sun dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "unabi",
@@ -328,10 +328,10 @@
           "moistureEn": "20-22 %",
           "dryingMethod": "Солнечная сушка",
           "dryingMethodEn": "Sun dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "compote-mix",
@@ -349,7 +349,7 @@
           "sulphurDioxide": "SO2 1800 ppm",
           "sulphurDioxideEn": "1800 ppm",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         }
       ],
       "desc": "Курага, изюм, чернослив, джида, унаби и компотные смеси — солнечная сушка и промышленная калибровка.",
@@ -379,10 +379,10 @@
               "moistureEn": "5-6%",
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "peeled",
@@ -401,10 +401,10 @@
                   "moistureEn": "5-6%",
                   "dryingMethod": "Механическая сушка",
                   "dryingMethodEn": "Mechanically dried",
-                  "sulphurDioxide": "Не содержит SO2",
+                  "sulphurDioxide": "Отсутствует",
                   "sulphurDioxideEn": "Absent",
                   "weight": "5-10 кг (коробка)",
-                  "weightEn": "5-10 kg (box)"
+                  "weightEn": "5kg | 10kg box"
                 },
                 {
                   "id": "grade-1",
@@ -417,10 +417,10 @@
                   "moistureEn": "5-6%",
                   "dryingMethod": "Механическая сушка",
                   "dryingMethodEn": "Mechanically dried",
-                  "sulphurDioxide": "Не содержит SO2",
+                  "sulphurDioxide": "Отсутствует",
                   "sulphurDioxideEn": "Absent",
                   "weight": "5-10 кг (коробка)",
-                  "weightEn": "5-10 kg (box)"
+                  "weightEn": "5kg | 10kg box"
                 },
                 {
                   "id": "grade-2",
@@ -433,10 +433,10 @@
                   "moistureEn": "5-6%",
                   "dryingMethod": "Механическая сушка",
                   "dryingMethodEn": "Mechanically dried",
-                  "sulphurDioxide": "Не содержит SO2",
+                  "sulphurDioxide": "Отсутствует",
                   "sulphurDioxideEn": "Absent",
                   "weight": "5-10 кг (коробка)",
-                  "weightEn": "5-10 kg (box)"
+                  "weightEn": "5kg | 10kg box"
                 },
                 {
                   "id": "grade-3",
@@ -449,10 +449,10 @@
                   "moistureEn": "5-6%",
                   "dryingMethod": "Механическая сушка",
                   "dryingMethodEn": "Mechanically dried",
-                  "sulphurDioxide": "Не содержит SO2",
+                  "sulphurDioxide": "Отсутствует",
                   "sulphurDioxideEn": "Absent",
                   "weight": "5-10 кг (коробка)",
-                  "weightEn": "5-10 kg (box)"
+                  "weightEn": "5kg | 10kg box"
                 }
               ]
             },
@@ -467,10 +467,10 @@
               "moistureEn": "5-6%",
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "peeled-confectionery-red",
@@ -483,10 +483,10 @@
               "moistureEn": "5-6%",
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "crushed",
@@ -499,10 +499,10 @@
               "moistureEn": "5-6%",
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             }
           ],
           "desc": "Ядро половинки, четвертинки, микс и орех в скорлупе.",
@@ -525,10 +525,10 @@
               "moistureEn": "7-8 %",
               "dryingMethod": "Заводская сушка",
               "dryingMethodEn": "Factory-dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "peeled",
@@ -541,10 +541,10 @@
               "moistureEn": "7-8 %",
               "dryingMethod": "Заводская сушка",
               "dryingMethodEn": "factory-dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "blanched",
@@ -558,7 +558,7 @@
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "crushed",
@@ -572,7 +572,7 @@
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             }
           ],
           "desc": "Арахис сырой, жареный и бланшированный.",
@@ -595,10 +595,10 @@
               "moistureEn": "6%",
               "dryingMethod": "Солнечная сушка",
               "dryingMethodEn": "Sun dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "ahmad-agai-iran",
@@ -611,10 +611,10 @@
               "moistureEn": "6%",
               "dryingMethod": "Солнечная сушка",
               "dryingMethodEn": "Sun dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "turkey-unpeeled-premium",
@@ -627,10 +627,10 @@
               "moistureEn": "6%",
               "dryingMethod": "Солнечная сушка",
               "dryingMethodEn": "Sun dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "roasted-salted-iran",
@@ -643,10 +643,10 @@
               "moistureEn": "6%",
               "dryingMethod": "Солнечная сушка",
               "dryingMethodEn": "Sun dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             }
           ],
           "desc": "Фисташки жареные, солёные и натуральные.",
@@ -669,10 +669,10 @@
               "moistureEn": "7-8%",
               "dryingMethod": "Заводская сушка",
               "dryingMethodEn": "Factory-dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "unpeeled",
@@ -685,10 +685,10 @@
               "moistureEn": "7-8%",
               "dryingMethod": "Заводская сушка",
               "dryingMethodEn": "Factory-dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "peeled",
@@ -701,10 +701,10 @@
               "moistureEn": "5-7%",
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             }
           ],
           "desc": "Миндаль сладкий: ядро, жареный и в скорлупе.",
@@ -723,10 +723,10 @@
           "moistureEn": "5-7%",
           "dryingMethod": "Механическая сушка",
           "dryingMethodEn": "Mechanically dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "pumpkin-seed",
@@ -741,10 +741,10 @@
           "moistureEn": "5-6%",
           "dryingMethod": "Солнечная сушка",
           "dryingMethodEn": "Sun dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "macadamia",
@@ -759,10 +759,10 @@
           "moistureEn": "5-7%",
           "dryingMethod": "Механическая сушка",
           "dryingMethodEn": "Mechanically dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "hazelnut",
@@ -777,10 +777,10 @@
           "moistureEn": "5-6%",
           "dryingMethod": "Механическая сушка",
           "dryingMethodEn": "Mechanically dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "apricot-kernels",
@@ -798,7 +798,7 @@
           "sulphurDioxide": "Обработано SO2",
           "sulphurDioxideEn": "SO2 Treated",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         }
       ],
       "desc": "Грецкий орех, миндаль, фисташки, арахис, кешью, фундук и семечка — ядро и в скорлупе, экспортные сорта.",
@@ -824,10 +824,10 @@
           "moistureEn": "5-7%",
           "dryingMethod": "Механическая сушка",
           "dryingMethodEn": "Mechanically dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "sesame-white",
@@ -842,10 +842,10 @@
           "moistureEn": "5-6%",
           "dryingMethod": "Солнечная сушка",
           "dryingMethodEn": "Sun dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "fasol",
@@ -864,10 +864,10 @@
               "moistureEn": "5-6 %",
               "dryingMethod": "Заводская сушка",
               "dryingMethodEn": "factory-dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "pinto",
@@ -880,10 +880,10 @@
               "moistureEn": "5-7%",
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             },
             {
               "id": "blackeye",
@@ -896,10 +896,10 @@
               "moistureEn": "5-7%",
               "dryingMethod": "Механическая сушка",
               "dryingMethodEn": "Mechanically dried",
-              "sulphurDioxide": "Не содержит SO2",
+              "sulphurDioxide": "Отсутствует",
               "sulphurDioxideEn": "Absent",
               "weight": "5-10 кг (коробка)",
-              "weightEn": "5-10 kg (box)"
+              "weightEn": "5kg | 10kg box"
             }
           ],
           "desc": "Фасоль трёх сортов, фотосортировка.",
@@ -918,10 +918,10 @@
           "moistureEn": "5-7%",
           "dryingMethod": "Механическая сушка",
           "dryingMethodEn": "Mechanically dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "black-sesame",
@@ -936,10 +936,10 @@
           "moistureEn": "5-6%",
           "dryingMethod": "Солнечная сушка",
           "dryingMethodEn": "Sun dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "chickpea",
@@ -954,10 +954,10 @@
           "moistureEn": "5-7%",
           "dryingMethod": "Механическая сушка",
           "dryingMethodEn": "Mechanically dried",
-          "sulphurDioxide": "Не содержит SO2",
+          "sulphurDioxide": "Отсутствует",
           "sulphurDioxideEn": "Absent",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         }
       ],
       "desc": "Маш, нут, фасоль, белый и чёрный кунжут, жареный горох — очистка и сортировка на собственных линиях.",
@@ -1101,7 +1101,7 @@
           "sulphurDioxide": "Обработано SO2",
           "sulphurDioxideEn": "SO2 Treated",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "dried-apricots",
@@ -1119,7 +1119,7 @@
           "sulphurDioxide": "Обработано SO2",
           "sulphurDioxideEn": "SO2 Treated",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "dried-pineapple",
@@ -1137,7 +1137,7 @@
           "sulphurDioxide": "Обработано SO2",
           "sulphurDioxideEn": "SO2 Treated",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "dried-banana",
@@ -1155,7 +1155,7 @@
           "sulphurDioxide": "Обработано SO2",
           "sulphurDioxideEn": "SO2 Treated",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "dried-kiwi",
@@ -1173,7 +1173,7 @@
           "sulphurDioxide": "Обработано SO2",
           "sulphurDioxideEn": "SO2 Treated",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         },
         {
           "id": "dried-mango",
@@ -1191,7 +1191,7 @@
           "sulphurDioxide": "Обработано SO2",
           "sulphurDioxideEn": "SO2 Treated",
           "weight": "5-10 кг (коробка)",
-          "weightEn": "5-10 kg (box)"
+          "weightEn": "5kg | 10kg box"
         }
       ],
       "desc": "Цукаты и сушёные ананас, банан, киви, манго — яркая витрина для розничных сетей.",
