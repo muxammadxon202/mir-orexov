@@ -180,7 +180,7 @@ function page({ en, depth, url, altUrl, node, trail, children }) {
   const cat = trail[0];
   const description = desc(node, en);
   const w = weight(node, en);
-  const img = node.img ? rel(node.img, depth) : '';
+  const img = node.heroImg ? rel(node.heroImg, depth) : node.img ? rel(node.img, depth) : '';
   const gallery = Array.isArray(node.gallery) ? node.gallery.map((g) => rel(g, depth)) : [];
   const chrome = en ? CHROME.en : CHROME.ru;
   const L = en

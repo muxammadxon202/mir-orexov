@@ -204,8 +204,8 @@
         } else {
           heroGalleryEl.style.display = "none";
           heroGalleryEl.innerHTML = "";
-          if (node.img) {
-            heroPhotoEl.src = node.img;
+          if (node.heroImg || node.img) {
+            heroPhotoEl.src = node.heroImg || node.img;
             heroPhotoEl.alt = t(node);
             heroPhotoEl.style.display = "";
           } else {
