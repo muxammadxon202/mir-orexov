@@ -117,6 +117,24 @@
     }
     window.addEventListener('langchange', () => { updateCaption(); applyLabels(); });
 
+    // Opt-in (.sam-slider--report): instead of forcing every photo into one
+    // fixed box — which either crops mismatched-ratio photos via cover, or
+    // leaves bare empty bars beside them via contain — the slider's own
+    // aspect-ratio is set to match whichever slide is active, read straight
+    // off that img's width/height attributes (no need to wait for the image
+    // to actually load).
+    const fitToPhoto = slider.classList.contains('sam-slider--report');
+    function applyFitRatio() {
+      if (!fitToPhoto) return;
+      const img = slides[current];
+      // .width/.height reflect the *rendered* CSS size once our own
+      // stylesheet sets width/height on the img, so the real intrinsic
+      // ratio has to come from the width/height attributes directly.
+      const w = img.tagName === 'IMG' && img.getAttribute('width');
+      const h = img.tagName === 'IMG' && img.getAttribute('height');
+      if (w && h) slider.style.aspectRatio = w + ' / ' + h;
+    }
+
     function goTo(idx) {
       slides[current].classList.remove('active');
       dots[current].classList.remove('active');
@@ -126,6 +144,7 @@
       updateCaption();
       updateCounter();
       syncSlideState();
+      applyFitRatio();
       announce();
       if (slides[current].tagName === 'VIDEO') {
         slides[current].currentTime = 0;
@@ -137,6 +156,7 @@
     updateCounter();
     applyLabels();
     syncSlideState();
+    applyFitRatio();
     // No announce() here on purpose: the first slide is not a change.
 
     // Photo slides advance on a fixed timer; a video slide instead waits for
