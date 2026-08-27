@@ -1545,6 +1545,13 @@ html.intro-seen [data-animate-load="5"] { animation-delay: 600ms; }
 /* catalog root switches the auto grid to wider card columns */
 .grid-auto.grid-cards { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
 
+/* News grid: often has just one or two articles, so auto-fill reserves
+   empty phantom columns and leaves the card stranded on the left with a
+   big gap. auto-fit collapses those empty tracks so the card(s) actually
+   use the row width, without touching the catalog grids that share
+   .grid-auto and rely on auto-fill for many-item rows. */
+#news-grid { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
 /* Phone: same corner-overflow circle as desktop. The extra bottom padding
    reserves the lower-right area for the photo so text never runs under it. */
 @media (max-width: 480px) {
@@ -2065,6 +2072,30 @@ html.intro-seen .preloader { display: none; }
   opacity: 1;
   transform: scale(1);
   pointer-events: auto;
+}
+
+/* F.Istanbul photo report: mixes portrait phone shots with landscape hall
+   shots, so a plain contain-fit inside the 4:3 box left bare empty bars
+   beside the tall photos. Each slide instead layers a blurred, scaled-up
+   copy of the same photo as a full-bleed backdrop (no visible empty
+   space) under the sharp, uncropped photo on top — same trick as
+   Instagram/YouTube letterboxing. */
+.sam-slider--report .sam-slide { display: block; }
+.sam-slider--report .sam-slide-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(28px) brightness(0.75) saturate(1.15);
+  transform: scale(1.15);
+}
+.sam-slider--report .sam-slide-fg {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 /* Scroll-in animation for the whole slider */
 .sam-slider[data-animate]:not(.in-view) { opacity: 0; transform: translateY(36px); }
